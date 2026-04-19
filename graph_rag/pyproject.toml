@@ -1,0 +1,21 @@
+[project]
+name = "graph-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.7",
+    "datasets>=4.8.4",
+    "groq>=1.1.2",
+    "llama-index>=0.14.20",
+    "llama-index-graph-stores-neo4j>=0.7.0",
+    "networkx>=3.6.1",
+    "pandas>=3.0.2",
+    "python-dotenv>=1.2.2",
+    "pyvis>=0.3.2",
+    "sentence-transformers>=5.4.1",
+    "spacy>=3.8.14",
+    "torch>=2.11.0",
+    "voyageai>=0.3.7",
+]

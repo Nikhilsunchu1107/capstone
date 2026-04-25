@@ -5,11 +5,12 @@ A reproducible research monorepo for Graph RAG strategies. This repository serve
 ## Quick Start
 
 ```bash
-# Clone and setup (4 commands)
+# Clone and setup (5 commands)
 git clone <repo-url>
 cd capstone
-mise install
-uv sync
+git lfs install          # Enable Git LFS (one time)
+mise install           # Install Python 3.12 + uv
+uv sync               # Create .venv and install dependencies
 .venv/bin/python -m spacy download en_core_web_sm
 
 # Run a query
@@ -103,7 +104,7 @@ uv sync          # Creates .venv and installs all dependencies
 
 This repository uses Git LFS for large evaluation data files in `data/`.
 
-### Step 1: Install Git LFS
+### Install Git LFS
 
 **macOS:**
 ```bash
@@ -112,19 +113,27 @@ brew install git-lfs
 
 **Linux:**
 ```bash
-apt-get install git-lfs
+# Use your distro's package manager (apt, dnf, pacman, etc.)
+# Example for Debian/Ubuntu:
+sudo apt install git-lfs
 ```
 
-**Windows:**
-```powershell
-winget install Git.LFS
-```
+**Windows:** Already included in Git for Windows — no install needed.
 
-### Step 2: Enable LFS
+### Enable LFS
+
+After cloning, run once to configure LFS:
 
 ```bash
 git lfs install
-git lfs pull       # Download LFS files
+```
+
+Then download LFS files (or just run `git pull`, which also downloads LFS):
+
+```bash
+git pull
+# or explicitly:
+git lfs pull
 ```
 
 ---

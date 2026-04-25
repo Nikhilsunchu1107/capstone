@@ -20,17 +20,15 @@ These differences were made to get an end-to-end MVP working quickly and should 
 ## 2) Python runtime baseline is stricter than plan
 
 - **Expected (implementation/common rules):** Python 3.10+.
-- **Current MVP:** `graph_rag/pyproject.toml:6` requires `>=3.12`.
+- **Current MVP:** `pyproject.toml:6` requires `>=3.12` (at project root).
 - **Why this happened:** local environment standardization during MVP setup.
 
 ## 3) MVP sample size differs from Phase 1 recommendation
 
 - **Expected (common rules Phase 1):** hotpotqa sample size 100.
 - **Current MVP:**
-  - `graph_rag/scripts/download_ragbench_sample.py:22` defaults `--sample-size` to `50`.
-  - default output path is `data/ragbench_50` (`graph_rag/scripts/download_ragbench_sample.py:44`).
-  - default indices file is `data/mvp_eval_indices_50.json` (`graph_rag/scripts/download_ragbench_sample.py:50`).
-  - CLI default dataset path is also `data/ragbench_50` (`graph_rag/main.py:25`).
+  - `graph_rag/main.py` defaults to 50 samples.
+  - CLI default dataset path is also `../data/ragbench_50`.
 - **Why this happened:** faster indexing/query turnaround for MVP debugging.
 
 ## 4) Dataset download flow is MVP-centric, not team-shared flow yet
@@ -69,8 +67,8 @@ These differences were made to get an end-to-end MVP working quickly and should 
 
 ## 8) Additional dependencies for local embedding workaround
 
-- **Expected (team alignment intent):** Voyage-based embedding path.
-- **Current MVP:** `graph_rag/pyproject.toml` includes `sentence-transformers` and `torch`, supporting `graph_rag/src/embeddings_local.py`.
+- **Expected team alignment intent:** Voyage-based embedding path.
+- **Current MVP:** root `pyproject.toml` includes `sentence-transformers` and `torch`, supporting `src/embeddings_local.py`.
 - **Why this happened:** required for local embedding fallback path used during MVP.
 
 ## 9) Note on `.env` handling

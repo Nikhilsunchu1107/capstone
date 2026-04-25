@@ -4,9 +4,18 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
+from pathlib import Path
 
 from dotenv import load_dotenv
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+GRAPH_RAG_DIR = Path(__file__).resolve().parent
+for p in [str(PROJECT_ROOT), str(GRAPH_RAG_DIR / "src")]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
+from graph_rag.config import RANDOM_SEED
 from src.pipeline import GraphRAGPipeline
 
 
@@ -40,7 +49,9 @@ def main() -> None:
     output = {
         "question": result["question"],
         "answer": result["answer"],
-        "retrieved_chunk_ids": [item["chunk_id"] for item in result["retrieved_chunks"]],
+        "retrieved_chunk_ids": [
+            item["chunk_id"] for item in result["retrieved_chunks"]
+        ],
         "graph_result_count": result["graph_result_count"],
         "vector_result_count": result["vector_result_count"],
     }

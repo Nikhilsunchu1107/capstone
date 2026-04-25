@@ -1,29 +1,33 @@
 # AGENTS.md
 
 ## Scope + Ground Truth
-- Work from `graph_rag/` (this package has its own `pyproject.toml` + `uv.lock`; root docs live one level up).
-- `../common_rules.md` is the team comparability contract; current runtime deviations are tracked in `differences.md`.
-- `README.md` is empty; rely on code + scripts as source of truth.
+- **Project root** (`../`) has `pyproject.toml` + `uv.lock` that define dependencies.
+- `graph_rag/` contains the package code, `config.py`, and `main.py`.
+- `../common_rules.md` is the team comparability contract; runtime deviations are in `differences.md`.
+- `README.md` is at root level; rely on code + scripts as source of truth.
 
 ## Setup That Actually Works
-- Python version is pinned by config to `3.12` (`pyproject.toml`, `.python-version`).
-- From `graph_rag/`:
-  - `uv venv .venv --python 3.12`
-  - `source .venv/bin/activate`
-  - `uv sync`
-  - `uv run python -m spacy download en_core_web_sm`
+1. From project root:
+   ```bash
+   # Install mise if not present, then:
+   mise install python 3.12
+   .venv/bin/uv sync
+   .venv/bin/python -m spacy download en_core_web_sm
+   ```
+2. Run from `graph_rag/`:
+   ```bash
+   cd graph_rag
+   ../.venv/bin/python main.py --question "..." --dataset-path ../data/ragbench_50
+   ```
 
 ## Fast Run Commands
-- Build MVP sample dataset (single config sample):
-  - `uv run python scripts/download_ragbench_sample.py --config hotpotqa --sample-size 50`
+- Build evaluation indices (from project root):
+  - `../.venv/bin/python scripts/generate_eval_samples.py`
 - Run one end-to-end query:
-  - `uv run python main.py --question "..." --dataset-path data/ragbench_50`
+  - `cd graph_rag && ../.venv/bin/python main.py --question "..." --dataset-path ../data/ragbench_50`
 
 ## Current Runtime Behavior (Easy To Miss)
-- `main.py` defaults to `data/ragbench_50`; pipeline also defaults to this path.
-- `scripts/download_ragbench_sample.py` downloads from Hugging Face and saves:
-  - sampled dataset: `data/ragbench_50`
-  - sampled IDs: `data/mvp_eval_indices_50.json`
+- `main.py` defaults to `../data/ragbench_50`; pipeline also defaults to this path.
 - Chroma persistence is `outputs/chromadb`; changing dataset/index assumptions without clearing this can mix stale vectors with new runs.
 
 ## Env Vars + Embedding Path

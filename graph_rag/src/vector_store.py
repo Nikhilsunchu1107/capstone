@@ -13,7 +13,7 @@ import chromadb
 # import voyageai
 
 # Kept for reference per project request (do not remove):
-# from config import EMBED_MODEL
+from graph_rag.config import EMBED_MODEL
 from src.embeddings_local import BGEEmbedder
 from src.types import ChunkRecord, RetrievedChunk
 

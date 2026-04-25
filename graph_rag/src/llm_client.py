@@ -6,7 +6,7 @@ import os
 
 from groq import Groq
 
-from config import LLM_MODEL, MAX_TOKENS, TEMPERATURE
+from graph_rag.config import LLM_MODEL, MAX_TOKENS, TEMPERATURE
 
 
 class GroqGenerator:

@@ -7,7 +7,7 @@ from pathlib import Path
 
 from datasets import Dataset, load_from_disk
 
-from config import CHUNK_OVERLAP, CHUNK_SIZE
+from graph_rag.config import CHUNK_OVERLAP, CHUNK_SIZE
 from src.types import ChunkRecord
 
 

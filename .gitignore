@@ -1,0 +1,20 @@
+# Mise
+.mise/
+# Python Virtual Environments
+.venv/
+graph_rag/.venv/
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+# Environment variables
+.env
+.env.local
+# IDE
+.idea/
+.vscode/
+# Cache
+.ruff_cache/

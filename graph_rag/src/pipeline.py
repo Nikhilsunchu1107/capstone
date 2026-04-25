@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import asdict
 
-from config import TOP_K
+from graph_rag.config import TOP_K
 from src.data_loader import create_chunk_records, load_local_ragbench
 from src.graph import GraphIndex
 from src.llm_client import GroqGenerator

@@ -1,0 +1,2532 @@
+{
+  "group_name": "primary",
+  "split": "test",
+  "seed": 42,
+  "total_requested": 500,
+  "total_selected": 500,
+  "configs": [
+    "hotpotqa",
+    "msmarco",
+    "hagrid"
+  ],
+  "counts_per_config": {
+    "hotpotqa": 167,
+    "msmarco": 167,
+    "hagrid": 166
+  },
+  "source_sizes": {
+    "hotpotqa": 390,
+    "msmarco": 423,
+    "hagrid": 1318
+  },
+  "indices_by_config": {
+    "hotpotqa": [
+      0,
+      3,
+      5,
+      12,
+      13,
+      15,
+      16,
+      22,
+      23,
+      24,
+      27,
+      28,
+      32,
+      33,
+      35,
+      36,
+      39,
+      40,
+      41,
+      44,
+      45,
+      46,
+      47,
+      49,
+      50,
+      51,
+      52,
+      56,
+      57,
+      58,
+      63,
+      67,
+      70,
+      71,
+      73,
+      76,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      87,
+      95,
+      98,
+      101,
+      107,
+      108,
+      110,
+      111,
+      112,
+      114,
+      116,
+      117,
+      119,
+      125,
+      126,
+      128,
+      129,
+      134,
+      135,
+      136,
+      137,
+      138,
+      140,
+      142,
+      148,
+      150,
+      153,
+      155,
+      160,
+      161,
+      163,
+      166,
+      172,
+      174,
+      176,
+      181,
+      183,
+      184,
+      185,
+      186,
+      189,
+      193,
+      194,
+      195,
+      197,
+      199,
+      202,
+      204,
+      205,
+      214,
+      215,
+      216,
+      219,
+      222,
+      224,
+      229,
+      232,
+      233,
+      234,
+      235,
+      236,
+      239,
+      244,
+      246,
+      251,
+      252,
+      253,
+      255,
+      256,
+      258,
+      260,
+      263,
+      265,
+      273,
+      274,
+      275,
+      279,
+      282,
+      285,
+      287,
+      290,
+      293,
+      295,
+      297,
+      301,
+      302,
+      303,
+      304,
+      308,
+      309,
+      312,
+      316,
+      320,
+      321,
+      325,
+      327,
+      330,
+      331,
+      332,
+      333,
+      335,
+      338,
+      341,
+      346,
+      352,
+      353,
+      354,
+      355,
+      357,
+      359,
+      360,
+      368,
+      370,
+      372,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      382,
+      384,
+      386,
+      388
+    ],
+    "msmarco": [
+      1,
+      3,
+      7,
+      9,
+      10,
+      16,
+      20,
+      25,
+      27,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      38,
+      40,
+      41,
+      43,
+      47,
+      48,
+      49,
+      50,
+      55,
+      57,
+      61,
+      64,
+      65,
+      67,
+      71,
+      79,
+      80,
+      84,
+      85,
+      93,
+      95,
+      97,
+      98,
+      102,
+      104,
+      108,
+      109,
+      111,
+      112,
+      115,
+      117,
+      120,
+      121,
+      122,
+      123,
+      124,
+      126,
+      127,
+      133,
+      135,
+      142,
+      146,
+      151,
+      153,
+      157,
+      159,
+      160,
+      161,
+      169,
+      173,
+      181,
+      185,
+      191,
+      194,
+      199,
+      202,
+      204,
+      205,
+      206,
+      208,
+      210,
+      214,
+      216,
+      220,
+      224,
+      226,
+      229,
+      231,
+      232,
+      236,
+      239,
+      242,
+      243,
+      244,
+      246,
+      248,
+      249,
+      257,
+      260,
+      263,
+      264,
+      270,
+      271,
+      272,
+      274,
+      275,
+      276,
+      277,
+      281,
+      283,
+      284,
+      287,
+      290,
+      292,
+      293,
+      295,
+      297,
+      301,
+      310,
+      313,
+      322,
+      323,
+      326,
+      328,
+      330,
+      331,
+      332,
+      333,
+      334,
+      337,
+      339,
+      342,
+      343,
+      345,
+      346,
+      349,
+      352,
+      353,
+      354,
+      355,
+      357,
+      358,
+      362,
+      363,
+      365,
+      368,
+      372,
+      373,
+      374,
+      376,
+      379,
+      380,
+      385,
+      386,
+      389,
+      391,
+      392,
+      394,
+      396,
+      399,
+      400,
+      401,
+      403,
+      406,
+      408,
+      409,
+      410,
+      411,
+      413,
+      416,
+      417
+    ],
+    "hagrid": [
+      0,
+      3,
+      7,
+      16,
+      19,
+      48,
+      50,
+      56,
+      73,
+      78,
+      79,
+      81,
+      85,
+      90,
+      104,
+      140,
+      142,
+      143,
+      148,
+      150,
+      154,
+      189,
+      204,
+      210,
+      212,
+      219,
+      221,
+      222,
+      229,
+      236,
+      255,
+      260,
+      261,
+      267,
+      271,
+      275,
+      303,
+      305,
+      316,
+      318,
+      323,
+      326,
+      330,
+      332,
+      356,
+      362,
+      365,
+      367,
+      389,
+      392,
+      395,
+      403,
+      408,
+      416,
+      430,
+      431,
+      436,
+      455,
+      456,
+      466,
+      484,
+      500,
+      508,
+      511,
+      514,
+      521,
+      534,
+      536,
+      540,
+      541,
+      543,
+      546,
+      557,
+      566,
+      570,
+      571,
+      577,
+      583,
+      605,
+      613,
+      615,
+      616,
+      619,
+      622,
+      625,
+      631,
+      633,
+      642,
+      647,
+      668,
+      672,
+      676,
+      678,
+      680,
+      683,
+      702,
+      707,
+      714,
+      716,
+      719,
+      724,
+      732,
+      745,
+      746,
+      756,
+      776,
+      783,
+      788,
+      816,
+      818,
+      824,
+      831,
+      832,
+      836,
+      843,
+      844,
+      861,
+      867,
+      875,
+      880,
+      883,
+      889,
+      893,
+      897,
+      904,
+      936,
+      938,
+      942,
+      963,
+      1000,
+      1035,
+      1036,
+      1038,
+      1043,
+      1047,
+      1064,
+      1083,
+      1098,
+      1101,
+      1102,
+      1112,
+      1117,
+      1122,
+      1129,
+      1131,
+      1133,
+      1135,
+      1146,
+      1148,
+      1153,
+      1165,
+      1180,
+      1189,
+      1192,
+      1221,
+      1238,
+      1241,
+      1252,
+      1260,
+      1271,
+      1272,
+      1276,
+      1298,
+      1299,
+      1304,
+      1313
+    ]
+  },
+  "mixed_samples": [
+    {
+      "config": "hagrid",
+      "row_index": 897
+    },
+    {
+      "config": "hagrid",
+      "row_index": 616
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1112
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 50
+    },
+    {
+      "config": "msmarco",
+      "row_index": 71
+    },
+    {
+      "config": "msmarco",
+      "row_index": 334
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 388
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1131
+    },
+    {
+      "config": "msmarco",
+      "row_index": 277
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 150
+    },
+    {
+      "config": "hagrid",
+      "row_index": 143
+    },
+    {
+      "config": "hagrid",
+      "row_index": 7
+    },
+    {
+      "config": "msmarco",
+      "row_index": 93
+    },
+    {
+      "config": "msmarco",
+      "row_index": 332
+    },
+    {
+      "config": "msmarco",
+      "row_index": 339
+    },
+    {
+      "config": "msmarco",
+      "row_index": 111
+    },
+    {
+      "config": "hagrid",
+      "row_index": 867
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 82
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1272
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1038
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 114
+    },
+    {
+      "config": "msmarco",
+      "row_index": 409
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 23
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 234
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 214
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 232
+    },
+    {
+      "config": "msmarco",
+      "row_index": 109
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 372
+    },
+    {
+      "config": "msmarco",
+      "row_index": 216
+    },
+    {
+      "config": "msmarco",
+      "row_index": 157
+    },
+    {
+      "config": "msmarco",
+      "row_index": 276
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 3
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 308
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1165
+    },
+    {
+      "config": "hagrid",
+      "row_index": 332
+    },
+    {
+      "config": "hagrid",
+      "row_index": 702
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 15
+    },
+    {
+      "config": "msmarco",
+      "row_index": 50
+    },
+    {
+      "config": "msmarco",
+      "row_index": 31
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 73
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 341
+    },
+    {
+      "config": "msmarco",
+      "row_index": 274
+    },
+    {
+      "config": "hagrid",
+      "row_index": 431
+    },
+    {
+      "config": "hagrid",
+      "row_index": 831
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 98
+    },
+    {
+      "config": "hagrid",
+      "row_index": 90
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 222
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 138
+    },
+    {
+      "config": "hagrid",
+      "row_index": 676
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1083
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1189
+    },
+    {
+      "config": "hagrid",
+      "row_index": 323
+    },
+    {
+      "config": "msmarco",
+      "row_index": 232
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 112
+    },
+    {
+      "config": "hagrid",
+      "row_index": 613
+    },
+    {
+      "config": "hagrid",
+      "row_index": 430
+    },
+    {
+      "config": "msmarco",
+      "row_index": 403
+    },
+    {
+      "config": "msmarco",
+      "row_index": 98
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 224
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 40
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1148
+    },
+    {
+      "config": "msmarco",
+      "row_index": 61
+    },
+    {
+      "config": "msmarco",
+      "row_index": 374
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1304
+    },
+    {
+      "config": "hagrid",
+      "row_index": 73
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 251
+    },
+    {
+      "config": "msmarco",
+      "row_index": 313
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 204
+    },
+    {
+      "config": "hagrid",
+      "row_index": 541
+    },
+    {
+      "config": "hagrid",
+      "row_index": 78
+    },
+    {
+      "config": "msmarco",
+      "row_index": 257
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 263
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 78
+    },
+    {
+      "config": "msmarco",
+      "row_index": 333
+    },
+    {
+      "config": "msmarco",
+      "row_index": 79
+    },
+    {
+      "config": "hagrid",
+      "row_index": 883
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 135
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 256
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1221
+    },
+    {
+      "config": "hagrid",
+      "row_index": 140
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 0
+    },
+    {
+      "config": "hagrid",
+      "row_index": 788
+    },
+    {
+      "config": "msmarco",
+      "row_index": 372
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 355
+    },
+    {
+      "config": "hagrid",
+      "row_index": 543
+    },
+    {
+      "config": "msmarco",
+      "row_index": 9
+    },
+    {
+      "config": "msmarco",
+      "row_index": 413
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 275
+    },
+    {
+      "config": "msmarco",
+      "row_index": 35
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 71
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 56
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 303
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1117
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1153
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1043
+    },
+    {
+      "config": "msmarco",
+      "row_index": 169
+    },
+    {
+      "config": "msmarco",
+      "row_index": 38
+    },
+    {
+      "config": "msmarco",
+      "row_index": 242
+    },
+    {
+      "config": "hagrid",
+      "row_index": 436
+    },
+    {
+      "config": "msmarco",
+      "row_index": 206
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 375
+    },
+    {
+      "config": "hagrid",
+      "row_index": 633
+    },
+    {
+      "config": "msmarco",
+      "row_index": 65
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 128
+    },
+    {
+      "config": "msmarco",
+      "row_index": 117
+    },
+    {
+      "config": "hagrid",
+      "row_index": 642
+    },
+    {
+      "config": "hagrid",
+      "row_index": 844
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 57
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 184
+    },
+    {
+      "config": "hagrid",
+      "row_index": 142
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 176
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 368
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 117
+    },
+    {
+      "config": "hagrid",
+      "row_index": 668
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1299
+    },
+    {
+      "config": "msmarco",
+      "row_index": 355
+    },
+    {
+      "config": "hagrid",
+      "row_index": 261
+    },
+    {
+      "config": "hagrid",
+      "row_index": 229
+    },
+    {
+      "config": "msmarco",
+      "row_index": 295
+    },
+    {
+      "config": "msmarco",
+      "row_index": 416
+    },
+    {
+      "config": "msmarco",
+      "row_index": 102
+    },
+    {
+      "config": "hagrid",
+      "row_index": 783
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 44
+    },
+    {
+      "config": "hagrid",
+      "row_index": 508
+    },
+    {
+      "config": "msmarco",
+      "row_index": 270
+    },
+    {
+      "config": "msmarco",
+      "row_index": 185
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 166
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 41
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 338
+    },
+    {
+      "config": "msmarco",
+      "row_index": 353
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 39
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 58
+    },
+    {
+      "config": "msmarco",
+      "row_index": 244
+    },
+    {
+      "config": "msmarco",
+      "row_index": 27
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 353
+    },
+    {
+      "config": "msmarco",
+      "row_index": 3
+    },
+    {
+      "config": "msmarco",
+      "row_index": 263
+    },
+    {
+      "config": "hagrid",
+      "row_index": 85
+    },
+    {
+      "config": "msmarco",
+      "row_index": 346
+    },
+    {
+      "config": "hagrid",
+      "row_index": 416
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 378
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 379
+    },
+    {
+      "config": "msmarco",
+      "row_index": 365
+    },
+    {
+      "config": "msmarco",
+      "row_index": 84
+    },
+    {
+      "config": "hagrid",
+      "row_index": 536
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 172
+    },
+    {
+      "config": "msmarco",
+      "row_index": 43
+    },
+    {
+      "config": "msmarco",
+      "row_index": 322
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 28
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1260
+    },
+    {
+      "config": "hagrid",
+      "row_index": 318
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 325
+    },
+    {
+      "config": "hagrid",
+      "row_index": 326
+    },
+    {
+      "config": "hagrid",
+      "row_index": 546
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 101
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 215
+    },
+    {
+      "config": "msmarco",
+      "row_index": 330
+    },
+    {
+      "config": "hagrid",
+      "row_index": 356
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1102
+    },
+    {
+      "config": "msmarco",
+      "row_index": 400
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 163
+    },
+    {
+      "config": "hagrid",
+      "row_index": 625
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 320
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 357
+    },
+    {
+      "config": "msmarco",
+      "row_index": 160
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 293
+    },
+    {
+      "config": "msmarco",
+      "row_index": 323
+    },
+    {
+      "config": "msmarco",
+      "row_index": 386
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1098
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 327
+    },
+    {
+      "config": "msmarco",
+      "row_index": 20
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 185
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 111
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 63
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 134
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1276
+    },
+    {
+      "config": "msmarco",
+      "row_index": 55
+    },
+    {
+      "config": "hagrid",
+      "row_index": 521
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 274
+    },
+    {
+      "config": "msmarco",
+      "row_index": 243
+    },
+    {
+      "config": "msmarco",
+      "row_index": 146
+    },
+    {
+      "config": "hagrid",
+      "row_index": 19
+    },
+    {
+      "config": "hagrid",
+      "row_index": 511
+    },
+    {
+      "config": "msmarco",
+      "row_index": 392
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 202
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 321
+    },
+    {
+      "config": "hagrid",
+      "row_index": 893
+    },
+    {
+      "config": "hagrid",
+      "row_index": 570
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 219
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 354
+    },
+    {
+      "config": "hagrid",
+      "row_index": 303
+    },
+    {
+      "config": "msmarco",
+      "row_index": 275
+    },
+    {
+      "config": "hagrid",
+      "row_index": 210
+    },
+    {
+      "config": "msmarco",
+      "row_index": 283
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 239
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 126
+    },
+    {
+      "config": "hagrid",
+      "row_index": 816
+    },
+    {
+      "config": "hagrid",
+      "row_index": 938
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 13
+    },
+    {
+      "config": "msmarco",
+      "row_index": 362
+    },
+    {
+      "config": "hagrid",
+      "row_index": 305
+    },
+    {
+      "config": "msmarco",
+      "row_index": 36
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 386
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 287
+    },
+    {
+      "config": "msmarco",
+      "row_index": 29
+    },
+    {
+      "config": "msmarco",
+      "row_index": 236
+    },
+    {
+      "config": "msmarco",
+      "row_index": 385
+    },
+    {
+      "config": "msmarco",
+      "row_index": 122
+    },
+    {
+      "config": "hagrid",
+      "row_index": 936
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 244
+    },
+    {
+      "config": "msmarco",
+      "row_index": 40
+    },
+    {
+      "config": "msmarco",
+      "row_index": 287
+    },
+    {
+      "config": "hagrid",
+      "row_index": 0
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 110
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1298
+    },
+    {
+      "config": "hagrid",
+      "row_index": 776
+    },
+    {
+      "config": "msmarco",
+      "row_index": 380
+    },
+    {
+      "config": "hagrid",
+      "row_index": 367
+    },
+    {
+      "config": "msmarco",
+      "row_index": 363
+    },
+    {
+      "config": "hagrid",
+      "row_index": 154
+    },
+    {
+      "config": "msmarco",
+      "row_index": 343
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 199
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 148
+    },
+    {
+      "config": "hagrid",
+      "row_index": 824
+    },
+    {
+      "config": "msmarco",
+      "row_index": 246
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1122
+    },
+    {
+      "config": "hagrid",
+      "row_index": 275
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 107
+    },
+    {
+      "config": "hagrid",
+      "row_index": 622
+    },
+    {
+      "config": "hagrid",
+      "row_index": 724
+    },
+    {
+      "config": "msmarco",
+      "row_index": 354
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 22
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1135
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 229
+    },
+    {
+      "config": "hagrid",
+      "row_index": 403
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 374
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1129
+    },
+    {
+      "config": "hagrid",
+      "row_index": 362
+    },
+    {
+      "config": "msmarco",
+      "row_index": 310
+    },
+    {
+      "config": "msmarco",
+      "row_index": 220
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1036
+    },
+    {
+      "config": "hagrid",
+      "row_index": 455
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 161
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 47
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1133
+    },
+    {
+      "config": "hagrid",
+      "row_index": 843
+    },
+    {
+      "config": "hagrid",
+      "row_index": 672
+    },
+    {
+      "config": "hagrid",
+      "row_index": 571
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 189
+    },
+    {
+      "config": "hagrid",
+      "row_index": 647
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 359
+    },
+    {
+      "config": "msmarco",
+      "row_index": 47
+    },
+    {
+      "config": "msmarco",
+      "row_index": 112
+    },
+    {
+      "config": "msmarco",
+      "row_index": 337
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 282
+    },
+    {
+      "config": "msmarco",
+      "row_index": 224
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 330
+    },
+    {
+      "config": "hagrid",
+      "row_index": 716
+    },
+    {
+      "config": "msmarco",
+      "row_index": 135
+    },
+    {
+      "config": "msmarco",
+      "row_index": 349
+    },
+    {
+      "config": "msmarco",
+      "row_index": 191
+    },
+    {
+      "config": "msmarco",
+      "row_index": 41
+    },
+    {
+      "config": "msmarco",
+      "row_index": 133
+    },
+    {
+      "config": "hagrid",
+      "row_index": 745
+    },
+    {
+      "config": "msmarco",
+      "row_index": 231
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1035
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 16
+    },
+    {
+      "config": "msmarco",
+      "row_index": 25
+    },
+    {
+      "config": "msmarco",
+      "row_index": 249
+    },
+    {
+      "config": "hagrid",
+      "row_index": 619
+    },
+    {
+      "config": "msmarco",
+      "row_index": 49
+    },
+    {
+      "config": "msmarco",
+      "row_index": 408
+    },
+    {
+      "config": "msmarco",
+      "row_index": 30
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 46
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 136
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 370
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 116
+    },
+    {
+      "config": "hagrid",
+      "row_index": 818
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 80
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1000
+    },
+    {
+      "config": "msmarco",
+      "row_index": 95
+    },
+    {
+      "config": "msmarco",
+      "row_index": 57
+    },
+    {
+      "config": "hagrid",
+      "row_index": 678
+    },
+    {
+      "config": "msmarco",
+      "row_index": 410
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 125
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 377
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 193
+    },
+    {
+      "config": "hagrid",
+      "row_index": 219
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 195
+    },
+    {
+      "config": "msmarco",
+      "row_index": 48
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 309
+    },
+    {
+      "config": "hagrid",
+      "row_index": 714
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 258
+    },
+    {
+      "config": "msmarco",
+      "row_index": 411
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 129
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1180
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 140
+    },
+    {
+      "config": "hagrid",
+      "row_index": 889
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1146
+    },
+    {
+      "config": "hagrid",
+      "row_index": 221
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 236
+    },
+    {
+      "config": "hagrid",
+      "row_index": 534
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 36
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 45
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 76
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 265
+    },
+    {
+      "config": "msmarco",
+      "row_index": 32
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 52
+    },
+    {
+      "config": "hagrid",
+      "row_index": 392
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 24
+    },
+    {
+      "config": "msmarco",
+      "row_index": 205
+    },
+    {
+      "config": "hagrid",
+      "row_index": 389
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 304
+    },
+    {
+      "config": "hagrid",
+      "row_index": 255
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 335
+    },
+    {
+      "config": "msmarco",
+      "row_index": 396
+    },
+    {
+      "config": "hagrid",
+      "row_index": 50
+    },
+    {
+      "config": "hagrid",
+      "row_index": 746
+    },
+    {
+      "config": "msmarco",
+      "row_index": 173
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 253
+    },
+    {
+      "config": "msmarco",
+      "row_index": 1
+    },
+    {
+      "config": "hagrid",
+      "row_index": 212
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 316
+    },
+    {
+      "config": "hagrid",
+      "row_index": 680
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 216
+    },
+    {
+      "config": "msmarco",
+      "row_index": 194
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 155
+    },
+    {
+      "config": "msmarco",
+      "row_index": 126
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 87
+    },
+    {
+      "config": "msmarco",
+      "row_index": 417
+    },
+    {
+      "config": "msmarco",
+      "row_index": 331
+    },
+    {
+      "config": "msmarco",
+      "row_index": 357
+    },
+    {
+      "config": "msmarco",
+      "row_index": 85
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 33
+    },
+    {
+      "config": "msmarco",
+      "row_index": 284
+    },
+    {
+      "config": "msmarco",
+      "row_index": 391
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 142
+    },
+    {
+      "config": "msmarco",
+      "row_index": 204
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 194
+    },
+    {
+      "config": "msmarco",
+      "row_index": 104
+    },
+    {
+      "config": "msmarco",
+      "row_index": 16
+    },
+    {
+      "config": "hagrid",
+      "row_index": 150
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 35
+    },
+    {
+      "config": "hagrid",
+      "row_index": 500
+    },
+    {
+      "config": "msmarco",
+      "row_index": 142
+    },
+    {
+      "config": "hagrid",
+      "row_index": 615
+    },
+    {
+      "config": "hagrid",
+      "row_index": 104
+    },
+    {
+      "config": "msmarco",
+      "row_index": 229
+    },
+    {
+      "config": "hagrid",
+      "row_index": 719
+    },
+    {
+      "config": "msmarco",
+      "row_index": 368
+    },
+    {
+      "config": "msmarco",
+      "row_index": 297
+    },
+    {
+      "config": "msmarco",
+      "row_index": 290
+    },
+    {
+      "config": "msmarco",
+      "row_index": 120
+    },
+    {
+      "config": "hagrid",
+      "row_index": 236
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 360
+    },
+    {
+      "config": "msmarco",
+      "row_index": 34
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 12
+    },
+    {
+      "config": "msmarco",
+      "row_index": 214
+    },
+    {
+      "config": "msmarco",
+      "row_index": 64
+    },
+    {
+      "config": "hagrid",
+      "row_index": 861
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 27
+    },
+    {
+      "config": "hagrid",
+      "row_index": 707
+    },
+    {
+      "config": "msmarco",
+      "row_index": 352
+    },
+    {
+      "config": "msmarco",
+      "row_index": 80
+    },
+    {
+      "config": "msmarco",
+      "row_index": 121
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 246
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 67
+    },
+    {
+      "config": "hagrid",
+      "row_index": 316
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1252
+    },
+    {
+      "config": "msmarco",
+      "row_index": 293
+    },
+    {
+      "config": "msmarco",
+      "row_index": 7
+    },
+    {
+      "config": "msmarco",
+      "row_index": 108
+    },
+    {
+      "config": "hagrid",
+      "row_index": 875
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 70
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1192
+    },
+    {
+      "config": "hagrid",
+      "row_index": 222
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 183
+    },
+    {
+      "config": "hagrid",
+      "row_index": 189
+    },
+    {
+      "config": "hagrid",
+      "row_index": 832
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 279
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 181
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 160
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 83
+    },
+    {
+      "config": "msmarco",
+      "row_index": 292
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 382
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1101
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 331
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1047
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1313
+    },
+    {
+      "config": "hagrid",
+      "row_index": 260
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 81
+    },
+    {
+      "config": "msmarco",
+      "row_index": 151
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 332
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 290
+    },
+    {
+      "config": "msmarco",
+      "row_index": 394
+    },
+    {
+      "config": "msmarco",
+      "row_index": 226
+    },
+    {
+      "config": "msmarco",
+      "row_index": 272
+    },
+    {
+      "config": "hagrid",
+      "row_index": 456
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 333
+    },
+    {
+      "config": "msmarco",
+      "row_index": 406
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 301
+    },
+    {
+      "config": "hagrid",
+      "row_index": 756
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 312
+    },
+    {
+      "config": "msmarco",
+      "row_index": 161
+    },
+    {
+      "config": "hagrid",
+      "row_index": 904
+    },
+    {
+      "config": "hagrid",
+      "row_index": 365
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 186
+    },
+    {
+      "config": "msmarco",
+      "row_index": 159
+    },
+    {
+      "config": "msmarco",
+      "row_index": 301
+    },
+    {
+      "config": "msmarco",
+      "row_index": 124
+    },
+    {
+      "config": "msmarco",
+      "row_index": 248
+    },
+    {
+      "config": "hagrid",
+      "row_index": 271
+    },
+    {
+      "config": "msmarco",
+      "row_index": 379
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1238
+    },
+    {
+      "config": "hagrid",
+      "row_index": 408
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 380
+    },
+    {
+      "config": "msmarco",
+      "row_index": 358
+    },
+    {
+      "config": "msmarco",
+      "row_index": 328
+    },
+    {
+      "config": "msmarco",
+      "row_index": 281
+    },
+    {
+      "config": "hagrid",
+      "row_index": 56
+    },
+    {
+      "config": "hagrid",
+      "row_index": 683
+    },
+    {
+      "config": "hagrid",
+      "row_index": 577
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 153
+    },
+    {
+      "config": "hagrid",
+      "row_index": 880
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 137
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 302
+    },
+    {
+      "config": "msmarco",
+      "row_index": 326
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 51
+    },
+    {
+      "config": "msmarco",
+      "row_index": 199
+    },
+    {
+      "config": "msmarco",
+      "row_index": 271
+    },
+    {
+      "config": "hagrid",
+      "row_index": 836
+    },
+    {
+      "config": "hagrid",
+      "row_index": 583
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 205
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 260
+    },
+    {
+      "config": "msmarco",
+      "row_index": 123
+    },
+    {
+      "config": "hagrid",
+      "row_index": 514
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 119
+    },
+    {
+      "config": "hagrid",
+      "row_index": 484
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1064
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 5
+    },
+    {
+      "config": "hagrid",
+      "row_index": 148
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1271
+    },
+    {
+      "config": "hagrid",
+      "row_index": 963
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 295
+    },
+    {
+      "config": "msmarco",
+      "row_index": 97
+    },
+    {
+      "config": "msmarco",
+      "row_index": 239
+    },
+    {
+      "config": "msmarco",
+      "row_index": 67
+    },
+    {
+      "config": "hagrid",
+      "row_index": 204
+    },
+    {
+      "config": "hagrid",
+      "row_index": 267
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 233
+    },
+    {
+      "config": "msmarco",
+      "row_index": 342
+    },
+    {
+      "config": "msmarco",
+      "row_index": 399
+    },
+    {
+      "config": "msmarco",
+      "row_index": 115
+    },
+    {
+      "config": "msmarco",
+      "row_index": 181
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 79
+    },
+    {
+      "config": "hagrid",
+      "row_index": 466
+    },
+    {
+      "config": "hagrid",
+      "row_index": 732
+    },
+    {
+      "config": "msmarco",
+      "row_index": 376
+    },
+    {
+      "config": "msmarco",
+      "row_index": 210
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 297
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 49
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 32
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 174
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 235
+    },
+    {
+      "config": "hagrid",
+      "row_index": 605
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 273
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 376
+    },
+    {
+      "config": "hagrid",
+      "row_index": 79
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 285
+    },
+    {
+      "config": "hagrid",
+      "row_index": 395
+    },
+    {
+      "config": "hagrid",
+      "row_index": 631
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 108
+    },
+    {
+      "config": "msmarco",
+      "row_index": 10
+    },
+    {
+      "config": "msmarco",
+      "row_index": 389
+    },
+    {
+      "config": "msmarco",
+      "row_index": 401
+    },
+    {
+      "config": "hagrid",
+      "row_index": 48
+    },
+    {
+      "config": "msmarco",
+      "row_index": 264
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 346
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 95
+    },
+    {
+      "config": "hagrid",
+      "row_index": 16
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 197
+    },
+    {
+      "config": "hagrid",
+      "row_index": 330
+    },
+    {
+      "config": "hagrid",
+      "row_index": 566
+    },
+    {
+      "config": "hagrid",
+      "row_index": 942
+    },
+    {
+      "config": "hagrid",
+      "row_index": 557
+    },
+    {
+      "config": "msmarco",
+      "row_index": 208
+    },
+    {
+      "config": "msmarco",
+      "row_index": 260
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 255
+    },
+    {
+      "config": "hagrid",
+      "row_index": 81
+    },
+    {
+      "config": "hagrid",
+      "row_index": 1241
+    },
+    {
+      "config": "msmarco",
+      "row_index": 153
+    },
+    {
+      "config": "msmarco",
+      "row_index": 202
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 384
+    },
+    {
+      "config": "hagrid",
+      "row_index": 3
+    },
+    {
+      "config": "msmarco",
+      "row_index": 373
+    },
+    {
+      "config": "msmarco",
+      "row_index": 345
+    },
+    {
+      "config": "hagrid",
+      "row_index": 540
+    },
+    {
+      "config": "msmarco",
+      "row_index": 127
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 252
+    },
+    {
+      "config": "hotpotqa",
+      "row_index": 352
+    }
+  ]
+}

@@ -1,0 +1,1032 @@
+{
+  "group_name": "secondary",
+  "split": "test",
+  "seed": 42,
+  "total_requested": 200,
+  "total_selected": 200,
+  "configs": [
+    "delucionqa",
+    "cuad",
+    "emanual"
+  ],
+  "counts_per_config": {
+    "delucionqa": 67,
+    "cuad": 67,
+    "emanual": 66
+  },
+  "source_sizes": {
+    "delucionqa": 184,
+    "cuad": 510,
+    "emanual": 132
+  },
+  "indices_by_config": {
+    "delucionqa": [
+      1,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      17,
+      20,
+      22,
+      23,
+      24,
+      26,
+      28,
+      29,
+      31,
+      35,
+      39,
+      40,
+      48,
+      49,
+      50,
+      55,
+      56,
+      57,
+      58,
+      59,
+      62,
+      67,
+      70,
+      71,
+      74,
+      75,
+      81,
+      86,
+      87,
+      88,
+      91,
+      92,
+      96,
+      97,
+      107,
+      108,
+      109,
+      110,
+      114,
+      117,
+      126,
+      128,
+      129,
+      137,
+      139,
+      143,
+      150,
+      151,
+      154,
+      155,
+      160,
+      163,
+      167,
+      168,
+      171,
+      173,
+      174,
+      176,
+      177,
+      181
+    ],
+    "cuad": [
+      16,
+      28,
+      33,
+      36,
+      71,
+      73,
+      83,
+      87,
+      107,
+      108,
+      112,
+      117,
+      125,
+      126,
+      134,
+      135,
+      136,
+      137,
+      138,
+      161,
+      166,
+      181,
+      186,
+      189,
+      194,
+      202,
+      205,
+      219,
+      234,
+      236,
+      255,
+      273,
+      275,
+      285,
+      287,
+      290,
+      299,
+      311,
+      325,
+      327,
+      329,
+      331,
+      335,
+      343,
+      349,
+      350,
+      352,
+      359,
+      367,
+      373,
+      381,
+      382,
+      393,
+      397,
+      412,
+      420,
+      427,
+      431,
+      448,
+      452,
+      459,
+      467,
+      468,
+      473,
+      479,
+      482,
+      506
+    ],
+    "emanual": [
+      0,
+      1,
+      2,
+      6,
+      8,
+      11,
+      13,
+      14,
+      19,
+      20,
+      22,
+      25,
+      30,
+      32,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      41,
+      43,
+      46,
+      47,
+      48,
+      49,
+      54,
+      55,
+      56,
+      58,
+      59,
+      62,
+      64,
+      67,
+      68,
+      69,
+      70,
+      76,
+      77,
+      80,
+      81,
+      82,
+      86,
+      87,
+      88,
+      90,
+      92,
+      95,
+      96,
+      98,
+      101,
+      102,
+      103,
+      104,
+      105,
+      109,
+      110,
+      115,
+      117,
+      119,
+      120,
+      121,
+      122,
+      125,
+      126,
+      130
+    ]
+  },
+  "mixed_samples": [
+    {
+      "config": "emanual",
+      "row_index": 67
+    },
+    {
+      "config": "emanual",
+      "row_index": 30
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 126
+    },
+    {
+      "config": "cuad",
+      "row_index": 83
+    },
+    {
+      "config": "emanual",
+      "row_index": 81
+    },
+    {
+      "config": "cuad",
+      "row_index": 107
+    },
+    {
+      "config": "emanual",
+      "row_index": 0
+    },
+    {
+      "config": "cuad",
+      "row_index": 275
+    },
+    {
+      "config": "cuad",
+      "row_index": 327
+    },
+    {
+      "config": "cuad",
+      "row_index": 452
+    },
+    {
+      "config": "emanual",
+      "row_index": 109
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 55
+    },
+    {
+      "config": "cuad",
+      "row_index": 194
+    },
+    {
+      "config": "cuad",
+      "row_index": 126
+    },
+    {
+      "config": "cuad",
+      "row_index": 117
+    },
+    {
+      "config": "cuad",
+      "row_index": 427
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 67
+    },
+    {
+      "config": "emanual",
+      "row_index": 59
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 110
+    },
+    {
+      "config": "cuad",
+      "row_index": 287
+    },
+    {
+      "config": "cuad",
+      "row_index": 349
+    },
+    {
+      "config": "cuad",
+      "row_index": 352
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 114
+    },
+    {
+      "config": "emanual",
+      "row_index": 11
+    },
+    {
+      "config": "cuad",
+      "row_index": 373
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 137
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 8
+    },
+    {
+      "config": "emanual",
+      "row_index": 49
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 86
+    },
+    {
+      "config": "emanual",
+      "row_index": 130
+    },
+    {
+      "config": "cuad",
+      "row_index": 186
+    },
+    {
+      "config": "emanual",
+      "row_index": 33
+    },
+    {
+      "config": "cuad",
+      "row_index": 181
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 70
+    },
+    {
+      "config": "cuad",
+      "row_index": 134
+    },
+    {
+      "config": "emanual",
+      "row_index": 38
+    },
+    {
+      "config": "cuad",
+      "row_index": 335
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 107
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 150
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 117
+    },
+    {
+      "config": "cuad",
+      "row_index": 420
+    },
+    {
+      "config": "emanual",
+      "row_index": 62
+    },
+    {
+      "config": "cuad",
+      "row_index": 382
+    },
+    {
+      "config": "cuad",
+      "row_index": 166
+    },
+    {
+      "config": "emanual",
+      "row_index": 37
+    },
+    {
+      "config": "cuad",
+      "row_index": 255
+    },
+    {
+      "config": "emanual",
+      "row_index": 102
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 59
+    },
+    {
+      "config": "emanual",
+      "row_index": 58
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 96
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 7
+    },
+    {
+      "config": "cuad",
+      "row_index": 329
+    },
+    {
+      "config": "emanual",
+      "row_index": 88
+    },
+    {
+      "config": "cuad",
+      "row_index": 381
+    },
+    {
+      "config": "cuad",
+      "row_index": 138
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 181
+    },
+    {
+      "config": "cuad",
+      "row_index": 468
+    },
+    {
+      "config": "cuad",
+      "row_index": 467
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 154
+    },
+    {
+      "config": "cuad",
+      "row_index": 448
+    },
+    {
+      "config": "cuad",
+      "row_index": 135
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 92
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 10
+    },
+    {
+      "config": "cuad",
+      "row_index": 359
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 23
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 177
+    },
+    {
+      "config": "cuad",
+      "row_index": 73
+    },
+    {
+      "config": "emanual",
+      "row_index": 122
+    },
+    {
+      "config": "emanual",
+      "row_index": 101
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 176
+    },
+    {
+      "config": "emanual",
+      "row_index": 77
+    },
+    {
+      "config": "emanual",
+      "row_index": 70
+    },
+    {
+      "config": "cuad",
+      "row_index": 108
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 97
+    },
+    {
+      "config": "cuad",
+      "row_index": 112
+    },
+    {
+      "config": "cuad",
+      "row_index": 506
+    },
+    {
+      "config": "cuad",
+      "row_index": 87
+    },
+    {
+      "config": "cuad",
+      "row_index": 202
+    },
+    {
+      "config": "cuad",
+      "row_index": 219
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 91
+    },
+    {
+      "config": "emanual",
+      "row_index": 34
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 48
+    },
+    {
+      "config": "cuad",
+      "row_index": 285
+    },
+    {
+      "config": "emanual",
+      "row_index": 32
+    },
+    {
+      "config": "emanual",
+      "row_index": 69
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 88
+    },
+    {
+      "config": "emanual",
+      "row_index": 41
+    },
+    {
+      "config": "emanual",
+      "row_index": 20
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 129
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 1
+    },
+    {
+      "config": "emanual",
+      "row_index": 22
+    },
+    {
+      "config": "cuad",
+      "row_index": 273
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 17
+    },
+    {
+      "config": "emanual",
+      "row_index": 87
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 62
+    },
+    {
+      "config": "emanual",
+      "row_index": 126
+    },
+    {
+      "config": "emanual",
+      "row_index": 55
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 143
+    },
+    {
+      "config": "emanual",
+      "row_index": 121
+    },
+    {
+      "config": "emanual",
+      "row_index": 105
+    },
+    {
+      "config": "cuad",
+      "row_index": 236
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 24
+    },
+    {
+      "config": "emanual",
+      "row_index": 47
+    },
+    {
+      "config": "cuad",
+      "row_index": 33
+    },
+    {
+      "config": "cuad",
+      "row_index": 136
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 12
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 26
+    },
+    {
+      "config": "cuad",
+      "row_index": 36
+    },
+    {
+      "config": "cuad",
+      "row_index": 459
+    },
+    {
+      "config": "emanual",
+      "row_index": 48
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 22
+    },
+    {
+      "config": "emanual",
+      "row_index": 103
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 167
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 87
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 56
+    },
+    {
+      "config": "emanual",
+      "row_index": 125
+    },
+    {
+      "config": "emanual",
+      "row_index": 39
+    },
+    {
+      "config": "emanual",
+      "row_index": 80
+    },
+    {
+      "config": "cuad",
+      "row_index": 28
+    },
+    {
+      "config": "cuad",
+      "row_index": 397
+    },
+    {
+      "config": "emanual",
+      "row_index": 115
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 74
+    },
+    {
+      "config": "cuad",
+      "row_index": 473
+    },
+    {
+      "config": "emanual",
+      "row_index": 98
+    },
+    {
+      "config": "emanual",
+      "row_index": 82
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 109
+    },
+    {
+      "config": "cuad",
+      "row_index": 205
+    },
+    {
+      "config": "cuad",
+      "row_index": 299
+    },
+    {
+      "config": "emanual",
+      "row_index": 96
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 58
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 28
+    },
+    {
+      "config": "cuad",
+      "row_index": 393
+    },
+    {
+      "config": "cuad",
+      "row_index": 325
+    },
+    {
+      "config": "emanual",
+      "row_index": 95
+    },
+    {
+      "config": "cuad",
+      "row_index": 189
+    },
+    {
+      "config": "cuad",
+      "row_index": 343
+    },
+    {
+      "config": "emanual",
+      "row_index": 6
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 57
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 128
+    },
+    {
+      "config": "cuad",
+      "row_index": 311
+    },
+    {
+      "config": "emanual",
+      "row_index": 19
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 173
+    },
+    {
+      "config": "emanual",
+      "row_index": 120
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 81
+    },
+    {
+      "config": "emanual",
+      "row_index": 90
+    },
+    {
+      "config": "emanual",
+      "row_index": 92
+    },
+    {
+      "config": "emanual",
+      "row_index": 119
+    },
+    {
+      "config": "cuad",
+      "row_index": 71
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 168
+    },
+    {
+      "config": "cuad",
+      "row_index": 479
+    },
+    {
+      "config": "emanual",
+      "row_index": 46
+    },
+    {
+      "config": "cuad",
+      "row_index": 137
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 20
+    },
+    {
+      "config": "emanual",
+      "row_index": 117
+    },
+    {
+      "config": "emanual",
+      "row_index": 54
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 31
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 40
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 6
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 155
+    },
+    {
+      "config": "emanual",
+      "row_index": 56
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 163
+    },
+    {
+      "config": "emanual",
+      "row_index": 14
+    },
+    {
+      "config": "emanual",
+      "row_index": 35
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 11
+    },
+    {
+      "config": "cuad",
+      "row_index": 161
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 35
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 160
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 174
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 71
+    },
+    {
+      "config": "cuad",
+      "row_index": 367
+    },
+    {
+      "config": "cuad",
+      "row_index": 482
+    },
+    {
+      "config": "cuad",
+      "row_index": 350
+    },
+    {
+      "config": "cuad",
+      "row_index": 234
+    },
+    {
+      "config": "emanual",
+      "row_index": 64
+    },
+    {
+      "config": "emanual",
+      "row_index": 76
+    },
+    {
+      "config": "cuad",
+      "row_index": 290
+    },
+    {
+      "config": "cuad",
+      "row_index": 125
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 139
+    },
+    {
+      "config": "emanual",
+      "row_index": 86
+    },
+    {
+      "config": "emanual",
+      "row_index": 8
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 151
+    },
+    {
+      "config": "cuad",
+      "row_index": 331
+    },
+    {
+      "config": "emanual",
+      "row_index": 43
+    },
+    {
+      "config": "emanual",
+      "row_index": 1
+    },
+    {
+      "config": "cuad",
+      "row_index": 16
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 108
+    },
+    {
+      "config": "emanual",
+      "row_index": 13
+    },
+    {
+      "config": "cuad",
+      "row_index": 412
+    },
+    {
+      "config": "emanual",
+      "row_index": 68
+    },
+    {
+      "config": "emanual",
+      "row_index": 110
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 75
+    },
+    {
+      "config": "emanual",
+      "row_index": 2
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 39
+    },
+    {
+      "config": "cuad",
+      "row_index": 431
+    },
+    {
+      "config": "emanual",
+      "row_index": 104
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 50
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 49
+    },
+    {
+      "config": "emanual",
+      "row_index": 25
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 171
+    },
+    {
+      "config": "delucionqa",
+      "row_index": 29
+    }
+  ]
+}

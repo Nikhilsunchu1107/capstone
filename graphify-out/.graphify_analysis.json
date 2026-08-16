@@ -1,0 +1,480 @@
+{
+  "communities": {
+    "0": [
+      "graph_rag_src_graph_graphindex",
+      "graph_rag_src_graph_graphindex_build",
+      "graph_rag_src_graph_graphindex_ensure_document_node",
+      "graph_rag_src_graph_graphindex_ensure_entity_node",
+      "graph_rag_src_graph_graphindex_init",
+      "graph_rag_src_graph_graphindex_retrieve",
+      "graph_rag_src_graph_rationale_104",
+      "graph_rag_src_graph_rationale_19",
+      "graph_rag_src_graph_rationale_22",
+      "graph_rag_src_graph_rationale_37",
+      "graph_rag_src_graph_rationale_52",
+      "graph_rag_src_graph_rationale_93",
+      "graph_rag_src_llm_client_llmgenerator",
+      "graph_rag_src_llm_client_llmgenerator_generate",
+      "graph_rag_src_llm_client_llmgenerator_init",
+      "graph_rag_src_llm_client_rationale_40",
+      "graph_rag_src_llm_client_rationale_43",
+      "graph_rag_src_llm_client_rationale_65",
+      "graph_rag_src_ner_nerextractor",
+      "graph_rag_src_ner_nerextractor_init",
+      "graph_rag_src_ner_rationale_15",
+      "graph_rag_src_ner_rationale_18",
+      "graph_rag_src_pipeline_graphragpipeline",
+      "graph_rag_src_pipeline_graphragpipeline_build_context",
+      "graph_rag_src_pipeline_graphragpipeline_build_indices",
+      "graph_rag_src_pipeline_graphragpipeline_build_indices_from_policy_docs",
+      "graph_rag_src_pipeline_graphragpipeline_init",
+      "graph_rag_src_pipeline_graphragpipeline_load_graph",
+      "graph_rag_src_pipeline_graphragpipeline_merge_results",
+      "graph_rag_src_pipeline_graphragpipeline_query",
+      "graph_rag_src_pipeline_graphragpipeline_save_graph",
+      "graph_rag_src_pipeline_py_path",
+      "graph_rag_src_pipeline_rationale_117",
+      "graph_rag_src_pipeline_rationale_168",
+      "graph_rag_src_pipeline_rationale_182",
+      "graph_rag_src_pipeline_rationale_202",
+      "graph_rag_src_pipeline_rationale_221",
+      "graph_rag_src_pipeline_rationale_228",
+      "graph_rag_src_pipeline_rationale_40",
+      "graph_rag_src_pipeline_rationale_43",
+      "graph_rag_src_pipeline_rationale_71",
+      "graph_rag_src_types_chunkrecord",
+      "graph_rag_src_types_rationale_11",
+      "graph_rag_src_types_rationale_31",
+      "graph_rag_src_types_retrievedchunk",
+      "graph_rag_src_vector_store_rationale_132",
+      "graph_rag_src_vector_store_rationale_22",
+      "graph_rag_src_vector_store_rationale_57",
+      "graph_rag_src_vector_store_rationale_94",
+      "graph_rag_src_vector_store_vectorindex",
+      "graph_rag_src_vector_store_vectorindex_embed_with_jina",
+      "graph_rag_src_vector_store_vectorindex_index_chunks",
+      "graph_rag_src_vector_store_vectorindex_query"
+    ],
+    "1": [
+      "graph_rag_config",
+      "graph_rag_main",
+      "graph_rag_main_rationale_1",
+      "graph_rag_scripts_generate_policy_qa",
+      "graph_rag_scripts_generate_policy_qa_generate_qa_pairs",
+      "graph_rag_scripts_generate_policy_qa_is_duplicate",
+      "graph_rag_scripts_generate_policy_qa_main",
+      "graph_rag_scripts_generate_policy_qa_parse_args",
+      "graph_rag_scripts_generate_policy_qa_parse_qa",
+      "graph_rag_scripts_generate_policy_qa_py_any",
+      "graph_rag_scripts_generate_policy_qa_py_namespace",
+      "graph_rag_scripts_generate_policy_qa_py_path",
+      "graph_rag_scripts_generate_policy_qa_rationale_1",
+      "graph_rag_scripts_generate_policy_qa_rationale_103",
+      "graph_rag_scripts_generate_policy_qa_rationale_115",
+      "graph_rag_scripts_generate_policy_qa_rationale_129",
+      "graph_rag_scripts_generate_policy_qa_rationale_271",
+      "graph_rag_src_data_loader",
+      "graph_rag_src_data_loader_chunk_records_to_dicts",
+      "graph_rag_src_data_loader_rationale_1",
+      "graph_rag_src_data_loader_rationale_157",
+      "graph_rag_src_data_loader_rationale_223",
+      "graph_rag_src_data_loader_split_text",
+      "graph_rag_src_graph",
+      "graph_rag_src_graph_rationale_1",
+      "graph_rag_src_init",
+      "graph_rag_src_init_rationale_1",
+      "graph_rag_src_llm_client",
+      "graph_rag_src_llm_client_rationale_1",
+      "graph_rag_src_ner",
+      "graph_rag_src_ner_rationale_1",
+      "graph_rag_src_pipeline",
+      "graph_rag_src_pipeline_rationale_1",
+      "graph_rag_src_policy_loader",
+      "graph_rag_src_policy_loader_clean_pdf_text",
+      "graph_rag_src_policy_loader_derive_policy_name",
+      "graph_rag_src_policy_loader_load_policy_documents",
+      "graph_rag_src_policy_loader_py_path",
+      "graph_rag_src_policy_loader_rationale_1",
+      "graph_rag_src_policy_loader_rationale_28",
+      "graph_rag_src_policy_loader_rationale_36",
+      "graph_rag_src_policy_loader_rationale_54",
+      "graph_rag_src_policy_ner",
+      "graph_rag_src_policy_ner_rationale_1",
+      "graph_rag_src_types",
+      "graph_rag_src_types_rationale_1",
+      "graph_rag_src_vector_store",
+      "graph_rag_src_vector_store_rationale_1"
+    ],
+    "2": [
+      "graph_rag_score_evaluation",
+      "graph_rag_score_evaluation_exact_match",
+      "graph_rag_score_evaluation_load_raw_records",
+      "graph_rag_score_evaluation_main",
+      "graph_rag_score_evaluation_mean_std",
+      "graph_rag_score_evaluation_metric_values",
+      "graph_rag_score_evaluation_normalize_text",
+      "graph_rag_score_evaluation_parse_args",
+      "graph_rag_score_evaluation_py_any",
+      "graph_rag_score_evaluation_py_dataset",
+      "graph_rag_score_evaluation_py_namespace",
+      "graph_rag_score_evaluation_py_path",
+      "graph_rag_score_evaluation_ragas_dataset",
+      "graph_rag_score_evaluation_rationale_1",
+      "graph_rag_score_evaluation_rationale_101",
+      "graph_rag_score_evaluation_rationale_107",
+      "graph_rag_score_evaluation_rationale_136",
+      "graph_rag_score_evaluation_rationale_145",
+      "graph_rag_score_evaluation_rationale_154",
+      "graph_rag_score_evaluation_rationale_173",
+      "graph_rag_score_evaluation_rationale_261",
+      "graph_rag_score_evaluation_rationale_43",
+      "graph_rag_score_evaluation_rationale_73",
+      "graph_rag_score_evaluation_rationale_78",
+      "graph_rag_score_evaluation_rationale_93",
+      "graph_rag_score_evaluation_run_ragas_scores",
+      "graph_rag_score_evaluation_safe_float",
+      "graph_rag_score_evaluation_token_f1"
+    ],
+    "3": [
+      "graph_rag_src_ner_nerextractor_extract",
+      "graph_rag_src_ner_nerextractor_normalize_entity_text",
+      "graph_rag_src_ner_rationale_23",
+      "graph_rag_src_ner_rationale_27",
+      "graph_rag_src_policy_ner_load_gliner_model",
+      "graph_rag_src_policy_ner_load_spacy_model",
+      "graph_rag_src_policy_ner_policynerextractor",
+      "graph_rag_src_policy_ner_policynerextractor_extract",
+      "graph_rag_src_policy_ner_policynerextractor_extract_query",
+      "graph_rag_src_policy_ner_policynerextractor_init",
+      "graph_rag_src_policy_ner_policynerextractor_normalize",
+      "graph_rag_src_policy_ner_policynerextractor_run_gliner",
+      "graph_rag_src_policy_ner_policynerextractor_run_spacy",
+      "graph_rag_src_policy_ner_rationale_100",
+      "graph_rag_src_policy_ner_rationale_119",
+      "graph_rag_src_policy_ner_rationale_142",
+      "graph_rag_src_policy_ner_rationale_163",
+      "graph_rag_src_policy_ner_rationale_52",
+      "graph_rag_src_policy_ner_rationale_63",
+      "graph_rag_src_policy_ner_rationale_68",
+      "graph_rag_src_policy_ner_rationale_82",
+      "graph_rag_src_policy_ner_rationale_96",
+      "graph_rag_src_types_entitymention",
+      "graph_rag_src_types_rationale_22"
+    ],
+    "4": [
+      "graph_rag_run_evaluation",
+      "graph_rag_run_evaluation_get_ground_truth",
+      "graph_rag_run_evaluation_infer_question_type",
+      "graph_rag_run_evaluation_limit_dataset",
+      "graph_rag_run_evaluation_load_eval_dataset",
+      "graph_rag_run_evaluation_main",
+      "graph_rag_run_evaluation_parse_args",
+      "graph_rag_run_evaluation_parse_configs",
+      "graph_rag_run_evaluation_py_any",
+      "graph_rag_run_evaluation_py_namespace",
+      "graph_rag_run_evaluation_py_path",
+      "graph_rag_run_evaluation_rationale_1",
+      "graph_rag_run_evaluation_rationale_114",
+      "graph_rag_run_evaluation_rationale_138",
+      "graph_rag_run_evaluation_rationale_174",
+      "graph_rag_run_evaluation_rationale_183",
+      "graph_rag_run_evaluation_rationale_190",
+      "graph_rag_run_evaluation_rationale_33",
+      "graph_rag_run_evaluation_rationale_83",
+      "graph_rag_run_evaluation_rationale_97",
+      "graph_rag_run_evaluation_write_json"
+    ],
+    "5": [
+      "scripts_generate_eval_samples",
+      "scripts_generate_eval_samples_allocation",
+      "scripts_generate_eval_samples_build_group_payload",
+      "scripts_generate_eval_samples_load_local_split",
+      "scripts_generate_eval_samples_main",
+      "scripts_generate_eval_samples_normalize_configs",
+      "scripts_generate_eval_samples_parse_args",
+      "scripts_generate_eval_samples_py_dataset",
+      "scripts_generate_eval_samples_py_namespace",
+      "scripts_generate_eval_samples_py_path",
+      "scripts_generate_eval_samples_rationale_1",
+      "scripts_generate_eval_samples_rationale_115",
+      "scripts_generate_eval_samples_rationale_141",
+      "scripts_generate_eval_samples_rationale_184",
+      "scripts_generate_eval_samples_rationale_191",
+      "scripts_generate_eval_samples_rationale_24",
+      "scripts_generate_eval_samples_rationale_90",
+      "scripts_generate_eval_samples_rationale_95",
+      "scripts_generate_eval_samples_write_json"
+    ],
+    "6": [
+      "datetime",
+      "graph_rag_scripts_run_policy_evaluation",
+      "graph_rag_scripts_run_policy_evaluation_infer_question_type",
+      "graph_rag_scripts_run_policy_evaluation_load_checkpoint",
+      "graph_rag_scripts_run_policy_evaluation_main",
+      "graph_rag_scripts_run_policy_evaluation_parse_args",
+      "graph_rag_scripts_run_policy_evaluation_py_any",
+      "graph_rag_scripts_run_policy_evaluation_py_namespace",
+      "graph_rag_scripts_run_policy_evaluation_py_path",
+      "graph_rag_scripts_run_policy_evaluation_rationale_1",
+      "graph_rag_scripts_run_policy_evaluation_rationale_108",
+      "graph_rag_scripts_run_policy_evaluation_rationale_130",
+      "graph_rag_scripts_run_policy_evaluation_rationale_148",
+      "graph_rag_scripts_run_policy_evaluation_rationale_164",
+      "graph_rag_scripts_run_policy_evaluation_rationale_41",
+      "graph_rag_scripts_run_policy_evaluation_save_checkpoint"
+    ],
+    "7": [
+      "scripts_download_datasets",
+      "scripts_download_datasets_download_config",
+      "scripts_download_datasets_is_complete_saved_dataset",
+      "scripts_download_datasets_main",
+      "scripts_download_datasets_normalize_configs",
+      "scripts_download_datasets_parse_args",
+      "scripts_download_datasets_py_namespace",
+      "scripts_download_datasets_py_path",
+      "scripts_download_datasets_rationale_1",
+      "scripts_download_datasets_rationale_101",
+      "scripts_download_datasets_rationale_19",
+      "scripts_download_datasets_rationale_54",
+      "scripts_download_datasets_rationale_67",
+      "scripts_download_datasets_rationale_77",
+      "scripts_download_datasets_rationale_85",
+      "scripts_download_datasets_verify_saved_configs"
+    ],
+    "8": [
+      "scripts_download_ragbench_sample",
+      "scripts_download_ragbench_sample_download_sample",
+      "scripts_download_ragbench_sample_main",
+      "scripts_download_ragbench_sample_parse_args",
+      "scripts_download_ragbench_sample_py_namespace",
+      "scripts_download_ragbench_sample_py_path",
+      "scripts_download_ragbench_sample_rationale_1",
+      "scripts_download_ragbench_sample_rationale_20",
+      "scripts_download_ragbench_sample_rationale_57",
+      "scripts_download_ragbench_sample_rationale_76",
+      "scripts_download_ragbench_sample_rationale_83",
+      "scripts_download_ragbench_sample_rationale_90",
+      "scripts_download_ragbench_sample_save_indices",
+      "scripts_download_ragbench_sample_save_outputs"
+    ],
+    "9": [
+      "graph_rag_src_data_loader_create_chunk_records",
+      "graph_rag_src_data_loader_load_local_ragbench",
+      "graph_rag_src_data_loader_load_ragbench_configs",
+      "graph_rag_src_data_loader_py_dataset",
+      "graph_rag_src_data_loader_py_path",
+      "graph_rag_src_data_loader_rationale_152",
+      "graph_rag_src_data_loader_rationale_179",
+      "graph_rag_src_data_loader_rationale_30",
+      "graph_rag_src_data_loader_rationale_78",
+      "graph_rag_src_data_loader_sample_ragbench_configs"
+    ],
+    "10": [
+      "graph_rag_src_embeddings_local",
+      "graph_rag_src_embeddings_local_bgeembedder",
+      "graph_rag_src_embeddings_local_bgeembedder_embed",
+      "graph_rag_src_embeddings_local_bgeembedder_init",
+      "graph_rag_src_embeddings_local_rationale_1",
+      "graph_rag_src_embeddings_local_rationale_12",
+      "graph_rag_src_embeddings_local_rationale_16",
+      "graph_rag_src_embeddings_local_rationale_9",
+      "graph_rag_src_vector_store_rationale_29",
+      "graph_rag_src_vector_store_vectorindex_init"
+    ],
+    "11": [
+      "graph_rag_scripts_ingest_policy_docs",
+      "graph_rag_scripts_ingest_policy_docs_main",
+      "graph_rag_scripts_ingest_policy_docs_parse_args",
+      "graph_rag_scripts_ingest_policy_docs_py_namespace",
+      "graph_rag_scripts_ingest_policy_docs_rationale_1",
+      "graph_rag_scripts_ingest_policy_docs_rationale_28",
+      "graph_rag_scripts_ingest_policy_docs_rationale_63"
+    ],
+    "12": [
+      "graph_rag_main_main",
+      "graph_rag_main_parse_args",
+      "graph_rag_main_py_namespace",
+      "graph_rag_main_rationale_24",
+      "graph_rag_main_rationale_65"
+    ],
+    "13": [
+      "opencode_plugins_graphify",
+      "opencode_plugins_graphify_graphifyplugin",
+      "opencode_plugins_graphify_rationale_4"
+    ],
+    "14": [
+      "graph_rag_init"
+    ],
+    "15": [
+      "pkg_graph_rag"
+    ],
+    "16": [
+      "shared_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.057329462989840346,
+    "1": 0.06382978723404255,
+    "2": 0.1111111111111111,
+    "3": 0.11594202898550725,
+    "4": 0.14761904761904762,
+    "5": 0.15789473684210525,
+    "6": 0.19166666666666668,
+    "7": 0.2,
+    "8": 0.2087912087912088,
+    "9": 0.24444444444444444,
+    "10": 0.2,
+    "11": 0.3333333333333333,
+    "12": 0.4,
+    "13": 0.6666666666666666,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0
+  },
+  "gods": [
+    {
+      "id": "graph_rag_src_pipeline_graphragpipeline",
+      "label": "GraphRAGPipeline",
+      "degree": 20
+    },
+    {
+      "id": "graph_rag_src_graph_graphindex",
+      "label": "GraphIndex",
+      "degree": 12
+    },
+    {
+      "id": "graph_rag_src_vector_store_vectorindex",
+      "label": "VectorIndex",
+      "degree": 12
+    },
+    {
+      "id": "graph_rag_src_policy_ner_policynerextractor",
+      "label": "PolicyNERExtractor",
+      "degree": 11
+    },
+    {
+      "id": "graph_rag_run_evaluation_main",
+      "label": "main()",
+      "degree": 11
+    },
+    {
+      "id": "graph_rag_src_ner_nerextractor",
+      "label": "NERExtractor",
+      "degree": 10
+    },
+    {
+      "id": "graph_rag_score_evaluation_main",
+      "label": "main()",
+      "degree": 10
+    },
+    {
+      "id": "graph_rag_src_types_chunkrecord",
+      "label": "ChunkRecord",
+      "degree": 9
+    },
+    {
+      "id": "graph_rag_src_types_retrievedchunk",
+      "label": "RetrievedChunk",
+      "degree": 9
+    },
+    {
+      "id": "graph_rag_src_types_entitymention",
+      "label": "EntityMention",
+      "degree": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "NERExtractor",
+      "target": "EntityMention",
+      "source_files": [
+        "graph_rag/src/ner.py",
+        "graph_rag/src/types.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "GraphRAGPipeline",
+      "source_files": [
+        "graph_rag/main.py",
+        "graph_rag/src/pipeline.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "GraphRAGPipeline",
+      "source_files": [
+        "graph_rag/run_evaluation.py",
+        "graph_rag/src/pipeline.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "GraphRAGPipeline",
+      "source_files": [
+        "graph_rag/scripts/ingest_policy_docs.py",
+        "graph_rag/src/pipeline.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "GraphRAGPipeline",
+      "source_files": [
+        "graph_rag/scripts/run_policy_evaluation.py",
+        "graph_rag/src/pipeline.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `GraphRAGPipeline` connect `GraphRAGPipeline` to `pipeline.py`, `PolicyNERExtractor`, `run_evaluation.py`, `run_policy_evaluation.py`, `ingest_policy_docs.py`, `main`?",
+      "why": "High betweenness centrality (0.238) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `VectorIndex` connect `GraphRAGPipeline` to `pipeline.py`, `BGEEmbedder`?",
+      "why": "High betweenness centrality (0.090) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `PolicyNERExtractor` connect `PolicyNERExtractor` to `GraphRAGPipeline`, `pipeline.py`?",
+      "why": "High betweenness centrality (0.063) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 10 inferred relationships involving `GraphRAGPipeline` (e.g. with `main()` and `main()`) actually correct?",
+      "why": "`GraphRAGPipeline` has 10 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `GraphIndex` (e.g. with `NERExtractor` and `ChunkRecord`) actually correct?",
+      "why": "`GraphIndex` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 6 inferred relationships involving `VectorIndex` (e.g. with `GraphRAGPipeline` and `.build_indices_from_policy_docs()`) actually correct?",
+      "why": "`VectorIndex` has 6 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 3 inferred relationships involving `PolicyNERExtractor` (e.g. with `GraphRAGPipeline` and `.__init__()`) actually correct?",
+      "why": "`PolicyNERExtractor` has 3 INFERRED edges - model-reasoned connections that need verification."
+    }
+  ]
+}

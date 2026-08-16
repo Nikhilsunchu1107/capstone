@@ -18,3 +18,7 @@ wheels/
 .vscode/
 # Cache
 .ruff_cache/
+
+# Graphify generated/cache files
+graphify-out/cache/
+graphify-out/graph.html

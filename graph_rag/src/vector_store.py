@@ -21,7 +21,11 @@ from src.types import ChunkRecord, RetrievedChunk
 class VectorIndex:
     """Manage chunk embedding storage and semantic retrieval."""
 
-    def __init__(self, persist_dir: str = "outputs/chromadb", collection_name: str = "graph_rag_chunks") -> None:
+    def __init__(
+        self,
+        persist_dir: str = "outputs/chromadb",
+        collection_name: str = "graph_rag_chunks",
+    ) -> None:
         """Initialize Chroma client and selected embedding backend."""
         self.use_local_embeddings = os.getenv("USE_LOCAL_EMBEDDINGS", "1").lower() in {
             "1",
@@ -31,7 +35,9 @@ class VectorIndex:
         self.local_model_name = os.getenv("LOCAL_EMBED_MODEL", "BAAI/bge-m3")
 
         api_key = os.getenv("JINA_API_KEY")
-        if not self.use_local_embeddings and (not api_key or api_key == "your_jina_key_here"):
+        if not self.use_local_embeddings and (
+            not api_key or api_key == "your_jina_key_here"
+        ):
             msg = "JINA_API_KEY is missing. Set it in .env before vector operations."
             raise ValueError(msg)
 
@@ -39,7 +45,9 @@ class VectorIndex:
         self.collection = self.client.get_or_create_collection(name=collection_name)
         self.jina_api_key = api_key or ""
         self.embed_model = os.getenv("JINA_EMBED_MODEL", "jina-embeddings-v4")
-        self.local_embedder = BGEEmbedder(self.local_model_name) if self.use_local_embeddings else None
+        self.local_embedder = (
+            BGEEmbedder(self.local_model_name) if self.use_local_embeddings else None
+        )
 
         # Kept for reference per project request (do not remove):
         # self.voyage_client = voyageai.Client(api_key=os.getenv("VOYAGE_API_KEY"))
@@ -104,9 +112,18 @@ class VectorIndex:
         else:
             embeddings = self._embed_with_jina(documents)
 
-        # Kept for reference per project request (do not remove):
-        # embeddings = self.voyage_client.embed(documents, model=EMBED_MODEL).embeddings
-        self.collection.upsert(ids=ids, documents=documents, metadatas=metadatas, embeddings=embeddings)
+        chroma_batch_size = 5000
+        for i in range(0, len(embeddings), chroma_batch_size):
+            batch_ids = ids[i : i + chroma_batch_size]
+            batch_docs = documents[i : i + chroma_batch_size]
+            batch_meta = metadatas[i : i + chroma_batch_size]
+            batch_emb = embeddings[i : i + chroma_batch_size]
+            self.collection.upsert(
+                ids=batch_ids,
+                documents=batch_docs,
+                metadatas=batch_meta,
+                embeddings=batch_emb,
+            )
 
         for chunk in chunks:
             self.chunk_lookup[chunk.chunk_id] = chunk
@@ -120,18 +137,28 @@ class VectorIndex:
 
         # Kept for reference per project request (do not remove):
         # query_embedding = self.voyage_client.embed([query_text], model=EMBED_MODEL).embeddings[0]
-        result = self.collection.query(query_embeddings=[query_embedding], n_results=top_k)
+        result = self.collection.query(
+            query_embeddings=[query_embedding], n_results=top_k
+        )
 
         ids = result.get("ids", [[]])[0]
         documents = result.get("documents", [[]])[0]
         metadatas = result.get("metadatas", [[]])[0]
-        distances = result.get("distances", [[]])[0] if result.get("distances") else [None] * len(ids)
+        distances = (
+            result.get("distances", [[]])[0]
+            if result.get("distances")
+            else [None] * len(ids)
+        )
 
         retrieved: list[RetrievedChunk] = []
-        for chunk_id, text, metadata, distance in zip(ids, documents, metadatas, distances, strict=False):
+        for chunk_id, text, metadata, distance in zip(
+            ids, documents, metadatas, distances, strict=False
+        ):
             chunk = self.chunk_lookup.get(chunk_id)
             source_id = chunk.source_id if chunk else str(metadata.get("source_id", ""))
-            source_title = chunk.source_title if chunk else str(metadata.get("source_title", ""))
+            source_title = (
+                chunk.source_title if chunk else str(metadata.get("source_title", ""))
+            )
             score = 1.0 / (1.0 + float(distance)) if distance is not None else 0.0
             retrieved.append(
                 RetrievedChunk(

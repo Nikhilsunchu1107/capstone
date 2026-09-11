@@ -6,47 +6,85 @@
 - `../common_rules.md` is the team comparability contract; runtime deviations are in `differences.md`.
 - `README.md` is at root level; rely on code + scripts as source of truth.
 
+## Corpus
+
+The active evaluation corpus is the **15-document curated insurance policy set**:
+- Location: `../data/Policy_Documents_Curated_15/`
+- See `../data/Policy_Documents_Curated_15/SELECTION.md` for document list and selection rationale.
+- The larger 72-document set is **not used** for evaluation (rate-limit issue at scoring stage).
+
+## End-to-End Evaluation Workflow
+
+Run all commands from `graph_rag/`:
+
+```bash
+# Step 1 — Generate QA pairs (one-time, ~10 min, requires NVIDIA_NIM_API_KEY)
+../.venv/bin/python scripts/generate_policy_qa.py
+# Output: ../data/policy_qa.json  (~90 pairs, 6 per doc × 15 docs)
+
+# Step 2 — Run Graph-RAG retrieval + generation (~20–30 min)
+../.venv/bin/python scripts/run_policy_evaluation.py
+# Output: outputs/evaluations/policy_eval.json
+# Options: --max-questions 10 (smoke test), --resume (after crash)
+
+# Step 3 — Score with LLM-as-a-judge / RAGAS
+../.venv/bin/python scripts/score_evaluation_custom.py \
+    --input-path  outputs/evaluations/policy_eval.json \
+    --output-path outputs/evaluations/policy_eval_summary.json
+```
+
 ## Setup That Actually Works
 1. From project root:
    ```bash
-   # Install mise if not present, then:
    mise install python 3.12
    .venv/bin/uv sync
    .venv/bin/python -m spacy download en_core_web_sm
    ```
-2. Run from `graph_rag/`:
-   ```bash
-   cd graph_rag
-   ../.venv/bin/python main.py --question "..." --dataset-path ../data/ragbench_50
-   ```
+2. Copy `.env.example` → `graph_rag/.env` and fill in:
+   - `NVIDIA_NIM_API_KEY` — required for both generation and scoring
+   - `VOYAGE_API_KEY` — required for embeddings (VoyageAI)
 
-## Fast Run Commands
-- Build evaluation indices (from project root):
-  - `../.venv/bin/python scripts/generate_eval_samples.py`
-- Run one end-to-end query:
-  - `cd graph_rag && ../.venv/bin/python main.py --question "..." --dataset-path ../data/ragbench_50`
-
-## Current Runtime Behavior (Easy To Miss)
-- `main.py` defaults to `../data/ragbench_50`; pipeline also defaults to this path.
-- Chroma persistence is `outputs/chromadb`; changing dataset/index assumptions without clearing this can mix stale vectors with new runs.
-
-## Env Vars + Embedding Path
-- `GROQ_API_KEY` is required even for basic CLI runs (`GraphRAGPipeline.__init__` instantiates `GroqGenerator` immediately).
-- Default embedding path is local SentenceTransformer (`USE_LOCAL_EMBEDDINGS=1`, default model `BAAI/bge-m3`).
-- If `USE_LOCAL_EMBEDDINGS=0`, `JINA_API_KEY` is required (`JINA_EMBED_MODEL` optional, default `jina-embeddings-v4`).
-- `.env` is already ignored by `graph_rag/.gitignore`.
-
-## Team-Alignment Caveat
-- Shared rules expect Voyage embeddings (`voyage-3-lite`), but active code paths in `src/vector_store.py` use local BGE or Jina; treat this as MVP workaround, not final evaluation baseline.
+## Env Vars
+| Variable | Required for | Notes |
+|---|---|---|
+| `NVIDIA_NIM_API_KEY` | Generation + scoring | NIM free tier: ~1000 RPM |
+| `VOYAGE_API_KEY` | Embeddings | Used by `src/vector_store.py` |
+| `RAGAS_EMBED_MODEL` | Scoring | Default: `BAAI/bge-m3` (local HuggingFace) |
+| `RAGAS_EMBED_DEVICE` | Scoring | Default: `cpu` |
 
 ## Code Map
-- `main.py`: CLI wrapper (build indices, run one query, print JSON result summary).
-- `src/pipeline.py`: orchestration (load/chunk -> graph+vector retrieval -> merge -> generate).
-- `src/data_loader.py`: `load_from_disk` dataset loader + whitespace chunking into `ChunkRecord`.
-- `src/graph.py`: in-memory NetworkX graph index and traversal retrieval.
-- `src/vector_store.py`: ChromaDB index + local/Jina embeddings backend switch.
-- `src/llm_client.py`: Groq prompt + completion call.
+- `main.py` — CLI wrapper for a quick single-query smoke test on policy documents.
+- `scripts/generate_policy_qa.py` — generate 90 QA pairs from the 15 curated PDFs.
+- `scripts/run_policy_evaluation.py` — run full retrieval + generation over all QA pairs.
+- `scripts/score_evaluation_custom.py` — custom LLM-as-a-judge scorer (Faithfulness, Relevancy, Precision, Recall).
+- `scripts/score_evaluation_groq.py` — Groq-accelerated scoring variant.
+- `scripts/ingest_policy_docs.py` — standalone ingestion CLI (useful for rebuilding the graph cache only).
+- `src/pipeline.py` — orchestration (load/chunk → graph+vector retrieval → merge → generate).
+- `src/policy_loader.py` — PDF loading and chunking.
+- `src/graph.py` — in-memory NetworkX graph index with Document -> Chunk -> Entity hierarchy.
+- `src/vector_store.py` — ChromaDB index + VoyageAI / local BGE embeddings backend.
+- `src/llm_client.py` — NVIDIA NIM prompt + completion with retry backoff.
+- `config.py` — shared constants (model names, chunk size, TOP_K, etc.).
 
-## Verification Reality
-- No CI, lint config, typecheck config, or tests are currently set up (`tests/` is empty).
-- Practical verification is a smoke run via `main.py` with a real `GROQ_API_KEY`.
+## Output Files (fresh run)
+All outputs are **gitignored** and rebuilt on each run:
+- `outputs/policy_graph.pkl` — pickled NetworkX graph (15-doc corpus)
+- `outputs/policy_chromadb/` — ChromaDB persistence directory
+- `outputs/evaluations/policy_eval.json` — raw per-question results
+- `outputs/evaluations/policy_eval_summary.json` — final scored report
+
+## Rate Limit Budget
+| Stage | Count | Notes |
+|---|---|---|
+| QA generation | ~90 NIM calls | 1 per QA pair, 1 s pacing |
+| Answer generation | ~90 NIM calls | 1.5 s pacing |
+| Scoring | ~9 batches × 10 samples | 60 s between batches |
+
+## Current Status
+- [x] 15-doc curated corpus selected (`data/Policy_Documents_Curated_15/`)
+- [x] RAGBench completely decommissioned
+- [x] Scripts updated for 15-doc defaults
+- [x] QA pairs generated (`data/policy_qa.json`)
+- [x] Evaluation run completed (`outputs/evaluations/policy_eval.json`)
+- [x] RAGAS & Custom LLM-as-a-judge scores obtained (0.96 Faithfulness, 0.94 Relevancy)
+

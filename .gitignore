@@ -22,3 +22,12 @@ wheels/
 # Graphify generated/cache files
 graphify-out/cache/
 graphify-out/graph.html
+graphify-out/20*/
+
+# Pipeline and strategy outputs / local databases
+outputs/
+graph_rag/outputs/
+graph_rag/scripts/outputs/
+*.pkl
+*.sqlite3
+*.zip

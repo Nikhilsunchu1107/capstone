@@ -1,10 +1,15 @@
-# MVP Differences Log
+# Strategy Differences Log
 
-This file records deliberate deviations in the current MVP from:
-- `../common_rules.md`
-- `project_implementation.md`
+This file records differences and evolutions from the initial project planning:
 
-These differences were made to get an end-to-end MVP working quickly and should be treated as temporary unless the team agrees otherwise.
+## Phase 4 Update — Insurance Policy Domain (Active)
+
+- **Corpus Transition:** RAGBench has been completely deprecated and removed from the codebase.
+- **Active Dataset:** The active evaluation corpus is the **15-document curated insurance policy set** located in `data/Policy_Documents_Curated_15/` accompanied by `SELECTION.md`.
+- **Benchmark Test Set:** 90 domain QA pairs generated across the 15 policies stored in `data/policy_qa.json`.
+- **Hybrid Domain NER:** Fully integrated GLiNER (`urchade/gliner_medium-v2.1`) combined with spaCy in `src/policy_ner.py` extracting 10 insurance entities.
+- **LLM Provider:** NVIDIA NIM (`openai/gpt-oss-120b`) with exponential backoff handling for 429 rate limits in `src/llm_client.py`.
+
 
 ## 1) Embedding model/provider mismatch
 
@@ -80,3 +85,14 @@ These differences were made to get an end-to-end MVP working quickly and should 
 ## Current recommendation
 
 Keep these differences documented for MVP transparency, then progressively align to team-wide settings before Phase 2/Phase 3 comparative evaluation runs (especially embedding provider/model, dataset sampling protocol, metrics/MLflow, and shared indices).
+
+## Dataset Configuration (Phase 2 Aligned)
+
+The MVP now uses the full RAGBench dataset configs instead of the MVP sample:
+
+- **Available configs:** hotpotqa, msmarco, hagrid (primary), delucionqa, cuad, emanual (secondary)
+- **Full dataset:** 2,957 examples (all 6 configs, test split)
+- **Sampled (eval-mode):** 700 examples (500 primary + 200 secondary via shared indices)
+- **CLI defaults:**
+  - Non-eval mode: PRIMARY_CONFIGS (hotpotqa + msmarco + hagrid) = 2,131 examples
+  - Eval mode: all 6 configs via `shared_eval_indices.json` = 700 examples

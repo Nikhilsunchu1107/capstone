@@ -1,21 +1,20 @@
 # Graph RAG Monorepo
 
-A reproducible research monorepo for Graph RAG strategies. This repository serves as the single source of truth for all team strategies, with shared dependencies, configuration, and evaluation data.
+A reproducible research monorepo for Insurance Policy Graph RAG strategies. This repository serves as the single source of truth for all team strategies, with shared dependencies, configuration, and evaluation data.
 
 ## Quick Start
 
 ```bash
-# Clone and setup (5 commands)
+# Clone and setup
 git clone <repo-url>
 cd capstone
-git lfs install          # Enable Git LFS (one time)
 mise install           # Install Python 3.12 + uv
 uv sync               # Create .venv and install dependencies
 .venv/bin/python -m spacy download en_core_web_sm
 
-# Run a query
+# Run a query against the insurance policy knowledge graph
 cd graph_rag
-../.venv/bin/python main.py --question "Your question here"
+../.venv/bin/python main.py --question "What is the waiting period for pre-existing diseases under the Arogya Sanjeevani policy?"
 ```
 
 ---
@@ -31,15 +30,14 @@ capstone/                    # Project root
 ├── common_rules.md         # Team alignment contract
 ├── .env.example           # Template for API keys
 ├── .venv/                 # Virtual environment (auto-created by uv sync)
-├── scripts/               # Shared scripts
-│   └── generate_eval_samples.py
-├── data/                  # Shared evaluation data (Git LFS)
-│   └── ragbench/
-├── graph_rag/            # Strategy 1: Graph RAG implementation
-│   ├── config.py        # Strategy-specific config (derived from shared_config.py)
+├── data/                  # Evaluation and corpus data
+│   ├── Policy_Documents_Curated_15/  # 15 Curated insurance policy PDFs + SELECTION.md
+│   └── policy_qa.json     # Standardized evaluation QA benchmark
+├── graph_rag/            # Strategy: Insurance Policy Graph RAG implementation
+│   ├── config.py        # Strategy-specific config
 │   ├── main.py        # CLI entry point
-│   ├── src/          # Source code
-│   └── outputs/      # Pipeline outputs (chromadb, logs)
+│   ├── src/          # Pipeline, loaders, NER, graph, and vector store
+│   └── scripts/      # Ingestion, evaluation, and scoring scripts
 └── <new-strategy>/   # Future strategies follow same pattern
 ```
 
@@ -100,43 +98,6 @@ uv sync          # Creates .venv and installs all dependencies
 
 ---
 
-## Git LFS Setup
-
-This repository uses Git LFS for large evaluation data files in `data/`.
-
-### Install Git LFS
-
-**macOS:**
-```bash
-brew install git-lfs
-```
-
-**Linux:**
-```bash
-# Use your distro's package manager (apt, dnf, pacman, etc.)
-# Example for Debian/Ubuntu:
-sudo apt install git-lfs
-```
-
-**Windows:** Already included in Git for Windows — no install needed.
-
-### Enable LFS
-
-After cloning, run once to configure LFS:
-
-```bash
-git lfs install
-```
-
-Then download LFS files (or just run `git pull`, which also downloads LFS):
-
-```bash
-git pull
-# or explicitly:
-git lfs pull
-```
-
----
 
 ## API Keys Setup
 
@@ -288,14 +249,23 @@ cp .env.example temp_strategy/.env
 
 ```bash
 cd graph_rag
-../.venv/bin/python main.py --question "Your question" --dataset-path ../data/ragbench_50
+../.venv/bin/python main.py --question "What is the waiting period for pre-existing diseases under the Arogya Sanjeevani policy?"
 ```
 
-### Other Strategies
+### Ingestion and Full Evaluation
 
 ```bash
-cd <strategy-name>
-../.venv/bin/python main.py --question "Your question"
+cd graph_rag
+# Re-ingest all curated policies (optional, cached in outputs/)
+../.venv/bin/python scripts/ingest_policy_docs.py
+
+# Run evaluation over the 90 curated QA pairs
+../.venv/bin/python scripts/run_policy_evaluation.py
+
+# Score evaluation results
+../.venv/bin/python scripts/score_evaluation_custom.py \
+    --input-path outputs/evaluations/policy_eval.json \
+    --output-path outputs/evaluations/policy_eval_summary.json
 ```
 
 ---

@@ -20,30 +20,38 @@ from src.pipeline import GraphRAGPipeline
 
 
 def parse_args() -> argparse.Namespace:
-    """Parse command-line arguments for the MVP query run."""
+    """Parse command-line arguments for the Insurance Policy Graph RAG query."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--question",
         type=str,
-        default="To what team was the 2014 NBA Rookie of the Year traded in October 2016?",
-        help="Question to run against the Graph RAG pipeline.",
+        default="What is the waiting period for pre-existing diseases under the Arogya Sanjeevani policy?",
+        help="Question to run against the Insurance Policy Graph RAG pipeline.",
     )
     parser.add_argument(
-        "--dataset-path",
+        "--policy-dir",
         type=str,
-        default="data/ragbench_50",
-        help="Path to local sampled RAGBench dataset.",
+        default=str(PROJECT_ROOT / "data" / "Policy_Documents_Curated_15"),
+        help="Path to curated policy documents folder.",
+    )
+    parser.add_argument(
+        "--force-rebuild",
+        action="store_true",
+        help="Force rebuild of graph and vector store (ignore cached graph).",
     )
     return parser.parse_args()
 
 
 def main() -> None:
-    """Build MVP indices and execute one Graph RAG query."""
+    """Build or load policy indices and execute one Graph RAG query."""
     args = parse_args()
     load_dotenv()
 
-    pipeline = GraphRAGPipeline()
-    pipeline.build_indices(dataset_path=args.dataset_path)
+    pipeline = GraphRAGPipeline(policy_mode=True)
+    pipeline.build_indices(
+        policy_dir=args.policy_dir,
+        force_rebuild=args.force_rebuild,
+    )
     result = pipeline.query(args.question)
 
     output = {

@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import logging
+import os
 import re
 import time
 from collections import Counter, defaultdict
@@ -22,6 +22,7 @@ from openai import OpenAI, RateLimitError
 # run directly from any working directory.
 _PROJECT_ROOT = Path(__file__).resolve().parents[2]
 import sys
+
 if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
@@ -270,7 +271,7 @@ def _parse_score_response(content: str) -> float:
         data = json.loads(json_str)
         if "score" in data:
             return float(data["score"])
-    except Exception:
+    except Exception:  
         # Try checking for braces anywhere in the string
         braces_match = re.search(r"(\{.*\})", content, re.DOTALL)
         if braces_match:

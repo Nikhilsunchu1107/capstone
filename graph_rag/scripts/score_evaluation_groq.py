@@ -4,27 +4,27 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import logging
+import os
 import re
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from statistics import mean, pstdev
 from typing import Any
 
+import instructor
 import numpy as np
 from datasets import Dataset
 from dotenv import load_dotenv
-from ragas import evaluate
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from openai import OpenAI
+from ragas import evaluate
+from ragas.llms import llm_factory
 from ragas.metrics._answer_relevance import answer_relevancy
 from ragas.metrics._context_precision import context_precision
 from ragas.metrics._context_recall import context_recall
 from ragas.metrics._faithfulness import faithfulness
-from ragas.llms import llm_factory
-import sys
-from openai import OpenAI
-import instructor
 
 # Monkeypatch instructor to use MD_JSON mode so RAGAS can parse JSON from
 # reasoning models (like groq/compound) that output thinking/markdown.
@@ -214,10 +214,10 @@ def _run_ragas_scores(
         # to guarantee we stay below the limits on Groq
         _orig_create = client.chat.completions.create
         def delayed_create(*args, **kwargs):
-            import time  # noqa: PLC0415
+            import time
             time.sleep(1.0)
             return _orig_create(*args, **kwargs)
-        client.chat.completions.create = delayed_create
+        client.chat.completions.create = delayed_create # type: ignore
 
         eval_model = "groq/compound-mini"
 
@@ -267,23 +267,23 @@ def _run_ragas_scores(
             scores = evaluate(
                 batch,
                 metrics=[faithfulness, answer_relevancy, context_precision, context_recall],
-                llm=llm,
+                llm=llm, # type: ignore
                 embeddings=embeddings,
                 run_config=run_config,
                 raise_exceptions=False,
                 show_progress=False,
             )
-            for metric in all_results:
+            for metric in all_results:  # noqa: PLC0206
                 all_results[metric].extend(_metric_values(scores, metric))
         except Exception:
             logger.exception(f"RAGAS batch {batch_idx + 1} failed — filling with zeros")
             batch_len = end - start
-            for metric in all_results:
+            for metric in all_results:  # noqa: PLC0206
                 all_results[metric].extend([0.0] * batch_len)
 
         # Sleep between batches (not after the last one)
         if batch_idx < n_batches - 1:
-            import time  # noqa: PLC0415
+            import time
             print(f"  [RAGAS] Waiting {batch_delay:.0f}s before next batch...")
             time.sleep(batch_delay)
 

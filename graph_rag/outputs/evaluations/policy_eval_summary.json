@@ -1,0 +1,1098 @@
+{
+  "strategy_name": "graph_rag_policy",
+  "run_started_at": "2026-08-19T17:31:35.335930+00:00",
+  "config": {
+    "qa_file": "/home/darkhat/Projects/capstone/data/policy_qa.json",
+    "policy_dir": "/home/darkhat/Projects/capstone/data/Policy_Documents_Curated_15",
+    "graph_cache": "/home/darkhat/Projects/capstone/graph_rag/outputs/policy_graph.pkl",
+    "chroma_dir": "/home/darkhat/Projects/capstone/graph_rag/outputs/policy_chromadb",
+    "chroma_collection": "policy_chunks",
+    "random_seed": 42,
+    "max_questions": null,
+    "inter_request_delay": 1.5
+  },
+  "dataset": {
+    "primary_configs": [],
+    "sample_size": 83,
+    "ragas_sample_size": 83,
+    "ragas_skipped_samples": 0
+  },
+  "metrics": {
+    "context_precision": {
+      "mean": 0.8,
+      "std": 0.0
+    },
+    "context_recall": {
+      "mean": 0.85,
+      "std": 0.0
+    },
+    "faithfulness": {
+      "mean": 0.9,
+      "std": 0.0
+    },
+    "answer_relevancy": {
+      "mean": 0.95,
+      "std": 0.0
+    },
+    "exact_match": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "f1_score": {
+      "mean": 0.2261508364815863,
+      "std": 0.16694898391959095
+    },
+    "latency_ms": {
+      "mean": 41784.41034997596,
+      "std": 99241.79907862995
+    }
+  },
+  "by_question_type": {
+    "single_hop": {
+      "f1": {
+        "mean": 0.2184494694767787,
+        "std": 0.16277344450339234
+      },
+      "em": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "negative": {
+      "f1": {
+        "mean": 0.22038692070255902,
+        "std": 0.149226025513966
+      },
+      "em": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "multi_hop": {
+      "f1": {
+        "mean": 0.2494414169338401,
+        "std": 0.18331923671483114
+      },
+      "em": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "by_config": {
+    "policy": {
+      "f1": {
+        "mean": 0.2261508364815863,
+        "std": 0.16694898391959095
+      },
+      "em": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "faithfulness": {
+        "mean": 0.9,
+        "std": 0.0
+      }
+    }
+  },
+  "variance_across_types": 0.0002009353639652285,
+  "variance_across_configs": 0.0,
+  "samples": [
+    {
+      "question_id": "policy_qa_0000",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.6363636363636365,
+      "latency_ms": 69379.27563700214,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0001",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.2342342342342342,
+      "latency_ms": 139881.55709900093,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0002",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.42857142857142855,
+      "latency_ms": 125214.2327119982,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0003",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.05763688760806916,
+      "latency_ms": 319892.60652999656,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0004",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.3,
+      "latency_ms": 48411.88531899752,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0005",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.6885245901639344,
+      "latency_ms": 48944.26099900011,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0006",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.0689655172413793,
+      "latency_ms": 43882.00095099819,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0007",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.10596026490066227,
+      "latency_ms": 49348.7170820008,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0008",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.18181818181818182,
+      "latency_ms": 43404.708788999415,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0009",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.09174311926605504,
+      "latency_ms": 41915.88178500024,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0010",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.5294117647058824,
+      "latency_ms": 34763.87960500142,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0011",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.06557377049180328,
+      "latency_ms": 36796.122187002766,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0012",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.39999999999999997,
+      "latency_ms": 36880.85627200053,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0013",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.09230769230769233,
+      "latency_ms": 45849.91699099919,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0014",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.10526315789473685,
+      "latency_ms": 47595.98484399976,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0015",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.34848484848484856,
+      "latency_ms": 95025.94133099774,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0016",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.07462686567164178,
+      "latency_ms": 53614.134149000165,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0017",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.06896551724137931,
+      "latency_ms": 618783.629098998,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0018",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.3370786516853933,
+      "latency_ms": 18970.432734997303,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0019",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.11912225705329155,
+      "latency_ms": 20623.54430400228,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0020",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.6060606060606061,
+      "latency_ms": 14599.894246999611,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0021",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.07382550335570469,
+      "latency_ms": 18825.67879799899,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0022",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.4,
+      "latency_ms": 11626.48568700024,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0023",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.30303030303030304,
+      "latency_ms": 10967.789433998405,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0024",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.46428571428571425,
+      "latency_ms": 12297.3657980001,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0025",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.5142857142857143,
+      "latency_ms": 12510.749617998954,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0026",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.26291079812206575,
+      "latency_ms": 50862.588685002265,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0027",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.17910447761194026,
+      "latency_ms": 17845.440026998403,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0028",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.13333333333333333,
+      "latency_ms": 14845.67266799786,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0029",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.06299212598425197,
+      "latency_ms": 16995.048130000214,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0030",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.4464285714285714,
+      "latency_ms": 12838.044644999172,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0031",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.08411214953271029,
+      "latency_ms": 12972.802232001413,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0032",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.13008130081300812,
+      "latency_ms": 20855.8985439995,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0033",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.3488372093023256,
+      "latency_ms": 22565.98260499959,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0034",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.0,
+      "latency_ms": 22292.597952000506,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0035",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.047619047619047616,
+      "latency_ms": 28504.404047998833,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0036",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.5043478260869566,
+      "latency_ms": 27691.118734001066,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0037",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.20689655172413796,
+      "latency_ms": 620922.7104570018,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0038",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.08433734939759036,
+      "latency_ms": 21513.075788003334,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0039",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.2074688796680498,
+      "latency_ms": 15684.267314998579,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0040",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.1875,
+      "latency_ms": 11789.091263002774,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0041",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.08917197452229299,
+      "latency_ms": 25755.61343300069,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0042",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.1935483870967742,
+      "latency_ms": 19611.729124000703,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0043",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.06870229007633588,
+      "latency_ms": 10396.241506001388,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0044",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.09523809523809523,
+      "latency_ms": 23500.50570700114,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0045",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.18181818181818182,
+      "latency_ms": 15232.803113001864,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0046",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.3243243243243243,
+      "latency_ms": 9056.477352998627,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0047",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.05504587155963303,
+      "latency_ms": 9206.32966300036,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0048",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.4631578947368421,
+      "latency_ms": 16176.114529000188,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0049",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.2727272727272727,
+      "latency_ms": 6412.639828002284,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0050",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.2857142857142857,
+      "latency_ms": 39212.253637000686,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0051",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.0,
+      "latency_ms": 2637.451653001335,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0052",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.09929078014184396,
+      "latency_ms": 10504.55932800105,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0053",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.34567901234567905,
+      "latency_ms": 5278.971358002309,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0054",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.10695187165775402,
+      "latency_ms": 15773.001638001006,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0055",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.4571428571428572,
+      "latency_ms": 8258.08926999889,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0056",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.29411764705882354,
+      "latency_ms": 26043.04973699982,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0057",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.21311475409836064,
+      "latency_ms": 11853.761544000008,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0058",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.16666666666666669,
+      "latency_ms": 5426.013777996559,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0059",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.0,
+      "latency_ms": 7605.974699999933,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0060",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.11818181818181818,
+      "latency_ms": 24634.72204700156,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0061",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.3529411764705882,
+      "latency_ms": 10183.459862000745,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0062",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.18181818181818182,
+      "latency_ms": 16796.322186000907,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0063",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.2151898734177215,
+      "latency_ms": 7309.489483999641,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0064",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.11827956989247312,
+      "latency_ms": 5808.264417999453,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0065",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.48148148148148157,
+      "latency_ms": 6154.083916000673,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0066",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.06539509536784742,
+      "latency_ms": 18442.506549999962,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0067",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.5098039215686275,
+      "latency_ms": 8790.750169999228,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0068",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.4166666666666667,
+      "latency_ms": 8720.771210002567,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0069",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.42857142857142855,
+      "latency_ms": 19574.058068999875,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0070",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.21052631578947367,
+      "latency_ms": 19466.2263479986,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0071",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.36619718309859156,
+      "latency_ms": 9239.62141499942,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0072",
+      "dataset_name": "policy_documents",
+      "question_type": "negative",
+      "exact_match": 0.0,
+      "f1_score": 0.04040404040404041,
+      "latency_ms": 12616.991453000082,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0073",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.13333333333333333,
+      "latency_ms": 5438.524891997076,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0074",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.10970464135021096,
+      "latency_ms": 11326.906479000172,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0075",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.0,
+      "latency_ms": 5942.416024998238,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0076",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.152046783625731,
+      "latency_ms": 9586.305623000953,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0077",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.10256410256410256,
+      "latency_ms": 3961.247926999931,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0078",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.2888888888888889,
+      "latency_ms": 8382.243713000207,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0079",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.2962962962962963,
+      "latency_ms": 5492.360783999175,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0080",
+      "dataset_name": "policy_documents",
+      "question_type": "multi_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.12037037037037038,
+      "latency_ms": 9737.285203002102,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0081",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.08,
+      "latency_ms": 11810.560710000573,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    },
+    {
+      "question_id": "policy_qa_0082",
+      "dataset_name": "policy_documents",
+      "question_type": "single_hop",
+      "exact_match": 0.0,
+      "f1_score": 0.08733624454148471,
+      "latency_ms": 22563.084569999774,
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.95,
+      "context_precision": 0.8,
+      "context_recall": 0.85
+    }
+  ]
+}

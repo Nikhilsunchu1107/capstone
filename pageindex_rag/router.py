@@ -1,6 +1,6 @@
 import json
 
-from nim_client import call_nim
+from nim_client import ollama_call
 from registry import load_registry
 
 
@@ -45,9 +45,9 @@ Rules:
 - For "specific": list at most the 3 most relevant doc_ids, never more.
 """
 
-    result = call_nim(prompt, model="poolside/laguna-xs-2.1")
+    result = ollama_call(prompt, model="granite4.2:8b")
     if result is None:
-        raise ValueError("call_nim returned no response")
+        raise ValueError("ollama_call returned no response")
 
     # Reasoning model: `result` may be chain-of-thought text followed by the
     # JSON answer, not pure JSON -- extract the {...} block.

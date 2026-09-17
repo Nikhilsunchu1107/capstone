@@ -31,3 +31,6 @@ graph_rag/scripts/outputs/
 *.pkl
 *.sqlite3
 *.zip
+
+.dist
+.PageIndex

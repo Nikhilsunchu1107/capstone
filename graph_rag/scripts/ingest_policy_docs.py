@@ -21,7 +21,7 @@ for p in [str(PROJECT_ROOT), str(GRAPH_RAG_DIR)]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from src.pipeline import GraphRAGPipeline  # noqa: E402
+from src.pipeline import GraphRAGPipeline
 
 
 def parse_args() -> argparse.Namespace:

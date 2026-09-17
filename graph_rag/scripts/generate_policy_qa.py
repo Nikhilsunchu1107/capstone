@@ -32,9 +32,9 @@ for p in [str(PROJECT_ROOT), str(GRAPH_RAG_DIR)]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from graph_rag.config import LLM_MODEL, RANDOM_SEED  # noqa: E402
-from src.policy_loader import load_policy_documents  # noqa: E402
+from src.policy_loader import load_policy_documents
 
+from graph_rag.config import LLM_MODEL, RANDOM_SEED
 
 # ---------------------------------------------------------------------------
 # Question categories — one full rotation per document
@@ -211,14 +211,14 @@ def generate_qa_pairs(
         List of dicts with keys: id, question, answer, source_title,
         filename, category, chunk_id, documents.
     """
-    from openai import OpenAI  # noqa: PLC0415
+    from openai import OpenAI
 
     client = OpenAI(
         timeout=60,
         api_key=nim_api_key,
         base_url="https://integrate.api.nvidia.com/v1",
     )
-    rng = random.Random(random_seed)  # noqa: S311
+    rng = random.Random(random_seed) 
 
     # Load and group chunks by source document
     print(f"Loading policy documents from: {policy_dir}")
@@ -365,7 +365,7 @@ def main() -> None:
     args = parse_args()
     load_dotenv()
 
-    import os  # noqa: PLC0415
+    import os
 
     nim_api_key = os.getenv("NVIDIA_NIM_API_KEY", "")
     if not nim_api_key or nim_api_key == "your_nim_key_here":
@@ -399,7 +399,7 @@ def main() -> None:
 
     print(f"\nSaved {len(qa_pairs)} QA pairs to: {output_path}")
 
-    from collections import Counter  # noqa: PLC0415
+    from collections import Counter
 
     cat_counts = Counter(p["category"] for p in qa_pairs)
     print("\nCategory breakdown:")

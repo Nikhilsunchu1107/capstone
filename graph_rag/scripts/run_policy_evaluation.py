@@ -17,7 +17,7 @@ import argparse
 import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -29,8 +29,9 @@ for p in [str(PROJECT_ROOT), str(GRAPH_RAG_DIR)]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from graph_rag.config import RANDOM_SEED  # noqa: E402
-from src.pipeline import GraphRAGPipeline  # noqa: E402
+from src.pipeline import GraphRAGPipeline
+
+from graph_rag.config import RANDOM_SEED
 
 # Pause between NIM calls to stay within token-per-minute limits.
 # 1.5 s ≈ 40 req/min sustained — comfortable margin for the free tier.
@@ -202,7 +203,7 @@ def main() -> None:
     )
 
     # --- Run evaluation ---
-    started_at = datetime.now(timezone.utc)
+    started_at = datetime.now(UTC)
     run_started = time.perf_counter()
 
     run_config = {

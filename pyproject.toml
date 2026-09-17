@@ -23,4 +23,8 @@ dependencies = [
     "pymupdf",
     "gliner",
     "graphifyy>=0.9.44",
+    "pageindex>=0.2.17",
+    "langchain-nvidia-ai-endpoints>=1.4.3",
+    "langchain-text-splitters>=1.1.1",
+    "openai>=2.54.0",
 ]

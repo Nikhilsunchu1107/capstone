@@ -12,10 +12,9 @@ from pageindex import utils
 from router import route_query
 
 GENERATOR_MODEL = "gemma2:2b"  # local Ollama, for test-set generation
-JUDGE_MODEL = "qwen2.5:7b-instruct"  # local Ollama, for evaluation scoring
+JUDGE_MODEL = "granite4.2:8b"  # local Ollama, for evaluation scoring
 # ─────────────────────────────────────────────────────────────────────────────
-# NOTE: If you have access to qwen/qwq-32b, set JUDGE_MODEL to that.
-# A bigger judge = more reliable scores. Generator model can stay small.
+# Bigger judge = more reliable scores. Generator model can stay small.
 # ─────────────────────────────────────────────────────────────────────────────
 
 CACHE_DIR = Path("cache/")
@@ -218,7 +217,7 @@ Reply ONLY with this JSON:
 """
 
     response_text = ollama_call(
-        prompt, model="qwen2.5:7b-instruct", max_tokens=768, num_ctx=8192
+        prompt, model="granite4.2:8b", max_tokens=768, num_ctx=8192
     )
     if not response_text:
         raise ValueError("ollama_call returned no response after 3 retries")

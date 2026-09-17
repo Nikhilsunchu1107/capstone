@@ -1,7 +1,7 @@
 import json
 
 from client import REGISTRY_PATH, pi_client
-from nim_client import call_nim, nim_call
+from nim_client import ollama_call
 from pageindex import utils
 from router import route_query
 
@@ -40,15 +40,30 @@ Reply ONLY with this JSON:
 }}
 """
 
-    response_text = nim_call(prompt, model="poolside/laguna-xs-2.1")
+    response_text = ollama_call(
+        prompt, model="granite4.2:8b", max_tokens=768, num_ctx=8192
+    )
     if not response_text:
-        raise ValueError("nim_call returned no response after 3 retries")
-    result = json.loads(response_text)
+        raise ValueError("ollama_call returned no response after 3 retries")
+
+    # Local model may prepend/append extra text around the JSON object —
+    # extract just the {...} block instead of parsing the raw response.
+    start = response_text.find("{")
+    end = response_text.rfind("}") + 1
+    if start == -1 or end == 0:
+        raise ValueError(f"No JSON object found in response: {response_text[:200]!r}")
+    result = json.loads(response_text[start:end])
 
     node_map = utils.create_node_mapping(tree)
+    node_list = result.get("node_list", [])
+
+    # Doc has exactly one node (title+summary too coarse to judge relevance
+    # against) — it's the only candidate either way, so use it regardless.
+    if not node_list and len(node_map) == 1:
+        node_list = list(node_map.keys())
 
     chunks = []
-    for node_id in result["node_list"]:
+    for node_id in node_list:
         if node_id not in node_map:
             continue
         node = node_map[node_id]
@@ -79,9 +94,9 @@ def ask(query: str):
         prompt = f"""Answer this insurance question in simple plain language.
         Start with a one-sentence summary. Avoid jargon.
         Question: {query}"""
-        answer = call_nim(
+        answer = ollama_call(
             prompt,
-            model="poolside/laguna-xs-2.1",
+            model="granite4.2:8b",
         )
         utils.print_wrapped(answer)
 
@@ -115,7 +130,7 @@ Instructions:
 - Start with a one-sentence summary
 - End with "Bottom line:" telling the user what to actually do or know
 """
-        answer = call_nim(prompt, model="poolside/laguna-xs-2.1")
+        answer = ollama_call(prompt, model="granite4.2:8b")
         print("\n📝 Answer:\n")
         utils.print_wrapped(answer)
 

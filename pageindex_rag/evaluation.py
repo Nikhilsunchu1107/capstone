@@ -7,12 +7,87 @@ from pathlib import Path
 
 import pandas as pd
 from client import PROJECT_DIR, REGISTRY_PATH, pi_client
-from nim_client import ollama_call
+from ollama_client import ollama_call, ollama_call_json
 from pageindex import utils
 from router import route_query
+from search import dedupe_text
 
-GENERATOR_MODEL = "gemma2:2b"  # local Ollama, for test-set generation
-JUDGE_MODEL = "granite4.2:8b"  # local Ollama, for evaluation scoring
+GENERATOR_MODEL = "gemma2-8k"  # local Ollama, for test-set generation
+JUDGE_MODEL = "granite4.2-8k"  # local Ollama, for evaluation scoring
+# *-8k tags are local Ollama models created from Modelfiles with a baked-in
+# `PARAMETER num_ctx` — Ollama's OpenAI-compatibility endpoint does not
+# reliably honor a per-request num_ctx override via extra_body, so the
+# context window has to be set on the model itself instead. granite4.2-8k is
+# tagged at 65536; gemma2-8k is tagged at 8192, gemma2:2b's actual native
+# max — raising it further wouldn't give it more real context.
+
+# gemma2:2b cannot be given more context via num_ctx than it was trained on
+# (8192, its real architectural limit) — Ollama's OpenAI-compat endpoint
+# silently truncates an oversized prompt instead of erroring, which is worse
+# than a loud failure: the model quietly answers from a content-blind
+# fragment and looks like a normal success. GENERATOR_MODEL_CTX_TOKENS lets
+# the answer-generation call size its own context to what gemma2-8k can
+# actually use, truncating chunks explicitly (and visibly, in the resulting
+# context) rather than leaving that to chance.
+GENERATOR_MODEL_CTX_TOKENS = 8192
+GENERATOR_MODEL_MAX_TOKENS = 384
+GENERATOR_MODEL_SAFETY_MARGIN = 200  # buffer for tokenizer-estimate vs. real-model mismatch
+
+
+def _answer_prompt(question: str, context: str) -> str:
+    return f"""Answer the question based only on the context below.
+Question: {question}
+
+Context:
+{context}
+
+Instructions:
+- Use plain simple language
+- Start with a one-sentence summary
+- End with "Bottom line:" telling the user what to know"""
+
+
+def _fit_chunks_to_ctx(
+    chunks: list[str],
+    question: str,
+    ctx_window: int = GENERATOR_MODEL_CTX_TOKENS,
+    max_tokens: int = GENERATOR_MODEL_MAX_TOKENS,
+    safety_margin: int = GENERATOR_MODEL_SAFETY_MARGIN,
+) -> str:
+    """Join `chunks` (already ranked most-relevant-first) into a context
+    string that fits `ctx_window`'s real token budget for GENERATOR_MODEL,
+    minus room for the prompt template/question, the model's own output, and
+    a safety margin. Chunks are included whole where they fit; the first
+    chunk that doesn't fit whole is truncated to the remaining budget
+    (visibly marked) instead of silently overflowing the model's context."""
+    overhead = utils.count_tokens(_answer_prompt(question, ""), model=None)
+    budget = ctx_window - overhead - max_tokens - safety_margin
+    if budget <= 0:
+        return ""
+
+    included = []
+    used = 0
+    for chunk in chunks:
+        chunk_tokens = utils.count_tokens(chunk, model=None)
+        if used + chunk_tokens <= budget:
+            included.append(chunk)
+            used += chunk_tokens
+            continue
+
+        remaining = budget - used
+        if remaining > 0:
+            lo, hi = 0, len(chunk)
+            while lo < hi:
+                mid = (lo + hi + 1) // 2
+                if utils.count_tokens(chunk[:mid], model=None) <= remaining:
+                    lo = mid
+                else:
+                    hi = mid - 1
+            if lo > 0:
+                included.append(chunk[:lo] + "\n...[truncated to fit generator model's context]")
+        break
+
+    return "\n\n---\n\n".join(included)
 # ─────────────────────────────────────────────────────────────────────────────
 # Bigger judge = more reliable scores. Generator model can stay small.
 # ─────────────────────────────────────────────────────────────────────────────
@@ -189,6 +264,23 @@ def get_tree_and_node_map(doc_id: str):
     return TREE_CACHE[doc_id], NODE_MAP_CACHE[doc_id]
 
 
+def _snippet_tree(node, max_len=500):
+    """Copy of `node`/`nodes` with each 'text' field truncated to a short
+    preview instead of removed outright, so node selection sees title +
+    summary + a text snippet rather than title + summary alone."""
+    if isinstance(node, dict):
+        copy = dict(node)
+        if "text" in copy and isinstance(copy["text"], str):
+            text = copy["text"]
+            copy["text"] = text[:max_len] + "..." if len(text) > max_len else text
+        if "nodes" in copy:
+            copy["nodes"] = _snippet_tree(copy["nodes"], max_len)
+        return copy
+    if isinstance(node, list):
+        return [_snippet_tree(item, max_len) for item in node]
+    return node
+
+
 def search_nodes_cached(doc_id: str, query: str, max_chunks: int = 2) -> list[str]:
     """Same PageIndex tree selection as search_nodes(), but caches local tree work."""
     if not pi_client.is_retrieval_ready(doc_id):
@@ -198,16 +290,16 @@ def search_nodes_cached(doc_id: str, query: str, max_chunks: int = 2) -> list[st
     registry = _load_registry_cached()
     filename = registry[doc_id]["filename"]
     tree, node_map = get_tree_and_node_map(doc_id)
-    tree_without_text = utils.remove_fields(tree.copy(), fields=["text"])
+    tree_with_snippets = _snippet_tree(tree.copy())
 
     prompt = f"""You are given a question and a tree structure of a document.
-Each node contains a node id, title, and summary.
+Each node contains a node id, title, summary, and a short text preview.
 Find up to {max_chunks} nodes likely to contain the answer to the question.
 
 Question: {query}
 
 Document tree:
-{json.dumps(tree_without_text, indent=2)}
+{json.dumps(tree_with_snippets, indent=2)}
 
 Reply ONLY with this JSON:
 {{
@@ -216,19 +308,13 @@ Reply ONLY with this JSON:
 }}
 """
 
-    response_text = ollama_call(
-        prompt, model="granite4.2:8b", max_tokens=768, num_ctx=8192
-    )
-    if not response_text:
-        raise ValueError("ollama_call returned no response after 3 retries")
-
-    # Local model may prepend/append extra text around the JSON object —
-    # extract just the {...} block instead of parsing the raw response.
-    start = response_text.find("{")
-    end = response_text.rfind("}") + 1
-    if start == -1 or end == 0:
-        raise ValueError(f"No JSON object found in response: {response_text[:200]!r}")
-    result = json.loads(response_text[start:end])
+    # Local model may wrap the JSON object in prose/markdown, or occasionally
+    # drop a malformed one — ollama_call_json retries with a "JSON only" nudge
+    # instead of failing on a single bad generation. max_tokens is generous
+    # because the requested "thinking" field alone can run past 1-2k tokens
+    # on trees with dozens of nodes — too low a budget truncates before the
+    # model ever reaches node_list, yielding an empty/incomplete response.
+    result = ollama_call_json(prompt, model="granite4.2-8k", max_tokens=4096)
     node_list = result.get("node_list", [])
 
     # Doc has exactly one node (title+summary too coarse to judge relevance
@@ -242,7 +328,7 @@ Reply ONLY with this JSON:
         if not node:
             continue
         chunks.append(
-            f"[Source: {filename}, Page {node['page_index']}]\n{node['text'][:3000]}"
+            f"[Source: {filename}, Page {node['page_index']}]\n{dedupe_text(node['text'])}"
         )
 
     print(f"  {filename}: {len(chunks)} relevant node(s) found")
@@ -290,21 +376,12 @@ def run_pageindex_pipeline(
                     search_nodes_cached(doc_id_to_search, q, max_chunks=max_chunks)
                 )
 
-            if all_chunks:
-                context = "\n\n---\n\n".join(all_chunks)
+            context = _fit_chunks_to_ctx(all_chunks, q) if all_chunks else ""
+            if context:
                 answer = ollama_call(
-                    f"""Answer the question based only on the context below.
-Question: {q}
-
-Context:
-{context}
-
-Instructions:
-- Use plain simple language
-- Start with a one-sentence summary
-- End with "Bottom line:" telling the user what to know""",
+                    _answer_prompt(q, context),
                     model=GENERATOR_MODEL,
-                    max_tokens=384,
+                    max_tokens=GENERATOR_MODEL_MAX_TOKENS,
                 )
             else:
                 answer = "No relevant content found."
@@ -383,32 +460,19 @@ def load_or_run_pageindex_pipeline(
     return sorted(existing.values(), key=lambda row: order.get(row.get("id", row["question"]), 1 << 30))
 
 
-def safe_parse_score(raw: str) -> dict:
-    """
-    Parses NIM's JSON response robustly.
-    Handles cases where the model adds markdown fences or extra text.
-    Returns {"score": float, "reasoning": str} or a fallback.
-    """
-    try:
-        clean = raw.replace("```json", "").replace("```", "").strip()
-        # Find the JSON object even if there's trailing text
-        start = clean.find("{")
-        end = clean.rfind("}") + 1
-        if start == -1 or end == 0:
-            raise ValueError("No JSON object found")
-        parsed = json.loads(clean[start:end])
-        score = float(parsed.get("score", 0.0))
-        score = max(0.0, min(1.0, score))  # Clamp to [0, 1]
-        return {"score": score, "reasoning": parsed.get("reasoning", "")}
-    except Exception as e:
-        return {"score": 0.0, "reasoning": f"Parse error: {e} | Raw: {raw[:100]}"}
+def _score_and_reasoning(parsed: dict) -> dict:
+    score = max(0.0, min(1.0, float(parsed.get("score", 0.0))))
+    return {"score": score, "reasoning": parsed.get("reasoning", "")}
 
 
 def evaluate_single(item: dict) -> dict:
     """
     Evaluates one (question, contexts, answer, ground_truth) entry.
-    Makes 4 NIM calls sequentially with sleep between each.
-    Returns scores + reasoning for all 4 metrics.
+    Makes 4 judge calls sequentially. Returns scores + reasoning for all 4
+    metrics. A judge call that still doesn't parse as JSON after
+    ollama_call_json's retries raises — the caller (evaluate_pipeline) skips
+    the whole row on exception, so an unparseable judge reply excludes the
+    row from the aggregate instead of silently averaging it in as a 0.0.
     """
     q = item["question"]
     a = item["answer"]
@@ -426,38 +490,38 @@ def evaluate_single(item: dict) -> dict:
     scores = {}
 
     # 1. Faithfulness
-    raw = ollama_call(
+    parsed = ollama_call_json(
         FAITHFULNESS_PROMPT.format(question=q, context=context_joined, answer=a),
         model=JUDGE_MODEL,
         max_tokens=400,
     )
-    scores["faithfulness"] = safe_parse_score(raw)
+    scores["faithfulness"] = _score_and_reasoning(parsed)
 
     # 2. Answer Relevancy
-    raw = ollama_call(
+    parsed = ollama_call_json(
         ANSWER_RELEVANCY_PROMPT.format(question=q, answer=a),
         model=JUDGE_MODEL,
         max_tokens=300,
     )
-    scores["answer_relevancy"] = safe_parse_score(raw)
+    scores["answer_relevancy"] = _score_and_reasoning(parsed)
 
     # 3. Context Precision
-    raw = ollama_call(
+    parsed = ollama_call_json(
         CONTEXT_PRECISION_PROMPT.format(
             question=q, ground_truth=gt, context_numbered=context_numbered
         ),
         model=JUDGE_MODEL,
         max_tokens=400,
     )
-    scores["context_precision"] = safe_parse_score(raw)
+    scores["context_precision"] = _score_and_reasoning(parsed)
 
     # 4. Context Recall
-    raw = ollama_call(
+    parsed = ollama_call_json(
         CONTEXT_RECALL_PROMPT.format(question=q, ground_truth=gt, context=context_joined),
         model=JUDGE_MODEL,
         max_tokens=400,
     )
-    scores["context_recall"] = safe_parse_score(raw)
+    scores["context_recall"] = _score_and_reasoning(parsed)
 
     return scores
 

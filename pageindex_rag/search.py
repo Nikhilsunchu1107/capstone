@@ -1,9 +1,45 @@
 import json
 
 from client import REGISTRY_PATH, pi_client
-from nim_client import ollama_call
+from ollama_client import ollama_call, ollama_call_json
 from pageindex import utils
 from router import route_query
+
+
+def dedupe_text(text: str) -> str:
+    """Remove duplicate paragraphs from node text while preserving order
+    and keeping short lines (headers, numbers, list items) untouched."""
+    seen = set()
+    out = []
+    for para in text.split('\n'):
+        key = para.strip()
+        if len(key) < 40:
+            out.append(para)
+            continue
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(para)
+    return '\n'.join(out)
+
+
+def _snippet_tree(node, max_len=500):
+    """Copy of `node`/`nodes` with each 'text' field truncated to a short
+    preview instead of removed outright, so node selection sees title +
+    summary + a text snippet rather than title + summary alone. Text is
+    deduped before truncating so the preview isn't just the same repeated
+    paragraph over and over on nodes with duplicated boilerplate."""
+    if isinstance(node, dict):
+        copy = dict(node)
+        if "text" in copy and isinstance(copy["text"], str):
+            text = dedupe_text(copy["text"])
+            copy["text"] = text[:max_len] + "..." if len(text) > max_len else text
+        if "nodes" in copy:
+            copy["nodes"] = _snippet_tree(copy["nodes"], max_len)
+        return copy
+    if isinstance(node, list):
+        return [_snippet_tree(item, max_len) for item in node]
+    return node
 
 
 def search_nodes(doc_id: str, query: str) -> list[str]:
@@ -22,16 +58,16 @@ def search_nodes(doc_id: str, query: str) -> list[str]:
 
     # fetch tree for this specific doc
     tree = pi_client.get_tree(doc_id, node_summary=True)["result"]
-    tree_without_text = utils.remove_fields(tree.copy(), fields=["text"])
+    tree_with_snippets = _snippet_tree(tree.copy())
 
     prompt = f"""You are given a question and a tree structure of a document.
-Each node contains a node id, title, and summary.
+Each node contains a node id, title, summary, and a short text preview.
 Find all nodes likely to contain the answer to the question.
 
 Question: {query}
 
 Document tree:
-{json.dumps(tree_without_text, indent=2)}
+{json.dumps(tree_with_snippets, indent=2)}
 
 Reply ONLY with this JSON:
 {{
@@ -40,19 +76,13 @@ Reply ONLY with this JSON:
 }}
 """
 
-    response_text = ollama_call(
-        prompt, model="granite4.2:8b", max_tokens=768, num_ctx=8192
-    )
-    if not response_text:
-        raise ValueError("ollama_call returned no response after 3 retries")
-
-    # Local model may prepend/append extra text around the JSON object —
-    # extract just the {...} block instead of parsing the raw response.
-    start = response_text.find("{")
-    end = response_text.rfind("}") + 1
-    if start == -1 or end == 0:
-        raise ValueError(f"No JSON object found in response: {response_text[:200]!r}")
-    result = json.loads(response_text[start:end])
+    # Local model may wrap the JSON object in prose/markdown, or occasionally
+    # drop a malformed one — ollama_call_json retries with a "JSON only" nudge
+    # instead of failing on a single bad generation. max_tokens is generous
+    # because the requested "thinking" field alone can run past 1-2k tokens
+    # on trees with dozens of nodes — too low a budget truncates before the
+    # model ever reaches node_list, yielding an empty/incomplete response.
+    result = ollama_call_json(prompt, model="granite4.2-8k", max_tokens=4096)
 
     node_map = utils.create_node_mapping(tree)
     node_list = result.get("node_list", [])
@@ -68,7 +98,7 @@ Reply ONLY with this JSON:
             continue
         node = node_map[node_id]
         chunks.append(
-            f"[Source: {filename}, Page {node['page_index']}]\n{node['text'][:4000]}"
+            f"[Source: {filename}, Page {node['page_index']}]\n{node['text']}"
         )
 
     print(f"  📑 {filename}: {len(chunks)} relevant node(s) found")
@@ -96,7 +126,7 @@ def ask(query: str):
         Question: {query}"""
         answer = ollama_call(
             prompt,
-            model="granite4.2:8b",
+            model="granite4.2-8k",
         )
         utils.print_wrapped(answer)
 
@@ -130,7 +160,7 @@ Instructions:
 - Start with a one-sentence summary
 - End with "Bottom line:" telling the user what to actually do or know
 """
-        answer = ollama_call(prompt, model="granite4.2:8b")
+        answer = ollama_call(prompt, model="granite4.2-8k")
         print("\n📝 Answer:\n")
         utils.print_wrapped(answer)
 

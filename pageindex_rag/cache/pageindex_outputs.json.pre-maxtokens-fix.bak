@@ -1,0 +1,22 @@
+[
+  {
+    "id": "policy_qa_0000",
+    "question": "What consequence does the policy impose if the insured fails to provide the required documents in accordance with Item\u202f12.2?",
+    "ground_truth": "The insurer may give the insured notice suspending all cover under the policy until the insured fully complies with the condition stipulated in Item\u202f12.2.",
+    "contexts": [],
+    "answer": "ERROR: No valid JSON object found after 3 attempt(s). Last raw response: ''",
+    "q_type": "ERROR",
+    "source_file": "14..Trade credit insc_GEN756.pdf",
+    "doc_ids_searched": []
+  },
+  {
+    "id": "policy_qa_0001",
+    "question": "Which countries are excluded from coverage or require advance approval, thereby voiding a claim under this policy?",
+    "ground_truth": "The policy excludes Somalia, Afghanistan, and Palestine (off\u2011cover) and requires advance insurer approval for Iran,",
+    "contexts": [],
+    "answer": "ERROR: No valid JSON object found after 3 attempt(s). Last raw response: ''",
+    "q_type": "ERROR",
+    "source_file": "14..Trade credit insc_GEN756.pdf",
+    "doc_ids_searched": []
+  }
+]

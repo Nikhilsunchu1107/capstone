@@ -1,0 +1,2420 @@
+[
+  {
+    "id": "policy_qa_0000",
+    "question": "What consequence does the policy impose if the insured fails to provide the required documents in accordance with Item\u202f12.2?",
+    "answer": "If the insured fails to provide the required documents in accordance with Item 12.2, the insurer can suspend all cover under the policy until the insured complies. \n\nBottom line: If the insured fails to provide the required documents, the insurer can suspend coverage until compliance.",
+    "ground_truth": "The insurer may give the insured notice suspending all cover under the policy until the insured fully complies with the condition stipulated in Item\u202f12.2.",
+    "n_contexts": 2,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.5142857142857142,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the context in Item 12.3 directly states that failure to provide documents in accordance with Item 12.2 will entitle the insurer to suspend all cover under the policy until such time that the insured has fully complied with this condition."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly addresses the question by specifying the consequence (suspension of coverage) if the insured fails to provide the required documents as per Item 12.2. It also provides a concise summary of the bottom line, making the answer clear and relevant."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it discusses policy period and termination conditions, which are not related to the consequence of failing to provide required documents. Chunk 2: relevant because it directly addresses the consequence of failing to provide documents in accordance with Item 12.2."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: found/not found in context... The consequence of failing to provide required documents as per Item 12.2 is not explicitly mentioned in the retrieved context. Key point 2: ..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0001",
+    "question": "Which countries are excluded from coverage or require advance approval, thereby voiding a claim under this policy?",
+    "answer": "This document outlines the exclusions and specific requirements for Trade Credit Insurance coverage, including which countries are excluded and the conditions for claiming a payout. \n\nBottom line:  This document outlines the specific exclusions and requirements for Trade Credit Insurance coverage, including which countries are excluded and the conditions for claiming a payout.",
+    "ground_truth": "The policy excludes Somalia, Afghanistan, and Palestine (off\u2011cover) and requires advance insurer approval for Iran,",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.11940298507462686,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... This document does not explicitly list any countries that are excluded from coverage or require advance approval. The content focuses on exclusions and conditions for claims but does not mention specific countries."
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer provides a general statement about the document's content but does not directly address which countries are excluded or require advance approval. It also does not specify the conditions for claiming a payout, which are part of the question."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because the chunk discusses terms and conditions of the insurance policy, but does not mention any exclusions or requirements for advance approval related to specific countries. Chunk 2: not relevant because the chunk defines terms used in the policy wording, but does not address the specific countries excluded or requiring advance approval for claims."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: Somalia - not found in context... Key point 2: Afghanistan - not found in context... Key point 3: Palestine (off-cover) - not found in context... Key point 4: Iran - not found in context..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0002",
+    "question": "What exchange rate is used to calculate the amount of indemnification under this Trade Credit Insurance policy?",
+    "answer": "This document outlines the exchange rate used to calculate indemnification under a Trade Credit Insurance policy. \n\nBottom line: The exchange rate used to calculate indemnification is the first published rate by the Reserve Bank of India on the day the insured event occurred.",
+    "ground_truth": "The rate of exchange used by the Reserve Bank of India on the day the Insured Event occurred.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.5573770491803278,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: not supported because the retrieved context states that the exchange rate used is the first published rate by the Reserve Bank of India on the day the insured event occurred, not the day the delivery was effected or the invoice date."
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "The answer does not directly address the question about the specific exchange rate used for the calculation. Instead, it provides a vague statement about the source of the exchange rate without specifying which rate is used."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it does not mention the exchange rate used for indemnification. Chunk 2: relevant because it specifies the exchange rate used by the Reserve Bank of India on the day the Insured Event occurred for calculating the amount of indemnification."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: The rate of exchange used by the Reserve Bank of India on the day the Insured Event occurred - not found in context..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0003",
+    "question": "How does the policy describe the process for filing a claim and the documents required?",
+    "answer": "This policy outlines the process for filing a claim and the required documents for the insurance company to process the claim. \n\nBottom line: To file a claim, the Insured must submit a written claim within 60 days of the loss, provide supporting documents, and cooperate with the insurer's request for additional information.",
+    "ground_truth": "The provided text does not contain any information about the claim\u2011filing process or required documents.",
+    "n_contexts": 2,
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.7,
+    "context_precision": 1.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.1791044776119403,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.5,
+        "reasoning": "claim 1: To file a claim, the Insured must submit a written claim within 60 days of the loss - supported. This is directly stated in the context under 8.1. claim 2: Provide supporting documents - supported. This is directly stated in the context under 8.6.2. claim 3: Cooperate with the insurer's request for additional information - supported. This is implied in the context under 8.6.3 and 8.6.4, but not explicitly stated in the generated answer."
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer provides a general outline of the claim process and the required documents, which is relevant to the question. However, it does not explicitly state that this information is from the policy as requested in the question."
+      },
+      "context_precision": {
+        "score": 1.0,
+        "reasoning": "Chunk 1: relevant because it mentions the Insured's obligation to provide documents to the Insurer for the purpose of exercising rights related to the insured credit. Chunk 2: relevant because it details the process for filing a claim, including the required documents and the steps the Insurer may take to assess the claim."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: found/not found in context... The ground truth answer states that the provided text does not contain any information about the claim-filing process or required documents, which is accurately reflected in the score. Key point 2: ..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0004",
+    "question": "When is the Insured eligible to receive a No Claims Bonus under this policy?",
+    "answer": "This document outlines the conditions for receiving a No Claims Bonus under a Trade Credit Insurance policy. \n\nBottom line:  To receive a No Claims Bonus, the Insured must declare their Insurable Turnover to the insurer and meet the policy's requirements for claim submission and payment.",
+    "ground_truth": "The Insured may receive a No Claims Bonus if no insured event is reported during the insurance",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3225806451612903,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... No factual claims were made in the generated answer that can be directly supported by the retrieved context. The generated answer does not provide specific details about the No Claims Bonus eligibility criteria, which are not present in the given context."
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "The answer does not directly address when the Insured is eligible to receive a No Claims Bonus, which is what the question asks. Instead, it provides general information about the conditions for receiving the bonus without specifying the timing."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it discusses the premium calculation and declaration process, which is not related to the No Claims Bonus. Chunk 2: not relevant because it covers topics such as subrogation, collections, and claims, which are not related to the No Claims Bonus."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: found/not found in context... The ground truth answer does not provide specific details that are present in the context, such as the definition of an 'insured event' or the condition of no claims. Key point 2: ..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0005",
+    "question": "What is the maximum time frame for the insurer to pay the insurance indemnity after a claim is submitted, considering the receipt of all required information?",
+    "answer": "The maximum time frame for the insurer to pay the insurance indemnity after a claim is submitted, considering the receipt of all required information, is 90 days. \n\nBottom line: The insurer has 90 days to pay the insurance indemnity after receiving all required information.",
+    "ground_truth": "The insurer must pay the indemnity within 90 days after the claim submission or within 60 days after receiving all required information, whichever is later.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 1.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.4927536231884058,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... The generated answer claims that the maximum time frame for the insurer to pay the insurance indemnity is 90 days after receiving all required information. However, the context provides two different time frames: 90 days after the day of claim submission or 60 days after the insurer's receipt of all required information, whichever is later. The generated answer does not accurately reflect the condition 'whichever is the later.'"
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly addresses the question by providing a specific time frame (90 days) for the insurer to pay the insurance indemnity after receiving all required information. It also includes a concise summary of the key point."
+      },
+      "context_precision": {
+        "score": 1.0,
+        "reasoning": "Chunk 1: relevant because it specifies the time frame for the insurer to pay the indemnity, which is directly related to the question. Chunk 2: not relevant because it does not provide information about the time frame for the insurer to pay the indemnity."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: found/not found in context... The maximum time frame for the insurer to pay the insurance indemnity after a claim is submitted, considering the receipt of all required information, is not directly stated in the retrieved context. Key point 2: ..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0006",
+    "question": "What benefits does the insured person receive if the premium is paid within the stipulated grace period?",
+    "answer": "This document outlines the terms and conditions of a health insurance policy, including the benefits and procedures for filing claims. \n\nBottom line:  If you pay your health insurance premium within the grace period, you will be eligible for the policy's benefits, such as reimbursement for medical expenses incurred during hospitalization.",
+    "ground_truth": "The insured person",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.03773584905660377,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... The generated answer does not make any factual claims directly related to the benefits received if the premium is paid within the stipulated grace period. The retrieved context focuses on claim submission procedures and does not discuss the grace period for premium payment or the benefits received as a result of timely payment."
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer is mostly relevant as it correctly states that paying the premium within the grace period allows the insured person to receive policy benefits. However, it does not explicitly mention the grace period, and the initial part of the answer about the document's content is not directly related to the question."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: Not relevant because it discusses claim notification and submission procedures, not the benefits received by the insured person if the premium is paid within the grace period. Chunk 2: Not relevant because it defines terms and conditions of the policy, not the benefits received by the insured person if the premium is paid within the grace period."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: found/not found in context... Key point 2: ..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0009",
+    "question": "How do I file a claim under this policy, and what documents are required?",
+    "answer": "This document outlines the policy terms and conditions for the Arogya Sanjeevani health insurance policy, including information on filing claims and required documents. \n\nBottom line:  To file a claim under this policy, you'll need to follow the instructions outlined in the document and provide the necessary documentation.",
+    "ground_truth": "The provided policy text does not include any information about the claim filing process or the documents needed.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.24615384615384614,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... The generated answer does not contain any specific factual claims that can be directly supported by the retrieved context. It merely states a general idea about filing a claim and required documents without providing details that can be verified from the context."
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer provides a general direction on how to file a claim and mentions the need for necessary documentation, which are relevant aspects of the question. However, it does not explicitly state the specific steps for filing a claim or list the required documents, which are key components of the question."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because the chunk does not provide information on the claim filing process or required documents. Chunk 2: not relevant because the chunk does not provide information on the claim filing process or required documents."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: found/not found in context... The claim filing process and required documents are not mentioned in the retrieved context. Key point 2: ..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0010",
+    "question": "What is the waiting period for expenses related to the treatment of listed conditions under the specific waiting period clause?",
+    "answer": "This document does not contain information about the waiting period for expenses related to the treatment of listed conditions. \n\nBottom line:  The provided text does not contain information about waiting periods for expenses related to listed conditions.",
+    "ground_truth": "Expenses for listed conditions are excluded until the expiry of 24\u202for\u202f36 months of continuous coverage, unless the claim arises from an accident.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.22950819672131148,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... The generated answer claims that the document does not contain information about the waiting period for expenses related to the treatment of listed conditions. This claim is not directly supported by the retrieved context, as the context does not explicitly mention waiting periods for expenses. However, the context does not provide any information about waiting periods either, making the claim neither directly supported nor refuted by the context."
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "The answer does not provide any relevant information about the waiting period for expenses related to the treatment of listed conditions, as requested in the question. Instead, it states that the document lacks such information, which is not an answer to the question itself."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because the chunk does not mention any waiting period for expenses related to the treatment of listed conditions. Chunk 2: not relevant because the chunk does not mention any waiting period for expenses related to the treatment of listed conditions."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: found/not found in context... Expenses for listed conditions are excluded until the expiry of 24 or 36 months of continuous coverage, unless the claim arises from an accident. Not found in the context..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0011",
+    "question": "What is the grace period for premium payment when the premium is paid monthly?",
+    "answer": "This document does not contain information about the grace period for premium payment when the premium is paid monthly. \n\nBottom line: This document does not contain information about the grace period for premium payment when the premium is paid monthly.",
+    "ground_truth": "Fifteen days.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... The generated answer does not make any factual claims that can be evaluated against the retrieved context."
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "The answer does not provide any information about the grace period for premium payment when the premium is paid monthly, and instead states that the document does not contain such information. This does not address the question at hand."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because the chunk does not mention anything about the grace period for premium payment. Chunk 2: not relevant because the chunk discusses claim notification and settlement procedures, which are unrelated to the grace period for premium payment."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: grace period for premium payment found/not found in context..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0014",
+    "question": "What is the deductible amount specified for each claim under this add\u2011on?",
+    "answer": "The deductible amount specified for each claim under this add-on is outlined in the Schedule. \n\nBottom line:  The Schedule details the deductible amount for each claim under this add-on.",
+    "ground_truth": "The deductible is the \u201cFirst Rs\u2026.. for each and every claim.\u201d",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.35,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... The generated answer claims that the deductible amount is outlined in the Schedule, which is not directly supported by the retrieved context. The context mentions the deductible but does not specify it in the add-on or the Schedule as stated in the answer."
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer is mostly relevant as it correctly identifies where to find the deductible amount, which is in the Schedule. However, it does not provide the actual deductible amount, which is part of the question."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because the chunk does not specify the deductible amount for each claim. It only mentions that the company is not liable for claims in respect of the deductible stated in the schedule. Chunk 2: not relevant because the chunk discusses compensation for bodily injury and is unrelated to the deductible for vehicle claims."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: deductible amount - not found in context..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0015",
+    "question": "What steps and documentation are required to file a claim under this policy?",
+    "answer": "To file a claim under this commercial vehicle insurance policy, you must submit a completed claim form, supporting documentation, and notify the insurer within 7 days of a potential loss. \n\nBottom line: You must submit a completed claim form, supporting documentation, and notify the insurer within 7 days of a potential loss to file a claim.",
+    "ground_truth": "You must give written notice of the claim to the insurer within 7 days of the loss (or as soon as reasonably possible, but no later than 30 days), and you or your representative must provide all requested documentation, medical records, and information needed to establish the claim\u2019s circumstances.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 1.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.38095238095238093,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... The generated answer mentions submitting a completed claim form and notifying the insurer within 7 days, but the context does not specify these exact requirements. The context mentions providing documentation and information within 15 days of notice, but does not explicitly state the need for a claim form or the 7-day notice period."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly addresses all parts of the question by specifying the required steps (submitting a completed claim form, supporting documentation, and notifying the insurer) and the time frame (within 7 days of a potential loss)."
+      },
+      "context_precision": {
+        "score": 1.0,
+        "reasoning": "Chunk 1: relevant because it mentions the need to give notice of the claim within 7 days of the loss and to provide information and assistance as the company requires. Chunk 2: relevant because it explicitly states the need to give written notice of the claim within 7 days of the loss, and to provide all requested documentation, medical records, and information within 15 days of notice."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: written notice of the claim found/not found in context... Key point 2: all requested documentation, medical records, and information found/not found in context..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0016",
+    "question": "What expenses does this policy provide coverage for?",
+    "answer": "This policy covers the insured's vehicle for accidental damage or loss, including theft, fire, and natural disasters, and provides financial assistance for repair or replacement. \n\nBottom line: This policy covers damage to the insured's vehicle due to accidents, theft, and natural disasters, and provides financial assistance for repair or replacement.",
+    "ground_truth": "It covers ambulance charges for transporting you, the driver, or occupants",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.13114754098360654,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "claim 1: supported/not supported because... This claim is not directly supported by the retrieved context. The context mentions coverage for various types of loss or damage, but it does not explicitly state that the policy provides financial assistance for repair or replacement. claim 2: supported/not supported because... This claim is not directly supported by the retrieved context. The context does not mention the policy providing financial assistance for repair or replacement."
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "The answer does not address the question about expenses covered by the policy. Instead, it describes the types of damage or loss the policy covers, but does not mention any associated expenses or financial assistance for repair or replacement."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because the chunk discusses coverage for loss or damage to the vehicle, not ambulance charges. Chunk 2: not relevant because the chunk discusses costs related to vehicle repairs and removal, not ambulance charges."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: Ambulance charges found/not found in context..."
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0017",
+    "question": "Does the policy specify any waiting period before coverage becomes effective?",
+    "answer": "This document does not specify any waiting period before coverage becomes effective. \n\nBottom line: The provided text does not mention a waiting period before coverage begins.",
+    "ground_truth": "The provided text does not mention any waiting period; no time\u2011based restriction is stated.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.45,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0018",
+    "question": "What losses and expenses are covered under the Home Building Cover in this policy?",
+    "answer": "This document outlines the coverage provided under the Home Building Cover of the TATA AIG Bharat Griha Raksha Policy. \n\nBottom line: The Home Building Cover in this policy covers the cost of rebuilding your home in case of a total loss, and it automatically increases in value each year.",
+    "ground_truth": "The policy covers physical loss, damage or destruction of the home building caused by any Insured Event listed in Clause\u202fB, the fees of architects, surveyors and consulting engineers, the cost of removing debris",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3614457831325301,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0019",
+    "question": "Under this policy, what actions by the insured can cause the insurer to refuse payment of a claim or cancel the policy?",
+    "answer": "This policy document outlines the actions by the insured that could lead to the insurer refusing to pay a claim or canceling the policy. \n\nBottom line:  The insured must be truthful and transparent in their claims and provide all necessary information to the insurer. Failure to do so could result in the insurer refusing to pay the claim or canceling the policy.",
+    "ground_truth": "Giving false information or documents, withholding any information or documents (written or electronic), and refusing to cooperate with the insurer\u2019s survey/investigation\u2014such as not allowing inspection, photography, or scientific testing of the insured property and not answering claim questions truthfully and completely.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.21359223300970875,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0020",
+    "question": "What type of insurance plan is described for the Click\u202f2\u202fProtect\u202fOptima\u202fSecure (UIN\u202f101Y122V05) policy?",
+    "answer": "This document describes a type of insurance plan called a \"Non-linked, Non-participating, Individual, Pure Risk Premium/Savings Combi\" insurance plan offered by HDFC Life. \n\nBottom line: This insurance plan is a pure risk premium/savings plan with a death benefit, critical illness benefit, and maturity benefit.",
+    "ground_truth": "It is a non\u2011linked, non\u2011participating, individual, pure risk premium/savings combi insurance plan.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3928571428571429,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 1.0, \"reasoning\": \"Chunk 1: relevant because it explicitly states 'A Non-linked, Non-parti"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0021",
+    "question": "What exclusions or conditions that would void a claim are specified in this policy?",
+    "answer": "This document excerpt outlines the specific exclusions and conditions that would void a claim under the Click-2-Protect Optima Secure policy. \n\nBottom line: This document excerpt outlines the specific exclusions and conditions that would void a claim under the Click-2-Protect Optima Secure policy.",
+    "ground_truth": "The provided text does not contain any statements about exclusions or conditions that would void a claim.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.27118644067796605,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0023",
+    "question": "What is the process for filing a claim under this Click\u202f2\u202fProtect Optima Secure policy?",
+    "answer": "This document outlines the process for filing a complaint with the Insurance Ombudsman if you have a grievance with your insurance company. \n\nBottom line: To file a complaint with the Insurance Ombudsman, you must submit a written complaint to the Ombudsman's office, detailing your grievance and supporting documentation.",
+    "ground_truth": "The provided policy text does not contain any information about how to file a claim, the required documents, or the steps to be followed.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.19444444444444448,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0024",
+    "question": "What specific situations or conditions are excluded from coverage under this critical illness policy?",
+    "answer": "This document outlines specific illnesses and conditions that are excluded from coverage under the critical illness policy. \n\nBottom line:  Certain types of cancer, heart attacks, and other specific conditions are not covered under this critical illness policy.",
+    "ground_truth": "The policy excludes coverage if the critical illness is caused or aggravated by any of the following: diagnosis, hospitalization, or treatment of a listed critical illness within 90 days of the policy\u2019s start or reinstatement; any pre\u2011existing disease diagnosed within 36 months (or for which medical advice/treatment was received within 48 months) before the policy\u2019s commencement or reinstatement; illnesses due to an external congenital defect diagnosed before age\u202f18; suicide, attempted suicide, or intentional self\u2011inflicted injury; the life insured being under the influence of non\u2011prescribed drugs, alcohol, narcotics, or psychotropic substances; war, invasion, hostilities, civil war, rebellion, terrorist activity, revolution, riots, civil commotion, strikes, or industrial action; and participation by the life assured in a criminal or unlawful act.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.14102564102564102,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0025",
+    "question": "What survival period must the insured meet after a complete diagnosis of a critical illness for a claim to be eligible?",
+    "answer": "This document outlines the terms and conditions of a life insurance policy, specifically regarding critical illness coverage. \n\nBottom line:  The policy requires a complete diagnosis of a critical illness within 90 days of the policy's start date for a claim to be eligible.",
+    "ground_truth": "The insured must survive 30 days after the complete diagnosis.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.18867924528301888,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0026",
+    "question": "What losses and expenses are covered under Section\u202f1 of the CyberShield policy?",
+    "answer": "This document outlines the coverage for losses and expenses related to cyberbullying, defamation, extortion threats, and data loss under a CyberShield policy. \n\nBottom line: This policy covers losses and expenses related to cyberbullying, defamation, extortion threats, and data loss, but certain exclusions apply.",
+    "ground_truth": "Section\u202f1 covers (i) indemnification for theft of funds from your bank account, credit/debit card, or mobile wallet caused by a cyber incident or hacking, (ii) legal defence costs to pursue action against the bank or wallet provider for non\u2011reimbursement of those funds, and (iii) reimbursement of penalty or fall\u2011below",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.1290322580645161,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0027",
+    "question": "According to the provided policy text, what exclusions or conditions that would void a claim are specified?",
+    "answer": "This policy text outlines the exclusions and conditions that would void a claim under the Cyber Shield policy. \n\nBottom line:  The policy excludes claims if the policyholder is negligent in safeguarding their personal information, if the theft of funds is due to unauthorized access by a third party, or if the theft of funds is related to terrorism.",
+    "ground_truth": "The text does not specify any exclusions or conditions that would void a claim; it only provides definitions of terms.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.282051282051282,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0028",
+    "question": "What is the maximum daily amount that can be claimed for lost wages under this policy?",
+    "answer": "This document excerpt outlines the terms and conditions of a cyber insurance policy, specifically regarding the maximum amount for lost wages that can be claimed. \n\nBottom line: This document does not specify the maximum daily amount that can be claimed for lost wages under this policy.",
+    "ground_truth": "The maximum is INR\u202f6,500 per day.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.07547169811320756,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0029",
+    "question": "How do I file a claim under this policy and what documents are required?",
+    "answer": "This document outlines the process for filing a claim under a cyber insurance policy and the required documentation. \n\nBottom line: To file a claim, you need to report the incident to the insurer within a specific timeframe, provide documentation like a letter from your employer and a medical certificate, and follow the policy's instructions.",
+    "ground_truth": "The provided policy text does not include any information on claim filing procedures or required documents.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.14285714285714285,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0030",
+    "question": "What are the two escalation levels for unresolved complaints and the response timeframes for each level?",
+    "answer": "This document outlines the escalation process for unresolved customer complaints regarding Tata AIG insurance policies. \n\nBottom line:  If you don't get a satisfactory response within 10 days (Escalation Level 1) or 8 days (Escalation Level 2), you can escalate your complaint to the Head - Customer Services.",
+    "ground_truth": "Escalation Level\u202f1 \u2013 send the complaint to manager.customersupport@tataaig.com and the company will respond within 8 days; Escalation Level\u202f2 \u2013 send the complaint to head.customerservices@tataaig.com and the company will give a final response within",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.379746835443038,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0031",
+    "question": "Does the policy specify any waiting period, policy tenure, or renewal condition for the coverage?",
+    "answer": "This document excerpt does not specify any waiting period, policy tenure, or renewal condition for coverage. \n\nBottom line: The provided text does not mention waiting periods, policy tenure, or renewal conditions for coverage.",
+    "ground_truth": "The provided excerpt does not contain any information about waiting periods, policy tenure, or renewal conditions.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.5306122448979591,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0032",
+    "question": "What types of property and specific items are included as covered under this insurance policy?",
+    "answer": "This insurance policy covers property and specific items owned by individuals or businesses, including their products, work, and the property of third parties. \n\nBottom line: This insurance policy covers your personal property, your business's products, and your work, as well as the property of third parties.",
+    "ground_truth": "The policy covers all real and personal property of every kind and description (except exclusions), including any property in which the Insured acquires an insurable interest, and specifically defines personal property to include Money\u2014current coin, bank notes, currency notes, cheques, credit\u2011card sales or discount\u2011house vouchers,",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3076923076923077,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0033",
+    "question": "Which accounts receivable are excluded from the claim amount under this policy?",
+    "answer": "This document outlines the policy terms and procedures for filing claims with TATA AIG General Insurance Company Limited. \n\nBottom line: This document does not specify which accounts receivable are excluded from the claim amount under this policy.",
+    "ground_truth": "Accounts evidenced by records that were not lost or damaged, or that were otherwise established or collected by the Insured, are deducted from the total amount and therefore not covered.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.23880597014925373,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it contains general policy information (cause of action, disputes, renewal notice, claim notice procedures) but does not mention accounts receivable or any exclusion language. Chunk 2: not relevant because it discusses grievance redressal procedures, escalation levels, and contact details, and also does not mention accounts receivable or exclusions."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0034",
+    "question": "What is the market value limit for equipment covered under the mechanical/electrical breakdown or malfunction clause?",
+    "answer": "This document excerpt does not contain information about the market value limit for equipment covered under the mechanical/electrical breakdown or malfunction clause. \n\nBottom line:  The provided text does not contain the market value limit for equipment covered under the mechanical/electrical breakdown or malfunction clause.",
+    "ground_truth": "Equipment with market value less than \u2026\u2026\u200b.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.12000000000000001,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0035",
+    "question": "How do I file a claim under this policy, and what documents are required?",
+    "answer": "This document outlines the process for filing a claim under a TATA AIG General Insurance policy and the required documents. \n\nBottom line: To file a claim, you must send a written notice to TATA AIG General Insurance Company Ltd. using registered mail or courier, and include the necessary documents.",
+    "ground_truth": "The policy text does not specify any claim\u2011filing procedure or required documents.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.16393442622950824,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0036",
+    "question": "What does the policy state regarding electronic transactions?",
+    "answer": "This document outlines the policy's terms and procedures for electronic transactions, including payment methods and dispute resolution. \n\nBottom line: This document outlines the policy's terms and procedures for electronic transactions, including payment methods and dispute resolution.",
+    "ground_truth": "The policy states that any transactions carried out through remote facilities\u2014including the Internet, web, electronic data interchange, call centers, teleservice operations, or other telecommunication means\u2014are legally binding and valid when they comply with the company's prescribed terms and conditions.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.18666666666666665,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0037",
+    "question": "What is the maximum duration of the indemnity period under this policy?",
+    "answer": "This document excerpt does not contain information about the maximum duration of the indemnity period under the policy. \n\nBottom line: The provided text does not contain information about the maximum duration of the indemnity period.",
+    "ground_truth": "The indemnity period may not exceed 24 months from the termination of the deductible period, unless otherwise stated in the certificate.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3214285714285714,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0.0, \"reasoning\": \"Chunk 1: not relevant because it discusses cause of action, policy disp"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0038",
+    "question": "What types of coverage or parties are specifically mentioned as being included under this insurance policy?",
+    "answer": "This insurance policy covers claims related to aircraft accidents, but excludes claims caused by noise, pollution, electromagnetic interference, or interference with property use.  \n\nBottom line: This insurance policy covers claims related to aircraft accidents, but excludes claims caused by noise, pollution, electromagnetic interference, or interference with property use.",
+    "ground_truth": "The policy includes coverage for contractual liability, additional insureds, and waivers of subrogation.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.03278688524590164,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0039",
+    "question": "According to the policy, which liabilities are expressly excluded from coverage?",
+    "answer": "This document outlines the exclusions from coverage under an aviation insurance policy. \n\nBottom line:  The policy excludes coverage for claims related to pollution, contamination, noise, and interference with property use.",
+    "ground_truth": "The policy excludes (D) legal liability for the insured\u2019s costs of inspecting, repairing, altering, modifying, replacing, or completing work on an Aviation Product\u2014or any property that is part of it\u2014when those costs arise from a known or suspected defect or deficiency in an Aviation Product not actually involved in an occurrence; and (E) any liability for property damage to any",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.24444444444444444,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0040",
+    "question": "According to the policy, what is the maximum amount for which the insurers will pay premiums on bonds to release attachments?",
+    "answer": "This document outlines the terms and conditions of an aviation insurance policy, including the maximum amount the insurers will pay for premiums on bonds to release attachments. \n\nBottom line: The maximum amount the insurers will pay for premiums on bonds to release attachments is not specified in this document.",
+    "ground_truth": "The insurers will pay premiums on bonds to release attachments for an amount not in excess of the Limit of Liability of this Section.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.49315068493150693,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0041",
+    "question": "How can a policyholder file a claim under this insurance policy, and what documents are required?",
+    "answer": "This document outlines the process for filing a claim under an aviation insurance policy and the required documentation. \n\nBottom line: To file a claim under this aviation insurance policy, you must follow the instructions outlined in the document, including providing the required documentation.",
+    "ground_truth": "The provided policy text does not include any information about claim filing procedures or required documents.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.16949152542372883,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0042",
+    "question": "What type of insurance is covered by this policy?",
+    "answer": "This document outlines the terms and conditions of an aviation insurance policy, including coverage details, exclusions, and procedures for claims. \n\nBottom line: This policy covers aviation-related incidents and accidents, but excludes certain types of claims and requires the insured to cooperate with the insurer.",
+    "ground_truth": "The policy provides Aviation Insurance.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.163265306122449,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0043",
+    "question": "What waiting period, policy tenure, or renewal condition is specified in the provided policy text?",
+    "answer": "This policy text specifies a 90-day notice period for cancellation and outlines the calculation of premium retention in case of cancellation by the insured. \n\nBottom line: The policy specifies a 90-day notice period for cancellation and outlines the calculation of premium retention in case of cancellation by the insured.",
+    "ground_truth": "The policy text does not mention any waiting periods, policy tenure, or renewal conditions.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.12698412698412698,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0044",
+    "question": "What type of insurance does this policy provide?",
+    "answer": "This policy provides insurance for physical damage to machinery and equipment owned by contractors, during the course of their work. \n\nBottom line: This policy covers unforeseen damage to machinery and equipment owned by contractors, with a limit on the amount of coverage for each item.",
+    "ground_truth": "Contractors Plant & Machinery Insurance \u2013 Commercial.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 1.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.12000000000000001,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 1.0,
+        "reasoning": "Chunk 1: relevant because it contains the phrase 'Contractors Plant & Machinery Insurance - Commercial', which directly answers the question. Chunk 2: relevant because it also contains the same phrase 'Contractors Plant & Machinery Insurance - Commercial', providing the same answer."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0045",
+    "question": "Which geographical areas are explicitly excluded from coverage under this Contractors Plant & Machinery Insurance policy?",
+    "answer": "This document outlines the exclusions from coverage under a Contractors Plant & Machinery Insurance policy. \n\nBottom line:  The policy excludes coverage for damage caused by electrical or mechanical failures, freezing of fluids, defective lubrication, and loss of replaceable parts.",
+    "ground_truth": "The policy excludes the Navi\u202fMumbai and Thane areas of the Mumbai Metropolitan Region.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.23076923076923078,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0046",
+    "question": "According to the policy, what must the Sum Insured be equal to?",
+    "answer": "The policy states that the Sum Insured must equal the amount specified in the Schedule for each item of insured property. \n\nBottom line: The Sum Insured must be equal to the amount specified in the Schedule for each item of insured property.",
+    "ground_truth": "The Sum Insured must be equal to the cost of replacement of the insured property by new property of the same kind and same capacity, including freight, duties, customs duties (if any), and erection costs.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.38961038961038963,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0047",
+    "question": "What political risks does the Tata AIG Political Risk Insurance for Investors cover?",
+    "answer": "This document outlines the political risks covered by Tata AIG's Political Risk Insurance for Investors. \n\nBottom line: This insurance covers losses caused by expropriation, nontransfer of funds, and political violence in the host country where the investment is located.",
+    "ground_truth": "It covers confiscation, expropriation, and nationalization.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.13333333333333336,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0048",
+    "question": "Under what condition does the policy\u2019s risk cover not commence, thereby preventing a claim?",
+    "answer": "This document outlines the conditions under which the political risk insurance policy does not cover a claim. \n\nBottom line: The policy does not cover claims if the insured's loss is caused by or related to nuclear reactions, radioactive contamination, or failure to comply with the laws of the host country.",
+    "ground_truth": "The risk cover only begins after the payable premium is received by Tata AIG General Insurance Company Limited; if the premium is not paid, coverage does not start and a claim cannot be made.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3333333333333333,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0049",
+    "question": "What sum assured, premium, payout, or benefit amount is specified in this policy text?",
+    "answer": "This policy text outlines the terms and conditions of a political risk insurance policy, including the insured amount, premium, payout, and benefit amount. \n\nBottom line: This policy text details the specific terms and conditions of a political risk insurance policy, including the amount of coverage, the premium, and the payout structure.",
+    "ground_truth": "The policy text does not mention any sum assured, premium, payout, or benefit amount.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.21538461538461542,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0050",
+    "question": "How must a notice of loss or claim be filed under this policy?",
+    "answer": "To file a notice of loss or claim under this political risk insurance policy, you must submit a written notice to the company at the address specified in the policy schedule. \n\nBottom line:  You must submit a written notice of loss or claim to the company at the address specified in the policy schedule.",
+    "ground_truth": "All notices of loss, claims, proposals, demands, and requests must be made in writing and delivered to the Insured or the Company at the mailing address specified in the policy schedule.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.39999999999999997,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0051",
+    "question": "What is the telephone number for the Office of the Insurance Ombudsman in Ahmedabad?",
+    "answer": "The provided text does not contain the telephone number for the Office of the Insurance Ombudsman in Ahmedabad. \n\nBottom line: The text does not contain the telephone number for the Office of the Insurance Ombudsman in Ahmedabad.",
+    "ground_truth": "079 - 25501201/02/05/06.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0052",
+    "question": "Does the policy text specify any waiting periods, policy tenure, or renewal conditions?",
+    "answer": "This policy document outlines the terms and conditions of a political risk insurance policy for investors, including details on indemnification, waiting periods, and dispute resolution. \n\nBottom line: This policy document details the terms and conditions of a political risk insurance policy for investors, including waiting periods, dispute resolution, and the applicable law.",
+    "ground_truth": "No; the excerpt provided contains no statements about waiting periods, policy tenure, or renewal conditions.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.14925373134328357,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0053",
+    "question": "What documents must be submitted to substantiate a loss when making a claim under the SBI General Livestock Policy?",
+    "answer": "No relevant content found.",
+    "ground_truth": "Photographs of the dead animal with its ear\u2011tag and any other document relevant to substantiate the loss.",
+    "n_contexts": 0,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.09523809523809523,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0.0, \"reasoning\": \"The answer does not provide any information about required documents;"
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0054",
+    "question": "According to the provided policy text, what exclusions or conditions would void a claim under this insurance policy?",
+    "answer": "No relevant content found.",
+    "ground_truth": "The text does not specify any exclusions or conditions that would void a claim; it only defines terms such as \u201cPolicy,\u201d \u201cPolicy Period,\u201d \u201cProposal,\u201d \u201cSchedule,\u201d and \u201cSum Insured.\u201d",
+    "n_contexts": 0,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0055",
+    "question": "What is the maximum indemnity limit for a theft claim relative to the market value of the insured animal?",
+    "answer": "No relevant content found.",
+    "ground_truth": "It shall not exceed 60% of the market value of the insured animal.",
+    "n_contexts": 0,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "No context chunks were retrieved; therefore, score is 0.0."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0056",
+    "question": "What is the required procedure for submitting a claim under this policy?",
+    "answer": "No relevant content found.",
+    "ground_truth": "The Insured must submit the claim in writing addressed to the Company and obtain the Company\u2019s acknowledgment of service, as all notices and communications required by the Company must be written and acknowledged.",
+    "n_contexts": 0,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0.0, \"reasoning\": \"The answer does not provide any information about the required procedur"
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0057",
+    "question": "Who or what is covered under the SBI General Livestock Policy?",
+    "answer": "The SBI General Livestock Policy covers domestic animals listed in the Schedule, such as cattle, sheep, goats, pigs, camels, horses, mules, donkeys, yaks, and others, against accidental death or injury. \n\nBottom line: The SBI General Livestock Policy covers domestic animals listed in the Schedule against accidental death or injury.",
+    "ground_truth": "The policy covers the animals listed in the Schedule, such as cattle, calves, heifers, stud bulls, bullocks (castrated bulls), and draft, breeding, and meat\u2011purpose animals.",
+    "n_contexts": 1,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.37837837837837834,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0058",
+    "question": "According to the policy, how long does the insured have to notify the company of an animal\u2019s death and then provide the required information?",
+    "answer": "No relevant content found.",
+    "ground_truth": "The insured must give immediate",
+    "n_contexts": 0,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0059",
+    "question": "What type of insurance coverage is provided by this policy?",
+    "answer": "This document outlines the contact information and procedures for filing complaints with the Insurance Ombudsman for Tata AIG General Insurance. \n\nBottom line: This document provides details on how to contact the Insurance Ombudsman for Tata AIG General Insurance if you have a complaint.",
+    "ground_truth": "Weather Insurance.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.04444444444444444,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0060",
+    "question": "Under what conditions will the insurer refuse to pay any benefit or compensate the insured under this policy?",
+    "answer": "This document outlines the process for filing complaints with the Insurance Ombudsman and the conditions under which the insurer will refuse to pay benefits or compensate the insured. \n\nBottom line: The insurer will refuse to pay benefits or compensate the insured if they fail to respond to complaints or if the resolution does not meet the insured's expectations.",
+    "ground_truth": "The insurer will not pay if, for excess\u2011weather coverage, the Observed Weather Index is lower than the Strike, or for deficient\u2011weather coverage, the Observed Weather Index is higher than the Strike, during the insured period.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3010752688172043,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0.0, \"reasoning\": \"Chunk 1: not relevant because it only contains contact details"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0061",
+    "question": "What is the sum assured specified in this policy?",
+    "answer": "This document does not contain the sum assured specified in the policy. \n\nBottom line:  You will need to find the sum assured in your specific weather insurance policy.",
+    "ground_truth": "The policy text does not provide a sum assured amount.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3157894736842105,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0062",
+    "question": "How can I file a claim under this Tata AIG Weather Insurance Policy, and what documents are required?",
+    "answer": "This document outlines the process for filing a claim under a Tata AIG Weather Insurance Policy and the required documents. \n\nBottom line: To file a claim under your Tata AIG Weather Insurance Policy, you can contact the company's customer support or the Insurance Ombudsman.",
+    "ground_truth": "The excerpt provided only lists the insurer\u2019s contact information and states that the proposal and premium have been accepted; it does not include any details",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.14492753623188406,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0063",
+    "question": "What fallback methodology does the policy use when daily observed weather data is unavailable?",
+    "answer": "This document outlines the process for resolving complaints and the fallback methodology for weather data when it is unavailable. \n\nBottom line: If daily weather data is unavailable, the policy will use the Insurance Ombudsman's process for resolution.",
+    "ground_truth": "The policy replaces any missing daily observed weather data with an average value calculated according to a fallback methodology described in the policy.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.26666666666666666,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it only contains complaint escalation procedures, office addresses, contact details, and ombudsman information\u2014no mention of weather data, daily observed weather data, fallback methodology, or averaging. Chunk 2: not relevant for the same reason; it repeats the same administrative content without any reference to weather data handling or fallback methodology."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0064",
+    "question": "Does the provided policy text specify any waiting periods, policy tenure, or renewal conditions?",
+    "answer": "This document outlines the process for resolving complaints with Tata AIG General Insurance Company Limited, including the timeframe for response and the process for appealing a decision. \n\nBottom line: This document details the process for appealing a decision from Tata AIG General Insurance Company Limited, including the timeframe for response and the process for appealing a decision.",
+    "ground_truth": "No, the text only lists contact and office details and does not mention any waiting periods, policy tenure, or renewal conditions.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.10256410256410256,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0065",
+    "question": "What payment is made to the policyholder when the policy is surrendered, and what happens to the policy thereafter?",
+    "answer": "When a policyholder surrenders their HDFC Life Smart Pension Plus policy, they receive a payment based on the policy's terms and conditions, and the policy is then terminated. \n\nBottom line:  Policyholders receive a payment upon surrendering their HDFC Life Smart Pension Plus policy, and the policy is then canceled.",
+    "ground_truth": "The surrender value is paid immediately, the policy is terminated, and no further benefits",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.22222222222222224,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it only contains grievance redressal, duplicate policy issuance, and claim intimation details, with no mention of surrender, surrender value, or policy termination. Chunk 2: not relevant for the same reason; it repeats grievance redressal procedures and escalation matrix, lacking any information about surrender payments or policy status after surrender."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0066",
+    "question": "According to the policy, which costs are not covered by the insurer and could prevent a claim from being paid?",
+    "answer": "This document outlines the policy's grievance redressal process and exclusions from coverage.  It also provides contact information for the Grievance Redressal Officer and IRDAI Grievance Cell. \n\nBottom line: This document details the policy's grievance process and exclusions from coverage, including contact information for the Grievance Redressal Officer and IRDAI Grievance Cell.",
+    "ground_truth": "The insurer does not cover any applicable taxes, cess, or other statutory levies; the policyholder must pay these amounts, and failure to do so would affect the claim.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.10126582278481011,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0067",
+    "question": "What amount is deducted from the Policy Fund Value to cover the overseas transfer charge?",
+    "answer": "The policy document states that an overseas transfer charge is deducted from the Policy Fund Value to cover the cost of transferring funds. \n\nBottom line:  An overseas transfer charge is deducted from the Policy Fund Value to cover the cost of transferring funds.",
+    "ground_truth": "Only the amount equal to the applicable tax charge is deducted from the Policy Fund Value.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.3728813559322034,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0.0, \"reasoning\": \"Chunk 1: not relevant because it discusses claim procedures, duplicate "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0068",
+    "question": "What documents are required to file a death benefit claim and within what time frame must the claim be intimated under this policy?",
+    "answer": "This document outlines the requirements for filing a death benefit claim for the HDFC Life Smart Pension Plus policy and the time frame for notifying the company. \n\nBottom line: To file a death benefit claim, you must notify the company within 90 days of the death and provide any additional documents requested.",
+    "ground_truth": "The claimant must submit (i) a First Information Report, Inquest and Final Investigation Report attested by the jurisdictional police official, (ii) a Post Mortem Report attested by the concerned officials, and (iii) bank account details of the claimant with IFSC code (payment will be made by NEFT). The claim must be intimated to the Company within 90 days of the date of death, though delays beyond the claimant\u2019s control may be condoned.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.30645161290322576,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0069",
+    "question": "What happens if the Annuitant\u2019s age at the policy commencement date is outside the permitted entry age range?",
+    "answer": "This document outlines the process for filing a claim and the company's response time for grievances. \n\nBottom line: If the Annuitant's age at policy commencement is outside the permitted range, the company may request additional information and documents.",
+    "ground_truth": "The policy becomes void from commencement, and the total purchase price less any annuity payouts made to date is refunded after deducting the applicable stamp duty charges.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.2153846153846154,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it discusses grievance redressal, duplicate policy issuance, exclusions, and policy details unrelated to age entry range or policy voiding. Chunk 2: not relevant for the same reason; it only covers grievance procedures and escalation matrices."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0070",
+    "question": "Within what time frame can a life insurance policy be called into question on the ground of a misstatement or suppression of a material fact?",
+    "answer": "This document outlines the process for filing a complaint with HDFC Life regarding a life insurance policy.  It details the timeframe for responding to complaints and the escalation process if the initial response is unsatisfactory. \n\nBottom line:  You have 14 days to receive a response from HDFC Life, and if you are not satisfied with the response, you can escalate the complaint to IRDAI.",
+    "ground_truth": "It can be called into question within 3 years.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0547945205479452,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0.0"
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0071",
+    "question": "What methods and contact details does the policy provide for the insured to submit a grievance to Tata AIG?",
+    "answer": "This document outlines the procedures for submitting grievances to Tata AIG General Insurance Company Limited. \n\nBottom line:  To file a grievance, you can call their toll-free number, email their customer service, or send a letter to the designated address.",
+    "ground_truth": "The insured can submit a grievance in writing by post or email to the Company\u2019s Grievance Redressal Officer at Customer Support, Tata AIG General Insurance Company Limited, 7th and 8th Floor",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.4285714285714286,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0072",
+    "question": "What items are excluded from coverage under this policy?",
+    "answer": "This policy excludes coverage for certain events and types of losses, including mysterious disappearances, theft by employees, and losses related to government actions or nuclear incidents. \n\nBottom line: This policy does not cover losses related to theft, unexplained disappearances, government actions, nuclear incidents, or pollution.",
+    "ground_truth": "Orders, stamps, food stamps, fine arts, insurance policies, and all other negotiable and non\u2011contracts representing money are not covered.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.09375000000000001,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0073",
+    "question": "What premium amount is specified in this policy text?",
+    "answer": "This policy text does not specify a numerical premium amount. \n\nBottom line: The provided text does not contain a specific premium amount.",
+    "ground_truth": "No premium amount is mentioned in",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.14285714285714288,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0074",
+    "question": "What steps must be followed to file a claim under this insurance policy, and what documents are required?",
+    "answer": "This document outlines the steps to file a claim under a specie insurance policy, including required documents. \n\nBottom line: To file a claim under this specie insurance policy, you must follow the outlined procedures, provide necessary documentation, and cooperate with the insurer.",
+    "ground_truth": "The provided policy text does not specify any claim\u2011filing procedures or required documents; it only notes that if a claim has occurred, no premium refund will be given.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.2,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0075",
+    "question": "What is the email address for the Insurance Ombudsman office in Mumbai?",
+    "answer": "This document provides the contact information for the Insurance Ombudsman offices in various Indian cities. \n\nBottom line:  The document lists the contact information for the Insurance Ombudsman offices in different cities of India.",
+    "ground_truth": "bimalokpal.mumbai@ecoi.co.in",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0076",
+    "question": "Does the policy text specify any waiting periods, policy tenure, or renewal conditions?",
+    "answer": "This policy text does not specify any waiting periods, policy tenure, or renewal conditions. \n\nBottom line: The provided text does not mention waiting periods, policy tenure, or renewal conditions.",
+    "ground_truth": "No, the provided policy text contains only contact and office information and does not mention any waiting periods, policy tenure, or renewal conditions.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.576923076923077,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0077",
+    "question": "What claim categories are outlined as covered in this insurance policy?",
+    "answer": "This document outlines the insurance policy's claim categories, including notification procedures, required documentation, and timeframes for filing claims. \n\nBottom line: This document outlines the specific claim categories covered by the insurance policy, including the process for filing a claim and the required documentation.",
+    "ground_truth": "The policy outlines coverage for Airline Booking claims, Fraudulent Charges claims, Emergency Extension claims, and Hijack/Kidnap Daily Allowance claims.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.19354838709677416,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0078",
+    "question": "Under what circumstance will the policy refuse to pay for an up\u2011gradation to business class under Section\u202f23?",
+    "answer": "This document outlines the procedures for filing a travel insurance claim, including the circumstances under which the policy may refuse to pay for an upgrade to business class. \n\nBottom line: The policy will not pay for an upgrade to business class under Section 23 unless there is a specific event that gives rise to a claim.",
+    "ground_truth": "The policy will not make any payment if the insured was already booked to return to their usual place of residence in India on a business\u2011class air ticket.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.19047619047619047,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0079",
+    "question": "What is the maximum liability of the insurer under this policy?",
+    "answer": "This document outlines the process for filing a claim under a travel insurance policy and the maximum liability of the insurer. \n\nBottom line: The maximum liability of the insurer under this policy is not explicitly stated in the provided text.",
+    "ground_truth": "The insurer\u2019s total maximum liability in any scenario shall not exceed the Sum Insured mentioned in the Policy Schedule.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.2711864406779661,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0080",
+    "question": "How does an insured person file a claim and what documents are required under this policy?",
+    "answer": "To file a claim under this travel insurance policy, you must notify the insurer immediately, provide them with all relevant documentation, and cooperate with their investigation. \n\nBottom line: To file a claim, you must notify the insurer promptly, provide them with all necessary documentation, and cooperate with their investigation.",
+    "ground_truth": "The excerpt does not provide any details on claim filing procedures or required documents; it only covers subrogation and the free\u2011look period.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.1408450704225352,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0081",
+    "question": "What categories of medical expenses are covered under this policy?",
+    "answer": "This document outlines the procedures for filing a claim under the TATA AIG Travel Insurance - International Plus Health policy. \n\nBottom line: This document details the process for filing a claim under the TATA AIG Travel Insurance - International Plus Health policy, including required documentation and timeframes.",
+    "ground_truth": "The policy covers IPD treatment, day",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.0784313725490196,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: {\"score\": 0.0, \"reasoning\": \"Chunk 1: not relevant because it only describes the claim"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  },
+  {
+    "id": "policy_qa_0082",
+    "question": "What waiting period, policy tenure, or renewal condition is specified in this policy text?",
+    "answer": "This policy text outlines the procedures for filing a claim, including notification requirements, timeframes for providing documentation, and the process for establishing the validity of a claim. \n\nBottom line:  You must notify the insurer immediately after an event that may give rise to a claim, provide documentation within 30 days, and cooperate with the insurer's investigation.",
+    "ground_truth": "The excerpt provided contains only definitions (e.g., Anomaly, Day, Deductible) and does not mention any waiting periods, policy tenure, renewal conditions, or other time\u2011based restrictions.",
+    "n_contexts": 2,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "exact_match": 0.0,
+    "f1_score": 0.07407407407407406,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON object found | Raw: "
+      }
+    }
+  }
+]

@@ -14,18 +14,23 @@ _orig_acomp = _u.llm_acompletion
 
 
 async def _capped(model, prompt):
-    if len(prompt) > 6000:
-        prompt = prompt[:6000] + "\n...[truncated]"
+    if len(prompt) > 20000:
+        prompt = prompt[:20000] + "\n...[truncated]"
     return await _orig_acomp(model, prompt)
 
 
 _u.llm_acompletion = _capped
 from pageindex import PageIndexLocalClient
 
+# granite4.2-8k / gemma2-8k are local Ollama tags (see pageindex_rag/README or
+# `ollama show granite4.2-8k`) created via a Modelfile with `PARAMETER num_ctx
+# 8192` baked in — Ollama's OpenAI-compatibility endpoint does not reliably
+# honor a per-request `num_ctx` override passed via extra_body, so the
+# context window has to be set on the model itself instead.
 pi_client = PageIndexLocalClient(
-    model="ollama_chat/granite4.2:8b",
-    summary_model="ollama_chat/granite4.2:8b",
-    retrieve_model="ollama_chat/granite4.2:8b",
+    model="ollama_chat/granite4.2-8k",
+    summary_model="ollama_chat/granite4.2-8k",
+    retrieve_model="ollama_chat/granite4.2-8k",
     storage_path=str(MODULE_DIR / ".pageindex"),
 )
 

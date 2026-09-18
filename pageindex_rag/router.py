@@ -1,6 +1,6 @@
 import json
 
-from nim_client import ollama_call
+from ollama_client import ollama_call_json
 from registry import load_registry
 
 
@@ -45,17 +45,10 @@ Rules:
 - For "specific": list at most the 3 most relevant doc_ids, never more.
 """
 
-    result = ollama_call(prompt, model="granite4.2:8b")
-    if result is None:
-        raise ValueError("ollama_call returned no response")
-
-    # Reasoning model: `result` may be chain-of-thought text followed by the
-    # JSON answer, not pure JSON -- extract the {...} block.
-    start = result.find("{")
-    end = result.rfind("}") + 1
-    if start == -1 or end == 0:
-        raise ValueError(f"No JSON object found in response: {result[:200]!r}")
-    parsed = json.loads(result[start:end])
+    # Reasoning model: the reply may be chain-of-thought text followed by the
+    # JSON answer, not pure JSON -- ollama_call_json extracts the {...} block
+    # and retries with a "JSON only" nudge if parsing fails.
+    parsed = ollama_call_json(prompt, model="granite4.2-8k")
 
     print(f"🔍 Type     : {parsed['type']}")
     print(f"📄 Doc IDs  : {parsed['doc_ids']}")

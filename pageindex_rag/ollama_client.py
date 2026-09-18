@@ -1,3 +1,4 @@
+import json
 import time
 
 from openai import OpenAI
@@ -32,6 +33,38 @@ def ollama_call(
             wait = 3 * (attempt + 1)
             print(f"  ⚠ ollama_call attempt {attempt + 1} failed: {e}. Retrying in {wait}s...")
             time.sleep(wait)
+
+
+def ollama_call_json(
+    prompt: str,
+    model: str,
+    max_tokens: int = 512,
+    num_ctx: int | None = None,
+    retries: int = 3,
+    parse_retries: int = 2,
+) -> dict:
+    """Like `ollama_call`, but extracts and parses the `{...}` JSON object in
+    the reply. Local models sometimes wrap the object in prose or markdown
+    fences, or drop a malformed one entirely — retry with an explicit
+    "JSON only" nudge before giving up, instead of silently treating a single
+    bad generation as a permanent failure (or a zero score, for callers that
+    used to do that themselves)."""
+    raw = ""
+    for attempt in range(parse_retries + 1):
+        raw = ollama_call(prompt, model=model, max_tokens=max_tokens, retries=retries, num_ctx=num_ctx) or ""
+        start = raw.find("{")
+        end = raw.rfind("}") + 1
+        if start != -1 and end != 0:
+            try:
+                return json.loads(raw[start:end])
+            except json.JSONDecodeError:
+                pass
+        prompt = prompt + "\n\nReply with ONLY the JSON object, no other text before or after it."
+
+    raise ValueError(
+        f"No valid JSON object found after {parse_retries + 1} attempt(s). "
+        f"Last raw response: {raw[:200]!r}"
+    )
 
 
 if __name__ == "__main__":

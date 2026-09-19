@@ -1,0 +1,702 @@
+[
+  {
+    "question": "What consequence does the policy impose if the insured fails to provide the required documents in accordance with Item\u202f12.2?",
+    "answer": "If the insured fails to provide the required documents in accordance with Item 12.2, the insurer will give the insured notice suspending all cover under the Policy until such time that the insured has fully complied with this condition.",
+    "ground_truth": "The insurer may give the insured notice suspending all cover under the policy until the insured fully complies with the condition stipulated in Item\u202f12.2.",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.2,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "Claim 1 (if the insured fails to provide documents, the insurer will give notice): supported \u2013 the source states that failure entitles the insurer to give notice. Claim 2 (the notice suspends all cover under the Policy): supported \u2013 the source explicitly says the notice suspends all cover. Claim 3 (the suspension continues until the insured fully complies): supported \u2013 the source says the suspension lasts until such time that the insured has fully complied with the condition. All factual claims in the answer are directly supported by the source."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly addresses the question by stating the policy's consequence: the insurer will give notice suspending all cover under the policy until the insured fully complies with Item\u202f12.2. It is concise, relevant, and complete."
+      },
+      "context_precision": {
+        "score": 0.2,
+        "reasoning": "Chunk 1: relevant because it directly states that failure to provide such documents in accordance with Item 12.2 entitles the insurer to give the insured notice suspending all cover under the policy until full compliance. Chunk 2: not relevant because it discusses insurer's exemption from liability and does not mention suspension of cover. Chunk 3: not relevant because it addresses amendment and disclosure obligations, not the specific consequence for failing to provide documents. Chunk 4: not relevant because it mentions condition precedent but does not specify suspension of cover. Chunk 5: not relevant because it covers notice procedures and document inspection, not the policy's consequence for non\u2011compliance with Item 12.2."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1: found in context. Key point 2: found in context. Key point 3: found in context."
+      }
+    }
+  },
+  {
+    "question": "Which countries are excluded from coverage or require advance approval, thereby voiding a claim under this policy?",
+    "answer": "The countries excluded from coverage or require advance approval for coverage are:\n\n- Nigeria, Argentina, Montenegro, Angola, Ecuador, Serbia, Egypt, Iceland, Ukraine, Hungary, Latvia, Bulgaria, Romania, Algeria, Estonia, Lithuania, Croatia, Belarus, Liberia, Rwanda, Haiti, Georgia, Myanmar, Uzbekistan, Mongolia, Iraq, Sudan, Kosovo, Iran, Zimbabwe, Cuba, Pakistan.",
+    "ground_truth": "The policy excludes Somalia, Afghanistan, and Palestine (off\u2011cover) and requires advance insurer approval for Iran,",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.2,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: - Nigeria is excluded from coverage or requires advance approval.  \n- Argentina is excluded from cov"
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly lists the countries that are excluded from coverage or require advance approval, thereby addressing the question fully."
+      },
+      "context_precision": {
+        "score": 0.2,
+        "reasoning": "Chunk 1: not relevant because it discusses compliance with environmental/public health laws and does not mention excluded or advance approval countries. Chunk 2: relevant because it lists OFF COVER (Somalia, Afghanistan, Palestine) and lists Iran among case\u2011by\u2011case & conditional countries that require advance insurer approval. Chunk 3: not relevant because it discusses political risk restrictions. Chunk 4: not relevant because it discusses trip exclusions. Chunk 5: not relevant because it discusses trip\u2011related exclusions."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1 (Somalia excluded): found in OFF COVER list. Key point 2 (Afghanistan excluded): found in OFF COVER list. Key point 3 (Palestine excluded): found in OFF COVER list. Key point 4 (Iran requires advance insurer approval): found in the 'Case by case & Conditional' category description stating advance approval required from the Insurer."
+      }
+    }
+  },
+  {
+    "question": "What exchange rate is used to calculate the amount of indemnification under this Trade Credit Insurance policy?",
+    "answer": "The rate of exchange used by the Reserve Bank of India on the day the Insured Event occurred will be used in calculating the amount of indemnification, subject to this not being higher than that of the day when delivery was effected or, in the case of services, the invoice date.",
+    "ground_truth": "The rate of exchange used by the Reserve Bank of India on the day the Insured Event occurred.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.4,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: Yes, the claim is supported by the retrieved context."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly identifies the exchange rate used (the Reserve Bank of India's rate on the day the Insured Event occurred) and includes the relevant condition (not higher than the rate on delivery day or invoice date for services), which precisely addresses the question 'What exchange rate is used to calculate the amount of indemnification under this Trade Credit Insurance policy.' It is concise, on-topic, and covers all necessary parts of the query without extraneous information."
+      },
+      "context_precision": {
+        "score": 0.4,
+        "reasoning": "Chunk 1: relevant because it mentions the rate of exchange used by the Reserve Bank of India on the day the Insured Event occurred will be used in calculating indemnification. Chunk 2: not relevant because it only describes indemnity conditions without reference to the exchange rate. Chunk 3: relevant because it explicitly states the rate of exchange used by the Reserve Bank of India on the day the Insured Event occurred will be used in calculating the amount of indemnification. Chunk 4: not relevant because it discusses premium payable in Indian Rupees and declaration but does not mention the exchange rate for indemnification. Chunk 5: not relevant because it discusses claim payment set-off and recoveries but does not specify the exchange rate for indemnification."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: ### Step-by-step reasoning\n\n1. **Identify the goal**: The task is to answer the implicit question (e"
+      }
+    }
+  },
+  {
+    "question": "How does the policy describe the process for filing a claim and the documents required?",
+    "answer": "The policy requires that you or someone claiming on your behalf provide all requested documentation, including medical records, bills, receipts, and other relevant documents within 30 days after the date of the loss. The required documents include completed claim forms, supporting documentation such as medical reports, prescriptions, and other relevant documents as requested by the claims department. The policy also requires providing original bills, receipts, and other documentation upon which a claim is based at your cost.",
+    "ground_truth": "The provided text does not contain any information about the claim\u2011filing process or required documents.",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the policy states that you or someone claiming on your behalf shall provide all documentation, medical records and information within 30 days after the loss. claim 2: supported because the policy lists the claim form duly completed and signed, medical reports, case histories, investigation reports, treatment papers, discharge summaries, and prescriptions as required documents, and mentions any other document as requested by the claims department. claim 3: supported because the policy requires providing all original bills, receipts and other documentation upon which a claim is based at your cost."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly describes the policy's timeline (within 30 days after the date of loss), identifies who can file (you or someone claiming on your behalf), and lists the required documents (medical records, bills, receipts, completed claim forms, medical reports, prescriptions, and original bills/receipts at your cost). It addresses both the process for filing a claim and the documents required without off\u2011topic content."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: supported"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: Based solely on the provided context (which describes the user filing a claim for a damaged item, me"
+      }
+    }
+  },
+  {
+    "question": "When is the Insured eligible to receive a No Claims Bonus under this policy?",
+    "answer": "The Insured is eligible to receive a No Claims Bonus after six (6) months from the expiration of the insurance period, provided they have entered into a new insurance policy with the company without a break.",
+    "ground_truth": "The Insured may receive a No Claims Bonus if no insured event is reported during the insurance",
+    "n_contexts": 5,
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.2,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.5,
+        "reasoning": "claim 1: supported because the context states 'The application for No Claims Bonus shall be submitted after six (6) months from the expiration of the insurance period', indicating the Insured cannot receive the No Claims Bonus before that period. claim 2: not supported because the context does not mention a 'without a break' requirement for No Claims Bonus; the 'without a break' wording appears only in the Cumulative Bonus provision."
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer provides a specific timeframe (six months after expiration) which directly answers the 'when' part, but also adds an extra condition about entering a new policy without a break. Since the question only asks 'When is the Insured eligible...', the extra condition constitutes off\u2011topic addition, making the answer mostly relevant but not fully precise."
+      },
+      "context_precision": {
+        "score": 0.2,
+        "reasoning": "Chunk 1: relevant because it states that if there is no notice of occurrence of an insured event during the insurance period, the insurer may pay a No Claims Bonus (application after six months). Chunk 2: not relevant because it discusses Cumulative Bonus (CB) and claim\u2011free policy years, not the No Claims Bonus condition. Chunk 3: not relevant because it discusses notification of claims and definitions, not No Claims Bonus eligibility. Chunk 4: not relevant because it discusses commercial credits and policy cancellation, unrelated to No Claims Bonus. Chunk 5: not relevant because it discusses claims procedure timelines, unrelated to No Claims Bonus."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1 (The Insured may receive a No Claims Bonus): found in context (the insurer may pay an agreed portion of the paid premiums to the Insured as No Claims Bonus). Key point 2 (Eligibility requires that no insured event is reported): found in context (If there is no notice of occurrence of an insured event ...). Key point 3 (The condition applies during the insurance period): found in context (during the insurance period). All key points present, so score = 1.0."
+      }
+    }
+  },
+  {
+    "question": "What is the maximum time frame for the insurer to pay the insurance indemnity after a claim is submitted, considering the receipt of all required information?",
+    "answer": "The maximum time frame for the insurer to pay the insurance indemnity after a claim is submitted, considering the receipt of all required information, is 30 days from the date of receipt of all necessary documents. If the claim is not settled within this period, the insurer shall be liable to pay interest at a rate, which is 2% above the bank rate from the date of receipt of last relevant and necessary document from the insured/claimant by insurer till the date of actual payment.",
+    "ground_truth": "The insurer must pay the indemnity within 90 days after the claim submission or within 60 days after receiving all required information, whichever is later.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: The answer correctly reproduces the interest\u2011rate wording (\u201c2\u202f% above the bank rate from the date of"
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer provides a specific maximum time frame (30 days from receipt of all necessary documents), which directly answers the question about the maximum time frame for payment after receipt of required information. However, it also adds extra information about interest payable if the insurer does not settle within that period, which is not part of the question. Because it adds off\u2011topic content, it does not achieve the perfect 1.0 score but remains mostly relevant, fitting the 0.7 criterion."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: Chunk\u202f1: relevant  \nChunk\u202f2: not relevant  \nChunk\u202f3: not relevant  \nChunk\u202f4: not relevant  \nChunk\u202f5:"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1 (within 90 days after claim submission): not found in context. Key point 2 (within 60 days after receiving all required information): not found in context. Key point 3 (whichever is later): not found in context."
+      }
+    }
+  },
+  {
+    "question": "What benefits does the insured person receive if the premium is paid within the stipulated grace period?",
+    "answer": "If the premium is paid within the stipulated grace period, the insured person will receive the following benefits:\n\n- Accrued continuity benefits in respect of the Sum Insured, No Claim Bonus, Specific Waiting Periods, Waiting Periods for Pre-existing Diseases, and Moratorium period.",
+    "ground_truth": "The insured person",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the context states: 'The Insured Person will get the accrued continuity bene\ufb01t in respect of the Sum Insured, No Claim Bonus, Speci\u0133c Waiting Periods, Waiting Periods for Pre-existing Diseases, Moratorium period etc in the event of payment of premium within the stipulated Grace Period.' claim 2: supported because the context explicitly mentions Sum Insured, No Claim Bonus, Specific Waiting Periods, Waiting Periods for Pre-existing Diseases, and Moratorium period as components of the accrued continuity benefit during the grace period."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly addresses the question by explicitly stating the benefits the insured person receives when the premium is paid within the stipulated grace period. It provides a clear list (continuity benefits related to Sum Insured, No Claim Bonus, waiting periods, etc.) without adding off\u2011topic content, and sufficiently answers the query."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) | Raw: Chunk\u202f1 mentions that the policy is considered in\u2011force during the grace period and that a claim is "
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1: The insured person - found in context (context mentions 'The Insured Person will get the accrued continuity benefit...')"
+      }
+    }
+  },
+  {
+    "question": "According to the policy text, what situations or conditions are excluded from coverage or would void a claim?",
+    "answer": "According to the policy text, the following situations or conditions are excluded from coverage or would void a claim:\n\n- Any loss or damage or destruction of the Insured Property directly or indirectly as a result of or caused by or arising from events such as war, invasion, act of foreign enemy hostilities, civil war, mutiny, civil commotion, military rising, rebellion, revolution, insurrection, military or usurped power, ionizing radiation, contamination by radioactivity, or the radioactive, toxic, explosive or other hazardous properties of any explosive nuclear assembly or nuclear component.\n- Death of Your Immediate Family Member.\n- Natural disaster which has prevented You from continuing with the scheduled Trip.\n- Unexpected strike, riot or civil commotion which are beyond Your control.\n- You are unable to continue the Trip due to Illness, Injury or death of the Insured Person or Your Travelling Companion or Your Immediate Family Member or Your Travelling Companion's Immediate Family Member.\n- Political disturbance, travel prohibition declared by the government or local authorities or airline authorities, which is not publicly known before the commencement of the Trip.\n- Deliberate, willful or intentional act or omission, or of anyone on your behalf, or with your connivance, including war, invasion, act of foreign enemy hostilities, civil war, mutiny, civil commotion, military rising, rebellion, revolution, insurrection, military or usurped power, ionizing radiation, contamination by radioactivity, or the radioactive, toxic, explosive or other hazardous properties of any explosive nuclear assembly or nuclear component.\n- Theft or dishonesty committed by or in collusion with any principal shareholder (beneficial or otherwise), partner, director, officer, or any employee of the insured or any person to whom the insured property is entrusted or loaned.\n- Loss arising whether directly or indirectly from the insolvency, administration, voluntary arrangements with creditors, bankruptcy or receivership of the insured, the operators of the premises of named location(s), or any third party whose property may have become indistinguishable from the insured property.",
+    "ground_truth": "The excerpt does not specify any exclusions or claim\u2011voiding conditions; it only outlines the free\u2011look period, cancellation procedures, and that policy changes must be made by a written endorsement from the insurer.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: The text explicitly states two exclusionary provisions:\n\n1. **Losses and expenses for any loss or da"
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer directly attempts to list situations or conditions excluded from coverage or that would void a claim, which aligns with the question. However, it includes several items (e.g., 'Unexpected strike, riot or civil commotion', 'Death of Your Immediate Family Member', repeated wording for war-related exclusions) that may not all be present in the actual policy text and thus introduce some redundancy or potential off\u2011topic detail. Consequently, while mostly relevant, it does not fully and precisely reflect the policy text without verification, leading to a slightly lower score."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: 0.0"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: not found in context. Key point 2: not found in context. Key point 3: not found in context. Key point 4: not found in context. Key point 5: not found in context."
+      }
+    }
+  },
+  {
+    "question": "What co\u2011payment percentage is applied to each claim under the policy?",
+    "answer": "The co-payment percentage applied to each claim under the policy is 5%.",
+    "ground_truth": "5%\u200b",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.2,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the retrieved context states 'Each and every claim under the Policy shall be subject to a Co-payment of 5% applicable to claim amount admissible and payable as per the terms and conditions of the Policy.'"
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly provides the co\u2011payment percentage (5%) for each claim under the policy, addressing the question fully without extraneous content."
+      },
+      "context_precision": {
+        "score": 0.2,
+        "reasoning": "Chunk 1: relevant because it explicitly states \"Co-payment of 5%\", directly answering the question. Chunk 2: not relevant (discusses policy conditions but no co\u2011payment percentage). Chunk 3: not relevant (mentions that amount payable is after deduction of the co\u2011payment but does not specify the percentage). Chunk 4: not relevant (discusses payout and mode of payment). Chunk 5: not relevant (discusses float basis and CB, no co\u2011payment percentage)."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1: found in context."
+      }
+    }
+  },
+  {
+    "question": "How do I file a claim under this policy, and what documents are required?",
+    "answer": "To file a claim under this policy, you or someone claiming on your behalf shall provide all documentation, medical records, and information which the insurer may request to establish the circumstances of the claim, its quantum, or the insurer's liability for the claim within 30 Days after the date of such loss. The required documents include:\n\n- Support documents and examination, such as a duly completed and signed claim form on behalf of the insured person.\n- Copies of tickets and/or boarding passes, with original scheduled itinerary and date of booking.\n- Original bills and receipts, including pharmacy purchase bills, consultation bills, diagnostic bills, and any attachments like receipts or prescriptions.\n- All relevant medical reports, case histories, investigation reports, treatment papers, discharge summaries.\n- A precise diagnosis of the treatment for which a claim is made.\n- A detailed list of individual medical services and treatments provided, along with a unit price for each.\n- Prescriptions that name the insured person and in the case of drugs: the drugs prescribed, their price, and a receipt for payment.\n- Any other document as requested by the claims department which is relevant to the coverage under the policy.\n- Details of loss or damage under any Optional Cover or Add-Ons.\n- Submit photographs of loss or physical damage, wherever possible.",
+    "ground_truth": "The provided policy text does not include any information about the claim filing process or the documents needed.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: supported"
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly addresses both parts of the question: it explains how to file a claim (provide all required documentation within 30 days of the loss) and lists the required documents comprehensively (claim form, tickets/boarding passes, original bills/receipts, medical reports, diagnosis, service list with unit prices, prescriptions, photographs, etc.). While it does not specify the exact submission channel (e.g., online portal vs paper), the core filing instruction and document checklist fully answer the question."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: 0.0"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: The ground truth answer states: \"The provided policy text does not include any information about the"
+      }
+    }
+  },
+  {
+    "question": "What is the waiting period for expenses related to the treatment of listed conditions under the specific waiting period clause?",
+    "answer": "The waiting period for expenses related to the treatment of listed conditions under the specific waiting period clause is 24/36 months of continuous coverage, as specific to the parties, e.g., robbery, crime of passion, murder.",
+    "ground_truth": "Expenses for listed conditions are excluded until the expiry of 24\u202for\u202f36 months of continuous coverage, unless the claim arises from an accident.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.4,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: "
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer mentions a waiting period of 24/36 months for expenses related to listed conditions under the clause, which directly addresses the core question. However, it adds irrelevant detail about parties (e.g., robbery, crime of passion, murder) and does not clarify which specific period applies, making it partially off-topic. Thus it is mostly relevant but misses clarity and includes off-topic content."
+      },
+      "context_precision": {
+        "score": 0.4,
+        "reasoning": "Chunk 1: relevant because it states that expenses for listed conditions are excluded until the expiry of 24/36 months of continuous coverage. Chunk 2: not relevant because it only defines a generic waiting period (Item\u202f10) without reference to listed conditions. Chunk 3: not relevant because it discusses waivers and general exclusions. Chunk 4: not relevant because it refers to the overdue notification period, not the listed\u2011conditions waiting period. Chunk 5: relevant because it repeats the same exclusion (until 24/36 months of continuous coverage) for listed conditions and clarifies its application."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1: Expenses for listed conditions are excluded \u2013 found in context (e.g., 'Expenses related to the following listed conditions, Surgeries/treatments shall be excluded until 24/36 months of continuous coverage'). Key point 2: Exclusion applies until expiry of 24 or 36 months of continuous coverage \u2013 found in context (e.g., 'until 24/36 months of continuous coverage'). Key point 3: Exception for claims arising from an accident \u2013 found in context (e.g., 'This exclusion shall not be applicable for claims arising due to an accident')."
+      }
+    }
+  },
+  {
+    "question": "What is the grace period for premium payment when the premium is paid monthly?",
+    "answer": "The grace period for premium payment when the premium is paid monthly is 15 days.",
+    "ground_truth": "Fifteen days.",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the retrieved context explicitly says the grace period is 15 days for monthly payment (e.g., '15 days in case of monthly mode', 'the grace period for payment of the premium for all types of life insurance policies shall be fifteen days, where the policyholder pays the premium on a monthly basis', and 'In case of monthly instalment option, a Grace Period of 15 days is applicable')."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly provides the grace period (15 days) for monthly premium payment, addressing the question completely and without extraneous content."
+      },
+      "context_precision": {
+        "score": 1.0,
+        "reasoning": "Chunk 1: relevant because it states '15 days in case of monthly mode'. Chunk 2: relevant because it states 'fifteen days where the policyholder pays the premium on a monthly basis'. Chunk 3: relevant because it states 'fifteen days where the policyholder pays the premium on a monthly basis'. Chunk 4: relevant because it states 'Grace Period of 15 days is applicable' for monthly instalment option. Chunk 5: relevant because it states 'fifteen days where the policyholder pays the premium on a monthly basis'."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1: found in context (the context states that the grace period for monthly payment is 15 days / fifteen days)."
+      }
+    }
+  },
+  {
+    "question": "What liability does this endorsement provide coverage for according to the policy text?",
+    "answer": "This endorsement provides coverage for the insured's legal liability under the Workmen's Compensation Act, 1923 and subsequent amendments of that Act, the Fatal Accidents Act, 1855, or at Common Law in respect of personal injury to any paid driver (or cleaner or any person) exceeding six in number whilst being carried in the Motor vehicle. It also covers death of or bodily injury to any person (other than the paid driver) in the same scenario.",
+    "ground_truth": "It indemnifies the insured against legal liability for compensation (including the claimant\u2019s legal costs) for death or bodily injury to any person (except those excluded under the general exception) while being carried in, upon, entering, mounting, or alighting from the insured vehicle.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: Supported"
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly and completely describes the liability coverage provided by the endorsement according to the policy text, specifying legal liability under the Workmen's Compensation Act, 1923 and its amendments, the Fatal Accidents Act, 1855, or common law, in respect of personal injury to paid drivers (or cleaners or any person) exceeding six in number while being carried in the motor vehicle, and also covering death or bodily injury to any other person in the same scenario."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: Chunk\u202f1 \u2013 relevant  \nChunk\u202f2 \u2013 relevant  \nChunk\u202f3 \u2013 relevant  \nChunk\u202f4 \u2013 relevant  \nChunk\u202f5 \u2013 not re"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) | Raw: The policy text (as implied by the description) indicates that the endorsement indemnifies the insur"
+      }
+    }
+  },
+  {
+    "question": "According to the policy, what situations or conditions are excluded from coverage or would void a claim?",
+    "answer": "According to the policy, the following situations or conditions are excluded from coverage or would void a claim:\n\n- Mysterious disappearance or any unexplained loss.\n- Loss or shortage discovered while taking inventory.\n- Theft or dishonesty committed by or in collusion with any principal shareholder (beneficial or otherwise), partner, director, officer, or any employee of the insured or any person to whom the insured property is entrusted or loaned.\n- Loss arising whether directly or indirectly from the insolvency, administration, voluntary arrangements with creditors, bankruptcy or receivership of:\n  - The insured;\n  - The operators of the premises of named location(s);\n  - Any third party whose property may have become indistinguishable from the insured property.\n- Consequential loss of any kind.",
+    "ground_truth": "The policy excludes payment for death or injury that is (a) caused by intentional self\u2011injury, suicide or attempted",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the policy explicitly lists 'mysterious disappearance or any unexplained loss' under exclusion A(i). claim 2: supported because the policy explicitly lists 'loss or shortage discovered while taking inventory' under exclusion A(ii). claim 3: supported because the policy explicitly lists theft or dishonesty committed by or in collusion with any principal shareholder (beneficial or otherwise), partner, director, officer, or any employee of the insured or any person to whom the insured property is entrusted or loaned under exclusion B. claim 4: supported because the policy explicitly lists loss arising whether directly or indirectly from insolvency, administration, voluntary arrangements with creditors, bankruptcy or receivership of the insured, operators of premises, and any third party whose property may become indistinguishable from the insured property under exclusion C. claim 5: supported because the policy explicitly lists 'consequential loss of any kind' under exclusion D."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly addresses the question by explicitly stating that the following situations or conditions are excluded from coverage or would void a claim, and provides a clear list of exclusions without off\u2011topic content. It directly responds to the request for what is excluded according to the policy."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it discusses waiting periods for surgeries/treatments and an accident exclusion, but does not mention intentional self\u2011injury, suicide or attempted injury. Chunk 2: not relevant because it describes automatic cessation after a claim and disappearance provisions, without referencing the specific exclusion about intentional self\u2011injury, suicide or attempted injury. Chunk 3: not relevant because it lists exclusions such as death of an immediate family member, natural disaster, strike, etc., but does not mention intentional self\u2011injury, suicide or attempted injury. Chunk 4: not relevant because it lists exclusions like mysterious disappearance, theft, insolvency and consequential loss, which do not cover the ground\u2011truth exclusion. Chunk 5: not relevant because it only addresses liability limits and does not mention exclusions related to intentional self\u2011injury, suicide or attempted injury."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: not found in context. Key point 2: not found in context. Key point 3: not found in context. Key point 4: not found in context."
+      }
+    }
+  },
+  {
+    "question": "What is the deductible amount specified for each claim under this add\u2011on?",
+    "answer": "The deductible amount specified for each claim under this add-on is specified in your certificate. The context does not provide a specific deductible amount for the add-on.",
+    "ground_truth": "The deductible is the \u201cFirst Rs\u2026.. for each and every claim.\u201d",
+    "n_contexts": 5,
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.4,
+    "context_precision": 1.0,
+    "context_recall": 0.5,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.5,
+        "reasoning": "claim 1: supported because the context explicitly states '16.1. Deductibles are specified in your certificate', which directly supports that the deductible amount for claims is specified in the certificate. claim 2: not supported because the context provides explicit deductible information such as 'nil' for all other claims and 'as for the claim being mitigated' for mitigated claims, thus it does provide a specific deductible amount (nil) for the add\u2011on."
+      },
+      "answer_relevancy": {
+        "score": 0.4,
+        "reasoning": "The answer does not provide the deductible amount; it only states that the amount is specified in the certificate and notes that the context does not give a specific amount. Thus it does not directly answer the question."
+      },
+      "context_precision": {
+        "score": 1.0,
+        "reasoning": "Chunk 1: relevant because it mentions that deductibles are specified in the certificate and outlines rules for deductibles under the add-on. Chunk 2: relevant because it explicitly refers to the deductible stated in the Schedule for the add-on, which is where the amount would be defined. Chunk 3: relevant because it lists deductible conditions (mitigated vs nil) for claims under the add-on. Chunk 4: relevant because it repeats deductible rules and conditions for claims. Chunk 5: relevant because it states a nil deductible unless otherwise indicated, which relates to the deductible amount for claims."
+      },
+      "context_recall": {
+        "score": 0.5,
+        "reasoning": "Key point 1: not found in context. Key point 2: found in context."
+      }
+    }
+  },
+  {
+    "question": "What steps and documentation are required to file a claim under this policy?",
+    "answer": "To file a claim under this policy, the following steps and documentation are required:\n\n- Provide all requested documentation, including medical records and information to establish the circumstances of the claim, its quantum, or the insurer's liability.\n- Submit a completed claim form, including NEFT details and bank account proof as specified in the claim form.\n- Provide the original policy.\n- Provide an attested copy of the Death Certificate in case of death.\n- Provide an attested copy of the medical report from the attending specialist doctor, including a Death Summary in case of hospitalization.\n- Provide an attested copy of the disability certificate from the treating doctor stating the percentage of disability.\n- Provide an attested copy of the FIR, Panchanama, or Inquest Panchanama.\n- Provide complete medical records/reports, including investigation/Lab reports (X-Ray, MRI, etc.) in case of disability claim.\n- Provide an attested copy of the Post Mortem Report (only if conducted).\n- Provide any other document(s) as requested by the Claims department.",
+    "ground_truth": "You must give written notice of the claim to the insurer within 7 days of the loss (or as soon as reasonably possible, but no later than 30 days), and you or your representative must provide all requested documentation, medical records, and information needed to establish the claim\u2019s circumstances.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: **Claim\u2011by\u2011claim support check (based on the retrieved context):**\n\n1. **\u201cProvide all requested docu"
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer provides a list of documentation and mentions submitting a claim form and providing the original policy, which directly addresses the request for steps and documentation. However, it includes several conditional items (e.g., death certificate, FIR, post\u2011mortem report) that apply only to specific claim types, and the wording is somewhat vague ('provide all requested documentation'). It does not give a clear ordered step\u2011by\u2011step procedure. Therefore it is mostly relevant but misses some clarity/precision, warranting a 0.7 score."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: You must give written notice of the claim to the insurer within 7 days of the loss (or as soon as re"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) | Raw: **Key pieces extracted from the ground\u2011truth statement**\n\n1. *Give written notice of the claim withi"
+      }
+    }
+  },
+  {
+    "question": "What expenses does this policy provide coverage for?",
+    "answer": "This policy provides coverage for medical expenses incurred for hospitalization, including room rent, boarding, nursing expenses, ICU/ICCU expenses, and expenses towards Surgeon, Anaesthetist, Medical Practitioner, and Consultant services. Expenses related to accidents, physiotherapy treatments, expenses not supported by original and valid bills/receipts, expenses starting after 5 days from the date of accident, and expenses arising from intentional self-injury, suicide, or attempted suicide are not covered. Expenses related to pre-existing diseases are also not covered unless declared and accepted for coverage by the company after a 3-year waiting period. Expenses for items such as baby food, beauty services, belts/braces, cold packs/hot packs, carry bags, email/internet charges, food charges other than patient's diet provided by hospital, leggings, laundry charges, mineral water, sanitary pads, telephone charges, guest services, crepe bandage, diapers of any type, eyelet collar, slings, blood grouping and cross matching of donors' samples are not covered.",
+    "ground_truth": "It covers ambulance charges for transporting you, the driver, or occupants",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: Claim A (policy provides coverage for medical expenses incurred for hospitalization): Supported  \nCl"
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer correctly identifies the covered expenses (hospitalization\u2011related items such as room rent, boarding, nursing, ICU/ICCU, surgeon, anaesthetist, medical practitioner, and consultant services). However, it also includes a lengthy list of exclusions and conditions (e.g., accidents, physiotherapy, timing restrictions, pre\u2011existing disease rules, many specific non\u2011covered items), which goes beyond the direct question about what expenses are covered. This extra content makes the answer partially off\u2011topic, warranting a score of 0.7."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Chunk 1: not relevant because it only describes hospitalization benefits (room rent, boarding, nursing, ICU) and does not mention ambulance charges. Chunk 2: not relevant because it only defines policy terms (e.g., Accident, Age) and does not address ambulance coverage. Chunk 3: not relevant because it only defines policy terms (policy period, schedule, year, portability) and does not mention ambulance charges. Chunk 4: not relevant because it discusses liability limits and exclusions (e.g., maximum licensed seating capacity) but does not specify ambulance coverage. Chunk 5: not relevant because it lists miscellaneous items (baby food, utilities, beauty services, etc.) and does not mention ambulance charges."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: It covers ambulance charges for transporting you, the driver, or occupants \u2013 not found in context"
+      }
+    }
+  },
+  {
+    "question": "Does the policy specify any waiting period before coverage becomes effective?",
+    "answer": "The policy specifies a waiting period before coverage becomes effective. The waiting period varies depending on the specific conditions and types of treatments covered. For pre-existing diseases, the waiting period is 36 months of continuous coverage after the date of inception of the first policy with the insurer. For specific listed conditions, the waiting period is 24 to 36 months of continuous coverage, depending on the specific condition. If the insured person is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations, the waiting period for the same would be reduced to the extent of prior coverage.",
+    "ground_truth": "The provided text does not mention any waiting period; no time\u2011based restriction is stated.",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the policy includes a First Thirty Days Waiting Period and other waiting periods for pre-existing diseases and listed conditions. claim 2: supported because the policy defines different waiting periods (30 days for any illness, 36 months for pre-existing diseases, 24/36 months for listed conditions), so the waiting period varies by condition/treatment. claim 3: supported because the policy states that expenses for a pre-existing Disease and its direct complications are excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy. claim 4: supported because the policy states that expenses for listed conditions are excluded until the expiry of 24/36 months of continuous coverage. claim 5: supported because the policy states that if the insured person is continuously covered without a break per portability norms (IRDAI regulations), the waiting period is reduced to the extent of prior coverage."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly states that the policy specifies a waiting period before coverage becomes effective, which directly answers the yes/no question. It also provides relevant details about the varying periods without off\u2011topic content."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": ""
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: not found in context (the context mentions waiting periods such as 'First Thirty Days Waiting Period', 'Specific Waiting Period', etc.). Key point 2: not found in context (the context includes time\u2011based waiting periods like 30 days, 24/36 months, so a time\u2011based restriction is stated)."
+      }
+    }
+  },
+  {
+    "question": "What losses and expenses are covered under the Home Building Cover in this policy?",
+    "answer": "Under the Home Building Cover in this policy, the following losses and expenses are covered:\n\n- Total Loss of the Home Building\n- Loss of an additional structure\n- Reasonable fees of architect, surveyor, and consulting engineer\n- Reasonable costs of removing debris from the site\n- Loss of rent and rent for alternative accommodation, if the Home Building is not fit for living due to an Insured Event",
+    "ground_truth": "The policy covers physical loss, damage or destruction of the home building caused by any Insured Event listed in Clause\u202fB, the fees of architects, surveyors and consulting engineers, the cost of removing debris",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.0,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: **Reasoning**\n\n1. Locate the parts of the text that describe what the policy pays for under \u201cHome Bu"
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly responds to the question 'What losses and expenses are covered under the Home Building Cover in this policy?' by explicitly listing the covered items (Total Loss of the Home Building, Loss of an additional structure, reasonable fees of architect/surveyor/consulting engineer, reasonable debris removal costs, and loss of rent/alternative accommodation under the specified condition). The response is concise, relevant, and does not include off-topic content. It provides a clear enumeration of the covered items as stated in the policy context, fully addressing the query without omission or distraction."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: The cover provides up to three\u202fyears of repair coverage from the date the home becomes uninhabitable"
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1: found in context. Key point 2: found in context. Key point 3: found in context."
+      }
+    }
+  },
+  {
+    "question": "Under this policy, what actions by the insured can cause the insurer to refuse payment of a claim or cancel the policy?",
+    "answer": "Under this policy, the insurer can refuse payment of a claim or cancel the policy if the insured:\n\n- Cancels the policy without a valid reason.\n- Uses fraudulent means or devices to obtain benefits under the policy.\n- Makes a claim and the claim is rejected, and no court action or suit is commenced within 12 months after the rejection, or if arbitration is involved, within 12 calendar months after the Arbitrator's award.\n- Dispatches goods or renders services after an insured event or cancels cover to Item 4.6 or 6.8 b) of the Policy.",
+    "ground_truth": "Giving false information or documents, withholding any information or documents (written or electronic), and refusing to cooperate with the insurer\u2019s survey/investigation\u2014such as not allowing inspection, photography, or scientific testing of the insured property and not answering claim questions truthfully and completely.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.6,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: correct"
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer lists several actions that could lead to insurer refusal or cancellation, but it is not exhaustive and includes some unclear or possibly off\u2011topic items (e.g., dispatching goods after an insured event). It does not fully cover all actions the policy may specify nor clearly explain each action's effect. Thus it is mostly relevant but misses parts of the answer."
+      },
+      "context_precision": {
+        "score": 0.6,
+        "reasoning": "Chunk 1: relevant because it mentions insurer may cancel policy on grounds of established fraud (i.e., false information). Chunk 2: relevant because it mentions policy cancelled for non\u2011cooperation of the insured, matching refusal to cooperate with the insurer\u2019s survey/investigation. Chunk 3: not relevant because it only states insurer may refuse payment when policy is invalidated/lapsed/canceled for reasons not insurer\u2019s responsibility; it does not specify insured actions like false info or non\u2011cooperation. Chunk 4: relevant because it mentions fraudulent means or devices used by the Insured, matching giving false information/documents. Chunk 5: not relevant because it only covers insured giving notice to cancel voluntarily; it does not address insurer refusing payment due to insured misconduct."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: Based on the retrieved context, the insurer may refuse payment or cancel the policy if the insured:\n"
+      }
+    }
+  },
+  {
+    "question": "What type of insurance plan is described for the Click\u202f2\u202fProtect\u202fOptima\u202fSecure (UIN\u202f101Y122V05) policy?",
+    "answer": "The Click\u202f2\u202fProtect\u202fOptima\u202fSecure (UIN\u202f101Y122V05) policy is a Non-linked, Non-participating, Individual, Pure Risk Premium/Savings Combi Insurance Plan.",
+    "ground_truth": "It is a non\u2011linked, non\u2011participating, individual, pure risk premium/savings combi insurance plan.",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the retrieved context explicitly states 'A Non-linked, Non-participating, Individual, Pure Risk Premium/Savings Combi Insurance Plan' for the policy."
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly identifies the type of insurance plan for the Click\u202f2\u202fProtect\u202fOptima\u202fSecure (UIN\u202f101Y122V05) policy, providing a clear description that fully addresses the question without omission or off\u2011topic content."
+      },
+      "context_precision": {
+        "score": 1.0,
+        "reasoning": "Chunk 1: relevant because it states 'A Non-linked, Non-participating, Individual, Pure Risk Premium/Savings Combi Insurance Plan'. Chunk 2: relevant because it repeats the same description and also mentions 'non participating, non-linked, individual, pure risk premium/savings ... Life Insurance Plan'. Chunk 3: relevant because it repeats the same description (though includes numeric data), but the plan description appears at the top. Chunk 4: relevant because it repeats the same description. Chunk 5: relevant because it repeats the same description."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "non-linked: present as 'Non-linked' in the context; non-participating: present as 'Non-participating' in the context; individual: present as 'Individual' in the context; pure risk premium/savings: present as 'Pure Risk Premium/Savings' in the context; combi: present as 'Combi' in the context; insurance plan: present as 'Insurance Plan' in the context."
+      }
+    }
+  },
+  {
+    "question": "What exclusions or conditions that would void a claim are specified in this policy?",
+    "answer": "The policy specifies several exclusions and conditions that would void a claim, including:\n\n- Loss of passport due to delay or from confiscation or detention by customs, police, or other authority.\n- Loss not reported to the appropriate police authority within 24 hours of discovery and an official report not obtained within 24 hours of becoming aware of the loss.\n- Loss or theft of passport that was left unattended unless kept in a locked safety deposit box in a locked hotel room or apartment.\n- Loss caused due to failure to take reasonable steps to guard against the loss of passport.\n- Any loss arising in India.\n- Deceased immediate family member.\n- Death of immediate family member.\n- Natural disaster preventing the scheduled Trip.\n- Unexpected strike, riot, or civil commotion beyond control.\n- Political disturbance, travel prohibition declared by government or local authorities, not publicly known before the commencement of the Trip.",
+    "ground_truth": "The provided text does not contain any statements about exclusions or conditions that would void a claim.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.8,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": ""
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly enumerates exclusions and conditions that would void a claim as specified in the policy, addressing the question comprehensively."
+      },
+      "context_precision": {
+        "score": 0.8,
+        "reasoning": "Chunks 1, 2, 4, and 5 explicitly state exclusions or conditions that would prevent coverage (e.g., loss of passport due to delay, reporting requirements, insolvency\u2011related losses, etc.), directly addressing the question about exclusions or conditions that would void a claim. Chunk 3 only discusses benefit recipients and does not mention exclusions or voiding conditions, so it is not relevant to the question."
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1: not found in context"
+      }
+    }
+  },
+  {
+    "question": "What is the charge for each additional servicing request initiated by the Policyholder?",
+    "answer": "The charge for each additional servicing request initiated by the Policyholder is Rs. 250 per request.",
+    "ground_truth": "Rs.\u202f250 per request.",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.2,
+    "context_recall": 1.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "claim 1: supported because the retrieved context states 'Any additional servicing request initiated by the Policyholder will attract a charge of Rs. 250 per request.'"
+      },
+      "answer_relevancy": {
+        "score": 1.0,
+        "reasoning": "The answer directly states the exact charge amount (Rs. 250 per request) for each additional servicing request initiated by the Policyholder, matching the question's wording precisely. It contains no off-topic content, omissions, or ambiguity. Thus, it fully and completely addresses all parts of the question."
+      },
+      "context_precision": {
+        "score": 0.2,
+        "reasoning": "Chunk 1: relevant because it explicitly states 'Any additional servicing request initiated by the Policyholder will attract a charge of Rs. 250 per request,' which directly matches the ground truth answer. Chunk 2: not relevant because it discusses responsibility for costs of services arranged by an Assistance Company and does not mention servicing request charges. Chunk 3: not relevant because it defines terms related to health insurance (e.g., solicitation, sub-limit, sum insured) and does not address servicing request charges. Chunk 4: not relevant because it discusses add-on options, premium calculations for ROP/WOP CI, and does not mention servicing request charges. Chunk 5: not relevant because it covers policy revival conditions and does not mention servicing request charges."
+      },
+      "context_recall": {
+        "score": 1.0,
+        "reasoning": "Key point 1: Rs. 250 per request - found in context. The retrieved context explicitly states: 'Any additional servicing request initiated by the Policyholder will attract a charge of Rs. 250 per request.' This directly matches the ground truth answer 'Rs.\u202f250 per request.' No additional or conflicting information is required; the key piece is fully present."
+      }
+    }
+  },
+  {
+    "question": "What is the process for filing a claim under this Click\u202f2\u202fProtect Optima Secure policy?",
+    "answer": "The process for filing a claim under this Click\u202f2\u202fProtect Optima Secure policy involves the following steps:\n\n1. Completed claim form, including NEFT details and bank account proof as specified in the claim form.\n2. Original Policy.\n3. Original or copy Death Certificate issued by Municipal Authority/ Gram Panchay, Tehsildar, or Gram Panchayat (attested by issuing authority).\n4. Claimant\u2019s identity and residence proof.\n5. Original or copy of First Information Report, Police Panchnama report, attested by Police authorities.\n6. Original or copy of Postmortem report, attested by Hospital authority.\n\nPlease ensure all original documents are submitted, as attestation by authorities is not required if originals are provided.",
+    "ground_truth": "The provided policy text does not contain any information about how to file a claim, the required documents, or the steps to be followed.",
+    "n_contexts": 5,
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: **Evaluation of the generated answer against the retrieved context**\n\n| # | Claim in the answer (as "
+      },
+      "answer_relevancy": {
+        "score": 0.7,
+        "reasoning": "The answer lists required documents (claim form, policy copy, death certificate, identity proof, FIR, postmortem report) and mentions original vs attested requirements. However, it does not clearly describe the step\u2011by\u2011step filing process (e.g., where/how to submit the claim, any required notifications, timelines, or contact procedures). Thus it is mostly relevant but misses essential parts of the process."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: not relevant"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: **Key pieces extracted from the Ground\u2011Truth answer**\n\n1. \u201cThe provided policy text does **not** con"
+      }
+    }
+  },
+  {
+    "question": "What specific situations or conditions are excluded from coverage under this critical illness policy?",
+    "answer": "The specific situations or conditions excluded from coverage under this critical illness policy include:\n\n- Death of Your Immediate Family Member.\n- Natural disaster which has prevented You from continuing with the scheduled Trip.\n- Unexpected strike, riot or civil commotion which are beyond Your control.\n- You are unable to continue the Trip due to Illness, Injury or death of the Insured Person or Your Travelling Companion or Your Immediate Family Member or Your Travelling Companion's Immediate Family Member.\n- Political disturbance, travel prohibition declared by the government or local authorities or airline authorities, which is not publicly known before the commencement of the Trip.",
+    "ground_truth": "The policy excludes coverage if the critical illness is caused or aggravated by any of the following: diagnosis, hospitalization, or treatment of a listed critical illness within 90 days of the policy\u2019s start or reinstatement; any pre\u2011existing disease diagnosed within 36 months (or for which medical advice/treatment was received within 48 months) before the policy\u2019s commencement or reinstatement; illnesses due to an external congenital defect diagnosed before age\u202f18; suicide, attempted suicide, or intentional self\u2011inflicted injury; the life insured being under the influence of non\u2011prescribed drugs, alcohol, narcotics, or psychotropic substances; war, invasion, hostilities, civil war, rebellion, terrorist activity, revolution, riots, civil commotion, strikes, or industrial action; and participation by the life assured in a criminal or unlawful act.",
+    "n_contexts": 5,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.4,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "reasoning": {
+      "faithfulness": {
+        "score": 1.0,
+        "reasoning": "All five claims in the generated answer are directly present in the retrieved context: 'Death of Your Immediate Family Member' appears under b.,a.; 'Natural disaster which has prevented You from continuing with the scheduled Trip' appears under b.,b.; 'Unexpected strike, riot or civil commotion which are beyond Your control' appears under b.,c.; 'You are unable to continue the Trip due to Illness, Injury or death of the Insured Person or Your Travelling Companion or Your Immediate Family Member or Your Travelling Companion's Immediate Family Member' appears under b.,d.; and 'Political disturbance, travel prohibition declared by the government or local authorities or airline authorities, which is not publicly known before the commencement of the Trip' appears under b.,e."
+      },
+      "answer_relevancy": {
+        "score": 0.4,
+        "reasoning": "The answer lists exclusions but they refer to travel\u2011related situations (e.g., death of an immediate family member, natural disaster preventing continuation of a trip, strikes, political disturbances), which are not specific to the critical illness policy. It does not directly address the exclusions under the critical illness policy, making it only vaguely related."
+      },
+      "context_precision": {
+        "score": 0.0,
+        "reasoning": "Parse error: No JSON found | Raw: 2"
+      },
+      "context_recall": {
+        "score": 0.0,
+        "reasoning": "Key point 1 (diagnosis, hospitalization, or treatment of a listed critical illness within 90 days of the policy\u2019s start or reinstatement): not found in context. Key point 2 (any pre\u2011existing disease diagnosed within 36 months (or for which medical advice/treatment was received within 48 months) before the policy\u2019s commencement or reinstatement): not found. Key point 3 (illnesses due to an external congenital defect diagnosed before age\u202f18): not found. Key point 4 (suicide, attempted suicide, or intentional self\u2011inflicted injury): not found. Key point 5 (the life insured being under the influence of non\u2011prescribed drugs, alcohol, narcotics, or psychotropic substances): not found. Key point 6 (war, invasion, hostilities, civil war, rebellion, terrorist activity, revolution, riots, civil commotion, strikes, or industrial action): not found. Key point 7 (participation by the life assured in a criminal or unlawful act): not found."
+      }
+    }
+  }
+]

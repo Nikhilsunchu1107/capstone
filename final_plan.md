@@ -69,7 +69,7 @@ capstone-deepseek/
 
 | ID | Question | Recommendation |
 |---|---|---|
-| D1 | Embeddings (F1) | **Local Ollama `nomic-embed-text`.** Free, already used by current Vector RAG. Same embedder for Vector AND Graph (fair). Alternative: NVIDIA NIM embeddings (old key, may be dead). |
+| D1 | Embeddings (F1) | **DECIDED (user): `nvidia/nemotron-3-embed-1b` on NVIDIA's OpenAI-compatible endpoint.** 2048 dims. No Ollama anywhere. Same embedder for Vector AND Graph. Passages use `input_type=passage`, queries use `input_type=query`. Cached per text in `cache/nvidia/embed/`. |
 | D2 | Judge model | **Same `deepseek` flash for all 3.** One judge = comparable. Note in paper: judge = generator family (self-preference bias). Mitigation: spot-check 15 rows by hand. |
 | D3 | Generator model | Same flash model for all 3. |
 | D4 | Thinking mode | Off for judge and generator. Cheaper. Deterministic. `temperature=0`. |
@@ -203,4 +203,5 @@ Run `graphify update .` (AGENTS.md rule). Commit per phase. Commit message ends 
 - Phase 1 DONE: endpoint verified. Models: `deepseek-flash`, `deepseek-v4-pro` (never use pro). Cache gate passed (2nd call = 0 paid calls). Thinking-off param accepted.
 - Phase 2 DONE: `eval/judge.py` + `eval/judge_sanity.py`. 9/9 checks pass, null rate 0/150. Judge now has 5 metrics: the 4 plan metrics + `answer_correctness` (gold answer vs generated answer). Reason: the 4 RAGAS metrics never compare the answer with the gold answer.
 - Judge reply format: JSON, reasoning first, score last. First version lost the score key in 3/114 replies. Fixed by stating both keys are required.
+- Embeddings DONE: `eval/embed.py`, NVIDIA `nemotron-3-embed-1b` (ID verified via models.list, 2048 dims, cache test passed). Needs `NVIDIA_API_KEY` in `.env`. Only 2 external services: DeepSeek (LLM) and NVIDIA (embeddings).
 - NEXT: Phase 3 (retrieval-only debug, hit@k, per strategy).

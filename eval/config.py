@@ -22,7 +22,13 @@ ANSWER_MAX_TOKENS = 512
 JUDGE_MAX_TOKENS = 800
 JUDGE_WORKERS = 8
 
-EMBED_MODEL = "nomic-embed-text"  # local Ollama; DeepSeek has no embeddings endpoint
+# DeepSeek has no embeddings endpoint, so embeddings use NVIDIA's OpenAI-compatible endpoint.
+NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
+NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "")
+EMBED_MODEL = "nvidia/nemotron-3-embed-1b"
+EMBED_DIM = 2048
+EMBED_BATCH = 32
+EMBED_CACHE_DIR = ROOT / "cache" / "nvidia" / "embed"
 TOP_K = 5
 MAX_CONTEXT_CHARS = 8000
 RANDOM_SEED = 42

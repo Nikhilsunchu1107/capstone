@@ -1,0 +1,552 @@
+[
+ {
+  "answer": "Not less than 60 days' written notice before the termination.",
+  "eval_id": "q01",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 12,
+    "quote": "by giving notice to the other in writing not less than 60 days prior to such termination"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, how much written notice must the Insured or the Insurer give to terminate the policy?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "After six (6) months from the expiration of the insurance period.",
+  "eval_id": "q02",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 5,
+    "quote": "The application for No Claims Bonus shall be submitted after six (6) months from the expiration of the insurance period"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, when can the Insured apply for the No Claims Bonus?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "30 days, beginning from the date of receipt of the policy document.",
+  "eval_id": "q03",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 10,
+    "quote": "shall be provided a free look period of 30 days beginning from the date of receipt of Policy document"
+   }
+  ],
+  "question": "How long is the free look period under the Arogya Sanjeevani policy, and from when does it start?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "It increases by 5% for each claim-free policy year, up to a maximum of 50% of the sum insured.",
+  "eval_id": "q04",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 5,
+    "quote": "Cumulative Bonus will be increased by 5% in respect of each claim free policy year ... subject to maximum of 50% of the sum insured"
+   }
+  ],
+  "question": "By how much does the Cumulative Bonus increase under the Arogya Sanjeevani policy, and what is its maximum?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "50%, applied only on the material cost of the total painting charges.",
+  "eval_id": "q05",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 2,
+    "quote": "In the case of painting, depreciation rate of 50% shall be applied only on the material cost of total paint"
+   }
+  ],
+  "question": "In the Auto Secure Commercial Vehicle Package Policy, what depreciation rate applies to painting, and on what amount?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "Within 30 days from the date the insured first notices the loss or damage.",
+  "eval_id": "q06",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 14,
+    "quote": "You must submit your claim in Our Claim Form at the earliest opportunity, but within 30 days from the date you first notice the loss or damage"
+   }
+  ],
+  "question": "Under the Bharat Griha Raksha policy, within how many days must the insured submit the claim form?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "At least 80% of the total premiums paid till the date of death, or the surrender value on the date of death, whichever is higher, provided the policy is in force.",
+  "eval_id": "q07",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 17,
+    "quote": "entitled to at least 80% of the total Premiums paid till the date of death or the surrender value available as on the date of death whichever is higher"
+   }
+  ],
+  "question": "Under the Click 2 Protect Optima Secure policy, what is payable if the life assured dies by suicide within 12 months of risk commencement?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "For up to a maximum of 7 working days.",
+  "eval_id": "q08",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 2,
+    "quote": "Lost wages for up to a maximum of 7 working days"
+   }
+  ],
+  "question": "Under the Cyber Shield policy, for how many days can lost wages be claimed after a cyber bullying or defamation event?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "Within 28 days of acquisition.",
+  "eval_id": "q09",
+  "evidence": [
+   {
+    "filename": "PORT_PACKAGE_Policy_wording_a5f317091b.pdf",
+    "page": 38,
+    "quote": "You may add equipment which you have not previously declared, subject to notifying us within 28 days of acquisition"
+   }
+  ],
+  "question": "Under the Port Package policy, within how many days must the insured notify the insurer of newly acquired equipment that was not previously declared?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "Not less than ninety (90) days' notice in writing.",
+  "eval_id": "q10",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_aviation_insurance.pdf_7b7e60200a.pdf",
+    "page": 14,
+    "quote": "may be cancelled by or on behalf of the Insurers provided ... not less than ninety (90) days notice in writing be given"
+   }
+  ],
+  "question": "Under the Tata AIG Aviation Insurance policy, how much notice must the Insurers give to cancel the insurance?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "Minor damage not exceeding Rs 7,500.",
+  "eval_id": "q11",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 5,
+    "quote": "the Insured may proceed with the repair of any minor damage not exceeding `7,500/-"
+   }
+  ],
+  "question": "Under the Contractors Plant and Machinery Insurance policy, up to what amount can the insured repair minor damage after notifying a claim?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "A substantial disturbance of the public peace by three (3) or more persons assembled together and acting with common intent.",
+  "eval_id": "q12",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 5,
+    "quote": "CIVIL COMMOTION means a substantial disturbance of the public peace by three (3) or more persons assembled together and acting with common intent"
+   }
+  ],
+  "question": "How does the Political Risk Insurance for Investors policy define Civil Commotion?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "It shall not exceed 60% of the market value of the insured animal.",
+  "eval_id": "q13",
+  "evidence": [
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 2,
+    "quote": "Indemnity limit for claim payable under Theft shall not exceed 60% of the market value of the Insured animal"
+   }
+  ],
+  "question": "Under the SBI General Livestock policy, what is the indemnity limit for a theft claim?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "The period during which direct solar irradiance exceeds 120 watts per square meter.",
+  "eval_id": "q14",
+  "evidence": [
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 4,
+    "quote": "the period during which direct solar irradiance exceeds the threshold value of 120 watts per square meter"
+   }
+  ],
+  "question": "In the Weather Insurance (Retail) policy, what solar irradiance threshold defines Sunshine Hours?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "9.50% per annum.",
+  "eval_id": "q15",
+  "evidence": [
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 22,
+    "quote": "The current compounding interest rate on loan is 9.50% p.a"
+   }
+  ],
+  "question": "What is the current compounding interest rate on a policy loan under the HDFC Life Smart Pension Plus policy?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "A fixed amount for every 12-hour period, up to the maximum number of days in the Policy Schedule.",
+  "eval_id": "q16",
+  "evidence": [
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 22,
+    "quote": "We will pay You a fixed amount as mentioned in the Policy Schedule, for every 12 hours period up to the maximum number of Days"
+   }
+  ],
+  "question": "Under the Tata AIG Travel Insurance International Plus Health policy, for what time unit is the Hijack/Kidnap Daily Allowance paid?",
+  "tier": "A_single_fact"
+ },
+ {
+  "answer": "Room rent, boarding and nursing: up to 2% of the sum insured, maximum Rs 5,000 per day. ICU/ICCU: up to 5% of the sum insured, maximum Rs 10,000 per day.",
+  "eval_id": "q17",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 4,
+    "quote": "up to 2% of the sum insured subject to maximum `5,000/ par day ... (ICU) / (ICCU) expenses up to 5% of sum insured subject to maximum of `10,000/- per day"
+   }
+  ],
+  "question": "Under the Arogya Sanjeevani policy, what are the limits for room rent and for ICU expenses?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "Emergency cashless: within 24 hours of hospitalization or before discharge, whichever is earlier. Planned cashless: at least 72 hours before hospitalization. Reimbursement: within 48 hours of admission or before discharge, whichever is earlier.",
+  "eval_id": "q18",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 7,
+    "quote": "Within 24 hours from the date of emergency hospitalization ... At least 72 hours prior to the planned Hospitalization. For Reimbursement Claims: i. Within 48 hours of admission"
+   }
+  ],
+  "question": "Under the Arogya Sanjeevani policy, what are the claim notification deadlines for emergency cashless, planned cashless, and reimbursement claims?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "Death 100%. Loss of two limbs, or sight of two eyes, or one limb and sight of one eye 100%. Loss of one limb or sight of one eye 50%. Permanent total disablement from other injuries 100%.",
+  "eval_id": "q19",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 5,
+    "quote": "i) Death 100% ii) Loss of two limbs or sight of two eyes or one limb and sight of one eye 100% iii) Loss of one limb or sight of one eye 50% iv) Permanent Total Disablement ... 100%"
+   }
+  ],
+  "question": "In the Auto Secure Commercial Vehicle Package Policy, what is the scale of compensation under the Personal Accident Cover for Owner-Driver?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "35% for a vehicle exceeding 4 years but not exceeding 5 years. 50% for a vehicle exceeding 10 years.",
+  "eval_id": "q20",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 2,
+    "quote": "Exceeding 4 years but not exceeding 5 years 35% Exceeding 5 years but not exceeding 10 years 40% Exceeding 10 years 50%"
+   }
+  ],
+  "question": "In the Auto Secure Commercial Vehicle Package Policy, what depreciation applies to other parts for a vehicle aged over 4 but not over 5 years, and for a vehicle over 10 years?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "30 days where the premium mode is other than monthly, and 15 days for the monthly mode.",
+  "eval_id": "q21",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 12,
+    "quote": "A grace period of 30 days, where the mode of payment of Premium is other than monthly and 15 days in case of monthly mode"
+   }
+  ],
+  "question": "What grace period does the Click 2 Protect Optima Secure policy allow for premium payment in each payment mode?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "Discovery must be no later than 90 days from the occurrence. The insured must report to the issuing bank or mobile wallet company within 72 hours of discovery, and file an FIR (or give a police complaint acknowledgement) within 72 hours of discovery.",
+  "eval_id": "q22",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 2,
+    "quote": "Discovery of Theft of funds is no longer than 90 days from the date of occurrence, c. You report to the issuing Bank or the Mobile wallet company within 72 hours of discovery ... d. You file a First Information Report (FIR) ... within 72 hours"
+   }
+  ],
+  "question": "Under the Cyber Shield policy, what time conditions must be met for a Theft of Funds claim?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "Up to 1 month: 75%. More than 1 and up to 3 months: 50%. More than 3 and up to 6 months: 25%. More than 6 months: nil.",
+  "eval_id": "q23",
+  "evidence": [
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 9,
+    "quote": "Up to 1 Month 75.00% 2 >1 month & Up to 3 Months 50.00% 3 >3 months & Up to 6 Months 25.00% 4 >6 months & Up to 12 Months Nil 5 Exceeding 12 months Nil"
+   }
+  ],
+  "question": "Under the Weather Insurance (Retail) policy, what percentage of premium is refunded on cancellation for each length of time the policy was in force?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "50% of the annual rate for 3 months, and 80% of the annual rate for 8 months.",
+  "eval_id": "q24",
+  "evidence": [
+   {
+    "filename": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+    "page": 5,
+    "quote": "3 months 50% of the Annual rate 4 months 60% of the Annual rate 6 months 75% of the Annual rate 8 months 80% of the Annual rate"
+   }
+  ],
+  "question": "Under the Specie Insurance policy, what short-period rate applies for a period not exceeding 3 months and for a period not exceeding 8 months?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "Up to 5% of the claim amount for reasonable fees of architect, surveyor and consulting engineer, and up to 2% of the claim amount for reasonable costs of removing debris from the site.",
+  "eval_id": "q25",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 8,
+    "quote": "Up to 5% of the Claim Amount for reasonable fees of architect, surveyor, consulting engineer; i. Up to 2 % of the Claim Amount for reasonable costs of removing debris from the site"
+   }
+  ],
+  "question": "Under the Home Building Cover of the Bharat Griha Raksha policy, what additional expenses are paid, and up to what share of the claim amount?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "The loan shall not exceed 80% of the available surrender value, and shall not be less than Rs 1,000. The effective annual interest on the loan must not exceed 50% of the annual annuity amount payable.",
+  "eval_id": "q26",
+  "evidence": [
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 22,
+    "quote": "shall not exceed 80% of the available surrender value ... not less than Rs.1, 000 ... effective annual interest amount payable on loan does not exceed 50% of the annual annuity amount"
+   }
+  ],
+  "question": "What limits apply to a policy loan under the HDFC Life Smart Pension Plus policy?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "Off cover: Somalia, Afghanistan, Palestine. Case by case and conditional (advance approval needed): Iran, Zimbabwe, Cuba, Pakistan.",
+  "eval_id": "q27",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 20,
+    "quote": "Case by case & Conditional Iran, Zimbabwe, Cuba, Pakistan *This category requires advance approval ... OFF COVER Somalia, Afghanistan, Palestine"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, which countries are off cover, and which are covered only case by case with advance approval?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "Immediately notify the Company by telephone or telegram and in writing, with the nature and extent of the loss. Take all reasonable steps to minimise the loss. Preserve the damaged or defective parts for inspection. Furnish all information and documentary evidence the Company requires.",
+  "eval_id": "q28",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 5,
+    "quote": "a) Immediately notify the Company by telephone or telegram as well as in writing ... b) Take all reasonable steps within his power to minimise ... c) Preserve the damaged or defective parts ... d) Furnish all such information and documentary evidence"
+   }
+  ],
+  "question": "Under the Contractors Plant and Machinery Insurance policy, what must the insured do after an occurrence that can give rise to a claim?",
+  "tier": "B_multi_part"
+ },
+ {
+  "answer": "The Insurer may terminate unilaterally with written notice of not less than 5 days. Normal termination by either party needs not less than 60 days' written notice.",
+  "eval_id": "q29",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 12,
+    "quote": "upon the Insured's Insolvency, the Insurer may unilaterally terminate the Policy by giving a written notice to the Insured not less than 5 (five) days prior ... not less than 60 days prior to such termination"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, the Insured becomes insolvent. How much notice must the Insurer give to terminate the policy, and how does this differ from normal termination?",
+  "tier": "C_apply_rule"
+ },
+ {
+  "answer": "No. Expenses for any illness within 30 days from the first policy commencement date are excluded, except claims arising from an accident. The exclusion does not apply if the insured has continuous coverage for more than twelve months.",
+  "eval_id": "q30",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 5,
+    "quote": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident ... shall not, however, apply if the Insured Person has Continuous Coverage for more than twelve months"
+   }
+  ],
+  "question": "A person with a new Arogya Sanjeevani policy is hospitalised for an illness 20 days after the first policy commencement date. Are the expenses covered?",
+  "tier": "C_apply_rule"
+ },
+ {
+  "answer": "No. Death due to diseases contracted within 15 days from the date of commencement of risk is excluded, unless the insurance is a continuous renewal without a break or the Waiver of Waiting Period add-on (4.4) is opted.",
+  "eval_id": "q31",
+  "evidence": [
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 2,
+    "quote": "Death of insured Animal due to diseases contracted within 15 days from the Date of Commencement of Risk, unless such insurance is a continuous renewal ... or Add-On cover 4.4, Waiver of Waiting Period, is opted"
+   }
+  ],
+  "question": "Under a new SBI General Livestock policy, an insured animal dies of a disease contracted 10 days after the commencement of risk. Is the death covered?",
+  "tier": "C_apply_rule"
+ },
+ {
+  "answer": "No. The discovery of the theft of funds must be no longer than 90 days from the date of occurrence.",
+  "eval_id": "q32",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 2,
+    "quote": "Discovery of Theft of funds is no longer than 90 days from the date of occurrence"
+   }
+  ],
+  "question": "Under the Cyber Shield policy, an insured discovers a theft of funds 100 days after it occurred. Does the claim meet the policy conditions?",
+  "tier": "C_apply_rule"
+ },
+ {
+  "answer": "No. The Company is not liable for loss or damage if no notice and completed claims form are received within fourteen days of its occurrence.",
+  "eval_id": "q33",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 5,
+    "quote": "The Company shall not be liable for any loss or damage of which no notice and completed claims form have been received by the Company within Fourteen days of its occurrence"
+   }
+  ],
+  "question": "Under the Contractors Plant and Machinery Insurance policy, the Company receives the notice and completed claim form 20 days after the damage occurred. Is the Company liable?",
+  "tier": "C_apply_rule"
+ },
+ {
+  "answer": "No. The Insured must notify the Company promptly, and in no event after more than thirty (30) days.",
+  "eval_id": "q34",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 13,
+    "quote": "to notify the Company promptly, and in no event after more than thirty (30) days, of any occurrence which could give rise to a claim"
+   }
+  ],
+  "question": "Under the Political Risk Insurance for Investors policy, the Insured notifies the Company 45 days after an occurrence that could give rise to a claim. Does this meet the Insured's obligation?",
+  "tier": "C_apply_rule"
+ },
+ {
+  "answer": "Cyber Shield. Its rate is 85% of the annual rate. The Specie Insurance rate is 80% of the annual rate.",
+  "eval_id": "q35",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 7,
+    "quote": "8 Months 85% of the Annual rate"
+   },
+   {
+    "filename": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+    "page": 5,
+    "quote": "8 months 80% of the Annual rate"
+   }
+  ],
+  "question": "For a period not exceeding 8 months, which policy has the higher short-period rate: Cyber Shield or Specie Insurance?",
+  "tier": "D_cross_document"
+ },
+ {
+  "answer": "Contractors Plant and Machinery: notice and completed claims form within 14 days of the occurrence. Bharat Griha Raksha: claim form within 30 days from the date the insured first notices the loss or damage.",
+  "eval_id": "q36",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 5,
+    "quote": "within Fourteen days of its occurrence"
+   },
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 14,
+    "quote": "within 30 days from the date you first notice the loss or damage"
+   }
+  ],
+  "question": "Compare the claim submission deadlines of the Contractors Plant and Machinery policy and the Bharat Griha Raksha policy.",
+  "tier": "D_cross_document"
+ },
+ {
+  "answer": "Aviation Insurance: within 7 days from receipt of the complaint. Cyber Shield: within 10 days from receipt of the complaint.",
+  "eval_id": "q37",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_aviation_insurance.pdf_7b7e60200a.pdf",
+    "page": 16,
+    "quote": "we will send you our response within a period of 7 days from the date of receipt of your complaint"
+   },
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 8,
+    "quote": "we will send Our response within a period of 10 days from the date of receipt of the complaint"
+   }
+  ],
+  "question": "How fast does the insurer respond to a first complaint under the Aviation Insurance policy and under the Cyber Shield policy?",
+  "tier": "D_cross_document"
+ },
+ {
+  "answer": "Click 2 Protect: 30 days (15 days for monthly mode), and the policy is considered in force with the risk cover. Arogya Sanjeevani: 30 days for renewal, and coverage is not available during the grace period.",
+  "eval_id": "q38",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 12,
+    "quote": "the Policy is considered to be in-force with the risk cover. A grace period of 30 days ... and 15 days in case of monthly mode"
+   },
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 10,
+    "quote": "can be renewed within the Grace Period of 30 days ... Coverage is not available during the Grace Period"
+   }
+  ],
+  "question": "Compare the grace period in the Click 2 Protect Optima Secure policy and the Arogya Sanjeevani policy. Is cover active during the grace period in each?",
+  "tier": "D_cross_document"
+ },
+ {
+  "answer": "Livestock: a copy of the FIR and Non Traceable Report within 30 days from the date of theft. Cyber Shield: an FIR (or police complaint acknowledgement) within 72 hours of discovery of the theft of funds.",
+  "eval_id": "q39",
+  "evidence": [
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 2,
+    "quote": "a copy of FIR report & Non Traceable Report from Police Station ... within 30 days from the date of theft of insured Animal"
+   },
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 2,
+    "quote": "file a First Information Report (FIR) ... within 72 hours upon discovery"
+   }
+  ],
+  "question": "Compare the police report deadlines for a theft claim under the SBI General Livestock policy and a theft of funds claim under the Cyber Shield policy.",
+  "tier": "D_cross_document"
+ },
+ {
+  "answer": "Both state the same rule. The insurer must comply within 30 days of receipt of the award. If it does not, a penalty of Rs 5,000 per day is payable to the complainant.",
+  "eval_id": "q40",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 25,
+    "quote": "comply with the award of the Insurance Ombudsman within 30 days ... a penalty of Rs. 5000/- per day shall be payable to the complainant"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 36,
+    "quote": "comply with the award of the Insurance Ombudsman within 30 days ... a penalty of Rs. 5000/- per day shall be payable to the complainant"
+   }
+  ],
+  "question": "In the Click 2 Protect Optima Secure and HDFC Life Smart Pension Plus policies, what happens if the insurer does not honour an Insurance Ombudsman award?",
+  "tier": "D_cross_document"
+ }
+]

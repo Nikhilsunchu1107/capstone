@@ -8,6 +8,8 @@ the judge reply cannot be parsed twice; it is never replaced by a default number
 import json
 from concurrent.futures import ThreadPoolExecutor
 
+from openai import APIStatusError
+
 from eval import config, llm
 
 METRICS = ("faithfulness", "answer_relevancy", "context_precision", "context_recall", "answer_correctness")
@@ -79,17 +81,29 @@ def _parse(raw: str) -> dict:
 
 
 def score_metric(metric: str, row: dict) -> dict:
+    """Score one metric. The reply must hold a numeric "score" key.
+
+    On a bad reply, ask once more with the model's own reply shown. The model supplies
+    the number. No default score is ever used: a second failure gives score None.
+    """
     prompt = _user_prompt(metric, row)
     err = raw = ""
-    for tag in ("", "retry1"):
-        raw = llm.chat(
-            prompt,
-            system=SYSTEM[metric] + _FORMAT,
-            model=config.JUDGE_MODEL,
-            max_tokens=config.JUDGE_MAX_TOKENS,
-            json_mode=True,
-            tag=tag,
+    for attempt in range(2):
+        text = prompt if attempt == 0 else (
+            f"{prompt}\n\nYour previous reply was:\n{raw}\n\n"
+            'It had no valid numeric "score" key. Reply again with one JSON object only: '
+            '{"reasoning": "<one sentence>", "score": <number between 0.0 and 1.0>}'
         )
+        try:
+            raw = llm.chat(
+                text,
+                system=SYSTEM[metric] + _FORMAT,
+                model=config.JUDGE_MODEL,
+                max_tokens=config.JUDGE_MAX_TOKENS,
+                json_mode=True,
+            )
+        except APIStatusError as e:  # e.g. prompt longer than the model context
+            return {"score": None, "reasoning": f"API_ERROR {e.status_code}: {str(e)[:200]}"}
         try:
             return _parse(raw)
         except (ValueError, KeyError, TypeError) as e:

@@ -1,0 +1,1496 @@
+{
+ "rows": [
+  {
+   "id": "q01",
+   "tier": "A_single_fact",
+   "question": "Under the Trade Credit Insurance policy, how much written notice must the Insured or the Insurer give to terminate the policy?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 13674,
+   "top": [
+    [
+     "14..Trade credit insc_GEN",
+     12,
+     0.0
+    ],
+    [
+     "14..Trade credit insc_GEN",
+     12,
+     0.0
+    ],
+    [
+     "14..Trade credit insc_GEN",
+     13,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q02",
+   "tier": "A_single_fact",
+   "question": "Under the Trade Credit Insurance policy, when can the Insured apply for the No Claims Bonus?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 7896,
+   "top": [
+    [
+     "14..Trade credit insc_GEN",
+     5,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q03",
+   "tier": "A_single_fact",
+   "question": "How long is the free look period under the Arogya Sanjeevani policy, and from when does it start?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 318226,
+   "top": [
+    [
+     "Arogya_Sanjeevani_Policy_",
+     10,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     9,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     4,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q04",
+   "tier": "A_single_fact",
+   "question": "By how much does the Cumulative Bonus increase under the Arogya Sanjeevani policy, and what is its maximum?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    2
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 129799,
+   "top": [
+    [
+     "Arogya_Sanjeevani_Policy_",
+     4,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     5,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     5,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q05",
+   "tier": "A_single_fact",
+   "question": "In the Auto Secure Commercial Vehicle Package Policy, what depreciation rate applies to painting, and on what amount?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 15414,
+   "top": [
+    [
+     "Auto_Secure_Commercial_Ve",
+     2,
+     0.0
+    ],
+    [
+     "Auto_Secure_Commercial_Ve",
+     2,
+     0.0
+    ],
+    [
+     "Auto_Secure_Commercial_Ve",
+     3,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q06",
+   "tier": "A_single_fact",
+   "question": "Under the Bharat Griha Raksha policy, within how many days must the insured submit the claim form?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 24199,
+   "top": [
+    [
+     "Bharat_Griha_Raksha_Polic",
+     13,
+     0.0
+    ],
+    [
+     "Bharat_Griha_Raksha_Polic",
+     12,
+     0.0
+    ],
+    [
+     "Bharat_Griha_Raksha_Polic",
+     11,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q07",
+   "tier": "A_single_fact",
+   "question": "Under the Click 2 Protect Optima Secure policy, what is payable if the life assured dies by suicide within 12 months of risk commencement?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    2
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 37929,
+   "top": [
+    [
+     "Click-2-Protect-Optima-Se",
+     15,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     17,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     15,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q08",
+   "tier": "A_single_fact",
+   "question": "Under the Cyber Shield policy, for how many days can lost wages be claimed after a cyber bullying or defamation event?",
+   "n_evidence": 1,
+   "strict": [
+    2
+   ],
+   "page": [
+    2
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 26147,
+   "top": [
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     2,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q09",
+   "tier": "A_single_fact",
+   "question": "Under the Port Package policy, within how many days must the insured notify the insurer of newly acquired equipment that was not previously declared?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 32697,
+   "top": [
+    [
+     "PORT_PACKAGE_Policy_wordi",
+     101,
+     0.0
+    ],
+    [
+     "PORT_PACKAGE_Policy_wordi",
+     39,
+     0.0
+    ],
+    [
+     "PORT_PACKAGE_Policy_wordi",
+     103,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q10",
+   "tier": "A_single_fact",
+   "question": "Under the Tata AIG Aviation Insurance policy, how much notice must the Insurers give to cancel the insurance?",
+   "n_evidence": 1,
+   "strict": [
+    3
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 30742,
+   "top": [
+    [
+     "Policy_Wordings_aviation_",
+     2,
+     0.0
+    ],
+    [
+     "Policy_Wordings_aviation_",
+     2,
+     0.0
+    ],
+    [
+     "Policy_Wordings_aviation_",
+     13,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q11",
+   "tier": "A_single_fact",
+   "question": "Under the Contractors Plant and Machinery Insurance policy, up to what amount can the insured repair minor damage after notifying a claim?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 150280,
+   "top": [
+    [
+     "Policy_Wordings_contracto",
+     2,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q12",
+   "tier": "A_single_fact",
+   "question": "How does the Political Risk Insurance for Investors policy define Civil Commotion?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 15100,
+   "top": [
+    [
+     "Policy_Wordings_political",
+     5,
+     0.0
+    ],
+    [
+     "Policy_Wordings_political",
+     4,
+     0.0
+    ],
+    [
+     "Policy_Wordings_political",
+     3,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q13",
+   "tier": "A_single_fact",
+   "question": "Under the SBI General Livestock policy, what is the indemnity limit for a theft claim?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 27357,
+   "top": [
+    [
+     "SBI_General_Livestock_Pol",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q14",
+   "tier": "A_single_fact",
+   "question": "In the Weather Insurance (Retail) policy, what solar irradiance threshold defines Sunshine Hours?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    2
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 14513,
+   "top": [
+    [
+     "Weather_Insurance_Policy_",
+     2,
+     0.0
+    ],
+    [
+     "Weather_Insurance_Policy_",
+     4,
+     0.0
+    ],
+    [
+     "Weather_Insurance_Policy_",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q15",
+   "tier": "A_single_fact",
+   "question": "What is the current compounding interest rate on a policy loan under the HDFC Life Smart Pension Plus policy?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 15867,
+   "top": [
+    [
+     "hdfc-life-smart-pension-p",
+     22,
+     0.0
+    ],
+    [
+     "hdfc-life-smart-pension-p",
+     21,
+     0.0
+    ],
+    [
+     "hdfc-life-smart-pension-p",
+     20,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q16",
+   "tier": "A_single_fact",
+   "question": "Under the Tata AIG Travel Insurance International Plus Health policy, for what time unit is the Hijack/Kidnap Daily Allowance paid?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 16435,
+   "top": [
+    [
+     "tata_aig_travel_insurance",
+     22,
+     0.0
+    ],
+    [
+     "tata_aig_travel_insurance",
+     21,
+     0.0
+    ],
+    [
+     "tata_aig_travel_insurance",
+     22,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q17",
+   "tier": "B_multi_part",
+   "question": "Under the Arogya Sanjeevani policy, what are the limits for room rent and for ICU expenses?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 388545,
+   "top": [
+    [
+     "Arogya_Sanjeevani_Policy_",
+     4,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     4,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q18",
+   "tier": "B_multi_part",
+   "question": "Under the Arogya Sanjeevani policy, what are the claim notification deadlines for emergency cashless, planned cashless, and reimbursement claims?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 120248,
+   "top": [
+    [
+     "Arogya_Sanjeevani_Policy_",
+     7,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     6,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     7,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q19",
+   "tier": "B_multi_part",
+   "question": "In the Auto Secure Commercial Vehicle Package Policy, what is the scale of compensation under the Personal Accident Cover for Owner-Driver?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 20114,
+   "top": [
+    [
+     "Auto_Secure_Commercial_Ve",
+     5,
+     0.0
+    ],
+    [
+     "Auto_Secure_Commercial_Ve",
+     4,
+     0.0
+    ],
+    [
+     "Auto_Secure_Commercial_Ve",
+     5,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q20",
+   "tier": "B_multi_part",
+   "question": "In the Auto Secure Commercial Vehicle Package Policy, what depreciation applies to other parts for a vehicle aged over 4 but not over 5 years, and for a vehicle over 10 years?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    2
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 20227,
+   "top": [
+    [
+     "Auto_Secure_Commercial_Ve",
+     3,
+     0.0
+    ],
+    [
+     "Auto_Secure_Commercial_Ve",
+     2,
+     0.0
+    ],
+    [
+     "Auto_Secure_Commercial_Ve",
+     3,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q21",
+   "tier": "B_multi_part",
+   "question": "What grace period does the Click 2 Protect Optima Secure policy allow for premium payment in each payment mode?",
+   "n_evidence": 1,
+   "strict": [
+    2
+   ],
+   "page": [
+    2
+   ],
+   "budget": [
+    2
+   ],
+   "chars": 23771,
+   "top": [
+    [
+     "Click-2-Protect-Optima-Se",
+     3,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     12,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     11,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q22",
+   "tier": "B_multi_part",
+   "question": "Under the Cyber Shield policy, what time conditions must be met for a Theft of Funds claim?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 26147,
+   "top": [
+    [
+     "Cyber_Shield_Policy_Wordi",
+     2,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q23",
+   "tier": "B_multi_part",
+   "question": "Under the Weather Insurance (Retail) policy, what percentage of premium is refunded on cancellation for each length of time the policy was in force?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 27893,
+   "top": [
+    [
+     "Weather_Insurance_Policy_",
+     9,
+     0.0
+    ],
+    [
+     "Weather_Insurance_Policy_",
+     8,
+     0.0
+    ],
+    [
+     "Weather_Insurance_Policy_",
+     7,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q24",
+   "tier": "B_multi_part",
+   "question": "Under the Specie Insurance policy, what short-period rate applies for a period not exceeding 3 months and for a period not exceeding 8 months?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 17908,
+   "top": [
+    [
+     "specie_insurance_policy_w",
+     5,
+     0.0
+    ],
+    [
+     "specie_insurance_policy_w",
+     5,
+     0.0
+    ],
+    [
+     "specie_insurance_policy_w",
+     6,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q25",
+   "tier": "B_multi_part",
+   "question": "Under the Home Building Cover of the Bharat Griha Raksha policy, what additional expenses are paid, and up to what share of the claim amount?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 16316,
+   "top": [
+    [
+     "Bharat_Griha_Raksha_Polic",
+     7,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q26",
+   "tier": "B_multi_part",
+   "question": "What limits apply to a policy loan under the HDFC Life Smart Pension Plus policy?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 14915,
+   "top": [
+    [
+     "hdfc-life-smart-pension-p",
+     22,
+     0.0
+    ],
+    [
+     "hdfc-life-smart-pension-p",
+     21,
+     0.0
+    ],
+    [
+     "hdfc-life-smart-pension-p",
+     23,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q27",
+   "tier": "B_multi_part",
+   "question": "Under the Trade Credit Insurance policy, which countries are off cover, and which are covered only case by case with advance approval?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 29672,
+   "top": [
+    [
+     "14..Trade credit insc_GEN",
+     19,
+     0.0
+    ],
+    [
+     "14..Trade credit insc_GEN",
+     14,
+     0.0
+    ],
+    [
+     "14..Trade credit insc_GEN",
+     14,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q28",
+   "tier": "B_multi_part",
+   "question": "Under the Contractors Plant and Machinery Insurance policy, what must the insured do after an occurrence that can give rise to a claim?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 150280,
+   "top": [
+    [
+     "Policy_Wordings_contracto",
+     2,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q29",
+   "tier": "C_apply_rule",
+   "question": "Under the Trade Credit Insurance policy, the Insured becomes insolvent. How much notice must the Insurer give to terminate the policy, and how does this differ from normal termination?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 13674,
+   "top": [
+    [
+     "14..Trade credit insc_GEN",
+     12,
+     0.0
+    ],
+    [
+     "14..Trade credit insc_GEN",
+     12,
+     0.0
+    ],
+    [
+     "14..Trade credit insc_GEN",
+     13,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q30",
+   "tier": "C_apply_rule",
+   "question": "A person with a new Arogya Sanjeevani policy is hospitalised for an illness 20 days after the first policy commencement date. Are the expenses covered?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    1
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 129799,
+   "top": [
+    [
+     "Arogya_Sanjeevani_Policy_",
+     5,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     5,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     4,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q31",
+   "tier": "C_apply_rule",
+   "question": "Under a new SBI General Livestock policy, an insured animal dies of a disease contracted 10 days after the commencement of risk. Is the death covered?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 27357,
+   "top": [
+    [
+     "SBI_General_Livestock_Pol",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q32",
+   "tier": "C_apply_rule",
+   "question": "Under the Cyber Shield policy, an insured discovers a theft of funds 100 days after it occurred. Does the claim meet the policy conditions?",
+   "n_evidence": 1,
+   "strict": [
+    3
+   ],
+   "page": [
+    3
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 26147,
+   "top": [
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     2,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q33",
+   "tier": "C_apply_rule",
+   "question": "Under the Contractors Plant and Machinery Insurance policy, the Company receives the notice and completed claim form 20 days after the damage occurred. Is the Company liable?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    null
+   ],
+   "chars": 150280,
+   "top": [
+    [
+     "Policy_Wordings_contracto",
+     2,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q34",
+   "tier": "C_apply_rule",
+   "question": "Under the Political Risk Insurance for Investors policy, the Insured notifies the Company 45 days after an occurrence that could give rise to a claim. Does this meet the Insured's obligation?",
+   "n_evidence": 1,
+   "strict": [
+    1
+   ],
+   "page": [
+    null
+   ],
+   "budget": [
+    1
+   ],
+   "chars": 17734,
+   "top": [
+    [
+     "Policy_Wordings_political",
+     12,
+     0.0
+    ],
+    [
+     "Policy_Wordings_political",
+     14,
+     0.0
+    ],
+    [
+     "Policy_Wordings_political",
+     5,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q35",
+   "tier": "D_cross_document",
+   "question": "For a period not exceeding 8 months, which policy has the higher short-period rate: Cyber Shield or Specie Insurance?",
+   "n_evidence": 2,
+   "strict": [
+    1,
+    2
+   ],
+   "page": [
+    null,
+    2
+   ],
+   "budget": [
+    null,
+    null
+   ],
+   "chars": 39128,
+   "top": [
+    [
+     "Cyber_Shield_Policy_Wordi",
+     6,
+     0.0
+    ],
+    [
+     "specie_insurance_policy_w",
+     5,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     6,
+     0.0
+    ],
+    [
+     "specie_insurance_policy_w",
+     5,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     5,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q36",
+   "tier": "D_cross_document",
+   "question": "Compare the claim submission deadlines of the Contractors Plant and Machinery policy and the Bharat Griha Raksha policy.",
+   "n_evidence": 2,
+   "strict": [
+    1,
+    2
+   ],
+   "page": [
+    null,
+    null
+   ],
+   "budget": [
+    null,
+    null
+   ],
+   "chars": 168106,
+   "top": [
+    [
+     "Policy_Wordings_contracto",
+     2,
+     0.0
+    ],
+    [
+     "Bharat_Griha_Raksha_Polic",
+     13,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ],
+    [
+     "Bharat_Griha_Raksha_Polic",
+     12,
+     0.0
+    ],
+    [
+     "Policy_Wordings_contracto",
+     1,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q37",
+   "tier": "D_cross_document",
+   "question": "How fast does the insurer respond to a first complaint under the Aviation Insurance policy and under the Cyber Shield policy?",
+   "n_evidence": 2,
+   "strict": [
+    1,
+    2
+   ],
+   "page": [
+    1,
+    2
+   ],
+   "budget": [
+    1,
+    null
+   ],
+   "chars": 51635,
+   "top": [
+    [
+     "Policy_Wordings_aviation_",
+     16,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     8,
+     0.0
+    ],
+    [
+     "Policy_Wordings_aviation_",
+     14,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     7,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     6,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q38",
+   "tier": "D_cross_document",
+   "question": "Compare the grace period in the Click 2 Protect Optima Secure policy and the Arogya Sanjeevani policy. Is cover active during the grace period in each?",
+   "n_evidence": 2,
+   "strict": [
+    1,
+    2
+   ],
+   "page": [
+    1,
+    4
+   ],
+   "budget": [
+    1,
+    null
+   ],
+   "chars": 84358,
+   "top": [
+    [
+     "Click-2-Protect-Optima-Se",
+     12,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     9,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     11,
+     0.0
+    ],
+    [
+     "Arogya_Sanjeevani_Policy_",
+     10,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     3,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q39",
+   "tier": "D_cross_document",
+   "question": "Compare the police report deadlines for a theft claim under the SBI General Livestock policy and a theft of funds claim under the Cyber Shield policy.",
+   "n_evidence": 2,
+   "strict": [
+    1,
+    2
+   ],
+   "page": [
+    null,
+    2
+   ],
+   "budget": [
+    null,
+    null
+   ],
+   "chars": 53504,
+   "top": [
+    [
+     "SBI_General_Livestock_Pol",
+     1,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     2,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ],
+    [
+     "Cyber_Shield_Policy_Wordi",
+     3,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "q40",
+   "tier": "D_cross_document",
+   "question": "In the Click 2 Protect Optima Secure and HDFC Life Smart Pension Plus policies, what happens if the insurer does not honour an Insurance Ombudsman award?",
+   "n_evidence": 2,
+   "strict": [
+    1,
+    2
+   ],
+   "page": [
+    1,
+    2
+   ],
+   "budget": [
+    1,
+    2
+   ],
+   "chars": 22788,
+   "top": [
+    [
+     "Click-2-Protect-Optima-Se",
+     25,
+     0.0
+    ],
+    [
+     "hdfc-life-smart-pension-p",
+     36,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     24,
+     0.0
+    ],
+    [
+     "hdfc-life-smart-pension-p",
+     35,
+     0.0
+    ],
+    [
+     "Click-2-Protect-Optima-Se",
+     24,
+     0.0
+    ]
+   ]
+  }
+ ],
+ "summary": {
+  "n": 40,
+  "mean_chars_top5": 62920.525,
+  "strict": {
+   "any@1": 0.9,
+   "all@1": 0.75,
+   "any@3": 1.0,
+   "all@3": 1.0,
+   "any@5": 1.0,
+   "all@5": 1.0,
+   "any@10": 1.0,
+   "all@10": 1.0,
+   "mrr": 0.9041666666666666
+  },
+  "page": {
+   "any@1": 0.475,
+   "all@1": 0.4,
+   "any@3": 0.7,
+   "all@3": 0.625,
+   "any@5": 0.7,
+   "all@5": 0.65,
+   "any@10": 0.7,
+   "all@10": 0.65,
+   "mrr": 0.5489583333333333
+  },
+  "budget": {
+   "any@1": 0.65,
+   "all@1": 0.575,
+   "any@3": 0.675,
+   "all@3": 0.625,
+   "any@5": 0.675,
+   "all@5": 0.625,
+   "any@10": 0.675,
+   "all@10": 0.625,
+   "mrr": 0.63125
+  },
+  "by_tier": {
+   "A_single_fact": {
+    "n": 16,
+    "strict": {
+     "any@1": 0.875,
+     "all@1": 0.875,
+     "any@3": 1.0,
+     "all@3": 1.0,
+     "any@5": 1.0,
+     "all@5": 1.0,
+     "any@10": 1.0,
+     "all@10": 1.0,
+     "mrr": 0.9270833333333334
+    },
+    "budget": {
+     "any@1": 0.625,
+     "all@1": 0.625,
+     "any@3": 0.625,
+     "all@3": 0.625,
+     "any@5": 0.625,
+     "all@5": 0.625,
+     "any@10": 0.625,
+     "all@10": 0.625,
+     "mrr": 0.625
+    }
+   },
+   "B_multi_part": {
+    "n": 12,
+    "strict": {
+     "any@1": 0.9166666666666666,
+     "all@1": 0.9166666666666666,
+     "any@3": 1.0,
+     "all@3": 1.0,
+     "any@5": 1.0,
+     "all@5": 1.0,
+     "any@10": 1.0,
+     "all@10": 1.0,
+     "mrr": 0.9583333333333334
+    },
+    "budget": {
+     "any@1": 0.8333333333333334,
+     "all@1": 0.8333333333333334,
+     "any@3": 0.9166666666666666,
+     "all@3": 0.9166666666666666,
+     "any@5": 0.9166666666666666,
+     "all@5": 0.9166666666666666,
+     "any@10": 0.9166666666666666,
+     "all@10": 0.9166666666666666,
+     "mrr": 0.875
+    }
+   },
+   "C_apply_rule": {
+    "n": 6,
+    "strict": {
+     "any@1": 0.8333333333333334,
+     "all@1": 0.8333333333333334,
+     "any@3": 1.0,
+     "all@3": 1.0,
+     "any@5": 1.0,
+     "all@5": 1.0,
+     "any@10": 1.0,
+     "all@10": 1.0,
+     "mrr": 0.8888888888888888
+    },
+    "budget": {
+     "any@1": 0.5,
+     "all@1": 0.5,
+     "any@3": 0.5,
+     "all@3": 0.5,
+     "any@5": 0.5,
+     "all@5": 0.5,
+     "any@10": 0.5,
+     "all@10": 0.5,
+     "mrr": 0.5
+    }
+   },
+   "D_cross_document": {
+    "n": 6,
+    "strict": {
+     "any@1": 1.0,
+     "all@1": 0.0,
+     "any@3": 1.0,
+     "all@3": 1.0,
+     "any@5": 1.0,
+     "all@5": 1.0,
+     "any@10": 1.0,
+     "all@10": 1.0,
+     "mrr": 0.75
+    },
+    "budget": {
+     "any@1": 0.5,
+     "all@1": 0.0,
+     "any@3": 0.5,
+     "all@3": 0.16666666666666666,
+     "any@5": 0.5,
+     "all@5": 0.16666666666666666,
+     "any@10": 0.5,
+     "all@10": 0.16666666666666666,
+     "mrr": 0.2916666666666667
+    }
+   }
+  }
+ }
+}

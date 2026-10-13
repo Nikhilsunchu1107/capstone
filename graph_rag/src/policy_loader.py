@@ -9,6 +9,7 @@ from pathlib import Path
 import fitz  # PyMuPDF
 
 from graph_rag.config import CHUNK_OVERLAP, CHUNK_SIZE
+from eval import textclean
 from src.data_loader import _split_text
 from src.types import ChunkRecord
 
@@ -81,7 +82,7 @@ def load_policy_documents(
         # --- Extract text with PyMuPDF ---
         try:
             with fitz.open(str(pdf_path)) as doc:
-                raw_pages: list[str] = [page.get_text() for page in doc]
+                raw_pages: list[str] = textclean.strip_pages([page.get_text() for page in doc])
         except Exception as exc:  # noqa: BLE001
             warnings.warn(
                 f"[PolicyLoader] Could not open '{pdf_path.name}': {exc}. Skipping.",

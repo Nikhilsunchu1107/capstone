@@ -18,15 +18,15 @@ _client = None
 def client() -> OpenAI:
     global _client
     if _client is None:
-        if not config.DEEPSEEK_API_KEY:
-            raise RuntimeError("DEEPSEEK_API_KEY is not set in .env")
-        _client = OpenAI(base_url=config.DEEPSEEK_BASE_URL, api_key=config.DEEPSEEK_API_KEY)
+        if not config.LLM_API_KEY:
+            raise RuntimeError("LLM_API_KEY is not set in .env")
+        _client = OpenAI(base_url=config.LLM_BASE_URL, api_key=config.LLM_API_KEY)
     return _client
 
 
 def _check_model(model: str) -> None:
     if not model:
-        raise RuntimeError("DEEPSEEK_MODEL is not set in .env (run `python -m eval.llm`)")
+        raise RuntimeError("LLM_MODEL is not set in .env (run `python -m eval.llm`)")
     if any(m in model.lower() for m in config.FORBIDDEN_MODEL_MARKERS):
         raise RuntimeError(f"Model '{model}' is not allowed: flash tier only")
 
@@ -35,7 +35,12 @@ def _key(payload: dict) -> str:
     return hashlib.sha256(json.dumps(payload, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 
 
-def chat(
+def chat(prompt: str, **kw) -> str:
+    """Return the completion text. See chat_full."""
+    return chat_full(prompt, **kw)[0]
+
+
+def chat_full(
     prompt: str,
     *,
     system: str | None = None,
@@ -44,12 +49,12 @@ def chat(
     json_mode: bool = False,
     tag: str = "",
     max_retries: int = 6,
-) -> str:
-    """Return the completion text. Identical calls are served from the disk cache.
+) -> tuple[str, str]:
+    """Return (completion text, finish_reason). Identical calls are served from the disk cache.
 
     `tag` is part of the cache key only (not sent); change it to force a fresh call.
     """
-    model = model or config.DEEPSEEK_MODEL
+    model = model or config.LLM_MODEL
     _check_model(model)
     messages = ([{"role": "system", "content": system}] if system else []) + [
         {"role": "user", "content": prompt}
@@ -65,7 +70,8 @@ def chat(
     }
     path = config.LLM_CACHE_DIR / f"{_key(payload)}.json"
     if path.exists():
-        return json.loads(path.read_text())["content"]
+        rec = json.loads(path.read_text())
+        return rec["content"], rec.get("finish_reason", "stop")
 
     kwargs = dict(
         model=model,
@@ -105,7 +111,7 @@ def chat(
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(record, ensure_ascii=False))
     tmp.replace(path)
-    return content
+    return content, record["finish_reason"]
 
 
 def usage_totals() -> dict:
@@ -123,10 +129,10 @@ if __name__ == "__main__":
     print("Models on this endpoint:")
     for m in client().models.list():
         print("  ", m.id)
-    if not config.DEEPSEEK_MODEL:
-        raise SystemExit("\nSet DEEPSEEK_MODEL in .env to the flash model ID above, then run again.")
+    if not config.LLM_MODEL:
+        raise SystemExit("\nSet LLM_MODEL in .env to the flash model ID above, then run again.")
     before = usage_totals()
-    print(f"\nModel: {config.DEEPSEEK_MODEL}")
+    print(f"\nModel: {config.LLM_MODEL}")
     print("Reply 1:", chat("Reply with the single word: ready", max_tokens=16))
     mid = usage_totals()
     print("Reply 2:", chat("Reply with the single word: ready", max_tokens=16))

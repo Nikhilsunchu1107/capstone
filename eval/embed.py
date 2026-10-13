@@ -1,4 +1,4 @@
-"""Embeddings through NVIDIA's OpenAI-compatible endpoint, cached on disk per text.
+"""Embeddings through an OpenAI-compatible endpoint, cached on disk per text.
 
 Passages and queries use different `input_type` values, as the model requires.
 """
@@ -18,9 +18,9 @@ _client = None
 def _cli() -> OpenAI:
     global _client
     if _client is None:
-        if not config.NVIDIA_API_KEY:
-            raise RuntimeError("NVIDIA_API_KEY is not set in .env")
-        _client = OpenAI(base_url=config.NVIDIA_BASE_URL, api_key=config.NVIDIA_API_KEY)
+        if not config.EMBED_API_KEY:
+            raise RuntimeError("EMBED_API_KEY is not set in .env")
+        _client = OpenAI(base_url=config.EMBED_BASE_URL, api_key=config.EMBED_API_KEY)
     return _client
 
 

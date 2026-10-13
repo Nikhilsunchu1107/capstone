@@ -33,5 +33,6 @@ outputs/
 .dist
 .PageIndex
 # DeepSeek per-call cache (re-creatable, large)
-cache/deepseek/llm/
-cache/nvidia/
+cache/llm/
+cache/embeddings/
+pageindex_rag/.pageindex/.lock

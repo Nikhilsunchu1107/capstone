@@ -8,34 +8,39 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
 
-DEEPSEEK_BASE_URL = "https://api.deepseek.com"
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
+# Any OpenAI-compatible chat endpoint. Settings come from .env: LLM_BASE_URL, LLM_API_KEY, LLM_MODEL.
+# The older names DEEPSEEK_API_KEY and DEEPSEEK_MODEL are still read as a fallback.
+LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.deepseek.com")
+LLM_API_KEY = os.getenv("LLM_API_KEY") or os.getenv("DEEPSEEK_API_KEY", "")
 # Exact ID comes from `python -m eval.llm` (models.list). Flash tier only.
-DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "")
+LLM_MODEL = os.getenv("LLM_MODEL") or os.getenv("DEEPSEEK_MODEL", "")
 FORBIDDEN_MODEL_MARKERS = ("pro", "reasoner")
 
-GENERATOR_MODEL = DEEPSEEK_MODEL
-JUDGE_MODEL = DEEPSEEK_MODEL
+GENERATOR_MODEL = LLM_MODEL
+JUDGE_MODEL = LLM_MODEL
 TEMPERATURE = 0.0
 THINKING = "disabled"
 ANSWER_MAX_TOKENS = 512
 JUDGE_MAX_TOKENS = 800
 JUDGE_WORKERS = 8
 
-# DeepSeek has no embeddings endpoint, so embeddings use NVIDIA's OpenAI-compatible endpoint.
-NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
-NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "")
-EMBED_MODEL = "nvidia/nemotron-3-embed-1b"
+# The chat endpoint has no embeddings API, so embeddings use a second OpenAI-compatible endpoint.
+# Settings: EMBED_BASE_URL, EMBED_API_KEY (fallback: NVIDIA_API_KEY), EMBED_MODEL.
+EMBED_BASE_URL = os.getenv("EMBED_BASE_URL", "https://integrate.api.nvidia.com/v1")
+EMBED_API_KEY = os.getenv("EMBED_API_KEY") or os.getenv("NVIDIA_API_KEY", "")
+EMBED_MODEL = os.getenv("EMBED_MODEL", "nvidia/nemotron-3-embed-1b")
 EMBED_DIM = 2048
 EMBED_BATCH = 32
-EMBED_CACHE_DIR = ROOT / "cache" / "nvidia" / "embed"
+EMBED_CACHE_DIR = ROOT / "cache" / "embeddings"
 TOP_K = 5
-MAX_CONTEXT_CHARS = 8000
+# Generation has NO context cap: each strategy passes its natural retrieval unit.
+# The cap below is used only by the retrieval-check 'budget' metric (reported as an extra row).
+RETRIEVAL_BUDGET_CHARS = 8000
 RANDOM_SEED = 42
 
 DATA_DIR = ROOT / "data"
 PDF_DIR = DATA_DIR / "Policy_Documents_Curated_15"
 EVAL_SET = DATA_DIR / "eval_set.json"
 EVAL_SET_SHA256 = "ce3683e0c5f9813abdf125302a2010afc6e359cacaaf4ebae055e7e70eb4b61a"
-LLM_CACHE_DIR = ROOT / "cache" / "deepseek" / "llm"
+LLM_CACHE_DIR = ROOT / "cache" / "llm"
 RESULTS_DIR = ROOT / "eval" / "results"

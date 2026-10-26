@@ -1,191 +1,198 @@
 # Hand-check sheet (15 rows). For each row write: is the answer correct vs the gold? y/n
 
-## 1. Vector RAG / q08 (A_single_fact)
-**Q:** Under the Cyber Shield policy, for how many days can lost wages be claimed after a cyber bullying or defamation event?
+## 1. Vector RAG / q114 (H_paraphrased)
+**Q:** A crane at our container terminal is insured for less than it is worth on the market. When does the insurer scale down a damage payout, and when does it not?
 
-**Gold:** For up to a maximum of 7 working days.
+**Gold:** The reduction (Average) applies only if the insured value is less than 80% of the market value of the item. The payout is then reduced by the percentage by which the insured value is below the market value. It does not apply if the insured value is an agreed value, and it does not apply to freight charges and labour costs.
 
-**Answer:** Under the Cyber Shield policy, lost wages can be claimed for up to a maximum of 7 working days after a cyber bullying or defamation event.
+**Answer:** The insurer scales down a damage payout under the Average clause. According to the context, if the market value of an item of equipment at the time of an accident is greater than the insured value, the insurer will reduce reimbursement by the percentage by which the insured value of the item is less than the market value.
 
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
+This scaling down applies only if the insured value is less than 80% of the market value of the item (6.1). It applies separately to each item of equipment (6.2).
 
-**Your verdict (answer correct? y/n):** 
+It does **not** apply:
+- to freight charges and labour costs (6.3)
+- if the insured value is an agreed value (6.4)
 
-## 2. Vector RAG / q02 (A_single_fact)
-**Q:** Under the Trade Credit Insurance policy, when can the Insured apply for the No Claims Bonus?
-
-**Gold:** After six (6) months from the expiration of the insurance period.
-
-**Answer:** Under the Trade Credit Insurance policy, the application for No Claims Bonus shall be submitted after six (6) months from the expiration of the insurance period.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 3. Vector RAG / q18 (B_multi_part)
-**Q:** Under the Arogya Sanjeevani policy, what are the claim notification deadlines for emergency cashless, planned cashless, and reimbursement claims?
-
-**Gold:** Emergency cashless: within 24 hours of hospitalization or before discharge, whichever is earlier. Planned cashless: at least 72 hours before hospitalization. Reimbursement: within 48 hours of admission or before discharge, whichever is earlier.
-
-**Answer:** Under the Arogya Sanjeevani policy, the claim notification deadlines are:
-
-- **Emergency cashless hospitalization:** Within 24 hours from the date of emergency hospitalization required, or before the Insured Person's discharge from Hospital, whichever is earlier.
-- **Planned cashless hospitalization:** At least 72 hours prior to the planned Hospitalization.
-- **Reimbursement claims:** Within 48 hours of admission or before discharge from the Hospital, whichever is earlier.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 4. Vector RAG / q16 (A_single_fact)
-**Q:** Under the Tata AIG Travel Insurance International Plus Health policy, for what time unit is the Hijack/Kidnap Daily Allowance paid?
-
-**Gold:** A fixed amount for every 12-hour period, up to the maximum number of days in the Policy Schedule.
-
-**Answer:** Under the Tata AIG Travel Insurance International Plus Health policy, the Hijack/Kidnap Daily Allowance is paid for every 12 hours period.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 5. Vector RAG / q15 (A_single_fact)
-**Q:** What is the current compounding interest rate on a policy loan under the HDFC Life Smart Pension Plus policy?
-
-**Gold:** 9.50% per annum.
-
-**Answer:** The current compounding interest rate on a policy loan under the HDFC Life Smart Pension Plus policy is 9.50% p.a.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 6. PageIndex RAG / q09 (A_single_fact)
-**Q:** Under the Port Package policy, within how many days must the insured notify the insurer of newly acquired equipment that was not previously declared?
-
-**Gold:** Within 28 days of acquisition.
-
-**Answer:** Under the Port Package policy, the insured must notify the insurer within 28 days of acquisition.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=1.0, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 7. PageIndex RAG / q07 (A_single_fact)
-**Q:** Under the Click 2 Protect Optima Secure policy, what is payable if the life assured dies by suicide within 12 months of risk commencement?
-
-**Gold:** At least 80% of the total premiums paid till the date of death, or the surrender value on the date of death, whichever is higher, provided the policy is in force.
-
-**Answer:** Under the Click 2 Protect Optima Secure policy, if death is due to suicide within 12 months from the date of commencement of risk under the policy or from the date of revival of the policy, as applicable, the nominee or beneficiary of the Policyholder shall be entitled to at least 80% of the total Premiums paid till the date of death or the surrender value available as on the date of death, whichever is higher, provided the policy is in force.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.6666666666666666, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 8. PageIndex RAG / q35 (D_cross_document)
-**Q:** For a period not exceeding 8 months, which policy has the higher short-period rate: Cyber Shield or Specie Insurance?
-
-**Gold:** Cyber Shield. Its rate is 85% of the annual rate. The Specie Insurance rate is 80% of the annual rate.
-
-**Answer:** For a period not exceeding 8 months, the Specie Insurance policy has the higher short-period rate: 80% of the Annual rate, compared to 85% for Cyber Shield.
-
-Judge: faithfulness=0.67, answer_relevancy=0.7, context_precision=0.8, context_recall=1.0, answer_correctness=0.5
-
-**Your verdict (answer correct? y/n):** 
-
-## 9. PageIndex RAG / q06 (A_single_fact)
-**Q:** Under the Bharat Griha Raksha policy, within how many days must the insured submit the claim form?
-
-**Gold:** Within 30 days from the date the insured first notices the loss or damage.
-
-**Answer:** Under the Bharat Griha Raksha policy, the insured must submit the claim form at the earliest opportunity, but within 30 days from the date they first notice the loss or damage.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.333, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 10. PageIndex RAG / q38 (D_cross_document)
-**Q:** Compare the grace period in the Click 2 Protect Optima Secure policy and the Arogya Sanjeevani policy. Is cover active during the grace period in each?
-
-**Gold:** Click 2 Protect: 30 days (15 days for monthly mode), and the policy is considered in force with the risk cover. Arogya Sanjeevani: 30 days for renewal, and coverage is not available during the grace period.
-
-**Answer:** **Click 2 Protect Optima Secure (HDFC Life Click 2 Protect Life):**
-
-- Grace period: **30 days** where the mode of payment of Premium is other than monthly, and **15 days** in case of monthly mode, allowed for the payment of each renewal Premium after the first Premium.
-- Cover during grace period: The policy is considered to be **in-force with the risk cover during the grace period without any interruption**. Should a valid claim arise under the Policy during the grace period, but before the payment of due premium, the claim shall still be honored; in such cases, the due and unpaid premium for the policy year will be deducted from any benefit payable.
-
-**Arogya Sanjeevani (SBI General Insurance):**
-
-- Grace period: In case of monthly instalment option, a Grace Period of **15 days** is applicable. In case of Single, Half Yearly, Quarterly instalment options, a Grace Period of **30 days** is applicable. (Also, at the end of the Policy Period, the Policy can be renewed within the Grace Period of 30 days to maintain continuity of benefits without Break in Policy.)
-- Cover during grace period: For premium payment in instalments, **coverage will be available from the due date of instalment premium till the date of receipt of premium by Company**. However, for renewal at the end of the Policy Period, **Coverage is not available during the Grace Period**.
-
-**Comparison:**
-
-- The grace period durations are the same in both policies: **15 days for monthly mode** and **30 days for other modes**.
-- On whether cover is active during the grace period: Under Click 2 Protect Optima Secure, the policy is in-force with the risk cover during the grace period without any interruption. Under Arogya Sanjeevani, coverage is available during the grace period for instalment premiums (from the due date of instalment premium till the date of receipt of premium by the Company), but for renewal at the end of the Policy Period, coverage is **not** available during the grace period.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=1.0, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 11. Graph RAG (linked) / q28 (B_multi_part)
-**Q:** Under the Contractors Plant and Machinery Insurance policy, what must the insured do after an occurrence that can give rise to a claim?
-
-**Gold:** Immediately notify the Company by telephone or telegram and in writing, with the nature and extent of the loss. Take all reasonable steps to minimise the loss. Preserve the damaged or defective parts for inspection. Furnish all information and documentary evidence the Company requires.
-
-**Answer:** Under the Contractors Plant and Machinery Insurance policy, in the event of any occurrence which might give rise to a claim, the Insured shall:
-
-a) Immediately notify the Company by telephone or telegram as well as in writing, giving an indication as to the nature and extent of loss or damage.
-
-b) Take all reasonable steps within his power to minimise the extent of the loss or damage or liability.
-
-c) Preserve the damaged or defective parts and make them available for inspection by an official or surveyor of the Company.
-
-d) Furnish all such information and documentary evidence as the company may require.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 12. Graph RAG (linked) / q03 (A_single_fact)
-**Q:** How long is the free look period under the Arogya Sanjeevani policy, and from when does it start?
-
-**Gold:** 30 days, beginning from the date of receipt of the policy document.
-
-**Answer:** Under the Arogya Sanjeevani policy, the free look period is 30 days, beginning from the date of receipt of the Policy document, whether received electronically or otherwise.
+Also, the clause does not require the insurer to pay more than the insured value for any item of equipment (6.5).
 
 Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.6, context_recall=1.0, answer_correctness=1.0
 
 **Your verdict (answer correct? y/n):** 
 
-## 13. Graph RAG (linked) / q02 (A_single_fact)
-**Q:** Under the Trade Credit Insurance policy, when can the Insured apply for the No Claims Bonus?
+## 2. Vector RAG / q103 (H_paraphrased)
+**Q:** Under the Bharat Griha Raksha policy, my flat is worth more than the amount I insured it for. Will the payout be cut in proportion?
 
-**Gold:** After six (6) months from the expiration of the insurance period.
+**Gold:** No. Underinsurance does not apply to this policy. If the sum insured is less than the actual value at risk, the difference does not affect the amount paid.
 
-**Answer:** Under the Trade Credit Insurance policy, the application for No Claims Bonus shall be submitted after six (6) months from the expiration of the insurance period.
+**Answer:** Under the TATA AIG Bharat Griha Raksha Policy, underinsurance does not apply. Thus, if your Sum Insured calculated on the basis of the information that you provided is less than the actual value at risk, the difference will not affect the amount We pay.
 
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
-
-**Your verdict (answer correct? y/n):** 
-
-## 14. Graph RAG (linked) / q06 (A_single_fact)
-**Q:** Under the Bharat Griha Raksha policy, within how many days must the insured submit the claim form?
-
-**Gold:** Within 30 days from the date the insured first notices the loss or damage.
-
-**Answer:** Under the Bharat Griha Raksha policy, the insured must submit the claim form within 30 days from the date they first notice the loss or damage.
-
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.13333333333333333, context_recall=1.0, answer_correctness=1.0
 
 **Your verdict (answer correct? y/n):** 
 
-## 15. Graph RAG (linked) / q14 (A_single_fact)
-**Q:** In the Weather Insurance (Retail) policy, what solar irradiance threshold defines Sunshine Hours?
+## 3. Vector RAG / q55 (E_multi_hop)
+**Q:** Under the Cyber Shield policy with Family Cover, is the policyholder's 20-year-old child treated as an insured person (You) or as a Third Party?
 
-**Gold:** The period during which direct solar irradiance exceeds 120 watts per square meter.
+**Gold:** As a Third Party. Family Members are the legal spouse and at most two eldest children who are both below the age of 18. A 20-year-old child is not a Family Member. Third Party means any person except You and Your Family Members.
 
-**Answer:** According to the context, Sunshine Hours is defined as the period during which direct solar irradiance exceeds the threshold value of 120 watts per square meter.
+**Answer:** Under the Cyber Shield policy, the policyholder's 20-year-old child would be treated as a **Third Party**, not as an insured person (You).
 
-Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=1.0
+According to the context:
+
+- **You/Your** means the Policyholder/Certificate holder who is a permanent resident of India. If Family Cover is purchased, then You/Your means the Policyholder/Certificate holder and the Policyholder's/Certificate holder's **Family Members**, who are permanent residents of India.
+
+- **Family Members** means the Policyholder's immediate family which includes a legal spouse and a **maximum of two children who are eldest, however both being below the age of 18**.
+
+- **Third Party** means any natural person and/or legal person and/or association of persons **except You and Your Family Members**.
+
+Since the child is 20 years old, they are **not below the age of 18** and therefore do not fall within the definition of Family Members. As a result, they are not included in the definition of You/Your and would be treated as a Third Party.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=0.5, answer_correctness=1.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 4. Vector RAG / q51 (E_multi_hop)
+**Q:** Under the Bharat Griha Raksha policy, a flood damages an insured home. Five days later, goods are stolen from inside the home because of the flood damage. Is the theft covered, and whom must the insured inform?
+
+**Gold:** Yes. Theft within 7 days from the occurrence of, and proximately caused by, an Insured Event is covered. Articles outside the home are not covered. The insured must inform the police.
+
+**Answer:** Under the Bharat Griha Raksha policy, theft within 7 (seven) days from the occurrence of and proximately caused by an Insured Event (such as flood) is covered. Since the theft occurred five days after the flood, it falls within this 7-day period.
+
+The insured must inform the police. The policy states that if there is a theft within 7 (seven) days following an Insured Event, you must inform the police.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.333, context_recall=1.0, answer_correctness=0.75
+
+**Your verdict (answer correct? y/n):** 
+
+## 5. Vector RAG / q48 (E_multi_hop)
+**Q:** In the Auto Secure Commercial Vehicle Package Policy, the IDV of a vehicle is Rs 10,00,000 and the cost to retrieve and repair it after an accident is Rs 8,00,000. How is the claim treated, and what is the most the Company will pay?
+
+**Gold:** It is treated as a Constructive Total Loss, because the cost exceeds 75% of the IDV (Rs 7,50,000). The Company's liability will not exceed the IDV stated in the Schedule less the value of the wreck.
+
+**Answer:** The context does not contain the answer to how this specific claim is treated or the exact amount the Company will pay for these figures. However, the context does state that the insured vehicle shall be treated as a CTL if the aggregate cost of retrieval and/or repair of the vehicle, subject to terms and conditions of the policy, exceeds 75% of the IDV of the vehicle.
+
+Judge: faithfulness=0.5, answer_relevancy=0.4, context_precision=0.2, context_recall=1.0, answer_correctness=0.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 6. PageIndex RAG / q117 (H_paraphrased)
+**Q:** An excavator on a coastal building site is partly under sea water when the tide comes in. Is the damage paid?
+
+**Gold:** No. Loss or damage due to total or partial immersion in tidal waters is excluded.
+
+**Answer:** The context does not contain the answer to whether damage to an excavator partly under sea water when the tide comes in is paid.
+
+Judge: faithfulness=0.0, answer_relevancy=0.0, context_precision=0.6, context_recall=1.0, answer_correctness=0.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 7. PageIndex RAG / q113 (H_paraphrased)
+**Q:** We keep gold bars and banknotes in a vault under a valuables policy. One of our own staff steals some of them. Does the policy pay?
+
+**Gold:** No. Theft or dishonesty committed by, or in collusion with, any employee of the insured is excluded.
+
+**Answer:** The policy does not pay. Under Section 2, Exclusions, B, this insurance does not cover "theft or dishonesty committed by or in collusion with any principal shareholder (beneficial or otherwise), partner, director, officer, or any employee of the insured or any person to whom the insured property is entrusted or loaned." Since the theft was committed by one of your own staff (an employee of the insured), it falls within this exclusion.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.67, context_recall=1.0, answer_correctness=1.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 8. PageIndex RAG / q89 (G_unanswerable)
+**Q:** Under the Contractors Plant and Machinery Insurance policy, how long is the free look period?
+
+**Gold:** The Contractors Plant and Machinery Insurance wording does not state this.
+
+**Answer:** The context does not contain information about a free look period.
+
+Judge: faithfulness=None, answer_relevancy=None, context_precision=None, context_recall=None, answer_correctness=1.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 9. PageIndex RAG / q111 (H_paraphrased)
+**Q:** My cover pays out from rainfall measured at a named recording site. If that site stops reporting, which numbers does the insurer use?
+
+**Gold:** Data from the back-up data source or weather station. If that is also not available, the insurer uses the fallback methodology, which replaces missing data with data from the same dates in recent historical years.
+
+**Answer:** If the weather data is not available from the reference data source/weather station, then the back-up data source/weather stations data will be used. If weather data from back-up data source/weather stations are also not available, then the weather data generated through fallback methodology will be used.
+
+Under the fallback methodology, if the Data Provider does not publish the Daily observed weather data in respect of any calendar day during the Policy Period, the missing data shall be replaced with an average value calculated as follows: any missing data shall be replaced with data measured on the corresponding dates of the most recent available mutually agreed number of historical years on an iterative basis. If more than one data point is missing for the current year, all the replacement data shall be taken from the same historical year(s), so that if in any historical year data is available for one date corresponding to a missing data point in the current year, but is not available for another missing data point, that historical year's data shall not be used as replacement data. Each of the last mutually agreed number of historical year's available replacement data shall be applied in turn in place of each of the missing data points, and the loss payable under the Policy shall equate to the average of the mutually agreed number of amounts (if any) thus indicated as payable.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=1.0, context_recall=1.0, answer_correctness=1.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 10. PageIndex RAG / q95 (G_unanswerable)
+**Q:** Under the SBI General Livestock policy, after how many months of continuous coverage does the moratorium period begin?
+
+**Gold:** The SBI General Livestock wording does not state this.
+
+**Answer:** The context does not contain the answer.
+
+Judge: faithfulness=None, answer_relevancy=None, context_precision=None, context_recall=None, answer_correctness=1.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 11. Graph RAG / q74 (F_cross_document)
+**Q:** Compare the free look period under the HDFC Life Smart Pension Plus policy and the Tata AIG Travel Insurance International Plus Health policy. How long is it, and to which policies does it apply?
+
+**Gold:** Both give 30 days from receipt of the policy. HDFC Life Smart Pension Plus: it does not apply where the policyholder must compulsorily purchase the annuity from HDFC Life with the proceeds of a pension plan. Tata AIG Travel: it applies only to policies with a Policy Period of one year.
+
+**Answer:** Under the HDFC Life Smart Pension Plus policy, the free look period is 30 days from the date of receipt of the policy, whether received electronically or otherwise.
+
+Under the Tata AIG Travel Insurance International Plus Health policy, the free look period is applicable for policies with a Policy Period of one (1) year, and the Insured Person is allowed a period of thirty Days from the date of receipt of the Policy, whether received electronically or otherwise.
+
+So both are 30 days, but the Tata AIG free look period applies only to policies with a Policy Period of one (1) year.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.333, context_recall=0.67, answer_correctness=0.67
+
+**Your verdict (answer correct? y/n):** 
+
+## 12. Graph RAG / q104 (H_paraphrased)
+**Q:** Under the Trade Credit Insurance policy, a buyer does not pay an invoice. A director of that buyer is a first cousin of a director of my company. Is the loss covered?
+
+**Gold:** No, unless the Insurer has agreed otherwise in writing. A blood relationship between directors of the Insured and the Counterparty, up to direct cousins, is a Controlling influence. The Insurer has no liability for losses where a Controlling influence can arise between the Insured and the Counterparty.
+
+**Answer:** Under the Trade Credit Insurance policy, the loss is **not covered**.
+
+The context states that the insurance does not apply if blood relationship exists between directors or largest shareholders of the Insured and the Counterparty, where blood relationship means direct blood relationship up to direct cousins (their parents are siblings), including cousins by marriage (spouses of one of the parent are siblings).
+
+Since a director of the buyer (Counterparty) is a first cousin of a director of your company (the Insured), this falls within the excluded blood relationship, so the loss is not covered.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.13333333333333333, context_recall=1.0, answer_correctness=0.33
+
+**Your verdict (answer correct? y/n):** 
+
+## 13. Graph RAG / q103 (H_paraphrased)
+**Q:** Under the Bharat Griha Raksha policy, my flat is worth more than the amount I insured it for. Will the payout be cut in proportion?
+
+**Gold:** No. Underinsurance does not apply to this policy. If the sum insured is less than the actual value at risk, the difference does not affect the amount paid.
+
+**Answer:** Under the TATA AIG Bharat Griha Raksha Policy, underinsurance does not apply. Thus, if your Sum Insured calculated on the basis of the information that you provided is less than the actual value at risk, the difference will not affect the amount We pay.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.13333333333333333, context_recall=1.0, answer_correctness=1.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 14. Graph RAG / q111 (H_paraphrased)
+**Q:** My cover pays out from rainfall measured at a named recording site. If that site stops reporting, which numbers does the insurer use?
+
+**Gold:** Data from the back-up data source or weather station. If that is also not available, the insurer uses the fallback methodology, which replaces missing data with data from the same dates in recent historical years.
+
+**Answer:** The context does not contain the answer.
+
+Judge: faithfulness=0.0, answer_relevancy=0.0, context_precision=0.13333333333333333, context_recall=0.6666666666666666, answer_correctness=0.0
+
+**Your verdict (answer correct? y/n):** 
+
+## 15. Graph RAG / q47 (E_multi_hop)
+**Q:** In the Auto Secure Commercial Vehicle Package Policy, a vehicle is three and a half years old. What depreciation percentage is used to fix its IDV, and what depreciation percentage applies to its other replaced parts in a partial loss claim?
+
+**Gold:** 40% for fixing the IDV, and 25% on other replaced parts in a partial loss claim. The two schedules are different.
+
+**Answer:** For fixing the IDV, a vehicle exceeding 3 years but not exceeding 4 years old has a depreciation rate of **40%**.
+
+For other replaced parts in a partial loss claim, a vehicle exceeding 3 years but not exceeding 4 years old has a depreciation rate of **25%**.
+
+Judge: faithfulness=1.0, answer_relevancy=1.0, context_precision=0.2, context_recall=1.0, answer_correctness=0.67
 
 **Your verdict (answer correct? y/n):** 

@@ -14,7 +14,7 @@ EMBED_DIMENSION  = 512                       # voyage-3-lite output dimension
 
 CHUNK_SIZE       = 512                       # tokens per chunk
 CHUNK_OVERLAP    = 64                        # token overlap between chunks
-TOP_K            = 5                         # chunks retrieved per query
+TOP_K            = 15                        # chunks retrieved per query
 
 RANDOM_SEED      = 42                        # for any random sampling
 EVAL_SAMPLE_SIZE = 500                       # questions per evaluation run

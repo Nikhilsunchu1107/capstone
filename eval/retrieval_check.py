@@ -62,7 +62,8 @@ def budget_rank(retrieved: list[dict], ev: dict, budget: int = config.RETRIEVAL_
 
 
 def evaluate(retrieve_fn, top_k: int = max(KS)) -> dict:
-    qs = json.loads(config.EVAL_SET.read_text())
+    # a question with no gold passage (unanswerable tier) has nothing to hit
+    qs = [q for q in json.loads(config.EVAL_SET.read_text()) if q["evidence"]]
     rows = []
     for q in qs:
         got = retrieve_fn(q["question"], top_k)

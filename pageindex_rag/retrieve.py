@@ -83,7 +83,7 @@ Reply with one JSON object only: {{"node_list": ["<node_id>", ...]}}"""
     return items
 
 
-def retrieve(question: str, top_k: int = config.TOP_K) -> list[dict]:
+def retrieve(question: str, top_k: int = config.PAGEINDEX_MAX_NODES) -> list[dict]:
     """Nodes from each routed document, interleaved by node rank, cut to top_k."""
     _load()
     per_doc = [search(d, question) for d in route(question)]

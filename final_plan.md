@@ -6,7 +6,7 @@ Status: **PLAN ONLY. No code changed. Wait for user "go".**
 ## 0. Goal
 
 - All 3 RAG strategies (PageIndex, Vector, Graph) use ONE OpenAI-compatible LLM endpoint: DeepSeek.
-- Same curated question set (`data/eval_set.json`, 40 QA, user-approved), same judge, same judge prompts, same metrics.
+- Same curated question set (`data/eval_set_v2.json`, 80 QA), same judge, same judge prompts, same metrics.
 - Result: numbers valid for research paper.
 
 ## 1. Hard rules
@@ -54,7 +54,7 @@ capstone-deepseek/
   .env                      # LLM_*, EMBED_* settings (copy by hand, not in git)
   data/
     policy_qa.json          # old 83 Q, frozen, kept for reference
-    eval_set.json           # NEW curated set (see Phase 0)
+    eval_set_v2.json        # curated set (see Phase 0)
   vector_rag/  pageindex_rag/  graph_rag/   # edited in place; LLM calls point to DeepSeek
   eval/
     judge.py                # ONE judge: 4 prompts, JSON parse, parallel, cache
@@ -82,27 +82,24 @@ capstone-deepseek/
 
 Each phase ends with a **gate**. Gate fail = stop, fix, do not continue.
 
-### Phase 0 — New eval set (40 questions, written fresh)
+### Phase 0 — Eval set (80 questions, written from the PDF text)
 
-**DECIDED (user):** Discard the old 83. Use 40 NEW questions, written from the PDF text.
+**DECIDED (user):** Discard the old 83 questions. Use a new set written from the PDF text.
 
 Why: the old set is flawed. About 22 gold answers say "text does not contain". Most questions say "this policy" with no name. Some gold answers are truncated or wrong.
 
-Design (draft done: `data/eval_set_v2_candidates.json`, review file `data/eval_set_v2_review.md`):
-- Each question names its policy. Each gold answer has evidence: filename, page, exact quote.
+Design (`data/eval_set_v2.json`, review sheet `data/eval_set_v2_review_q41-q120.md`):
+- Each gold answer has evidence: filename, page, exact quote. Every quote is checked against the PDFs (`python -m eval.verify_quotes`).
 - 4 tiers, so results show WHERE strategies differ:
-  - A single fact, one passage (16)
-  - B multi-part answer, list or table (12)
-  - C apply a rule to a case (6)
-  - D cross-document, needs 2 PDFs (6)
+  - E multi-hop in one policy (24)
+  - F cross-document, needs 2 or 3 PDFs (24)
+  - G unanswerable trap (12)
+  - H paraphrased, 10 of them without the policy name (20)
 - All 15 PDFs covered.
 - Tiers are chosen by question type, not by which strategy is expected to win. Report scores per tier AND overall.
+- Freeze with a content hash. No edit after freeze.
 
-Steps left:
-1. User reviews all 40. Marks reject or change.
-2. Freeze as `data/eval_set.json` with content hash. No edit after freeze.
-
-Gate: 40 questions, user-approved, hash recorded.
+Gate: 80 questions, hash recorded.
 
 Statistics note: n=40 overall, but tiers C and D have n=6 each. Per-tier numbers are descriptive only. Do significance tests on the overall set.
 
@@ -199,32 +196,26 @@ Run `graphify update .` (AGENTS.md rule). Commit per phase. Commit message ends 
 
 ## 11. Status
 
-- Phase 0 DONE: `data/eval_set.json` frozen (sha256 ce3683e0…b61a, 40 Q).
+- Eval set DONE: `data/eval_set_v2.json`, 80 questions (q41 to q120), FROZEN (sha256 982a01e2…c14, set in `eval/config.py`). `eval/run_strategy.py` stops if the file does not match its hash.
+  - Tiers: E multi-hop in one policy (24), F cross-document with 2 or 3 PDFs (24), G unanswerable trap (12), H paraphrased (20). 10 of the H questions do not name the policy.
+  - Every quote passes `python -m eval.verify_quotes` (0 problems). All 15 PDFs are used. Review sheet: `data/eval_set_v2_review_q41-q120.md`.
+  - Limitation for the paper: an LLM wrote the set. Not all gold answers are reviewed by a person. q85, q104, q59, q64 and q119 are ambiguous or have 3 sub-questions (not changed, the file is frozen).
+  - Limitation for the paper: design choices (header removal, Graph RAG entity linking) were made while looking at an earlier question set that is no longer part of this project.
 - Phase 1 DONE: endpoint verified. Models: `deepseek-flash`, `deepseek-v4-pro` (never use pro). Cache gate passed (2nd call = 0 paid calls). Thinking-off param accepted.
-- Phase 2 DONE: `eval/judge.py` + `eval/judge_sanity.py`. 9/9 checks pass, null rate 0/150. Judge now has 5 metrics: the 4 plan metrics + `answer_correctness` (gold answer vs generated answer). Reason: the 4 RAGAS metrics never compare the answer with the gold answer.
-- Judge reply format: JSON, reasoning first, score last. First version lost the score key in 3/114 replies. Fixed by stating both keys are required.
-- Embeddings DONE: `eval/embed.py`, NVIDIA `nemotron-3-embed-1b` (ID verified via models.list, 2048 dims, cache test passed). Needs `NVIDIA_API_KEY` in `.env`. Only 2 external services: DeepSeek (LLM) and NVIDIA (embeddings).
-- Phase 3a Vector RAG DONE (`vector_rag/index.py`, `retrieve.py`, `check.py`, `eval/retrieval_check.py`). Strict all@5 (every gold passage in top 5):
-  - raw pages, chunk 1000/150: 0.70 (any@5 0.72, MRR 0.58)
-  - after stripping repeated page headers/footers (lines on >=40% of a PDF's pages): **0.85** (any@5 0.93, MRR 0.75). Tier D cross-doc all@5 = 0.50: top-5 cannot hold two documents. Report both rows in the paper.
-  - Root cause of old low context precision/recall: header chunks ("<Policy name> ... F&U Dated") won the top ranks because every question names its policy.
-  - Same stripping must apply to Graph RAG and PageIndex input for fairness.
-- Renamed to vendor-neutral names (user decision): `cache/llm/`, `cache/embeddings/`, `pageindex_rag/.pageindex/` (old Ollama store replaced), `pageindex_rag/llm_patch.py`, `vector_rag/cache/{chunks.json,embeddings.npy}`, baseline in `vector_rag/cache/ablation_raw_pages/`. Config: `LLM_BASE_URL/LLM_API_KEY/LLM_MODEL`, `EMBED_BASE_URL/EMBED_API_KEY/EMBED_MODEL`. `.env` was NOT edited: config falls back to `DEEPSEEK_*` and `NVIDIA_API_KEY`. Re-check after rename: vector retrieval numbers identical, judge cache 0 new calls.
-- Cleanup before merge (needs user OK): old Ollama files `pageindex_rag/cache/ollama/*`, `vector_rag/cache/vector_rag_{eval_results,outputs}.json`, old notebooks.
-- DONE: PageIndex index built (15 PDFs, 0 failures). Real cost: about 520 calls, 0.96M prompt + 0.25M completion tokens (2x my first estimate; completion longer than expected). Node counts vs old Ollama trees: 7 of 14 identical, others +1 to +33 (e.g. Port 145 vs 112, Click 32 vs 24) so tree structure is NOT model independent. Total spend so far incl. tests: 1.0M prompt, 0.27M completion.
-- Phase 3a PageIndex DONE (`pageindex_rag/retrieve.py`, `check.py`): LLM router (never sees gold file) + tree search. Retrieval check used 0.31M prompt tokens. Strict all@5 = 1.00 but returns median 27k / mean 63k chars (max 388k) vs Vector 4.5k. Budget metric (gold inside first 8000 chars): Vector 0.85, PageIndex 0.62. Page metric is unfair to PageIndex (node has start page only).
-- DECIDED (user, option 3): generation has NO context cap. Each strategy passes its natural retrieval unit. Paper reports accuracy AND cost (context chars, tokens) together, plus the 8000-char retrieval-budget row. Note for paper: context precision favours big units, so compare it with care.
-- Phase 5 smoke DONE (first 5 questions, tier A): `eval/generate.py` (shared prompt), `eval/run_strategy.py` (retrieve -> answer -> judge, checkpointed). Vector: all 5 metrics ok except CP 0.32. PageIndex: all 1.0, CP 0.87. Zero null scores. Context up to 318k chars worked (no API error).
-- Cost per question measured: Vector ~6k prompt tokens (judge incl.); PageIndex ~105k on the 5 smoke questions (judge sees context in 3 of 5 metrics). Full-run estimate: Vector ~0.25M, PageIndex ~2.7M prompt tokens. Spend so far incl. smoke: 1.9M prompt.
-- Full runs DONE (40 Q each, 0 null scores after retry fix). Results in `eval/results/{vector,pageindex}_rows.json`.
-  - Vector: faithfulness 0.91, relevancy 0.88, ctx precision 0.27, ctx recall 0.95, correctness 0.83; context 4.5k chars.
-  - PageIndex: 0.94, 0.94, 0.75, 0.99, 0.91; context 63k chars (14x). Correctness by tier (Vector/PageIndex): A 0.88/1.00, B 1.00/0.96, C 0.71/0.67, D 0.47/0.83.
-  - Judge fix: first version lost the "score" key in 8/200 Vector replies. Retry now shows the model its own reply and asks again (model supplies the number; no default). Use `--rescore-null`.
-  - Total spend so far: 4.1M prompt, 0.35M completion tokens (PageIndex judge alone 1.5M).
-- Graph RAG DONE. NER switched from spaCy+GLiNER to DeepSeek flash (`graph_rag/src/llm_ner.py`), chunks and vectors shared with Vector RAG. Graph: 1878 chunks, 11,619 entities, 222k edges. Build cost ~0.65M prompt / 0.37M completion tokens.
-  - Retrieval all@5: vector-only 0.85, graph-only 0.17, hybrid original 0.75, linked graph 0.42, linked hybrid 0.82. Cause: exact-string entity matching (gold chunk shared a seed entity in only 12/40 questions) and raw-score merge across different scales. Fix = embedding entity linking + idf + RRF. One improvement pass only; no tuning on the frozen set.
-  - Reported as two variants: "Graph RAG (original)" (`graph`) and "Graph RAG (linked)" (`graph_linked`).
-- Phase 6 DONE: all four runs complete, 0 null scores. `python -m eval.report` writes `eval/results/summary.md` and `handcheck.md`.
-  - Correctness (mean, 95% CI): Vector 0.83 [0.71,0.93], PageIndex 0.91 [0.82,0.99], Graph orig 0.75 [0.62,0.87], Graph linked 0.78 [0.66,0.90]. No paired difference in correctness is significant at n=40 (best: PageIndex +0.085, CI [-0.02,+0.19], p=0.20). Significant only: PageIndex context precision (unit size artefact), Graph orig lower recall/precision.
-  - Total spend: 5.2M prompt, 0.78M completion tokens.
-- NEXT: user hand-checks 15 rows in `eval/results/handcheck.md` (Phase 7), then cleanup of old Ollama files (needs OK), `graphify update .`, user commits and merges.
+- Phase 2 DONE: `eval/judge.py` + `eval/judge_sanity.py`. Judge has 5 metrics: the 4 plan metrics + `answer_correctness` (gold answer vs generated answer), because the 4 RAGAS metrics never compare the answer with the gold answer. Sanity test on this set: 10 of 11 checks pass, null rate 0/180. The failing check is "perfect: all metrics >= 0.85": context recall is 0.74, because several multi-hop gold answers contain derived statements that the short gold quotes do not spell out. Threshold not changed.
+- Judge reply format: JSON, reasoning first, score last. The first version lost the score key in 3/114 replies. Fixed by stating both keys are required. A later version lost it in 8/200 Vector replies. Retry now shows the model its own reply and asks again (model supplies the number; no default). Use `--rescore-null`.
+- Judge change for tier G (unanswerable): only answer correctness is scored. The other four metrics are marked not applicable (`na`), not null. Reason: a correct refusal scored 0.33 on faithfulness. `eval/judge_sanity.py` has 3 abstention checks (all pass).
+- Embeddings DONE: `eval/embed.py`, NVIDIA `nemotron-3-embed-1b` (2048 dims, cache test passed). Needs `NVIDIA_API_KEY` in `.env`. Only 2 external services: DeepSeek (LLM) and NVIDIA (embeddings).
+- Vector RAG DONE (`vector_rag/index.py`, `retrieve.py`, `check.py`). Page headers and footers (lines on >=40% of a PDF's pages) are stripped, because header chunks ("<Policy name> ... F&U Dated") won the top ranks (every question names its policy). The same stripping applies to Graph RAG and PageIndex input. Strict all@5 = 0.59, all@10 = 0.78, cross-document (tier F) all@5 = 0.29.
+- Renamed to vendor-neutral names (user decision): `cache/llm/`, `cache/embeddings/`, `pageindex_rag/.pageindex/` (old Ollama store replaced), `pageindex_rag/llm_patch.py`, `vector_rag/cache/{chunks.json,embeddings.npy}`. Config: `LLM_BASE_URL/LLM_API_KEY/LLM_MODEL`, `EMBED_BASE_URL/EMBED_API_KEY/EMBED_MODEL`. `.env` was NOT edited: config falls back to `DEEPSEEK_*` and `NVIDIA_API_KEY`.
+- PageIndex DONE (`pageindex_rag/`): index of 15 PDFs, 0 failures, about 520 calls, 0.96M prompt + 0.25M completion tokens. Node counts vs old Ollama trees: 7 of 14 identical, others +1 to +33, so tree structure is NOT model independent. LLM router (never sees the gold file) picks up to 3 documents, tree search picks up to 3 nodes in each, at most 5 nodes go to the generator (`PAGEINDEX_MAX_NODES`; this cut was in the code for every run). Strict all@5 = 0.90, but mean context is 63.6k chars vs 13k for Vector. Budget metric (gold inside first 8000 chars): Vector 0.59, PageIndex 0.40. The page metric is unfair to PageIndex (node has start page only).
+- Graph RAG DONE. NER switched from spaCy+GLiNER to DeepSeek flash (`graph_rag/src/llm_ner.py`), chunks and vectors shared with Vector RAG. Graph: 1878 chunks, 11,619 entities, 222k edges. Build cost ~0.65M prompt / 0.37M completion tokens. A first design (exact-string entity matching, raw-score merge) retrieved poorly. One improvement pass: embedding entity linking + idf + RRF. Only the improved design is kept. Retrieval all@5: vector-only 0.59, graph-only 0.06, hybrid 0.49 (worse than vector alone).
+- DECIDED (user): generation has NO context cap. Each strategy passes its natural retrieval unit. Paper reports accuracy AND cost (context chars, tokens) together, plus the 8000-char retrieval-budget row. Context precision favours big units, so compare it with care.
+- Settings: Vector and Graph retrieve 15 chunks (`TOP_K` in `eval/config.py`).
+- Full runs DONE (80 Q each, 0 null scores): `eval/results/{vector,pageindex,graph}_v2_rows.json`. Correctness: Vector 0.80 [0.73,0.86], PageIndex 0.82 [0.75,0.89], Graph 0.78 [0.71,0.85]. No paired difference in correctness is significant (PageIndex +0.021, p=0.56; Graph -0.017, p=0.49). PageIndex has higher recall (0.91 vs 0.84, p=0.11) and the best tier F score (0.89 vs 0.78) at 4.8x the context. PageIndex cost about 4.9M prompt tokens, Graph about 1.1M.
+- Reports: `python -m eval.report` writes `eval/results/summary.md`, `handcheck.md` and `final_comparison.csv` (paper table: 4 metrics, one column per strategy). `COMPARISON.md` and `WORK_SUMMARY.md` are current.
+- NEXT:
+  1. User hand-checks 15 rows in `eval/results/handcheck.md`.
+  2. Check the source of the PageIndex "99%" claim before the paper cites it.
+  3. Decide: keep the 5-node cut for PageIndex, or remove it and re-run the affected questions (24 of 80 have exactly 5 nodes).
+  4. Cleanup of old Ollama files (needs user OK), `graphify update .`, user commits and merges.

@@ -32,7 +32,8 @@ EMBED_MODEL = os.getenv("EMBED_MODEL", "nvidia/nemotron-3-embed-1b")
 EMBED_DIM = 2048
 EMBED_BATCH = 32
 EMBED_CACHE_DIR = ROOT / "cache" / "embeddings"
-TOP_K = 5
+TOP_K = 15  # chunks retrieved per query (Vector and Graph RAG)
+PAGEINDEX_MAX_NODES = 5  # PageIndex returns at most this many tree nodes
 # Generation has NO context cap: each strategy passes its natural retrieval unit.
 # The cap below is used only by the retrieval-check 'budget' metric (reported as an extra row).
 RETRIEVAL_BUDGET_CHARS = 8000
@@ -40,7 +41,8 @@ RANDOM_SEED = 42
 
 DATA_DIR = ROOT / "data"
 PDF_DIR = DATA_DIR / "Policy_Documents_Curated_15"
-EVAL_SET = DATA_DIR / "eval_set.json"
-EVAL_SET_SHA256 = "ce3683e0c5f9813abdf125302a2010afc6e359cacaaf4ebae055e7e70eb4b61a"
+# 80 questions (q41-q120). Frozen: eval/run_strategy.py stops if the file does not match its hash.
+EVAL_SET = DATA_DIR / "eval_set_v2.json"
+EVAL_SET_SHA256 = "982a01e2962683386e868c614c76a4dde73240196d58b752207e4b28f5564c14"  # frozen 2026-10-13
 LLM_CACHE_DIR = ROOT / "cache" / "llm"
 RESULTS_DIR = ROOT / "eval" / "results"

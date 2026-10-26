@@ -3,6 +3,7 @@
 Input row: {"question", "answer", "ground_truth", "contexts": [str, ...]}
 Output: per-metric {"score": float | None, "reasoning": str}. A score is None when
 the judge reply cannot be parsed twice; it is never replaced by a default number.
+A row with "unanswerable": True gets {"score": None, "na": True} for the metrics that do not apply.
 """
 
 import json
@@ -111,15 +112,37 @@ def score_metric(metric: str, row: dict) -> dict:
     return {"score": None, "reasoning": f"PARSE_FAIL {err} | raw: {raw[:200]}"}
 
 
+# An unanswerable question has no gold passage, and its correct answer is an abstention.
+# Context precision and recall have nothing to measure. Answer relevancy scores a refusal as 0.0.
+# Faithfulness scores a correct refusal 0.33 (judge_sanity), because "the policy does not
+# state this" is a claim about absence that no context can support. Only correctness is kept.
+NOT_APPLICABLE = ("faithfulness", "answer_relevancy", "context_precision", "context_recall")
+
+
+def applies(metric: str, row: dict) -> bool:
+    return not (row.get("unanswerable") and metric in NOT_APPLICABLE)
+
+
+def is_null(cell: dict) -> bool:
+    """A judge failure. A not-applicable cell is not a failure."""
+    return cell["score"] is None and not cell.get("na")
+
+
+def _score(metric: str, row: dict) -> dict:
+    if not applies(metric, row):
+        return {"score": None, "na": True, "reasoning": "not applicable: unanswerable question"}
+    return score_metric(metric, row)
+
+
 def score_row(row: dict) -> dict:
-    return {m: score_metric(m, row) for m in METRICS}
+    return {m: _score(m, row) for m in METRICS}
 
 
 def score_rows(rows: list[dict]) -> list[dict]:
     """Score every row for every metric in parallel. Order is kept."""
     jobs = [(i, m) for i in range(len(rows)) for m in METRICS]
     with ThreadPoolExecutor(config.JUDGE_WORKERS) as pool:
-        results = list(pool.map(lambda j: score_metric(j[1], rows[j[0]]), jobs))
+        results = list(pool.map(lambda j: _score(j[1], rows[j[0]]), jobs))
     out = [{} for _ in rows]
     for (i, m), r in zip(jobs, results):
         out[i][m] = r

@@ -7,10 +7,10 @@ from graph_rag import retrieve
 
 if __name__ == "__main__":
     out = {}
-    for mode in ("graph", "vector", "hybrid", "linked_graph", "linked_hybrid"):
-        res = retrieval_check.evaluate(lambda q, k, m=mode: retrieve.retrieve(q, k, mode=m), top_k=5)
+    for mode in ("graph", "vector", "hybrid"):
+        res = retrieval_check.evaluate(lambda q, k, m=mode: retrieve.retrieve(q, k, mode=m), top_k=config.TOP_K)
         retrieval_check.print_summary(f"Graph RAG [{mode}]", res)
         out[mode] = res
-    p = config.RESULTS_DIR / "retrieval_graph_rag.json"
+    p = config.RESULTS_DIR / "retrieval_graph_rag_v2.json"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(out, indent=1))

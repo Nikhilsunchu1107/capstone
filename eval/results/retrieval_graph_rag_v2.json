@@ -1,0 +1,9698 @@
+{
+ "graph": {
+  "rows": [
+   {
+    "id": "q41",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, a Counterparty becomes insolvent. Within what period must the Insured submit a complete claim, and from which date does that period run?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     null
+    ],
+    "page": [
+     null,
+     7,
+     3
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 4136,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      18.526
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      17,
+      7.942
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      15,
+      7.758
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      3,
+      7.644
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      6,
+      7.644
+     ]
+    ]
+   },
+   {
+    "id": "q42",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, the Insured's payments record with a Counterparty for the recent one year is INR 1,000 million. What is the highest Preliminary limit the Insured may set, and for how long may it be applied if the Insurer has not yet determined a Credit limit?",
+    "n_evidence": 3,
+    "strict": [
+     7,
+     7,
+     4
+    ],
+    "page": [
+     5,
+     5,
+     4
+    ],
+    "budget": [
+     7,
+     7,
+     4
+    ],
+    "chars": 4695,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      19.079
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      7,
+      13.205
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      18,
+      13.165
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      4,
+      10.092
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      3,
+      9.358
+     ]
+    ]
+   },
+   {
+    "id": "q43",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, after a claim payment the Insured recovers INR 100 from the Counterparty and spends INR 10 as reasonable collection expenses. The insurance indemnity was INR 60 and the amount of outstanding claims was INR 80. How much is owed to the Insurer, and within how many days must the recovery be disbursed?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     5
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     5
+    ],
+    "chars": 3882,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      15.029
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      14.742
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      14.202
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      10,
+      10.085
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      10.051
+     ]
+    ]
+   },
+   {
+    "id": "q44",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 1,00,000 and all waiting periods are complete. Cataract surgery on one eye costs Rs 30,000. How much does the Company pay?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4871,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      5.845
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      4.696
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      3,
+      4.696
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      4.561
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      3.709
+     ]
+    ]
+   },
+   {
+    "id": "q45",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 2,00,000. The insured person takes a room that costs Rs 8,000 per day. What room rent is admissible per day, and how are the other hospital expenses paid?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     2
+    ],
+    "page": [
+     2,
+     2
+    ],
+    "budget": [
+     null,
+     2
+    ],
+    "chars": 2899,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      5.845
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      5.384
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      4.561
+     ]
+    ]
+   },
+   {
+    "id": "q46",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, a disease was diagnosed by a physician two years before the first policy started. Is it a Pre-Existing Disease, and when will its treatment be covered?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     13,
+     13
+    ],
+    "page": [
+     1,
+     13,
+     13
+    ],
+    "budget": [
+     1,
+     null,
+     null
+    ],
+    "chars": 4808,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      3,
+      14.603
+     ],
+     [
+      "tata_aig_travel_insurance",
+      4,
+      10.088
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      9.566
+     ],
+     [
+      "tata_aig_travel_insurance",
+      34,
+      9.448
+     ],
+     [
+      "tata_aig_travel_insurance",
+      5,
+      9.086
+     ]
+    ]
+   },
+   {
+    "id": "q47",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, a vehicle is three and a half years old. What depreciation percentage is used to fix its IDV, and what depreciation percentage applies to its other replaced parts in a partial loss claim?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     4,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4404,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      5.534
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      7,
+      5.308
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      5.186
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      14,
+      5.186
+     ]
+    ]
+   },
+   {
+    "id": "q48",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, the IDV of a vehicle is Rs 10,00,000 and the cost to retrieve and repair it after an accident is Rs 8,00,000. How is the claim treated, and what is the most the Company will pay?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     null
+    ],
+    "page": [
+     2,
+     null
+    ],
+    "budget": [
+     2,
+     null
+    ],
+    "chars": 4419,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      10,
+      10.457
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      9.736
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      8.45
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      25,
+      5.555
+     ]
+    ]
+   },
+   {
+    "id": "q49",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, an insured sells the vehicle after three consecutive claim-free years and takes a fresh insurance two years later. Can a No Claim Bonus be granted, and at what rate?",
+    "n_evidence": 2,
+    "strict": [
+     8,
+     null
+    ],
+    "page": [
+     8,
+     8
+    ],
+    "budget": [
+     8,
+     null
+    ],
+    "chars": 4096,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      5,
+      6.11
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      31,
+      5.388
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      4.662
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      9,
+      4.512
+     ]
+    ]
+   },
+   {
+    "id": "q50",
+    "tier": "E_multi_hop",
+    "question": "Under the Bharat Griha Raksha policy, a home is insured for Rs 60 lakh under the Home Building Cover, and the Home Contents Cover is also opted. How much built-in cover applies to General Contents, and does it include jewellery?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     null,
+     null
+    ],
+    "page": [
+     1,
+     null,
+     2
+    ],
+    "budget": [
+     1,
+     null,
+     null
+    ],
+    "chars": 4274,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      15.636
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      3,
+      12.066
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      1,
+      9.975
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      9.975
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      7,
+      7.91
+     ]
+    ]
+   },
+   {
+    "id": "q51",
+    "tier": "E_multi_hop",
+    "question": "Under the Bharat Griha Raksha policy, a flood damages an insured home. Five days later, goods are stolen from inside the home because of the flood damage. Is the theft covered, and whom must the insured inform?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4768,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      18,
+      10.602
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      5.546
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      18,
+      5.546
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.546
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      12,
+      5.167
+     ]
+    ]
+   },
+   {
+    "id": "q52",
+    "tier": "E_multi_hop",
+    "question": "Under the Click 2 Protect Optima Secure policy with the Life & CI Rebalance option, the Basic Sum Assured is Rs 1 crore and the Policy Term is 20 years. What are the Life Cover and Critical Illness sums assured at inception, and by how much do they change at each policy anniversary?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     1
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     1
+    ],
+    "chars": 4394,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      37.861
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      7,
+      14.481
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      10,
+      13.776
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      13.081
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      10.463
+     ]
+    ]
+   },
+   {
+    "id": "q53",
+    "tier": "E_multi_hop",
+    "question": "Under the Click 2 Protect Optima Secure policy, a policy lapses. Within what time can it be revived and at what interest rate? If the life assured then dies by suicide six months after the revival, what is payable?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 3699,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      11,
+      11.295
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      130,
+      8.417
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      5.649
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      33,
+      5.1
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      43,
+      5.1
+     ]
+    ]
+   },
+   {
+    "id": "q54",
+    "tier": "E_multi_hop",
+    "question": "Under the Cyber Shield policy, an employed insured has a daily salary rate of INR 8,000 and misses 10 working days because of a cyber bullying event. What is the highest amount of lost wages payable?",
+    "n_evidence": 2,
+    "strict": [
+     11,
+     1
+    ],
+    "page": [
+     11,
+     1
+    ],
+    "budget": [
+     null,
+     1
+    ],
+    "chars": 4520,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      9.795
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      9.737
+     ],
+     [
+      "Policy_Wordings_political",
+      13,
+      6.077
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      20,
+      5.424
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      30,
+      5.424
+     ]
+    ]
+   },
+   {
+    "id": "q55",
+    "tier": "E_multi_hop",
+    "question": "Under the Cyber Shield policy with Family Cover, is the policyholder's 20-year-old child treated as an insured person (You) or as a Third Party?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     1
+    ],
+    "page": [
+     null,
+     1
+    ],
+    "budget": [
+     null,
+     1
+    ],
+    "chars": 4825,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      9.657
+     ],
+     [
+      "tata_aig_travel_insurance",
+      16,
+      7.565
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      3,
+      5.766
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      130,
+      5.586
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      8,
+      5.12
+     ]
+    ]
+   },
+   {
+    "id": "q56",
+    "tier": "E_multi_hop",
+    "question": "Under the Political Risk Insurance for Investors policy, a covered loss under Insuring Agreement III is 1,000,000, the Deductible is 100,000 and the Insured Percentage is 90%. How much does the Company indemnify, before policy limits?",
+    "n_evidence": 2,
+    "strict": [
+     8,
+     1
+    ],
+    "page": [
+     6,
+     1
+    ],
+    "budget": [
+     8,
+     1
+    ],
+    "chars": 4334,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      12.912
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      10.066
+     ],
+     [
+      "Policy_Wordings_political",
+      1,
+      9.331
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      9.331
+     ],
+     [
+      "Policy_Wordings_political",
+      2,
+      8.302
+     ]
+    ]
+   },
+   {
+    "id": "q57",
+    "tier": "E_multi_hop",
+    "question": "Under the Political Risk Insurance for Investors policy, by when must the Insured submit a written proof of Loss, and by when must any legal action against the Company be commenced?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     null
+    ],
+    "page": [
+     1,
+     1,
+     null
+    ],
+    "budget": [
+     1,
+     1,
+     null
+    ],
+    "chars": 4664,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      14,
+      10.715
+     ],
+     [
+      "tata_aig_travel_insurance",
+      55,
+      5.396
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      5.176
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      63,
+      4.522
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      128,
+      4.522
+     ]
+    ]
+   },
+   {
+    "id": "q58",
+    "tier": "E_multi_hop",
+    "question": "Under the SBI General Livestock policy, an insured animal dies while it is transported 120 km by road. Is the death covered? Would the answer change if the animal was transported by air?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     4
+    ],
+    "page": [
+     4,
+     4
+    ],
+    "budget": [
+     4,
+     4
+    ],
+    "chars": 4861,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.974
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      5.296
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      4.852
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      3,
+      4.796
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      4.768
+     ]
+    ]
+   },
+   {
+    "id": "q59",
+    "tier": "E_multi_hop",
+    "question": "Under the SBI General Livestock policy, an insured animal dies. What must the Insured do about the carcass and about information for the Company, and how long does the Company have to reject a claim?",
+    "n_evidence": 3,
+    "strict": [
+     4,
+     4,
+     null
+    ],
+    "page": [
+     4,
+     4,
+     null
+    ],
+    "budget": [
+     4,
+     4,
+     null
+    ],
+    "chars": 4038,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.974
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      6,
+      5.713
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      32,
+      5.689
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      5.296
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      27,
+      5.069
+     ]
+    ]
+   },
+   {
+    "id": "q60",
+    "tier": "E_multi_hop",
+    "question": "Under the HDFC Life Smart Pension Plus policy, the available surrender value is Rs 5,00,000, the annual annuity is Rs 60,000 and the loan interest rate is 9.50% p.a. What is the largest loan that can be granted?",
+    "n_evidence": 3,
+    "strict": [
+     10,
+     4,
+     10
+    ],
+    "page": [
+     4,
+     4,
+     4
+    ],
+    "budget": [
+     null,
+     4,
+     null
+    ],
+    "chars": 4331,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      8,
+      9.959
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      10,
+      9.959
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      9.252
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      22,
+      9.221
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      13,
+      9.211
+     ]
+    ]
+   },
+   {
+    "id": "q61",
+    "tier": "E_multi_hop",
+    "question": "Under the HDFC Life Smart Pension Plus policy, a Limited Pay policy with a 10-year deferment period is surrendered in policy year 3, after total premiums of Rs 6,00,000 were paid. What is the Guaranteed Surrender Value?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     8
+    ],
+    "page": [
+     1,
+     1,
+     4
+    ],
+    "budget": [
+     1,
+     1,
+     8
+    ],
+    "chars": 4086,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      13.075
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      16,
+      11.009
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      13,
+      9.874
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      21,
+      8.459
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      34,
+      8.342
+     ]
+    ]
+   },
+   {
+    "id": "q62",
+    "tier": "E_multi_hop",
+    "question": "Under the Tata AIG Travel Insurance International Plus Health policy, an Eligible Card is stolen. The insured reports it to the issuer 10 hours after discovering the theft. Some unauthorised charges were made 20 hours before the report. Are those charges reimbursed?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     3,
+     null
+    ],
+    "page": [
+     2,
+     2,
+     2
+    ],
+    "budget": [
+     2,
+     3,
+     null
+    ],
+    "chars": 4435,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      21,
+      11.377
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      10.108
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      6.1
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      5.277
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      5.277
+     ]
+    ]
+   },
+   {
+    "id": "q63",
+    "tier": "E_multi_hop",
+    "question": "Under the Contractors Plant and Machinery Insurance policy, the cost to replace a machine with a new one is Rs 50 lakh, but the Sum Insured is Rs 40 lakh. A covered repair costs Rs 10 lakh. How much does the Company pay, before the Excess?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4404,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      24,
+      10.602
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      24,
+      9.698
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      8.153
+     ],
+     [
+      "Policy_Wordings_political",
+      17,
+      5.8
+     ],
+     [
+      "tata_aig_travel_insurance",
+      62,
+      5.596
+     ]
+    ]
+   },
+   {
+    "id": "q64",
+    "tier": "E_multi_hop",
+    "question": "Under the Weather Insurance (Retail) policy, must the insured file a claim form when the weather index deviates? By when is the payment made, and what data is used if the reference weather station has no data?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     9
+    ],
+    "page": [
+     1,
+     1,
+     9
+    ],
+    "budget": [
+     1,
+     1,
+     null
+    ],
+    "chars": 4750,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      9.509
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      9.426
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      5,
+      5.96
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      1,
+      5.908
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      14,
+      5.792
+     ]
+    ]
+   },
+   {
+    "id": "q65",
+    "tier": "F_cross_document",
+    "question": "Up to what repair cost can the insured authorise repairs without prior inspection under the Auto Secure Commercial Vehicle Package Policy, and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     5,
+     null
+    ],
+    "page": [
+     5,
+     null
+    ],
+    "budget": [
+     5,
+     null
+    ],
+    "chars": 4464,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      39,
+      6.704
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      7,
+      5.99
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      8,
+      5.975
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      5.068
+     ]
+    ]
+   },
+   {
+    "id": "q66",
+    "tier": "F_cross_document",
+    "question": "For a repairable (partial) loss, is depreciation deducted on replaced parts under the Auto Secure Commercial Vehicle Package Policy and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     2
+    ],
+    "page": [
+     null,
+     2
+    ],
+    "budget": [
+     null,
+     2
+    ],
+    "chars": 4042,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      6.45
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      5.485
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      30,
+      5.485
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      43,
+      5.485
+     ]
+    ]
+   },
+   {
+    "id": "q67",
+    "tier": "F_cross_document",
+    "question": "After a claim is rejected, within what time must court action start before all benefits are forfeited under the Contractors Plant and Machinery Insurance policy, and under the Specie Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     8,
+     3
+    ],
+    "page": [
+     8,
+     3
+    ],
+    "budget": [
+     8,
+     3
+    ],
+    "chars": 4312,
+    "top": [
+     [
+      "specie_insurance_policy_w",
+      1,
+      5.551
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      161,
+      5.287
+     ],
+     [
+      "specie_insurance_policy_w",
+      6,
+      5.287
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      160,
+      5.03
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      7,
+      5.03
+     ]
+    ]
+   },
+   {
+    "id": "q68",
+    "tier": "F_cross_document",
+    "question": "If another insurance covers the same loss, how much does the insurer pay under the Contractors Plant and Machinery Insurance policy, and under the Political Risk Insurance for Investors policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 974,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      5.176
+     ]
+    ]
+   },
+   {
+    "id": "q69",
+    "tier": "F_cross_document",
+    "question": "Which disputes can go to arbitration under the Cyber Shield policy, and under the Political Risk Insurance for Investors policy?",
+    "n_evidence": 2,
+    "strict": [
+     7,
+     9
+    ],
+    "page": [
+     4,
+     9
+    ],
+    "budget": [
+     7,
+     null
+    ],
+    "chars": 4797,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      130,
+      11.473
+     ],
+     [
+      "specie_insurance_policy_w",
+      6,
+      9.588
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      8,
+      9.267
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      5.245
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      5.176
+     ]
+    ]
+   },
+   {
+    "id": "q70",
+    "tier": "F_cross_document",
+    "question": "Where must the insured event take place for medical treatment under the Arogya Sanjeevani policy, and for the Accidental Death benefit under the Tata AIG Travel Insurance International Plus Health policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4632,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      6.435
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      6.167
+     ],
+     [
+      "tata_aig_travel_insurance",
+      4,
+      6.167
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      17,
+      6.142
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      5.845
+     ]
+    ]
+   },
+   {
+    "id": "q71",
+    "tier": "F_cross_document",
+    "question": "How does a hijacking affect cover under the Tata AIG Travel Insurance International Plus Health policy, and under the Aviation Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     null
+    ],
+    "page": [
+     2,
+     null
+    ],
+    "budget": [
+     2,
+     null
+    ],
+    "chars": 4285,
+    "top": [
+     [
+      "Policy_Wordings_aviation_",
+      1,
+      5.709
+     ],
+     [
+      "tata_aig_travel_insurance",
+      22,
+      4.852
+     ],
+     [
+      "tata_aig_travel_insurance",
+      22,
+      4.852
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      4.439
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      4.439
+     ]
+    ]
+   },
+   {
+    "id": "q72",
+    "tier": "F_cross_document",
+    "question": "How fast must a theft be reported to the police under the Auto Secure Commercial Vehicle Package Policy (vehicle theft), and under the Tata AIG Travel Insurance International Plus Health policy (lost or stolen Eligible Card)?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     1
+    ],
+    "page": [
+     3,
+     1
+    ],
+    "budget": [
+     3,
+     1
+    ],
+    "chars": 3348,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      21,
+      9.796
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      5.778
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      37,
+      5.625
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      38,
+      5.346
+     ]
+    ]
+   },
+   {
+    "id": "q73",
+    "tier": "F_cross_document",
+    "question": "Compare the revival terms of a lapsed policy under the Click 2 Protect Optima Secure policy and the HDFC Life Smart Pension Plus policy: the time limit and the current interest rate.",
+    "n_evidence": 4,
+    "strict": [
+     5,
+     null,
+     4,
+     8
+    ],
+    "page": [
+     3,
+     3,
+     null,
+     4
+    ],
+    "budget": [
+     5,
+     null,
+     4,
+     8
+    ],
+    "chars": 4243,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      7,
+      5.492
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      8,
+      5.32
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      15,
+      4.994
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      4.994
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      12,
+      4.919
+     ]
+    ]
+   },
+   {
+    "id": "q74",
+    "tier": "F_cross_document",
+    "question": "Compare the free look period under the HDFC Life Smart Pension Plus policy and the Tata AIG Travel Insurance International Plus Health policy. How long is it, and to which policies does it apply?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     13,
+     14
+    ],
+    "page": [
+     1,
+     1,
+     14
+    ],
+    "budget": [
+     1,
+     null,
+     null
+    ],
+    "chars": 4737,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      18,
+      5.143
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      4.974
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      4.974
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      4.974
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      28,
+      4.974
+     ]
+    ]
+   },
+   {
+    "id": "q75",
+    "tier": "F_cross_document",
+    "question": "How fast does the insurer respond to a grievance under the Click 2 Protect Optima Secure policy, and under the SBI General Livestock policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 3908,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      9,
+      6.644
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.974
+     ],
+     [
+      "specie_insurance_policy_w",
+      7,
+      5.912
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      4.958
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      4.958
+     ]
+    ]
+   },
+   {
+    "id": "q76",
+    "tier": "F_cross_document",
+    "question": "Which forum decides disputes under the Trade Credit Insurance policy, and under the Port Package policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     10
+    ],
+    "page": [
+     null,
+     10
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4797,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      130,
+      6.599
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      6.306
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      5.245
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      18,
+      4.374
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      37,
+      4.374
+     ]
+    ]
+   },
+   {
+    "id": "q77",
+    "tier": "F_cross_document",
+    "question": "Compare the initial waiting period for illness under the Arogya Sanjeevani policy with the initial waiting period for disease under the SBI General Livestock policy.",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     4,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4761,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.974
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      5.845
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      4.561
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      4.538
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      9,
+      4.225
+     ]
+    ]
+   },
+   {
+    "id": "q78",
+    "tier": "F_cross_document",
+    "question": "Which exchange rate is used to convert a foreign-currency loss into Indian Rupees under the Cyber Shield policy, and under the Trade Credit Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     10
+    ],
+    "page": [
+     1,
+     10
+    ],
+    "budget": [
+     1,
+     null
+    ],
+    "chars": 4753,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      9.721
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      6.306
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      29,
+      5.553
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      4.766
+     ],
+     [
+      "tata_aig_travel_insurance",
+      24,
+      4.741
+     ]
+    ]
+   },
+   {
+    "id": "q79",
+    "tier": "F_cross_document",
+    "question": "What happens to the insurance when the insured dies under the Bharat Griha Raksha policy, and under the Auto Secure Commercial Vehicle Package Policy?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     null
+    ],
+    "page": [
+     2,
+     null
+    ],
+    "budget": [
+     2,
+     null
+    ],
+    "chars": 4463,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      5.658
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      33,
+      5.012
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      9,
+      4.791
+     ],
+     [
+      "tata_aig_travel_insurance",
+      31,
+      4.791
+     ]
+    ]
+   },
+   {
+    "id": "q80",
+    "tier": "F_cross_document",
+    "question": "How much notice must the insurer give to cancel the policy under the Political Risk Insurance for Investors policy, and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4306,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      5.456
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      13,
+      5.183
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      8,
+      5.02
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      9,
+      5.002
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      4.036
+     ]
+    ]
+   },
+   {
+    "id": "q81",
+    "tier": "F_cross_document",
+    "question": "When is a damaged item settled as a total loss instead of being repaired under the Auto Secure Commercial Vehicle Package Policy, the Port Package policy (handling equipment), and the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 4490,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      94,
+      10.661
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      101,
+      9.234
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      52,
+      5.028
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      67,
+      5.028
+     ]
+    ]
+   },
+   {
+    "id": "q82",
+    "tier": "F_cross_document",
+    "question": "What reward does the insured get for a claim-free period under the Arogya Sanjeevani policy, the Auto Secure Commercial Vehicle Package Policy, and the Trade Credit Insurance policy?",
+    "n_evidence": 3,
+    "strict": [
+     4,
+     null,
+     null
+    ],
+    "page": [
+     4,
+     null,
+     null
+    ],
+    "budget": [
+     4,
+     null,
+     null
+    ],
+    "chars": 4367,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      6.306
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      5.845
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      4.642
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      4.561
+     ]
+    ]
+   },
+   {
+    "id": "q83",
+    "tier": "F_cross_document",
+    "question": "Is loss caused by terrorism covered under the Bharat Griha Raksha policy, the Auto Secure Commercial Vehicle Package Policy, and the Cyber Shield policy?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null,
+     5
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 4476,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      93,
+      5.478
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      156,
+      5.478
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      18,
+      4.623
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      4.623
+     ]
+    ]
+   },
+   {
+    "id": "q84",
+    "tier": "F_cross_document",
+    "question": "How is earthquake treated under the Bharat Griha Raksha policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     12
+    ],
+    "page": [
+     null,
+     null,
+     12
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 3418,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      1,
+      6.261
+     ],
+     [
+      "specie_insurance_policy_w",
+      1,
+      5.551
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      133,
+      4.879
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      41,
+      4.671
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      46,
+      4.671
+     ]
+    ]
+   },
+   {
+    "id": "q85",
+    "tier": "F_cross_document",
+    "question": "If the insured cancels after the policy was in force for about six months, with no claim, what share of the annual premium does the insurer keep under the Cyber Shield policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+    "n_evidence": 3,
+    "strict": [
+     6,
+     7,
+     null
+    ],
+    "page": [
+     6,
+     7,
+     null
+    ],
+    "budget": [
+     6,
+     7,
+     null
+    ],
+    "chars": 4091,
+    "top": [
+     [
+      "Policy_Wordings_aviation_",
+      15,
+      9.971
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      12,
+      6.695
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      1,
+      6.261
+     ],
+     [
+      "specie_insurance_policy_w",
+      1,
+      5.551
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      27,
+      5.429
+     ]
+    ]
+   },
+   {
+    "id": "q86",
+    "tier": "F_cross_document",
+    "question": "What happens to the insurance when the insured property is sold or changes owner under the Auto Secure Commercial Vehicle Package Policy, the SBI General Livestock policy, and the Bharat Griha Raksha policy?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     5
+    ],
+    "page": [
+     null,
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null,
+     5
+    ],
+    "chars": 4430,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.974
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      9,
+      5.385
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      12,
+      5.176
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      2,
+      3.662
+     ]
+    ]
+   },
+   {
+    "id": "q87",
+    "tier": "F_cross_document",
+    "question": "Is a loss that is discovered only during an inventory covered under the Specie Insurance policy, the Contractors Plant and Machinery Insurance policy, and the Political Risk Insurance for Investors policy?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     3,
+     null
+    ],
+    "page": [
+     2,
+     3,
+     null
+    ],
+    "budget": [
+     2,
+     3,
+     null
+    ],
+    "chars": 3247,
+    "top": [
+     [
+      "specie_insurance_policy_w",
+      1,
+      5.551
+     ],
+     [
+      "specie_insurance_policy_w",
+      2,
+      5.399
+     ],
+     [
+      "Policy_Wordings_contracto",
+      2,
+      5.247
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      5.176
+     ]
+    ]
+   },
+   {
+    "id": "q88",
+    "tier": "F_cross_document",
+    "question": "What interest does the insurer pay when a claim is settled late under the Arogya Sanjeevani policy, the SBI General Livestock policy, and the Tata AIG Travel Insurance International Plus Health policy?",
+    "n_evidence": 3,
+    "strict": [
+     3,
+     null,
+     8
+    ],
+    "page": [
+     3,
+     null,
+     8
+    ],
+    "budget": [
+     3,
+     null,
+     8
+    ],
+    "chars": 4801,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.974
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      5.845
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      8,
+      4.978
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      17,
+      4.978
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      65,
+      4.978
+     ]
+    ]
+   },
+   {
+    "id": "q101",
+    "tier": "H_paraphrased",
+    "question": "Under the Cyber Shield policy, how quickly must I install important operating system patches so that a claim to restore my files stays valid?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 0,
+    "top": []
+   },
+   {
+    "id": "q102",
+    "tier": "H_paraphrased",
+    "question": "Under the Arogya Sanjeevani policy, is weight-loss surgery ever paid for, and which body measurements qualify?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 1946,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      5.845
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      4.561
+     ]
+    ]
+   },
+   {
+    "id": "q103",
+    "tier": "H_paraphrased",
+    "question": "Under the Bharat Griha Raksha policy, my flat is worth more than the amount I insured it for. Will the payout be cut in proportion?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 4050,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      3,
+      6.588
+     ],
+     [
+      "Policy_Wordings_contracto",
+      6,
+      5.739
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      39,
+      4.963
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      38,
+      4.593
+     ],
+     [
+      "tata_aig_travel_insurance",
+      40,
+      4.593
+     ]
+    ]
+   },
+   {
+    "id": "q104",
+    "tier": "H_paraphrased",
+    "question": "Under the Trade Credit Insurance policy, a buyer does not pay an invoice. A director of that buyer is a first cousin of a director of my company. Is the loss covered?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4334,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      6.306
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      54,
+      5.713
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      5.713
+     ],
+     [
+      "Policy_Wordings_political",
+      8,
+      5.713
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      8,
+      5.385
+     ]
+    ]
+   },
+   {
+    "id": "q105",
+    "tier": "H_paraphrased",
+    "question": "Under the Auto Secure Commercial Vehicle Package Policy, my truck cannot move after a covered accident. How much of the cost to take it to the nearest garage is paid?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 4514,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      6.518
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      40,
+      6.264
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      41,
+      6.264
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      37,
+      5.966
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      40,
+      4.756
+     ]
+    ]
+   },
+   {
+    "id": "q106",
+    "tier": "H_paraphrased",
+    "question": "Under the Political Risk Insurance for Investors policy, the host nation stops my subsidiary from changing local money and sending dividends home. Which part of the policy covers this, and from which date is the loss counted?",
+    "n_evidence": 2,
+    "strict": [
+     10,
+     null
+    ],
+    "page": [
+     10,
+     12
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4502,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      10,
+      6.799
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      6.735
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      6.735
+     ],
+     [
+      "Policy_Wordings_political",
+      7,
+      6.735
+     ],
+     [
+      "Policy_Wordings_political",
+      7,
+      6.735
+     ]
+    ]
+   },
+   {
+    "id": "q107",
+    "tier": "H_paraphrased",
+    "question": "Under the Click 2 Protect Optima Secure policy, I stop paying after two full years of premiums. What happens to the amounts the policy pays out?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 1904,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      5.871
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      22,
+      4.676
+     ]
+    ]
+   },
+   {
+    "id": "q108",
+    "tier": "H_paraphrased",
+    "question": "Under the Tata AIG Travel Insurance International Plus Health policy, how long must the gap between my arrival and my onward plane be for a missed onward plane to be payable?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 872,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      19,
+      4.842
+     ]
+    ]
+   },
+   {
+    "id": "q109",
+    "tier": "H_paraphrased",
+    "question": "Under the HDFC Life Smart Pension Plus policy, can I take cash out in exchange for smaller pension payments? What limits apply?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 4825,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      65,
+      9.744
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      4.974
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      4.974
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      4.974
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      28,
+      4.974
+     ]
+    ]
+   },
+   {
+    "id": "q110",
+    "tier": "H_paraphrased",
+    "question": "Under the SBI General Livestock policy, I gave my details by telephone and the printed policy shows some of them wrongly. How long do I have to tell the insurer?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 4248,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      5.974
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      41,
+      5.073
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      26,
+      4.815
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      4.64
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      1,
+      4.528
+     ]
+    ]
+   },
+   {
+    "id": "q111",
+    "tier": "H_paraphrased",
+    "question": "My cover pays out from rainfall measured at a named recording site. If that site stops reporting, which numbers does the insurer use?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 361,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      25,
+      4.839
+     ]
+    ]
+   },
+   {
+    "id": "q112",
+    "tier": "H_paraphrased",
+    "question": "Someone online says they will publish my private files unless I pay them. How soon must I go to the police for my personal cyber cover to respond?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 4792,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      5.846
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      5.251
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      14,
+      4.833
+     ],
+     [
+      "specie_insurance_policy_w",
+      4,
+      4.833
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      14,
+      4.425
+     ]
+    ]
+   },
+   {
+    "id": "q113",
+    "tier": "H_paraphrased",
+    "question": "We keep gold bars and banknotes in a vault under a valuables policy. One of our own staff steals some of them. Does the policy pay?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 2925,
+    "top": [
+     [
+      "specie_insurance_policy_w",
+      3,
+      6.767
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      3,
+      6.233
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      149,
+      4.759
+     ]
+    ]
+   },
+   {
+    "id": "q114",
+    "tier": "H_paraphrased",
+    "question": "A crane at our container terminal is insured for less than it is worth on the market. When does the insurer scale down a damage payout, and when does it not?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     1,
+     null
+    ],
+    "chars": 4267,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      102,
+      9.473
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      18,
+      5.424
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      28,
+      5.424
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      24,
+      4.495
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      24,
+      4.495
+     ]
+    ]
+   },
+   {
+    "id": "q115",
+    "tier": "H_paraphrased",
+    "question": "A maker of aircraft parts must call back its parts under an emergency airworthiness order. What share of the call-back costs does the insurer reimburse?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 4860,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      18,
+      5.424
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      28,
+      5.424
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      2,
+      4.879
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      10,
+      4.833
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      24,
+      4.495
+     ]
+    ]
+   },
+   {
+    "id": "q116",
+    "tier": "H_paraphrased",
+    "question": "My suitcase did not arrive after a flight abroad and I was paid for the delay. The airline now confirms the suitcase is gone for good. What happens to the money I already received?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 4327,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      51,
+      4.746
+     ],
+     [
+      "tata_aig_travel_insurance",
+      19,
+      4.693
+     ],
+     [
+      "tata_aig_travel_insurance",
+      6,
+      4.245
+     ],
+     [
+      "tata_aig_travel_insurance",
+      36,
+      4.245
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      151,
+      3.744
+     ]
+    ]
+   },
+   {
+    "id": "q117",
+    "tier": "H_paraphrased",
+    "question": "An excavator on a coastal building site is partly under sea water when the tide comes in. Is the damage paid?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 4395,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      25,
+      5.474
+     ],
+     [
+      "tata_aig_travel_insurance",
+      26,
+      5.202
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      13,
+      4.67
+     ],
+     [
+      "tata_aig_travel_insurance",
+      42,
+      4.67
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      151,
+      4.553
+     ]
+    ]
+   },
+   {
+    "id": "q118",
+    "tier": "H_paraphrased",
+    "question": "My insured buffalo can never give milk again after an illness. Is that payable?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4070,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      11,
+      6.871
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      5.822
+     ],
+     [
+      "tata_aig_travel_insurance",
+      6,
+      5.018
+     ],
+     [
+      "tata_aig_travel_insurance",
+      8,
+      5.018
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      4.857
+     ]
+    ]
+   },
+   {
+    "id": "q119",
+    "tier": "H_paraphrased",
+    "question": "My husband was the main pension holder on our joint pension plan and he has died. Can I take some future instalments as one payment? For how many years ahead, and by when must I ask?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4416,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      11,
+      4.228
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      11,
+      4.228
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      71,
+      3.776
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      71,
+      3.776
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      76,
+      3.776
+     ]
+    ]
+   },
+   {
+    "id": "q120",
+    "tier": "H_paraphrased",
+    "question": "My house fell down by itself, not because of fire, flood or any other listed event. Does my home cover continue?",
+    "n_evidence": 1,
+    "strict": [
+     null
+    ],
+    "page": [
+     null
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 3610,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      1,
+      9.029
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      9.029
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      9.029
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      16,
+      4.804
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      46,
+      4.804
+     ]
+    ]
+   }
+  ],
+  "summary": {
+   "n": 68,
+   "mean_chars_top5": 4028.720588235294,
+   "strict": {
+    "any@1": 0.20588235294117646,
+    "all@1": 0.014705882352941176,
+    "any@3": 0.3382352941176471,
+    "all@3": 0.029411764705882353,
+    "any@5": 0.45588235294117646,
+    "all@5": 0.058823529411764705,
+    "any@10": 0.5294117647058824,
+    "all@10": 0.17647058823529413,
+    "mrr": 0.17427914881959
+   },
+   "page": {
+    "any@1": 0.20588235294117646,
+    "all@1": 0.04411764705882353,
+    "any@3": 0.36764705882352944,
+    "all@3": 0.08823529411764706,
+    "any@5": 0.5147058823529411,
+    "all@5": 0.14705882352941177,
+    "any@10": 0.5735294117647058,
+    "all@10": 0.23529411764705882,
+    "mrr": 0.21397122757416875
+   },
+   "budget": {
+    "any@1": 0.20588235294117646,
+    "all@1": 0.014705882352941176,
+    "any@3": 0.3382352941176471,
+    "all@3": 0.029411764705882353,
+    "any@5": 0.45588235294117646,
+    "all@5": 0.058823529411764705,
+    "any@10": 0.5,
+    "all@10": 0.11764705882352941,
+    "mrr": 0.16717291083099908
+   },
+   "by_tier": {
+    "E_multi_hop": {
+     "n": 24,
+     "strict": {
+      "any@1": 0.4166666666666667,
+      "all@1": 0.041666666666666664,
+      "any@3": 0.5416666666666666,
+      "all@3": 0.041666666666666664,
+      "any@5": 0.7083333333333334,
+      "all@5": 0.125,
+      "any@10": 0.75,
+      "all@10": 0.3333333333333333,
+      "mrr": 0.31625511833845166
+     },
+     "budget": {
+      "any@1": 0.4166666666666667,
+      "all@1": 0.041666666666666664,
+      "any@3": 0.5416666666666666,
+      "all@3": 0.041666666666666664,
+      "any@5": 0.7083333333333334,
+      "all@5": 0.125,
+      "any@10": 0.75,
+      "all@10": 0.25,
+      "mrr": 0.30790343915343915
+     }
+    },
+    "F_cross_document": {
+     "n": 24,
+     "strict": {
+      "any@1": 0.125,
+      "all@1": 0.0,
+      "any@3": 0.375,
+      "all@3": 0.041666666666666664,
+      "any@5": 0.5416666666666666,
+      "all@5": 0.041666666666666664,
+      "any@10": 0.6666666666666666,
+      "all@10": 0.16666666666666666,
+      "mrr": 0.15461913665038665
+     },
+     "budget": {
+      "any@1": 0.125,
+      "all@1": 0.0,
+      "any@3": 0.375,
+      "all@3": 0.041666666666666664,
+      "any@5": 0.5416666666666666,
+      "all@5": 0.041666666666666664,
+      "any@10": 0.625,
+      "all@10": 0.08333333333333333,
+      "mrr": 0.14491980820105818
+     }
+    },
+    "H_paraphrased": {
+     "n": 20,
+     "strict": {
+      "any@1": 0.05,
+      "all@1": 0.0,
+      "any@3": 0.05,
+      "all@3": 0.0,
+      "any@5": 0.05,
+      "all@5": 0.0,
+      "any@10": 0.1,
+      "all@10": 0.0,
+      "mrr": 0.027500000000000004
+     },
+     "budget": {
+      "any@1": 0.05,
+      "all@1": 0.0,
+      "any@3": 0.05,
+      "all@3": 0.0,
+      "any@5": 0.05,
+      "all@5": 0.0,
+      "any@10": 0.05,
+      "all@10": 0.0,
+      "mrr": 0.025
+     }
+    }
+   }
+  }
+ },
+ "vector": {
+  "rows": [
+   {
+    "id": "q41",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, a Counterparty becomes insolvent. Within what period must the Insured submit a complete claim, and from which date does that period run?",
+    "n_evidence": 3,
+    "strict": [
+     7,
+     null,
+     null
+    ],
+    "page": [
+     6,
+     null,
+     4
+    ],
+    "budget": [
+     7,
+     null,
+     null
+    ],
+    "chars": 4672,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.568
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      6,
+      0.55
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      6,
+      0.538
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      15,
+      0.515
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      15,
+      0.514
+     ]
+    ]
+   },
+   {
+    "id": "q42",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, the Insured's payments record with a Counterparty for the recent one year is INR 1,000 million. What is the highest Preliminary limit the Insured may set, and for how long may it be applied if the Insurer has not yet determined a Credit limit?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     2,
+     1
+    ],
+    "page": [
+     2,
+     2,
+     1
+    ],
+    "budget": [
+     2,
+     2,
+     1
+    ],
+    "chars": 4168,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      4,
+      0.628
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      3,
+      0.616
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      3,
+      0.615
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      18,
+      0.576
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      18,
+      0.551
+     ]
+    ]
+   },
+   {
+    "id": "q43",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, after a claim payment the Insured recovers INR 100 from the Counterparty and spends INR 10 as reasonable collection expenses. The insurance indemnity was INR 60 and the amount of outstanding claims was INR 80. How much is owed to the Insurer, and within how many days must the recovery be disbursed?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     2
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     2
+    ],
+    "chars": 3932,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      0.628
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      0.618
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      0.554
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      10,
+      0.552
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      7,
+      0.487
+     ]
+    ]
+   },
+   {
+    "id": "q44",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 1,00,000 and all waiting periods are complete. Cataract surgery on one eye costs Rs 30,000. How much does the Company pay?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     null
+    ],
+    "page": [
+     1,
+     null
+    ],
+    "budget": [
+     1,
+     null
+    ],
+    "chars": 4857,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.475
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.422
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.393
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.353
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.353
+     ]
+    ]
+   },
+   {
+    "id": "q45",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 2,00,000. The insured person takes a room that costs Rs 8,000 per day. What room rent is admissible per day, and how are the other hospital expenses paid?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     5
+    ],
+    "page": [
+     2,
+     2
+    ],
+    "budget": [
+     2,
+     5
+    ],
+    "chars": 4805,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.514
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.499
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.487
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.483
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.472
+     ]
+    ]
+   },
+   {
+    "id": "q46",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, a disease was diagnosed by a physician two years before the first policy started. Is it a Pre-Existing Disease, and when will its treatment be covered?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     2,
+     2
+    ],
+    "page": [
+     1,
+     2,
+     2
+    ],
+    "budget": [
+     1,
+     2,
+     2
+    ],
+    "chars": 4803,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      3,
+      0.526
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.499
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.45
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      32,
+      0.445
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.434
+     ]
+    ]
+   },
+   {
+    "id": "q47",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, a vehicle is three and a half years old. What depreciation percentage is used to fix its IDV, and what depreciation percentage applies to its other replaced parts in a partial loss claim?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     2
+    ],
+    "page": [
+     1,
+     4
+    ],
+    "budget": [
+     2,
+     2
+    ],
+    "chars": 4892,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.569
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.526
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      7,
+      0.465
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      2,
+      0.458
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      2,
+      0.448
+     ]
+    ]
+   },
+   {
+    "id": "q48",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, the IDV of a vehicle is Rs 10,00,000 and the cost to retrieve and repair it after an accident is Rs 8,00,000. How is the claim treated, and what is the most the Company will pay?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     2
+    ],
+    "page": [
+     1,
+     2
+    ],
+    "budget": [
+     4,
+     2
+    ],
+    "chars": 4418,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.567
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      7,
+      0.53
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.513
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.507
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      7,
+      0.497
+     ]
+    ]
+   },
+   {
+    "id": "q49",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, an insured sells the vehicle after three consecutive claim-free years and takes a fresh insurance two years later. Can a No Claim Bonus be granted, and at what rate?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     4
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     4
+    ],
+    "chars": 4157,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      9,
+      0.577
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      31,
+      0.525
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      5,
+      0.516
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      9,
+      0.457
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.449
+     ]
+    ]
+   },
+   {
+    "id": "q50",
+    "tier": "E_multi_hop",
+    "question": "Under the Bharat Griha Raksha policy, a home is insured for Rs 60 lakh under the Home Building Cover, and the Home Contents Cover is also opted. How much built-in cover applies to General Contents, and does it include jewellery?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     4,
+     8
+    ],
+    "page": [
+     1,
+     4,
+     3
+    ],
+    "budget": [
+     1,
+     4,
+     8
+    ],
+    "chars": 3874,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      0.676
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      0.55
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      3,
+      0.542
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      8,
+      0.505
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      1,
+      0.474
+     ]
+    ]
+   },
+   {
+    "id": "q51",
+    "tier": "E_multi_hop",
+    "question": "Under the Bharat Griha Raksha policy, a flood damages an insured home. Five days later, goods are stolen from inside the home because of the flood damage. Is the theft covered, and whom must the insured inform?",
+    "n_evidence": 2,
+    "strict": [
+     12,
+     1
+    ],
+    "page": [
+     12,
+     1
+    ],
+    "budget": [
+     null,
+     1
+    ],
+    "chars": 4859,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      14,
+      0.524
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.472
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      28,
+      0.436
+     ],
+     [
+      "tata_aig_travel_insurance",
+      47,
+      0.431
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      33,
+      0.416
+     ]
+    ]
+   },
+   {
+    "id": "q52",
+    "tier": "E_multi_hop",
+    "question": "Under the Click 2 Protect Optima Secure policy with the Life & CI Rebalance option, the Basic Sum Assured is Rs 1 crore and the Policy Term is 20 years. What are the Life Cover and Critical Illness sums assured at inception, and by how much do they change at each policy anniversary?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     1
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     1
+    ],
+    "chars": 4405,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      0.686
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      0.534
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      7,
+      0.501
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      0.451
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      0.45
+     ]
+    ]
+   },
+   {
+    "id": "q53",
+    "tier": "E_multi_hop",
+    "question": "Under the Click 2 Protect Optima Secure policy, a policy lapses. Within what time can it be revived and at what interest rate? If the life assured then dies by suicide six months after the revival, what is payable?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     6
+    ],
+    "page": [
+     1,
+     1,
+     6
+    ],
+    "budget": [
+     1,
+     1,
+     6
+    ],
+    "chars": 4910,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      15,
+      0.541
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      0.484
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      0.461
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      18,
+      0.447
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      14,
+      0.442
+     ]
+    ]
+   },
+   {
+    "id": "q54",
+    "tier": "E_multi_hop",
+    "question": "Under the Cyber Shield policy, an employed insured has a daily salary rate of INR 8,000 and misses 10 working days because of a cyber bullying event. What is the highest amount of lost wages payable?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     1
+    ],
+    "page": [
+     4,
+     1
+    ],
+    "budget": [
+     4,
+     1
+    ],
+    "chars": 3641,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      0.5
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.49
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      0.468
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      0.467
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      0.373
+     ]
+    ]
+   },
+   {
+    "id": "q55",
+    "tier": "E_multi_hop",
+    "question": "Under the Cyber Shield policy with Family Cover, is the policyholder's 20-year-old child treated as an insured person (You) or as a Third Party?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     1
+    ],
+    "page": [
+     2,
+     1
+    ],
+    "budget": [
+     2,
+     1
+    ],
+    "chars": 2753,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      0.522
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      0.429
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      76,
+      0.415
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      139,
+      0.38
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      4,
+      0.378
+     ]
+    ]
+   },
+   {
+    "id": "q56",
+    "tier": "E_multi_hop",
+    "question": "Under the Political Risk Insurance for Investors policy, a covered loss under Insuring Agreement III is 1,000,000, the Deductible is 100,000 and the Insured Percentage is 90%. How much does the Company indemnify, before policy limits?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     1
+    ],
+    "page": [
+     4,
+     1
+    ],
+    "budget": [
+     4,
+     1
+    ],
+    "chars": 3672,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.55
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.507
+     ],
+     [
+      "Policy_Wordings_political",
+      2,
+      0.439
+     ],
+     [
+      "Policy_Wordings_political",
+      5,
+      0.429
+     ],
+     [
+      "Policy_Wordings_political",
+      1,
+      0.428
+     ]
+    ]
+   },
+   {
+    "id": "q57",
+    "tier": "E_multi_hop",
+    "question": "Under the Political Risk Insurance for Investors policy, by when must the Insured submit a written proof of Loss, and by when must any legal action against the Company be commenced?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     2
+    ],
+    "page": [
+     1,
+     1,
+     2
+    ],
+    "budget": [
+     1,
+     1,
+     2
+    ],
+    "chars": 4102,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      14,
+      0.536
+     ],
+     [
+      "Policy_Wordings_political",
+      17,
+      0.476
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.457
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      35,
+      0.445
+     ],
+     [
+      "tata_aig_travel_insurance",
+      47,
+      0.438
+     ]
+    ]
+   },
+   {
+    "id": "q58",
+    "tier": "E_multi_hop",
+    "question": "Under the SBI General Livestock policy, an insured animal dies while it is transported 120 km by road. Is the death covered? Would the answer change if the animal was transported by air?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     3
+    ],
+    "page": [
+     3,
+     3
+    ],
+    "budget": [
+     3,
+     3
+    ],
+    "chars": 4801,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.529
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.44
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      3,
+      0.423
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.418
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.398
+     ]
+    ]
+   },
+   {
+    "id": "q59",
+    "tier": "E_multi_hop",
+    "question": "Under the SBI General Livestock policy, an insured animal dies. What must the Insured do about the carcass and about information for the Company, and how long does the Company have to reject a claim?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     10
+    ],
+    "page": [
+     1,
+     1,
+     10
+    ],
+    "budget": [
+     1,
+     1,
+     null
+    ],
+    "chars": 4859,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.601
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.593
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.517
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.497
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.492
+     ]
+    ]
+   },
+   {
+    "id": "q60",
+    "tier": "E_multi_hop",
+    "question": "Under the HDFC Life Smart Pension Plus policy, the available surrender value is Rs 5,00,000, the annual annuity is Rs 60,000 and the loan interest rate is 9.50% p.a. What is the largest loan that can be granted?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     1
+    ],
+    "page": [
+     1,
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     1,
+     1
+    ],
+    "chars": 4439,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      22,
+      0.549
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      0.479
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.46
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      22,
+      0.454
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      0.395
+     ]
+    ]
+   },
+   {
+    "id": "q61",
+    "tier": "E_multi_hop",
+    "question": "Under the HDFC Life Smart Pension Plus policy, a Limited Pay policy with a 10-year deferment period is surrendered in policy year 3, after total premiums of Rs 6,00,000 were paid. What is the Guaranteed Surrender Value?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     2
+    ],
+    "page": [
+     1,
+     1,
+     2
+    ],
+    "budget": [
+     1,
+     1,
+     2
+    ],
+    "chars": 4406,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      0.561
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      21,
+      0.529
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      13,
+      0.494
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      21,
+      0.49
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      0.455
+     ]
+    ]
+   },
+   {
+    "id": "q62",
+    "tier": "E_multi_hop",
+    "question": "Under the Tata AIG Travel Insurance International Plus Health policy, an Eligible Card is stolen. The insured reports it to the issuer 10 hours after discovering the theft. Some unauthorised charges were made 20 hours before the report. Are those charges reimbursed?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     2,
+     4
+    ],
+    "page": [
+     1,
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     2,
+     4
+    ],
+    "chars": 4369,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.645
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.634
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.633
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.612
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.44
+     ]
+    ]
+   },
+   {
+    "id": "q63",
+    "tier": "E_multi_hop",
+    "question": "Under the Contractors Plant and Machinery Insurance policy, the cost to replace a machine with a new one is Rs 50 lakh, but the Sum Insured is Rs 40 lakh. A covered repair costs Rs 10 lakh. How much does the Company pay, before the Excess?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     4
+    ],
+    "page": [
+     3,
+     1
+    ],
+    "budget": [
+     3,
+     4
+    ],
+    "chars": 4719,
+    "top": [
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.502
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.445
+     ],
+     [
+      "Policy_Wordings_contracto",
+      2,
+      0.429
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.428
+     ],
+     [
+      "Policy_Wordings_contracto",
+      5,
+      0.416
+     ]
+    ]
+   },
+   {
+    "id": "q64",
+    "tier": "E_multi_hop",
+    "question": "Under the Weather Insurance (Retail) policy, must the insured file a claim form when the weather index deviates? By when is the payment made, and what data is used if the reference weather station has no data?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     2,
+     9
+    ],
+    "page": [
+     1,
+     1,
+     9
+    ],
+    "budget": [
+     2,
+     2,
+     9
+    ],
+    "chars": 3926,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.617
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.609
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      3,
+      0.59
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      4,
+      0.541
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.516
+     ]
+    ]
+   },
+   {
+    "id": "q65",
+    "tier": "F_cross_document",
+    "question": "Up to what repair cost can the insured authorise repairs without prior inspection under the Auto Secure Commercial Vehicle Package Policy, and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     3
+    ],
+    "page": [
+     1,
+     3
+    ],
+    "budget": [
+     1,
+     3
+    ],
+    "chars": 4367,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.483
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.455
+     ],
+     [
+      "Policy_Wordings_contracto",
+      5,
+      0.445
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      110,
+      0.444
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      46,
+      0.44
+     ]
+    ]
+   },
+   {
+    "id": "q66",
+    "tier": "F_cross_document",
+    "question": "For a repairable (partial) loss, is depreciation deducted on replaced parts under the Auto Secure Commercial Vehicle Package Policy and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     10,
+     3
+    ],
+    "page": [
+     8,
+     3
+    ],
+    "budget": [
+     10,
+     3
+    ],
+    "chars": 4242,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      27,
+      0.505
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      27,
+      0.493
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.483
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.431
+     ],
+     [
+      "Policy_Wordings_contracto",
+      1,
+      0.431
+     ]
+    ]
+   },
+   {
+    "id": "q67",
+    "tier": "F_cross_document",
+    "question": "After a claim is rejected, within what time must court action start before all benefits are forfeited under the Contractors Plant and Machinery Insurance policy, and under the Specie Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     1
+    ],
+    "page": [
+     2,
+     1
+    ],
+    "budget": [
+     2,
+     1
+    ],
+    "chars": 4306,
+    "top": [
+     [
+      "specie_insurance_policy_w",
+      6,
+      0.554
+     ],
+     [
+      "Policy_Wordings_contracto",
+      4,
+      0.535
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      161,
+      0.509
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      5,
+      0.422
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      160,
+      0.418
+     ]
+    ]
+   },
+   {
+    "id": "q68",
+    "tier": "F_cross_document",
+    "question": "If another insurance covers the same loss, how much does the insurer pay under the Contractors Plant and Machinery Insurance policy, and under the Political Risk Insurance for Investors policy?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     null
+    ],
+    "page": [
+     2,
+     null
+    ],
+    "budget": [
+     2,
+     null
+    ],
+    "chars": 4744,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.461
+     ],
+     [
+      "Policy_Wordings_contracto",
+      5,
+      0.443
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      11,
+      0.416
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      16,
+      0.395
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      2,
+      0.394
+     ]
+    ]
+   },
+   {
+    "id": "q69",
+    "tier": "F_cross_document",
+    "question": "Which disputes can go to arbitration under the Cyber Shield policy, and under the Political Risk Insurance for Investors policy?",
+    "n_evidence": 2,
+    "strict": [
+     9,
+     10
+    ],
+    "page": [
+     6,
+     10
+    ],
+    "budget": [
+     9,
+     null
+    ],
+    "chars": 4912,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.384
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      16,
+      0.37
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      8,
+      0.362
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      8,
+      0.349
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      11,
+      0.344
+     ]
+    ]
+   },
+   {
+    "id": "q70",
+    "tier": "F_cross_document",
+    "question": "Where must the insured event take place for medical treatment under the Arogya Sanjeevani policy, and for the Accidental Death benefit under the Tata AIG Travel Insurance International Plus Health policy?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     null
+    ],
+    "page": [
+     4,
+     null
+    ],
+    "budget": [
+     4,
+     null
+    ],
+    "chars": 4752,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.459
+     ],
+     [
+      "tata_aig_travel_insurance",
+      7,
+      0.443
+     ],
+     [
+      "tata_aig_travel_insurance",
+      28,
+      0.406
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      8,
+      0.397
+     ],
+     [
+      "tata_aig_travel_insurance",
+      7,
+      0.395
+     ]
+    ]
+   },
+   {
+    "id": "q71",
+    "tier": "F_cross_document",
+    "question": "How does a hijacking affect cover under the Tata AIG Travel Insurance International Plus Health policy, and under the Aviation Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     6,
+     4
+    ],
+    "page": [
+     3,
+     4
+    ],
+    "budget": [
+     6,
+     4
+    ],
+    "chars": 4254,
+    "top": [
+     [
+      "Policy_Wordings_aviation_",
+      1,
+      0.535
+     ],
+     [
+      "tata_aig_travel_insurance",
+      17,
+      0.494
+     ],
+     [
+      "tata_aig_travel_insurance",
+      22,
+      0.491
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      12,
+      0.452
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      12,
+      0.449
+     ]
+    ]
+   },
+   {
+    "id": "q72",
+    "tier": "F_cross_document",
+    "question": "How fast must a theft be reported to the police under the Auto Secure Commercial Vehicle Package Policy (vehicle theft), and under the Tata AIG Travel Insurance International Plus Health policy (lost or stolen Eligible Card)?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     3
+    ],
+    "page": [
+     1,
+     3
+    ],
+    "budget": [
+     1,
+     3
+    ],
+    "chars": 4442,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.536
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.508
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.474
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.458
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      28,
+      0.434
+     ]
+    ]
+   },
+   {
+    "id": "q73",
+    "tier": "F_cross_document",
+    "question": "Compare the revival terms of a lapsed policy under the Click 2 Protect Optima Secure policy and the HDFC Life Smart Pension Plus policy: the time limit and the current interest rate.",
+    "n_evidence": 4,
+    "strict": [
+     1,
+     1,
+     4,
+     2
+    ],
+    "page": [
+     1,
+     1,
+     4,
+     2
+    ],
+    "budget": [
+     1,
+     1,
+     4,
+     2
+    ],
+    "chars": 4809,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      15,
+      0.52
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      0.46
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.43
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      18,
+      0.429
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      0.425
+     ]
+    ]
+   },
+   {
+    "id": "q74",
+    "tier": "F_cross_document",
+    "question": "Compare the free look period under the HDFC Life Smart Pension Plus policy and the Tata AIG Travel Insurance International Plus Health policy. How long is it, and to which policies does it apply?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     null,
+     8
+    ],
+    "page": [
+     7,
+     7,
+     8
+    ],
+    "budget": [
+     2,
+     null,
+     8
+    ],
+    "chars": 4726,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.487
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      0.462
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      0.453
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      0.44
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      28,
+      0.433
+     ]
+    ]
+   },
+   {
+    "id": "q75",
+    "tier": "F_cross_document",
+    "question": "How fast does the insurer respond to a grievance under the Click 2 Protect Optima Secure policy, and under the SBI General Livestock policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     1
+    ],
+    "page": [
+     15,
+     1
+    ],
+    "budget": [
+     null,
+     1
+    ],
+    "chars": 4499,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      5,
+      0.453
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      16,
+      0.439
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      9,
+      0.439
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.432
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.428
+     ]
+    ]
+   },
+   {
+    "id": "q76",
+    "tier": "F_cross_document",
+    "question": "Which forum decides disputes under the Trade Credit Insurance policy, and under the Port Package policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     6
+    ],
+    "page": [
+     null,
+     6
+    ],
+    "budget": [
+     null,
+     6
+    ],
+    "chars": 4772,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      1,
+      0.418
+     ],
+     [
+      "Policy_Wordings_political",
+      16,
+      0.404
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.397
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      29,
+      0.395
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      0.388
+     ]
+    ]
+   },
+   {
+    "id": "q77",
+    "tier": "F_cross_document",
+    "question": "Compare the initial waiting period for illness under the Arogya Sanjeevani policy with the initial waiting period for disease under the SBI General Livestock policy.",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     1
+    ],
+    "page": [
+     3,
+     1
+    ],
+    "budget": [
+     3,
+     1
+    ],
+    "chars": 4774,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.475
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.423
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.418
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.418
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.417
+     ]
+    ]
+   },
+   {
+    "id": "q78",
+    "tier": "F_cross_document",
+    "question": "Which exchange rate is used to convert a foreign-currency loss into Indian Rupees under the Cyber Shield policy, and under the Trade Credit Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     3
+    ],
+    "page": [
+     1,
+     3
+    ],
+    "budget": [
+     1,
+     3
+    ],
+    "chars": 4508,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.503
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.499
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      14,
+      0.479
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      62,
+      0.452
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      0.441
+     ]
+    ]
+   },
+   {
+    "id": "q79",
+    "tier": "F_cross_document",
+    "question": "What happens to the insurance when the insured dies under the Bharat Griha Raksha policy, and under the Auto Secure Commercial Vehicle Package Policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     2
+    ],
+    "page": [
+     null,
+     2
+    ],
+    "budget": [
+     null,
+     2
+    ],
+    "chars": 4045,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.513
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.451
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      10,
+      0.433
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      16,
+      0.432
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.429
+     ]
+    ]
+   },
+   {
+    "id": "q80",
+    "tier": "F_cross_document",
+    "question": "How much notice must the insurer give to cancel the policy under the Political Risk Insurance for Investors policy, and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     13,
+     null
+    ],
+    "page": [
+     13,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4487,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      26,
+      0.515
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      161,
+      0.494
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      26,
+      0.472
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      12,
+      0.457
+     ],
+     [
+      "specie_insurance_policy_w",
+      5,
+      0.455
+     ]
+    ]
+   },
+   {
+    "id": "q81",
+    "tier": "F_cross_document",
+    "question": "When is a damaged item settled as a total loss instead of being repaired under the Auto Secure Commercial Vehicle Package Policy, the Port Package policy (handling equipment), and the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     7,
+     1
+    ],
+    "page": [
+     null,
+     15,
+     1
+    ],
+    "budget": [
+     null,
+     7,
+     1
+    ],
+    "chars": 3781,
+    "top": [
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.467
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      27,
+      0.463
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.46
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      53,
+      0.448
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.447
+     ]
+    ]
+   },
+   {
+    "id": "q82",
+    "tier": "F_cross_document",
+    "question": "What reward does the insured get for a claim-free period under the Arogya Sanjeevani policy, the Auto Secure Commercial Vehicle Package Policy, and the Trade Credit Insurance policy?",
+    "n_evidence": 3,
+    "strict": [
+     6,
+     9,
+     7
+    ],
+    "page": [
+     6,
+     9,
+     7
+    ],
+    "budget": [
+     6,
+     9,
+     7
+    ],
+    "chars": 4383,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.42
+     ],
+     [
+      "tata_aig_travel_insurance",
+      45,
+      0.389
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      8,
+      0.386
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      31,
+      0.377
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.362
+     ]
+    ]
+   },
+   {
+    "id": "q83",
+    "tier": "F_cross_document",
+    "question": "Is loss caused by terrorism covered under the Bharat Griha Raksha policy, the Auto Secure Commercial Vehicle Package Policy, and the Cyber Shield policy?",
+    "n_evidence": 3,
+    "strict": [
+     10,
+     null,
+     null
+    ],
+    "page": [
+     10,
+     3,
+     2
+    ],
+    "budget": [
+     10,
+     null,
+     null
+    ],
+    "chars": 4492,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.515
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      0.424
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      2,
+      0.416
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      5,
+      0.415
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      5,
+      0.413
+     ]
+    ]
+   },
+   {
+    "id": "q84",
+    "tier": "F_cross_document",
+    "question": "How is earthquake treated under the Bharat Griha Raksha policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+    "n_evidence": 3,
+    "strict": [
+     6,
+     null,
+     1
+    ],
+    "page": [
+     6,
+     null,
+     1
+    ],
+    "budget": [
+     6,
+     null,
+     1
+    ],
+    "chars": 3438,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.476
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      1,
+      0.447
+     ],
+     [
+      "specie_insurance_policy_w",
+      1,
+      0.407
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      46,
+      0.363
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      133,
+      0.363
+     ]
+    ]
+   },
+   {
+    "id": "q85",
+    "tier": "F_cross_document",
+    "question": "If the insured cancels after the policy was in force for about six months, with no claim, what share of the annual premium does the insurer keep under the Cyber Shield policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+    "n_evidence": 3,
+    "strict": [
+     4,
+     9,
+     1
+    ],
+    "page": [
+     4,
+     2,
+     1
+    ],
+    "budget": [
+     4,
+     9,
+     1
+    ],
+    "chars": 3945,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      9,
+      0.459
+     ],
+     [
+      "specie_insurance_policy_w",
+      5,
+      0.457
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      7,
+      0.448
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      0.441
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      14,
+      0.436
+     ]
+    ]
+   },
+   {
+    "id": "q86",
+    "tier": "F_cross_document",
+    "question": "What happens to the insurance when the insured property is sold or changes owner under the Auto Secure Commercial Vehicle Package Policy, the SBI General Livestock policy, and the Bharat Griha Raksha policy?",
+    "n_evidence": 3,
+    "strict": [
+     6,
+     4,
+     2
+    ],
+    "page": [
+     6,
+     4,
+     2
+    ],
+    "budget": [
+     6,
+     4,
+     2
+    ],
+    "chars": 4426,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.505
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      0.438
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.431
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.416
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.404
+     ]
+    ]
+   },
+   {
+    "id": "q87",
+    "tier": "F_cross_document",
+    "question": "Is a loss that is discovered only during an inventory covered under the Specie Insurance policy, the Contractors Plant and Machinery Insurance policy, and the Political Risk Insurance for Investors policy?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     4,
+     null
+    ],
+    "page": [
+     1,
+     4,
+     3
+    ],
+    "budget": [
+     1,
+     4,
+     null
+    ],
+    "chars": 4800,
+    "top": [
+     [
+      "specie_insurance_policy_w",
+      2,
+      0.429
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.406
+     ],
+     [
+      "Policy_Wordings_political",
+      10,
+      0.4
+     ],
+     [
+      "Policy_Wordings_contracto",
+      2,
+      0.394
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      11,
+      0.384
+     ]
+    ]
+   },
+   {
+    "id": "q88",
+    "tier": "F_cross_document",
+    "question": "What interest does the insurer pay when a claim is settled late under the Arogya Sanjeevani policy, the SBI General Livestock policy, and the Tata AIG Travel Insurance International Plus Health policy?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     2,
+     4
+    ],
+    "page": [
+     1,
+     2,
+     3
+    ],
+    "budget": [
+     1,
+     2,
+     4
+    ],
+    "chars": 4345,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      8,
+      0.473
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      5,
+      0.419
+     ],
+     [
+      "tata_aig_travel_insurance",
+      56,
+      0.404
+     ],
+     [
+      "tata_aig_travel_insurance",
+      56,
+      0.399
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.391
+     ]
+    ]
+   },
+   {
+    "id": "q101",
+    "tier": "H_paraphrased",
+    "question": "Under the Cyber Shield policy, how quickly must I install important operating system patches so that a claim to restore my files stays valid?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4899,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.417
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.32
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.305
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.302
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      0.292
+     ]
+    ]
+   },
+   {
+    "id": "q102",
+    "tier": "H_paraphrased",
+    "question": "Under the Arogya Sanjeevani policy, is weight-loss surgery ever paid for, and which body measurements qualify?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     1
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     3,
+     1
+    ],
+    "chars": 4884,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      6,
+      0.404
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.378
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      6,
+      0.335
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.329
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.323
+     ]
+    ]
+   },
+   {
+    "id": "q103",
+    "tier": "H_paraphrased",
+    "question": "Under the Bharat Griha Raksha policy, my flat is worth more than the amount I insured it for. Will the payout be cut in proportion?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4490,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      16,
+      0.464
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      2,
+      0.402
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      8,
+      0.396
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      16,
+      0.39
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      7,
+      0.382
+     ]
+    ]
+   },
+   {
+    "id": "q104",
+    "tier": "H_paraphrased",
+    "question": "Under the Trade Credit Insurance policy, a buyer does not pay an invoice. A director of that buyer is a first cousin of a director of my company. Is the loss covered?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     6
+    ],
+    "page": [
+     1,
+     6
+    ],
+    "budget": [
+     1,
+     6
+    ],
+    "chars": 3369,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      18,
+      0.465
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.426
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      147,
+      0.371
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      71,
+      0.369
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      96,
+      0.361
+     ]
+    ]
+   },
+   {
+    "id": "q105",
+    "tier": "H_paraphrased",
+    "question": "Under the Auto Secure Commercial Vehicle Package Policy, my truck cannot move after a covered accident. How much of the cost to take it to the nearest garage is paid?",
+    "n_evidence": 1,
+    "strict": [
+     3
+    ],
+    "page": [
+     3
+    ],
+    "budget": [
+     3
+    ],
+    "chars": 4549,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.455
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      41,
+      0.442
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.425
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      41,
+      0.419
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      37,
+      0.416
+     ]
+    ]
+   },
+   {
+    "id": "q106",
+    "tier": "H_paraphrased",
+    "question": "Under the Political Risk Insurance for Investors policy, the host nation stops my subsidiary from changing local money and sending dividends home. Which part of the policy covers this, and from which date is the loss counted?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     8
+    ],
+    "page": [
+     3,
+     8
+    ],
+    "budget": [
+     3,
+     8
+    ],
+    "chars": 4449,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.449
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      14,
+      0.43
+     ],
+     [
+      "Policy_Wordings_political",
+      4,
+      0.429
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      16,
+      0.414
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      0.405
+     ]
+    ]
+   },
+   {
+    "id": "q107",
+    "tier": "H_paraphrased",
+    "question": "Under the Click 2 Protect Optima Secure policy, I stop paying after two full years of premiums. What happens to the amounts the policy pays out?",
+    "n_evidence": 1,
+    "strict": [
+     2
+    ],
+    "page": [
+     2
+    ],
+    "budget": [
+     2
+    ],
+    "chars": 3909,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      12,
+      0.404
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      14,
+      0.365
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      12,
+      0.356
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      12,
+      0.339
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      127,
+      0.339
+     ]
+    ]
+   },
+   {
+    "id": "q108",
+    "tier": "H_paraphrased",
+    "question": "Under the Tata AIG Travel Insurance International Plus Health policy, how long must the gap between my arrival and my onward plane be for a missed onward plane to be payable?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4389,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      19,
+      0.497
+     ],
+     [
+      "tata_aig_travel_insurance",
+      31,
+      0.411
+     ],
+     [
+      "tata_aig_travel_insurance",
+      25,
+      0.402
+     ],
+     [
+      "tata_aig_travel_insurance",
+      19,
+      0.381
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.373
+     ]
+    ]
+   },
+   {
+    "id": "q109",
+    "tier": "H_paraphrased",
+    "question": "Under the HDFC Life Smart Pension Plus policy, can I take cash out in exchange for smaller pension payments? What limits apply?",
+    "n_evidence": 3,
+    "strict": [
+     5,
+     5,
+     5
+    ],
+    "page": [
+     5,
+     5,
+     5
+    ],
+    "budget": [
+     5,
+     5,
+     5
+    ],
+    "chars": 4763,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.51
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      0.498
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      28,
+      0.461
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      0.435
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      24,
+      0.378
+     ]
+    ]
+   },
+   {
+    "id": "q110",
+    "tier": "H_paraphrased",
+    "question": "Under the SBI General Livestock policy, I gave my details by telephone and the printed policy shows some of them wrongly. How long do I have to tell the insurer?",
+    "n_evidence": 1,
+    "strict": [
+     2
+    ],
+    "page": [
+     2
+    ],
+    "budget": [
+     2
+    ],
+    "chars": 4824,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.487
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.404
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.397
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.386
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.375
+     ]
+    ]
+   },
+   {
+    "id": "q111",
+    "tier": "H_paraphrased",
+    "question": "My cover pays out from rainfall measured at a named recording site. If that site stops reporting, which numbers does the insurer use?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     2
+    ],
+    "page": [
+     2,
+     2
+    ],
+    "budget": [
+     2,
+     2
+    ],
+    "chars": 4854,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.401
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      7,
+      0.395
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      2,
+      0.385
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      4,
+      0.383
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      3,
+      0.38
+     ]
+    ]
+   },
+   {
+    "id": "q112",
+    "tier": "H_paraphrased",
+    "question": "Someone online says they will publish my private files unless I pay them. How soon must I go to the police for my personal cyber cover to respond?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4875,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.403
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      0.368
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.352
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.348
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.325
+     ]
+    ]
+   },
+   {
+    "id": "q113",
+    "tier": "H_paraphrased",
+    "question": "We keep gold bars and banknotes in a vault under a valuables policy. One of our own staff steals some of them. Does the policy pay?",
+    "n_evidence": 1,
+    "strict": [
+     2
+    ],
+    "page": [
+     2
+    ],
+    "budget": [
+     2
+    ],
+    "chars": 4855,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      33,
+      0.421
+     ],
+     [
+      "specie_insurance_policy_w",
+      2,
+      0.412
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      28,
+      0.39
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      32,
+      0.386
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      33,
+      0.385
+     ]
+    ]
+   },
+   {
+    "id": "q114",
+    "tier": "H_paraphrased",
+    "question": "A crane at our container terminal is insured for less than it is worth on the market. When does the insurer scale down a damage payout, and when does it not?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     1
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     1
+    ],
+    "chars": 4452,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      39,
+      0.479
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      118,
+      0.457
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      41,
+      0.452
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      102,
+      0.448
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      106,
+      0.44
+     ]
+    ]
+   },
+   {
+    "id": "q115",
+    "tier": "H_paraphrased",
+    "question": "A maker of aircraft parts must call back its parts under an emergency airworthiness order. What share of the call-back costs does the insurer reimburse?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4642,
+    "top": [
+     [
+      "Policy_Wordings_aviation_",
+      9,
+      0.573
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      10,
+      0.438
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      10,
+      0.424
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      2,
+      0.422
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      9,
+      0.422
+     ]
+    ]
+   },
+   {
+    "id": "q116",
+    "tier": "H_paraphrased",
+    "question": "My suitcase did not arrive after a flight abroad and I was paid for the delay. The airline now confirms the suitcase is gone for good. What happens to the money I already received?",
+    "n_evidence": 1,
+    "strict": [
+     6
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     6
+    ],
+    "chars": 3836,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      14,
+      0.447
+     ],
+     [
+      "tata_aig_travel_insurance",
+      50,
+      0.432
+     ],
+     [
+      "tata_aig_travel_insurance",
+      23,
+      0.414
+     ],
+     [
+      "tata_aig_travel_insurance",
+      41,
+      0.411
+     ],
+     [
+      "tata_aig_travel_insurance",
+      52,
+      0.403
+     ]
+    ]
+   },
+   {
+    "id": "q117",
+    "tier": "H_paraphrased",
+    "question": "An excavator on a coastal building site is partly under sea water when the tide comes in. Is the damage paid?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4540,
+    "top": [
+     [
+      "Policy_Wordings_contracto",
+      2,
+      0.467
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      41,
+      0.355
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      108,
+      0.353
+     ],
+     [
+      "Policy_Wordings_contracto",
+      1,
+      0.353
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      103,
+      0.352
+     ]
+    ]
+   },
+   {
+    "id": "q118",
+    "tier": "H_paraphrased",
+    "question": "My insured buffalo can never give milk again after an illness. Is that payable?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     null
+    ],
+    "page": [
+     1,
+     2
+    ],
+    "budget": [
+     1,
+     null
+    ],
+    "chars": 4763,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.454
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      3,
+      0.449
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.441
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.383
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      3,
+      0.383
+     ]
+    ]
+   },
+   {
+    "id": "q119",
+    "tier": "H_paraphrased",
+    "question": "My husband was the main pension holder on our joint pension plan and he has died. Can I take some future instalments as one payment? For how many years ahead, and by when must I ask?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     1
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     1
+    ],
+    "chars": 4677,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      24,
+      0.407
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      11,
+      0.407
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      23,
+      0.397
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      12,
+      0.39
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      13,
+      0.38
+     ]
+    ]
+   },
+   {
+    "id": "q120",
+    "tier": "H_paraphrased",
+    "question": "My house fell down by itself, not because of fire, flood or any other listed event. Does my home cover continue?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4313,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      12,
+      0.468
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      6,
+      0.441
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      5,
+      0.421
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      8,
+      0.415
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      0.406
+     ]
+    ]
+   }
+  ],
+  "summary": {
+   "n": 68,
+   "mean_chars_top5": 4426.764705882353,
+   "strict": {
+    "any@1": 0.6029411764705882,
+    "all@1": 0.16176470588235295,
+    "any@3": 0.8529411764705882,
+    "all@3": 0.4411764705882353,
+    "any@5": 0.8970588235294118,
+    "all@5": 0.5882352941176471,
+    "any@10": 0.9852941176470589,
+    "all@10": 0.7794117647058824,
+    "mrr": 0.5385324642677584
+   },
+   "page": {
+    "any@1": 0.6764705882352942,
+    "all@1": 0.23529411764705882,
+    "any@3": 0.8823529411764706,
+    "all@3": 0.5441176470588235,
+    "any@5": 0.9264705882352942,
+    "all@5": 0.6764705882352942,
+    "any@10": 0.9852941176470589,
+    "all@10": 0.8382352941176471,
+    "mrr": 0.6059412333309392
+   },
+   "budget": {
+    "any@1": 0.6029411764705882,
+    "all@1": 0.16176470588235295,
+    "any@3": 0.8529411764705882,
+    "all@3": 0.4411764705882353,
+    "any@5": 0.8970588235294118,
+    "all@5": 0.5882352941176471,
+    "any@10": 0.9852941176470589,
+    "all@10": 0.75,
+    "mrr": 0.5361286181139122
+   },
+   "by_tier": {
+    "E_multi_hop": {
+     "n": 24,
+     "strict": {
+      "any@1": 0.7083333333333334,
+      "all@1": 0.08333333333333333,
+      "any@3": 0.9583333333333334,
+      "all@3": 0.4166666666666667,
+      "any@5": 0.9583333333333334,
+      "all@5": 0.7083333333333334,
+      "any@10": 1.0,
+      "all@10": 0.875,
+      "mrr": 0.5895227072310406
+     },
+     "budget": {
+      "any@1": 0.7083333333333334,
+      "all@1": 0.08333333333333333,
+      "any@3": 0.9583333333333334,
+      "all@3": 0.4166666666666667,
+      "any@5": 0.9583333333333334,
+      "all@5": 0.7083333333333334,
+      "any@10": 1.0,
+      "all@10": 0.8333333333333334,
+      "mrr": 0.5863977072310406
+     }
+    },
+    "F_cross_document": {
+     "n": 24,
+     "strict": {
+      "any@1": 0.5,
+      "all@1": 0.0,
+      "any@3": 0.7083333333333334,
+      "all@3": 0.20833333333333334,
+      "any@5": 0.7916666666666666,
+      "all@5": 0.2916666666666667,
+      "any@10": 0.9583333333333334,
+      "all@10": 0.5416666666666666,
+      "mrr": 0.36635399708316374
+     },
+     "budget": {
+      "any@1": 0.5,
+      "all@1": 0.0,
+      "any@3": 0.7083333333333334,
+      "all@3": 0.20833333333333334,
+      "any@5": 0.7916666666666666,
+      "all@5": 0.2916666666666667,
+      "any@10": 0.9583333333333334,
+      "all@10": 0.5,
+      "mrr": 0.36266809964726626
+     }
+    },
+    "H_paraphrased": {
+     "n": 20,
+     "strict": {
+      "any@1": 0.6,
+      "all@1": 0.45,
+      "any@3": 0.9,
+      "all@3": 0.75,
+      "any@5": 0.95,
+      "all@5": 0.8,
+      "any@10": 1.0,
+      "all@10": 0.95,
+      "mrr": 0.6839583333333333
+     },
+     "budget": {
+      "any@1": 0.6,
+      "all@1": 0.45,
+      "any@3": 0.9,
+      "all@3": 0.75,
+      "any@5": 0.95,
+      "all@5": 0.8,
+      "any@10": 1.0,
+      "all@10": 0.95,
+      "mrr": 0.6839583333333333
+     }
+    }
+   }
+  }
+ },
+ "hybrid": {
+  "rows": [
+   {
+    "id": "q41",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, a Counterparty becomes insolvent. Within what period must the Insured submit a complete claim, and from which date does that period run?",
+    "n_evidence": 3,
+    "strict": [
+     12,
+     null,
+     null
+    ],
+    "page": [
+     10,
+     11,
+     2
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 4724,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.033
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      15,
+      0.031
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      17,
+      0.016
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      6,
+      0.016
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      6,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q42",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, the Insured's payments record with a Counterparty for the recent one year is INR 1,000 million. What is the highest Preliminary limit the Insured may set, and for how long may it be applied if the Insurer has not yet determined a Credit limit?",
+    "n_evidence": 3,
+    "strict": [
+     3,
+     3,
+     1
+    ],
+    "page": [
+     3,
+     3,
+     1
+    ],
+    "budget": [
+     3,
+     3,
+     1
+    ],
+    "chars": 4098,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      4,
+      0.032
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      18,
+      0.031
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      3,
+      0.031
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      18,
+      0.031
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q43",
+    "tier": "E_multi_hop",
+    "question": "Under the Trade Credit Insurance policy, after a claim payment the Insured recovers INR 100 from the Counterparty and spends INR 10 as reasonable collection expenses. The insurance indemnity was INR 60 and the amount of outstanding claims was INR 80. How much is owed to the Insurer, and within how many days must the recovery be disbursed?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     3
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     3
+    ],
+    "chars": 3882,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      0.033
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      0.032
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      9,
+      0.032
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.031
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      10,
+      0.031
+     ]
+    ]
+   },
+   {
+    "id": "q44",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 1,00,000 and all waiting periods are complete. Cataract surgery on one eye costs Rs 30,000. How much does the Company pay?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     null
+    ],
+    "page": [
+     3,
+     null
+    ],
+    "budget": [
+     3,
+     null
+    ],
+    "chars": 4840,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.032
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.031
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q45",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 2,00,000. The insured person takes a room that costs Rs 8,000 per day. What room rent is admissible per day, and how are the other hospital expenses paid?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     2
+    ],
+    "page": [
+     2,
+     2
+    ],
+    "budget": [
+     4,
+     2
+    ],
+    "chars": 4855,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.033
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.032
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.029
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      4,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q46",
+    "tier": "E_multi_hop",
+    "question": "Under the Arogya Sanjeevani policy, a disease was diagnosed by a physician two years before the first policy started. Is it a Pre-Existing Disease, and when will its treatment be covered?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     2,
+     2
+    ],
+    "page": [
+     1,
+     2,
+     2
+    ],
+    "budget": [
+     1,
+     2,
+     2
+    ],
+    "chars": 4819,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      3,
+      0.033
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.03
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.029
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.029
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      32,
+      0.028
+     ]
+    ]
+   },
+   {
+    "id": "q47",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, a vehicle is three and a half years old. What depreciation percentage is used to fix its IDV, and what depreciation percentage applies to its other replaced parts in a partial loss claim?",
+    "n_evidence": 2,
+    "strict": [
+     6,
+     6
+    ],
+    "page": [
+     3,
+     8
+    ],
+    "budget": [
+     6,
+     6
+    ],
+    "chars": 4063,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      7,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.031
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.031
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      30,
+      0.028
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q48",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, the IDV of a vehicle is Rs 10,00,000 and the cost to retrieve and repair it after an accident is Rs 8,00,000. How is the claim treated, and what is the most the Company will pay?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     5
+    ],
+    "page": [
+     1,
+     5
+    ],
+    "budget": [
+     1,
+     5
+    ],
+    "chars": 4445,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.031
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      10,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      7,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q49",
+    "tier": "E_multi_hop",
+    "question": "In the Auto Secure Commercial Vehicle Package Policy, an insured sells the vehicle after three consecutive claim-free years and takes a fresh insurance two years later. Can a No Claim Bonus be granted, and at what rate?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     10
+    ],
+    "page": [
+     4,
+     4
+    ],
+    "budget": [
+     4,
+     null
+    ],
+    "chars": 3795,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      5,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      31,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      9,
+      0.031
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      13,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q50",
+    "tier": "E_multi_hop",
+    "question": "Under the Bharat Griha Raksha policy, a home is insured for Rs 60 lakh under the Home Building Cover, and the Home Contents Cover is also opted. How much built-in cover applies to General Contents, and does it include jewellery?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     10,
+     12
+    ],
+    "page": [
+     1,
+     10,
+     2
+    ],
+    "budget": [
+     1,
+     null,
+     null
+    ],
+    "chars": 4283,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      0.033
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      3,
+      0.032
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      1,
+      0.031
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      2,
+      0.03
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      2,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q51",
+    "tier": "E_multi_hop",
+    "question": "Under the Bharat Griha Raksha policy, a flood damages an insured home. Five days later, goods are stolen from inside the home because of the flood damage. Is the theft covered, and whom must the insured inform?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     5
+    ],
+    "page": [
+     null,
+     5
+    ],
+    "budget": [
+     null,
+     5
+    ],
+    "chars": 4806,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.032
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      68,
+      0.028
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      133,
+      0.027
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      18,
+      0.016
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      14,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q52",
+    "tier": "E_multi_hop",
+    "question": "Under the Click 2 Protect Optima Secure policy with the Life & CI Rebalance option, the Basic Sum Assured is Rs 1 crore and the Policy Term is 20 years. What are the Life Cover and Critical Illness sums assured at inception, and by how much do they change at each policy anniversary?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     1
+    ],
+    "page": [
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     1
+    ],
+    "chars": 4405,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      0.033
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      7,
+      0.032
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      0.032
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      0.031
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      9,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q53",
+    "tier": "E_multi_hop",
+    "question": "Under the Click 2 Protect Optima Secure policy, a policy lapses. Within what time can it be revived and at what interest rate? If the life assured then dies by suicide six months after the revival, what is payable?",
+    "n_evidence": 3,
+    "strict": [
+     3,
+     3,
+     13
+    ],
+    "page": [
+     3,
+     3,
+     13
+    ],
+    "budget": [
+     3,
+     3,
+     null
+    ],
+    "chars": 4032,
+    "top": [
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      0.028
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      11,
+      0.016
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      15,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      130,
+      0.016
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q54",
+    "tier": "E_multi_hop",
+    "question": "Under the Cyber Shield policy, an employed insured has a daily salary rate of INR 8,000 and misses 10 working days because of a cyber bullying event. What is the highest amount of lost wages payable?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     1
+    ],
+    "page": [
+     4,
+     1
+    ],
+    "budget": [
+     4,
+     1
+    ],
+    "chars": 4289,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      0.032
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.032
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      0.031
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      0.03
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      0.028
+     ]
+    ]
+   },
+   {
+    "id": "q55",
+    "tier": "E_multi_hop",
+    "question": "Under the Cyber Shield policy with Family Cover, is the policyholder's 20-year-old child treated as an insured person (You) or as a Third Party?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     1
+    ],
+    "page": [
+     4,
+     1
+    ],
+    "budget": [
+     4,
+     1
+    ],
+    "chars": 4304,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      0.033
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      4,
+      0.031
+     ],
+     [
+      "tata_aig_travel_insurance",
+      16,
+      0.016
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      3,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q56",
+    "tier": "E_multi_hop",
+    "question": "Under the Political Risk Insurance for Investors policy, a covered loss under Insuring Agreement III is 1,000,000, the Deductible is 100,000 and the Insured Percentage is 90%. How much does the Company indemnify, before policy limits?",
+    "n_evidence": 2,
+    "strict": [
+     6,
+     1
+    ],
+    "page": [
+     6,
+     1
+    ],
+    "budget": [
+     6,
+     1
+    ],
+    "chars": 4334,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.033
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.033
+     ],
+     [
+      "Policy_Wordings_political",
+      1,
+      0.031
+     ],
+     [
+      "Policy_Wordings_political",
+      2,
+      0.031
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      0.031
+     ]
+    ]
+   },
+   {
+    "id": "q57",
+    "tier": "E_multi_hop",
+    "question": "Under the Political Risk Insurance for Investors policy, by when must the Insured submit a written proof of Loss, and by when must any legal action against the Company be commenced?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     4
+    ],
+    "page": [
+     1,
+     1,
+     4
+    ],
+    "budget": [
+     1,
+     1,
+     4
+    ],
+    "chars": 4643,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      14,
+      0.033
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.032
+     ],
+     [
+      "tata_aig_travel_insurance",
+      55,
+      0.016
+     ],
+     [
+      "Policy_Wordings_political",
+      17,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      63,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q58",
+    "tier": "E_multi_hop",
+    "question": "Under the SBI General Livestock policy, an insured animal dies while it is transported 120 km by road. Is the death covered? Would the answer change if the animal was transported by air?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     3
+    ],
+    "page": [
+     3,
+     3
+    ],
+    "budget": [
+     3,
+     3
+    ],
+    "chars": 4861,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.033
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.032
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      3,
+      0.031
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.031
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q59",
+    "tier": "E_multi_hop",
+    "question": "Under the SBI General Livestock policy, an insured animal dies. What must the Insured do about the carcass and about information for the Company, and how long does the Company have to reject a claim?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     2,
+     15
+    ],
+    "page": [
+     2,
+     2,
+     15
+    ],
+    "budget": [
+     2,
+     2,
+     null
+    ],
+    "chars": 4136,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.033
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.032
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.029
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      6,
+      0.016
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      32,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q60",
+    "tier": "E_multi_hop",
+    "question": "Under the HDFC Life Smart Pension Plus policy, the available surrender value is Rs 5,00,000, the annual annuity is Rs 60,000 and the loan interest rate is 9.50% p.a. What is the largest loan that can be granted?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     1,
+     2
+    ],
+    "page": [
+     1,
+     1,
+     1
+    ],
+    "budget": [
+     2,
+     1,
+     2
+    ],
+    "chars": 4346,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      22,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      22,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      0.03
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      0.03
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q61",
+    "tier": "E_multi_hop",
+    "question": "Under the HDFC Life Smart Pension Plus policy, a Limited Pay policy with a 10-year deferment period is surrendered in policy year 3, after total premiums of Rs 6,00,000 were paid. What is the Guaranteed Surrender Value?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     4
+    ],
+    "page": [
+     1,
+     1,
+     3
+    ],
+    "budget": [
+     1,
+     1,
+     4
+    ],
+    "chars": 4327,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      0.033
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      13,
+      0.032
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      21,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      21,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q62",
+    "tier": "E_multi_hop",
+    "question": "Under the Tata AIG Travel Insurance International Plus Health policy, an Eligible Card is stolen. The insured reports it to the issuer 10 hours after discovering the theft. Some unauthorised charges were made 20 hours before the report. Are those charges reimbursed?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     3,
+     6
+    ],
+    "page": [
+     1,
+     1,
+     1
+    ],
+    "budget": [
+     1,
+     3,
+     6
+    ],
+    "chars": 4435,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.033
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.032
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.032
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.031
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q63",
+    "tier": "E_multi_hop",
+    "question": "Under the Contractors Plant and Machinery Insurance policy, the cost to replace a machine with a new one is Rs 50 lakh, but the Sum Insured is Rs 40 lakh. A covered repair costs Rs 10 lakh. How much does the Company pay, before the Excess?",
+    "n_evidence": 2,
+    "strict": [
+     6,
+     8
+    ],
+    "page": [
+     6,
+     2
+    ],
+    "budget": [
+     6,
+     8
+    ],
+    "chars": 4817,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      24,
+      0.016
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      24,
+      0.016
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.016
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q64",
+    "tier": "E_multi_hop",
+    "question": "Under the Weather Insurance (Retail) policy, must the insured file a claim form when the weather index deviates? By when is the payment made, and what data is used if the reference weather station has no data?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     1,
+     5
+    ],
+    "page": [
+     1,
+     1,
+     5
+    ],
+    "budget": [
+     1,
+     1,
+     5
+    ],
+    "chars": 4746,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.033
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.033
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      2,
+      0.03
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      1,
+      0.029
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      7,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q65",
+    "tier": "F_cross_document",
+    "question": "Up to what repair cost can the insured authorise repairs without prior inspection under the Auto Secure Commercial Vehicle Package Policy, and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     5
+    ],
+    "page": [
+     2,
+     5
+    ],
+    "budget": [
+     2,
+     5
+    ],
+    "chars": 4465,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      3,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      39,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      7,
+      0.016
+     ],
+     [
+      "Policy_Wordings_contracto",
+      5,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q66",
+    "tier": "F_cross_document",
+    "question": "For a repairable (partial) loss, is depreciation deducted on replaced parts under the Auto Secure Commercial Vehicle Package Policy and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     2
+    ],
+    "page": [
+     14,
+     2
+    ],
+    "budget": [
+     null,
+     2
+    ],
+    "chars": 4044,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.032
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      30,
+      0.03
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      43,
+      0.029
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      27,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q67",
+    "tier": "F_cross_document",
+    "question": "After a claim is rejected, within what time must court action start before all benefits are forfeited under the Contractors Plant and Machinery Insurance policy, and under the Specie Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     2
+    ],
+    "page": [
+     3,
+     2
+    ],
+    "budget": [
+     3,
+     2
+    ],
+    "chars": 4782,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      161,
+      0.032
+     ],
+     [
+      "specie_insurance_policy_w",
+      6,
+      0.031
+     ],
+     [
+      "Policy_Wordings_contracto",
+      4,
+      0.031
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      160,
+      0.031
+     ],
+     [
+      "specie_insurance_policy_w",
+      6,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q68",
+    "tier": "F_cross_document",
+    "question": "If another insurance covers the same loss, how much does the insurer pay under the Contractors Plant and Machinery Insurance policy, and under the Political Risk Insurance for Investors policy?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     null
+    ],
+    "page": [
+     2,
+     null
+    ],
+    "budget": [
+     2,
+     null
+    ],
+    "chars": 4744,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.033
+     ],
+     [
+      "Policy_Wordings_contracto",
+      5,
+      0.016
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      11,
+      0.016
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      16,
+      0.016
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      2,
+      0.015
+     ]
+    ]
+   },
+   {
+    "id": "q69",
+    "tier": "F_cross_document",
+    "question": "Which disputes can go to arbitration under the Cyber Shield policy, and under the Political Risk Insurance for Investors policy?",
+    "n_evidence": 2,
+    "strict": [
+     5,
+     8
+    ],
+    "page": [
+     3,
+     8
+    ],
+    "budget": [
+     5,
+     8
+    ],
+    "chars": 4836,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.032
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      8,
+      0.032
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      0.03
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      130,
+      0.03
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q70",
+    "tier": "F_cross_document",
+    "question": "Where must the insured event take place for medical treatment under the Arogya Sanjeevani policy, and for the Accidental Death benefit under the Tata AIG Travel Insurance International Plus Health policy?",
+    "n_evidence": 2,
+    "strict": [
+     8,
+     null
+    ],
+    "page": [
+     8,
+     null
+    ],
+    "budget": [
+     8,
+     null
+    ],
+    "chars": 4607,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.032
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      3,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      7,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      4,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q71",
+    "tier": "F_cross_document",
+    "question": "How does a hijacking affect cover under the Tata AIG Travel Insurance International Plus Health policy, and under the Aviation Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     6
+    ],
+    "page": [
+     2,
+     6
+    ],
+    "budget": [
+     3,
+     6
+    ],
+    "chars": 4263,
+    "top": [
+     [
+      "Policy_Wordings_aviation_",
+      1,
+      0.033
+     ],
+     [
+      "tata_aig_travel_insurance",
+      22,
+      0.032
+     ],
+     [
+      "tata_aig_travel_insurance",
+      22,
+      0.031
+     ],
+     [
+      "tata_aig_travel_insurance",
+      17,
+      0.016
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q72",
+    "tier": "F_cross_document",
+    "question": "How fast must a theft be reported to the police under the Auto Secure Commercial Vehicle Package Policy (vehicle theft), and under the Tata AIG Travel Insurance International Plus Health policy (lost or stolen Eligible Card)?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     3
+    ],
+    "page": [
+     1,
+     3
+    ],
+    "budget": [
+     1,
+     3
+    ],
+    "chars": 4013,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.032
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.031
+     ],
+     [
+      "tata_aig_travel_insurance",
+      21,
+      0.03
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q73",
+    "tier": "F_cross_document",
+    "question": "Compare the revival terms of a lapsed policy under the Click 2 Protect Optima Secure policy and the HDFC Life Smart Pension Plus policy: the time limit and the current interest rate.",
+    "n_evidence": 4,
+    "strict": [
+     10,
+     10,
+     2,
+     1
+    ],
+    "page": [
+     10,
+     10,
+     13,
+     1
+    ],
+    "budget": [
+     null,
+     null,
+     2,
+     1
+    ],
+    "chars": 4832,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      19,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.03
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      0.029
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q74",
+    "tier": "F_cross_document",
+    "question": "Compare the free look period under the HDFC Life Smart Pension Plus policy and the Tata AIG Travel Insurance International Plus Health policy. How long is it, and to which policies does it apply?",
+    "n_evidence": 3,
+    "strict": [
+     4,
+     null,
+     9
+    ],
+    "page": [
+     4,
+     4,
+     9
+    ],
+    "budget": [
+     4,
+     null,
+     9
+    ],
+    "chars": 4737,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.032
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      0.032
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      18,
+      0.031
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      28,
+      0.031
+     ]
+    ]
+   },
+   {
+    "id": "q75",
+    "tier": "F_cross_document",
+    "question": "How fast does the insurer respond to a grievance under the Click 2 Protect Optima Secure policy, and under the SBI General Livestock policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     4
+    ],
+    "page": [
+     null,
+     4
+    ],
+    "budget": [
+     null,
+     4
+    ],
+    "chars": 3856,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.032
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.031
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      9,
+      0.016
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      5,
+      0.016
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      16,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q76",
+    "tier": "F_cross_document",
+    "question": "Which forum decides disputes under the Trade Credit Insurance policy, and under the Port Package policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     2
+    ],
+    "page": [
+     null,
+     2
+    ],
+    "budget": [
+     null,
+     2
+    ],
+    "chars": 4788,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.032
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      162,
+      0.029
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      8,
+      0.029
+     ],
+     [
+      "specie_insurance_policy_w",
+      7,
+      0.028
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      8,
+      0.028
+     ]
+    ]
+   },
+   {
+    "id": "q77",
+    "tier": "F_cross_document",
+    "question": "Compare the initial waiting period for illness under the Arogya Sanjeevani policy with the initial waiting period for disease under the SBI General Livestock policy.",
+    "n_evidence": 2,
+    "strict": [
+     6,
+     5
+    ],
+    "page": [
+     3,
+     5
+    ],
+    "budget": [
+     6,
+     5
+    ],
+    "chars": 4773,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.033
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.031
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.031
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.031
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q78",
+    "tier": "F_cross_document",
+    "question": "Which exchange rate is used to convert a foreign-currency loss into Indian Rupees under the Cyber Shield policy, and under the Trade Credit Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     4
+    ],
+    "page": [
+     1,
+     4
+    ],
+    "budget": [
+     1,
+     4
+    ],
+    "chars": 4718,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.033
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      0.031
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.03
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      14,
+      0.03
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q79",
+    "tier": "F_cross_document",
+    "question": "What happens to the insurance when the insured dies under the Bharat Griha Raksha policy, and under the Auto Secure Commercial Vehicle Package Policy?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     3
+    ],
+    "page": [
+     2,
+     3
+    ],
+    "budget": [
+     2,
+     3
+    ],
+    "chars": 4460,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.033
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.016
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      33,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      10,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q80",
+    "tier": "F_cross_document",
+    "question": "How much notice must the insurer give to cancel the policy under the Political Risk Insurance for Investors policy, and under the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 2,
+    "strict": [
+     null,
+     null
+    ],
+    "page": [
+     null,
+     null
+    ],
+    "budget": [
+     null,
+     null
+    ],
+    "chars": 4520,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      9,
+      0.029
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      26,
+      0.016
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      13,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      161,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q81",
+    "tier": "F_cross_document",
+    "question": "When is a damaged item settled as a total loss instead of being repaired under the Auto Secure Commercial Vehicle Package Policy, the Port Package policy (handling equipment), and the Contractors Plant and Machinery Insurance policy?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     13,
+     3
+    ],
+    "page": [
+     null,
+     null,
+     3
+    ],
+    "budget": [
+     null,
+     null,
+     3
+    ],
+    "chars": 4160,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.031
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      94,
+      0.016
+     ],
+     [
+      "Policy_Wordings_contracto",
+      3,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      101,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      27,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q82",
+    "tier": "F_cross_document",
+    "question": "What reward does the insured get for a claim-free period under the Arogya Sanjeevani policy, the Auto Secure Commercial Vehicle Package Policy, and the Trade Credit Insurance policy?",
+    "n_evidence": 3,
+    "strict": [
+     3,
+     11,
+     9
+    ],
+    "page": [
+     3,
+     11,
+     9
+    ],
+    "budget": [
+     3,
+     null,
+     9
+    ],
+    "chars": 4367,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.033
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.032
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      5,
+      0.031
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.03
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.029
+     ]
+    ]
+   },
+   {
+    "id": "q83",
+    "tier": "F_cross_document",
+    "question": "Is loss caused by terrorism covered under the Bharat Griha Raksha policy, the Auto Secure Commercial Vehicle Package Policy, and the Cyber Shield policy?",
+    "n_evidence": 3,
+    "strict": [
+     null,
+     null,
+     null
+    ],
+    "page": [
+     null,
+     10,
+     2
+    ],
+    "budget": [
+     null,
+     null,
+     null
+    ],
+    "chars": 4473,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.033
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      5,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      18,
+      0.03
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      93,
+      0.03
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      5,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q84",
+    "tier": "F_cross_document",
+    "question": "How is earthquake treated under the Bharat Griha Raksha policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+    "n_evidence": 3,
+    "strict": [
+     8,
+     null,
+     5
+    ],
+    "page": [
+     8,
+     null,
+     5
+    ],
+    "budget": [
+     8,
+     null,
+     5
+    ],
+    "chars": 3438,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      1,
+      0.033
+     ],
+     [
+      "specie_insurance_policy_w",
+      1,
+      0.032
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      133,
+      0.031
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      46,
+      0.031
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q85",
+    "tier": "F_cross_document",
+    "question": "If the insured cancels after the policy was in force for about six months, with no claim, what share of the annual premium does the insurer keep under the Cyber Shield policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+    "n_evidence": 3,
+    "strict": [
+     2,
+     3,
+     4
+    ],
+    "page": [
+     2,
+     3,
+     4
+    ],
+    "budget": [
+     2,
+     3,
+     4
+    ],
+    "chars": 3751,
+    "top": [
+     [
+      "Policy_Wordings_aviation_",
+      15,
+      0.031
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      7,
+      0.031
+     ],
+     [
+      "specie_insurance_policy_w",
+      5,
+      0.029
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      9,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      12,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q86",
+    "tier": "F_cross_document",
+    "question": "What happens to the insurance when the insured property is sold or changes owner under the Auto Secure Commercial Vehicle Package Policy, the SBI General Livestock policy, and the Bharat Griha Raksha policy?",
+    "n_evidence": 3,
+    "strict": [
+     10,
+     6,
+     3
+    ],
+    "page": [
+     10,
+     6,
+     3
+    ],
+    "budget": [
+     null,
+     6,
+     3
+    ],
+    "chars": 4405,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.033
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.032
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      9,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      12,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q87",
+    "tier": "F_cross_document",
+    "question": "Is a loss that is discovered only during an inventory covered under the Specie Insurance policy, the Contractors Plant and Machinery Insurance policy, and the Political Risk Insurance for Investors policy?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     3,
+     null
+    ],
+    "page": [
+     1,
+     3,
+     5
+    ],
+    "budget": [
+     1,
+     3,
+     null
+    ],
+    "chars": 4237,
+    "top": [
+     [
+      "specie_insurance_policy_w",
+      2,
+      0.033
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.032
+     ],
+     [
+      "Policy_Wordings_contracto",
+      2,
+      0.031
+     ],
+     [
+      "specie_insurance_policy_w",
+      1,
+      0.016
+     ],
+     [
+      "Policy_Wordings_political",
+      10,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q88",
+    "tier": "F_cross_document",
+    "question": "What interest does the insurer pay when a claim is settled late under the Arogya Sanjeevani policy, the SBI General Livestock policy, and the Tata AIG Travel Insurance International Plus Health policy?",
+    "n_evidence": 3,
+    "strict": [
+     1,
+     7,
+     5
+    ],
+    "page": [
+     1,
+     7,
+     4
+    ],
+    "budget": [
+     1,
+     7,
+     5
+    ],
+    "chars": 4324,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      8,
+      0.032
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.031
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.031
+     ],
+     [
+      "tata_aig_travel_insurance",
+      56,
+      0.03
+     ],
+     [
+      "tata_aig_travel_insurance",
+      56,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q101",
+    "tier": "H_paraphrased",
+    "question": "Under the Cyber Shield policy, how quickly must I install important operating system patches so that a claim to restore my files stays valid?",
+    "n_evidence": 1,
+    "strict": [
+     1
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     1
+    ],
+    "chars": 4899,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.016
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.016
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.016
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      6,
+      0.016
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      0.015
+     ]
+    ]
+   },
+   {
+    "id": "q102",
+    "tier": "H_paraphrased",
+    "question": "Under the Arogya Sanjeevani policy, is weight-loss surgery ever paid for, and which body measurements qualify?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     3
+    ],
+    "page": [
+     3,
+     3
+    ],
+    "budget": [
+     4,
+     3
+    ],
+    "chars": 4884,
+    "top": [
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.033
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      11,
+      0.032
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      6,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      6,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      1,
+      0.015
+     ]
+    ]
+   },
+   {
+    "id": "q103",
+    "tier": "H_paraphrased",
+    "question": "Under the Bharat Griha Raksha policy, my flat is worth more than the amount I insured it for. Will the payout be cut in proportion?",
+    "n_evidence": 1,
+    "strict": [
+     2
+    ],
+    "page": [
+     2
+    ],
+    "budget": [
+     2
+    ],
+    "chars": 4531,
+    "top": [
+     [
+      "Weather_Insurance_Policy_",
+      3,
+      0.016
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      16,
+      0.016
+     ],
+     [
+      "Policy_Wordings_contracto",
+      6,
+      0.016
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      2,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      39,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q104",
+    "tier": "H_paraphrased",
+    "question": "Under the Trade Credit Insurance policy, a buyer does not pay an invoice. A director of that buyer is a first cousin of a director of my company. Is the loss covered?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     11
+    ],
+    "page": [
+     2,
+     11
+    ],
+    "budget": [
+     2,
+     null
+    ],
+    "chars": 3676,
+    "top": [
+     [
+      "14..Trade credit insc_GEN",
+      1,
+      0.033
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      18,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      54,
+      0.016
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      147,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q105",
+    "tier": "H_paraphrased",
+    "question": "Under the Auto Secure Commercial Vehicle Package Policy, my truck cannot move after a covered accident. How much of the cost to take it to the nearest garage is paid?",
+    "n_evidence": 1,
+    "strict": [
+     7
+    ],
+    "page": [
+     7
+    ],
+    "budget": [
+     7
+    ],
+    "chars": 4514,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      1,
+      0.033
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      41,
+      0.032
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      37,
+      0.031
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      40,
+      0.03
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      40,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q106",
+    "tier": "H_paraphrased",
+    "question": "Under the Political Risk Insurance for Investors policy, the host nation stops my subsidiary from changing local money and sending dividends home. Which part of the policy covers this, and from which date is the loss counted?",
+    "n_evidence": 2,
+    "strict": [
+     4,
+     null
+    ],
+    "page": [
+     4,
+     null
+    ],
+    "budget": [
+     4,
+     null
+    ],
+    "chars": 4081,
+    "top": [
+     [
+      "Policy_Wordings_political",
+      3,
+      0.032
+     ],
+     [
+      "Policy_Wordings_political",
+      3,
+      0.031
+     ],
+     [
+      "Policy_Wordings_political",
+      6,
+      0.03
+     ],
+     [
+      "Policy_Wordings_political",
+      4,
+      0.03
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      62,
+      0.03
+     ]
+    ]
+   },
+   {
+    "id": "q107",
+    "tier": "H_paraphrased",
+    "question": "Under the Click 2 Protect Optima Secure policy, I stop paying after two full years of premiums. What happens to the amounts the policy pays out?",
+    "n_evidence": 1,
+    "strict": [
+     4
+    ],
+    "page": [
+     4
+    ],
+    "budget": [
+     4
+    ],
+    "chars": 4599,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      20,
+      0.016
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      12,
+      0.016
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      22,
+      0.016
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      14,
+      0.016
+     ],
+     [
+      "14..Trade credit insc_GEN",
+      12,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q108",
+    "tier": "H_paraphrased",
+    "question": "Under the Tata AIG Travel Insurance International Plus Health policy, how long must the gap between my arrival and my onward plane be for a missed onward plane to be payable?",
+    "n_evidence": 1,
+    "strict": [
+     2
+    ],
+    "page": [
+     1
+    ],
+    "budget": [
+     2
+    ],
+    "chars": 4389,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      19,
+      0.032
+     ],
+     [
+      "tata_aig_travel_insurance",
+      19,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      31,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      25,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      20,
+      0.015
+     ]
+    ]
+   },
+   {
+    "id": "q109",
+    "tier": "H_paraphrased",
+    "question": "Under the HDFC Life Smart Pension Plus policy, can I take cash out in exchange for smaller pension payments? What limits apply?",
+    "n_evidence": 3,
+    "strict": [
+     6,
+     6,
+     6
+    ],
+    "page": [
+     6,
+     6,
+     6
+    ],
+    "budget": [
+     6,
+     6,
+     6
+    ],
+    "chars": 4825,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      3,
+      0.032
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      1,
+      0.032
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      4,
+      0.032
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      28,
+      0.031
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      65,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q110",
+    "tier": "H_paraphrased",
+    "question": "Under the SBI General Livestock policy, I gave my details by telephone and the printed policy shows some of them wrongly. How long do I have to tell the insurer?",
+    "n_evidence": 1,
+    "strict": [
+     4
+    ],
+    "page": [
+     4
+    ],
+    "budget": [
+     4
+    ],
+    "chars": 4782,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      1,
+      0.033
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      26,
+      0.03
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      41,
+      0.016
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.016
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q111",
+    "tier": "H_paraphrased",
+    "question": "My cover pays out from rainfall measured at a named recording site. If that site stops reporting, which numbers does the insurer use?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     3
+    ],
+    "page": [
+     3,
+     3
+    ],
+    "budget": [
+     3,
+     3
+    ],
+    "chars": 4249,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      25,
+      0.016
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      6,
+      0.016
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      7,
+      0.016
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      2,
+      0.016
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      4,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q112",
+    "tier": "H_paraphrased",
+    "question": "Someone online says they will publish my private files unless I pay them. How soon must I go to the police for my personal cyber cover to respond?",
+    "n_evidence": 1,
+    "strict": [
+     4
+    ],
+    "page": [
+     4
+    ],
+    "budget": [
+     4
+    ],
+    "chars": 4894,
+    "top": [
+     [
+      "Cyber_Shield_Policy_Wordi",
+      4,
+      0.031
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      14,
+      0.03
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      10,
+      0.03
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      3,
+      0.016
+     ],
+     [
+      "Cyber_Shield_Policy_Wordi",
+      2,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q113",
+    "tier": "H_paraphrased",
+    "question": "We keep gold bars and banknotes in a vault under a valuables policy. One of our own staff steals some of them. Does the policy pay?",
+    "n_evidence": 1,
+    "strict": [
+     4
+    ],
+    "page": [
+     4
+    ],
+    "budget": [
+     4
+    ],
+    "chars": 4849,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      3,
+      0.03
+     ],
+     [
+      "specie_insurance_policy_w",
+      3,
+      0.016
+     ],
+     [
+      "Auto_Secure_Commercial_Ve",
+      33,
+      0.016
+     ],
+     [
+      "specie_insurance_policy_w",
+      2,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      149,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q114",
+    "tier": "H_paraphrased",
+    "question": "A crane at our container terminal is insured for less than it is worth on the market. When does the insurer scale down a damage payout, and when does it not?",
+    "n_evidence": 2,
+    "strict": [
+     1,
+     2
+    ],
+    "page": [
+     2,
+     2
+    ],
+    "budget": [
+     1,
+     2
+    ],
+    "chars": 4495,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      102,
+      0.032
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      39,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      18,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      118,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      28,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q115",
+    "tier": "H_paraphrased",
+    "question": "A maker of aircraft parts must call back its parts under an emergency airworthiness order. What share of the call-back costs does the insurer reimburse?",
+    "n_evidence": 1,
+    "strict": [
+     2
+    ],
+    "page": [
+     2
+    ],
+    "budget": [
+     2
+    ],
+    "chars": 4607,
+    "top": [
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      18,
+      0.016
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      9,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      28,
+      0.016
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      10,
+      0.016
+     ],
+     [
+      "Weather_Insurance_Policy_",
+      2,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q116",
+    "tier": "H_paraphrased",
+    "question": "My suitcase did not arrive after a flight abroad and I was paid for the delay. The airline now confirms the suitcase is gone for good. What happens to the money I already received?",
+    "n_evidence": 1,
+    "strict": [
+     12
+    ],
+    "page": [
+     3
+    ],
+    "budget": [
+     null
+    ],
+    "chars": 3951,
+    "top": [
+     [
+      "tata_aig_travel_insurance",
+      19,
+      0.03
+     ],
+     [
+      "tata_aig_travel_insurance",
+      51,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      14,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      50,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      6,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q117",
+    "tier": "H_paraphrased",
+    "question": "An excavator on a coastal building site is partly under sea water when the tide comes in. Is the damage paid?",
+    "n_evidence": 1,
+    "strict": [
+     2
+    ],
+    "page": [
+     2
+    ],
+    "budget": [
+     2
+    ],
+    "chars": 4428,
+    "top": [
+     [
+      "Auto_Secure_Commercial_Ve",
+      25,
+      0.016
+     ],
+     [
+      "Policy_Wordings_contracto",
+      2,
+      0.016
+     ],
+     [
+      "tata_aig_travel_insurance",
+      26,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      41,
+      0.016
+     ],
+     [
+      "Policy_Wordings_aviation_",
+      13,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q118",
+    "tier": "H_paraphrased",
+    "question": "My insured buffalo can never give milk again after an illness. Is that payable?",
+    "n_evidence": 2,
+    "strict": [
+     3,
+     null
+    ],
+    "page": [
+     3,
+     5
+    ],
+    "budget": [
+     3,
+     null
+    ],
+    "chars": 4103,
+    "top": [
+     [
+      "SBI_General_Livestock_Pol",
+      4,
+      0.03
+     ],
+     [
+      "Click-2-Protect-Optima-Se",
+      11,
+      0.016
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      2,
+      0.016
+     ],
+     [
+      "Arogya_Sanjeevani_Policy_",
+      2,
+      0.016
+     ],
+     [
+      "SBI_General_Livestock_Pol",
+      3,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q119",
+    "tier": "H_paraphrased",
+    "question": "My husband was the main pension holder on our joint pension plan and he has died. Can I take some future instalments as one payment? For how many years ahead, and by when must I ask?",
+    "n_evidence": 2,
+    "strict": [
+     2,
+     2
+    ],
+    "page": [
+     2,
+     2
+    ],
+    "budget": [
+     2,
+     2
+    ],
+    "chars": 4172,
+    "top": [
+     [
+      "hdfc-life-smart-pension-p",
+      11,
+      0.033
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      24,
+      0.016
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      11,
+      0.016
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      71,
+      0.016
+     ],
+     [
+      "hdfc-life-smart-pension-p",
+      23,
+      0.016
+     ]
+    ]
+   },
+   {
+    "id": "q120",
+    "tier": "H_paraphrased",
+    "question": "My house fell down by itself, not because of fire, flood or any other listed event. Does my home cover continue?",
+    "n_evidence": 1,
+    "strict": [
+     4
+    ],
+    "page": [
+     4
+    ],
+    "budget": [
+     4
+    ],
+    "chars": 4322,
+    "top": [
+     [
+      "Bharat_Griha_Raksha_Polic",
+      1,
+      0.031
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      13,
+      0.031
+     ],
+     [
+      "PORT_PACKAGE_Policy_wordi",
+      133,
+      0.028
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      12,
+      0.016
+     ],
+     [
+      "Bharat_Griha_Raksha_Polic",
+      9,
+      0.016
+     ]
+    ]
+   }
+  ],
+  "summary": {
+   "n": 68,
+   "mean_chars_top5": 4428.35294117647,
+   "strict": {
+    "any@1": 0.3088235294117647,
+    "all@1": 0.029411764705882353,
+    "any@3": 0.6764705882352942,
+    "all@3": 0.25,
+    "any@5": 0.8676470588235294,
+    "all@5": 0.4852941176470588,
+    "any@10": 0.9411764705882353,
+    "all@10": 0.6764705882352942,
+    "mrr": 0.3639081846802435
+   },
+   "page": {
+    "any@1": 0.3088235294117647,
+    "all@1": 0.08823529411764706,
+    "any@3": 0.7794117647058824,
+    "all@3": 0.3235294117647059,
+    "any@5": 0.9411764705882353,
+    "all@5": 0.5735294117647058,
+    "any@10": 0.9852941176470589,
+    "all@10": 0.7352941176470589,
+    "mrr": 0.40996449764832116
+   },
+   "budget": {
+    "any@1": 0.3088235294117647,
+    "all@1": 0.029411764705882353,
+    "any@3": 0.6764705882352942,
+    "all@3": 0.25,
+    "any@5": 0.8676470588235294,
+    "all@5": 0.4852941176470588,
+    "any@10": 0.9411764705882353,
+    "all@10": 0.6323529411764706,
+    "mrr": 0.35721969343292875
+   },
+   "by_tier": {
+    "E_multi_hop": {
+     "n": 24,
+     "strict": {
+      "any@1": 0.5833333333333334,
+      "all@1": 0.041666666666666664,
+      "any@3": 0.7916666666666666,
+      "all@3": 0.25,
+      "any@5": 0.875,
+      "all@5": 0.5416666666666666,
+      "any@10": 0.9583333333333334,
+      "all@10": 0.75,
+      "mrr": 0.46709846866096866
+     },
+     "budget": {
+      "any@1": 0.5833333333333334,
+      "all@1": 0.041666666666666664,
+      "any@3": 0.7916666666666666,
+      "all@3": 0.25,
+      "any@5": 0.875,
+      "all@5": 0.5416666666666666,
+      "any@10": 0.9583333333333334,
+      "all@10": 0.7083333333333334,
+      "mrr": 0.4593171296296296
+     }
+    },
+    "F_cross_document": {
+     "n": 24,
+     "strict": {
+      "any@1": 0.20833333333333334,
+      "all@1": 0.0,
+      "any@3": 0.6666666666666666,
+      "all@3": 0.125,
+      "any@5": 0.875,
+      "all@5": 0.25,
+      "any@10": 0.9166666666666666,
+      "all@10": 0.5,
+      "mrr": 0.2679339564756231
+     },
+     "budget": {
+      "any@1": 0.20833333333333334,
+      "all@1": 0.0,
+      "any@3": 0.6666666666666666,
+      "all@3": 0.125,
+      "any@5": 0.875,
+      "all@5": 0.25,
+      "any@10": 0.9166666666666666,
+      "all@10": 0.4166666666666667,
+      "mrr": 0.2621307319223986
+     }
+    },
+    "H_paraphrased": {
+     "n": 20,
+     "strict": {
+      "any@1": 0.1,
+      "all@1": 0.05,
+      "any@3": 0.55,
+      "all@3": 0.4,
+      "any@5": 0.85,
+      "all@5": 0.7,
+      "any@10": 0.95,
+      "all@10": 0.8,
+      "mrr": 0.35524891774891776
+     },
+     "budget": {
+      "any@1": 0.1,
+      "all@1": 0.05,
+      "any@3": 0.55,
+      "all@3": 0.4,
+      "any@5": 0.85,
+      "all@5": 0.7,
+      "any@10": 0.95,
+      "all@10": 0.8,
+      "mrr": 0.3488095238095238
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,1425 @@
+[
+ {
+  "answer": "Within 60 days after the Date of Loss. For a loss due to Insolvency, the Date of Loss is the Due Date, which is the payment date originally set by the Contract.",
+  "eval_id": "q41",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 7,
+    "quote": "the Insured must submit in writing a complete claim in the form required by the Insurer (including all the information requested therein) any time within 60 (sixty) days after the Date of Loss"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 14,
+    "quote": "in the event of a loss due to Political Risk, Insolvency or refusal of payment by the Counterparty to the Contract - the Due Date"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 15,
+    "quote": "means the date of payment of the Commercial credit originally set by Contract"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, a Counterparty becomes insolvent. Within what period must the Insured submit a complete claim, and from which date does that period run?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "INR 200 million. One quarter of the payments record is INR 250 million, but the Preliminary limit cannot exceed INR 200 million. It may be applied for 3 months from the date it was set up, unless the Insurer restricts it.",
+  "eval_id": "q42",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 3,
+    "quote": "The Insured may establish up to 1/4 of the aggregate payments record of the recent one (1) year with a Counterparty"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 3,
+    "quote": "the Preliminary limit of such Counterparty does not exceed INR 200 million"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 4,
+    "quote": "the Preliminary limit may be applied for 3 (three) months from the date of setting up the Preliminary limit"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, the Insured's payments record with a Counterparty for the recent one year is INR 1,000 million. What is the highest Preliminary limit the Insured may set, and for how long may it be applied if the Insurer has not yet determined a Credit limit?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "INR 67.5. The formula is (Recoveries - Reasonable Expenses for Collection) x (Insurance Indemnity / Amount of Outstanding Claims) = (100 - 10) x (60 / 80). The recovery must be disbursed within 40 days from the day of recovery.",
+  "eval_id": "q43",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 9,
+    "quote": "The amount owed to the Insurer = (Recoveries - Reasonable Expenses for Collection) * (Insurance Indemnity/Amount of Outstanding Claims)"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 9,
+    "quote": "such Recoveries shall be disbursed between the Insurer and the Insured within 40 (Forty) days commencing from the day of recovery"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, after a claim payment the Insured recovers INR 100 from the Counterparty and spends INR 10 as reasonable collection expenses. The insurance indemnity was INR 60 and the amount of outstanding claims was INR 80. How much is owed to the Insurer, and within how many days must the recovery be disbursed?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Rs 23,750. The cataract limit is 25% of the sum insured or Rs 40,000, whichever is lower, per eye, so Rs 25,000 is admissible. Every claim then bears a 5% co-payment, which leaves Rs 23,750.",
+  "eval_id": "q44",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 4,
+    "quote": "subject to a limit of 25% of Sum Insured or 40,000/-, whichever is lower, per each eye in one policy year"
+   },
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 8,
+    "quote": "Each and every claim under the Policy shall be subject to a Co-payment of 5% applicable to claim amount admissible and payable"
+   }
+  ],
+  "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 1,00,000 and all waiting periods are complete. Cataract surgery on one eye costs Rs 30,000. How much does the Company pay?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Rs 4,000 per day is admissible (2% of the sum insured, which is below the Rs 5,000 per day cap). All other hospital expenses, except the cost of medicines, are paid in the same proportion as the admissible rate bears to the actual rate, which is 50% here.",
+  "eval_id": "q45",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 4,
+    "quote": "Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum"
+   },
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 4,
+    "quote": "shall be eﬀected in the same proportion as the admissible rate per day bears to the actual rate per day of Room Rent/ ICU/ICCU charges"
+   }
+  ],
+  "question": "Under the Arogya Sanjeevani policy, the sum insured is Rs 2,00,000. The insured person takes a room that costs Rs 8,000 per day. What room rent is admissible per day, and how are the other hospital expenses paid?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Yes. A condition diagnosed not more than 36 months before the policy commencement is a Pre-Existing Disease. Its treatment is excluded until 36 months of continuous coverage from the first policy. After that it is covered only if it was declared at the time of application and accepted by the insurer.",
+  "eval_id": "q46",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 3,
+    "quote": "that is/are diagnosed by a physician not more than 36 months prior to the date of commencement of the policy issued by the insurer"
+   },
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 5,
+    "quote": "shall be excluded until the expiry of 36 months  of continuous coverage after the date of inception of the ﬁrst policy with us"
+   },
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 5,
+    "quote": "for any pre-existing disease is subject to the same being declared at the time of application and accepted by us"
+   }
+  ],
+  "question": "Under the Arogya Sanjeevani policy, a disease was diagnosed by a physician two years before the first policy started. Is it a Pre-Existing Disease, and when will its treatment be covered?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "40% for fixing the IDV, and 25% on other replaced parts in a partial loss claim. The two schedules are different.",
+  "eval_id": "q47",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 3,
+    "quote": "Exceeding 3 years but not exceeding 4 years 40%"
+   },
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 2,
+    "quote": "Exceeding 3 years but not exceeding 4 years 25%"
+   }
+  ],
+  "question": "In the Auto Secure Commercial Vehicle Package Policy, a vehicle is three and a half years old. What depreciation percentage is used to fix its IDV, and what depreciation percentage applies to its other replaced parts in a partial loss claim?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "It is treated as a Constructive Total Loss, because the cost exceeds 75% of the IDV (Rs 7,50,000). The Company's liability will not exceed the IDV stated in the Schedule less the value of the wreck.",
+  "eval_id": "q48",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 3,
+    "quote": "The insured vehicle shall be treated as a CTL if the aggregate cost of retrieval and/or repair of the vehicle, subject to terms and conditions of the policy, exceeds 75% of the IDV of the vehicle"
+   },
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 7,
+    "quote": "as specified in the Schedule less the value of the wreck"
+   }
+  ],
+  "question": "In the Auto Secure Commercial Vehicle Package Policy, the IDV of a vehicle is Rs 10,00,000 and the cost to retrieve and repair it after an accident is Rs 8,00,000. How is the claim treated, and what is the most the Company will pay?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Yes, 35%. The bonus may be granted on a fresh insurance effected within 3 years from the date of sale, at the rate earned at the expiry of the last 12 months of insurance. Three consecutive claim-free years earn 35%.",
+  "eval_id": "q49",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 9,
+    "quote": "No claim made or pending during the preceding 3 consecutive years of insurance 35%"
+   },
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 9,
+    "quote": "provided such fresh insurance is effected within 3 (three) years from the date of sale of insured vehicle"
+   }
+  ],
+  "question": "In the Auto Secure Commercial Vehicle Package Policy, an insured sells the vehicle after three consecutive claim-free years and takes a fresh insurance two years later. Can a No Claim Bonus be granted, and at what rate?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Rs 10 lakh. The built-in cover is 20% of the Home Building sum insured (Rs 12 lakh here) but it is capped at Rs 10 lakh. It does not include jewellery. Jewellery is a Valuable Content, which is not covered unless the Optional Cover for Valuable Contents is purchased.",
+  "eval_id": "q50",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 9,
+    "quote": "equal to 20% of the Sum Insured for Home Building Cover subject to a maximum of ₹ 10 Lakh (Rupees Ten Lakh)"
+   },
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 8,
+    "quote": "Valuable Contents of your Home are not covered under this Policy unless you have purchased the Optional Cover for the Valuable Contents"
+   },
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 3,
+    "quote": "Valuable Contents of your Home consist of items such as jewellery"
+   }
+  ],
+  "question": "Under the Bharat Griha Raksha policy, a home is insured for Rs 60 lakh under the Home Building Cover, and the Home Contents Cover is also opted. How much built-in cover applies to General Contents, and does it include jewellery?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Yes. Theft within 7 days from the occurrence of, and proximately caused by, an Insured Event is covered. Articles outside the home are not covered. The insured must inform the police.",
+  "eval_id": "q51",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 6,
+    "quote": "Theft within 7 (seven) days from the occurrence of and proximately caused by any of the above Insured Events"
+   },
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 14,
+    "quote": "If there is a theft within 7 (seven) days following an Insured Event you must inform the police"
+   }
+  ],
+  "question": "Under the Bharat Griha Raksha policy, a flood damages an insured home. Five days later, goods are stolen from inside the home because of the flood damage. Is the theft covered, and whom must the insured inform?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "At inception the Life Cover SA is Rs 80 lakh (80%) and the CI SA is Rs 20 lakh (20%). At each policy anniversary the CI SA rises and the Life Cover SA falls by Rs 1.5 lakh, which is 30% x Basic Sum Assured / Policy Term.",
+  "eval_id": "q52",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 9,
+    "quote": "Life Cover SA = 80% of Basic Sum Assured and CI SA = 20% of Basic Sum Assured"
+   },
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 9,
+    "quote": "This amount will be calculated as: 30% ×Basic Sum Assured ÷Policy Term"
+   }
+  ],
+  "question": "Under the Click 2 Protect Optima Secure policy with the Life & CI Rebalance option, the Basic Sum Assured is Rs 1 crore and the Policy Term is 20 years. What are the Life Cover and Critical Illness sums assured at inception, and by how much do they change at each policy anniversary?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "The revival application must be made within five years from the due date of the first unpaid premium and before the Policy Term ends, with outstanding premiums and interest, currently 9.5% p.a. compounded annually. The suicide exclusion also runs for 12 months from the date of revival, so the nominee gets at least 80% of the total premiums paid till death or the surrender value on the date of death, whichever is higher, provided the policy is in force.",
+  "eval_id": "q53",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 15,
+    "quote": "the application for the revival should be made within five years from the due date of the first unpaid Premium and before the expiry of the Policy Term"
+   },
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 15,
+    "quote": "The current rate of interest is 9.5% p.a. compounded annually"
+   },
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 17,
+    "quote": "In case of death due to suicide within 12 months from the date of commencement of risk under the policy or from the date of revival of the policy"
+   }
+  ],
+  "question": "Under the Click 2 Protect Optima Secure policy, a policy lapses. Within what time can it be revived and at what interest rate? If the life assured then dies by suicide six months after the revival, what is payable?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "INR 45,500. Lost wages are paid for at most 7 working days, and the daily rate cannot be more than INR 6,500 per day (7 x 6,500).",
+  "eval_id": "q54",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 2,
+    "quote": "Lost wages for up to a maximum of 7 working days"
+   },
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 4,
+    "quote": "Lost wages will be calculated based on the daily rate of Your last drawn monthly salary, but not more than INR 6,500 per day"
+   }
+  ],
+  "question": "Under the Cyber Shield policy, an employed insured has a daily salary rate of INR 8,000 and misses 10 working days because of a cyber bullying event. What is the highest amount of lost wages payable?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "As a Third Party. Family Members are the legal spouse and at most two eldest children who are both below the age of 18. A 20-year-old child is not a Family Member. Third Party means any person except You and Your Family Members.",
+  "eval_id": "q55",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 4,
+    "quote": "which includes a legal spouse and a maximum of two children who are eldest, however both being below the age of 18"
+   },
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 5,
+    "quote": "Third Party means any natural person and/ or legal person and/or association of persons except You and Your Family Members"
+   }
+  ],
+  "question": "Under the Cyber Shield policy with Family Cover, is the policyholder's 20-year-old child treated as an insured person (You) or as a Third Party?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "810,000. The Deductible is subtracted first, and the Insured Percentage is then applied to the remainder: (1,000,000 - 100,000) x 90%.",
+  "eval_id": "q56",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 5,
+    "quote": "The Insured Percentage shall be applied to the amount of all covered losses after subtracting any applicable Deductible"
+   },
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 3,
+    "quote": "To indemnify the Insured for the Insured Percentage of the Insured's Loss in excess of the Deductible"
+   }
+  ],
+  "question": "Under the Political Risk Insurance for Investors policy, a covered loss under Insuring Agreement III is 1,000,000, the Deductible is 100,000 and the Insured Percentage is 90%. How much does the Company indemnify, before policy limits?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "The proof of Loss must be submitted within twelve months after the Date of Loss, or within 30 days after a demand by the Company. Any action against the Company must be commenced within twenty-four months following the Date of Loss.",
+  "eval_id": "q57",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 14,
+    "quote": "twelve (12) months after the Date of Loss"
+   },
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 14,
+    "quote": "the Insured shall file such proof of Loss with the Company within 30 days thereafter"
+   },
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 17,
+    "quote": "unless such action is commenced within twenty-four (24) months following the Date of Loss"
+   }
+  ],
+  "question": "Under the Political Risk Insurance for Investors policy, by when must the Insured submit a written proof of Loss, and by when must any legal action against the Company be commenced?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "By road it is covered only if Add-On cover 4.3, Transit Cover Beyond 80 Kms, is opted. Transportation beyond 80 km is otherwise excluded. Transportation by air or sea is excluded in every case.",
+  "eval_id": "q58",
+  "evidence": [
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 3,
+    "quote": "Transportation beyond 80kms unless Add-On cover 4.3, Transit Cover Beyond 80kms, is opted under the Policy"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 3,
+    "quote": "5. Transportation by Air/Sea."
+   }
+  ],
+  "question": "Under the SBI General Livestock policy, an insured animal dies while it is transported 120 km by road. Is the death covered? Would the answer change if the animal was transported by air?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "The Insured must give immediate notice and give the Company an opportunity to inspect the carcass until at least 24 hours after the notice. Within 7 days the Insured must furnish the information the Company requires. If the Company rejects the claim, it must do so within 30 days from receipt of all necessary documents.",
+  "eval_id": "q59",
+  "evidence": [
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 4,
+    "quote": "shall give the Company an opportunity of inspecting the carcass until at least the expiration of 24 hours after such notice shall have been given to the Company"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 4,
+    "quote": "The Insured shall also within 7 days furnish to the Company such information"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 5,
+    "quote": "the Company shall do so within a period of 30 days from the date of receipt of all necessary documents"
+   }
+  ],
+  "question": "Under the SBI General Livestock policy, an insured animal dies. What must the Insured do about the carcass and about information for the Company, and how long does the Company have to reject a claim?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "About Rs 3.16 lakh (Rs 3,15,789). Two limits apply and the lower one governs. The loan cannot exceed 80% of the surrender value (Rs 4,00,000). The annual interest on the loan also cannot exceed 50% of the annual annuity (Rs 30,000), which at 9.50% allows a loan of about Rs 3,15,789.",
+  "eval_id": "q60",
+  "evidence": [
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 22,
+    "quote": "shall not exceed 80% of the available surrender value at that point of time"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 22,
+    "quote": "the effective annual interest amount payable on loan does not exceed 50% of the annual annuity amount payable under the policy"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 22,
+    "quote": "The current compounding interest rate on loan is 9.50% p.a"
+   }
+  ],
+  "question": "Under the HDFC Life Smart Pension Plus policy, the available surrender value is Rs 5,00,000, the annual annuity is Rs 60,000 and the loan interest rate is 9.50% p.a. What is the largest loan that can be granted?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Rs 2,10,000. The GSV factor for policy year 3 is 35%, and GSV = GSV Factor x Total Premiums Paid. A Limited Pay policy acquires a GSV after at least two years' premiums, and GSV applies only where the deferment option is selected and the surrender is during the deferment period.",
+  "eval_id": "q61",
+  "evidence": [
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 20,
+    "quote": "on payment of at least two years’ premiums in case of Limited Pay"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 20,
+    "quote": "GSV = GSV Factor * Total Premiums Paid"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 21,
+    "quote": "3 35% 35%  35% 35% 35% 35% 35% 35% 35% 35% 35%"
+   }
+  ],
+  "question": "Under the HDFC Life Smart Pension Plus policy, a Limited Pay policy with a 10-year deferment period is surrendered in policy year 3, after total premiums of Rs 6,00,000 were paid. What is the Guaranteed Surrender Value?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "No. The report was in time, because it was within 12 hours of discovery. But the policy reimburses only unauthorised charges made up to 12 hours before the first report to the issuer. Charges made more than 12 hours before the report are excluded.",
+  "eval_id": "q62",
+  "evidence": [
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 20,
+    "quote": "up to twelve (12) hours prior to Your ﬁrst reporting of the event to the issuer"
+   },
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 20,
+    "quote": "You must report the loss or theft of Your Eligible Card to the issuer(s) within twelve (12) hours after discovering Your Lost or Stolen Eligible Card event"
+   },
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 20,
+    "quote": "Unauthorised Charges made on the Eligible Card that was Lost or Stolen, more than twelve (12) hours prior to Your ﬁrst reporting the event to the issuer"
+   }
+  ],
+  "question": "Under the Tata AIG Travel Insurance International Plus Health policy, an Eligible Card is stolen. The insured reports it to the issuer 10 hours after discovering the theft. Some unauthorised charges were made 20 hours before the report. Are those charges reimbursed?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Rs 8 lakh. The Sum Insured must equal the new replacement cost. If it is less, the Company pays only in the proportion the sum insured bears to the amount required to be insured, which is 40/50 = 80% of Rs 10 lakh.",
+  "eval_id": "q63",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 2,
+    "quote": "the Sum Insured shall be equal to the cost of replacement of the insured property by new property of the same kind and same capacity"
+   },
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 3,
+    "quote": "the Company will pay only in such proportion as the sum insured bears to the amount required to be insured"
+   }
+  ],
+  "question": "Under the Contractors Plant and Machinery Insurance policy, the cost to replace a machine with a new one is Rs 50 lakh, but the Sum Insured is Rs 40 lakh. A covered repair costs Rs 10 lakh. How much does the Company pay, before the Excess?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "No claim form is required. The insurer calculates the loss from certified data. Payment is not earlier than the end of the risk period and not later than 30 days from the day the certified weather data is received. If the reference station has no data, the back-up data source is used. If that is also not available, the fallback methodology is used.",
+  "eval_id": "q64",
+  "evidence": [
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 6,
+    "quote": "shall not require the claim form and payment shall be made to the insured"
+   },
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 6,
+    "quote": "not later than 30 days from the day certiﬁed weather data required for claim settlement is received"
+   },
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 7,
+    "quote": "then the back-up data source/ weather stations data will be used"
+   }
+  ],
+  "question": "Under the Weather Insurance (Retail) policy, must the insured file a claim form when the weather index deviates? By when is the payment made, and what data is used if the reference weather station has no data?",
+  "tier": "E_multi_hop"
+ },
+ {
+  "answer": "Auto Secure: the estimated cost of repair, including replacements, must not exceed Rs 500. Contractors Plant and Machinery: minor damage not exceeding Rs 7,500, after the claim is notified.",
+  "eval_id": "q65",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 3,
+    "quote": "the estimated cost of such repair including replacements, does not exceed Rs. 500/-"
+   },
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 5,
+    "quote": "the Insured may proceed with the repair of any minor damage not exceeding 7,500/-"
+   }
+  ],
+  "question": "Up to what repair cost can the insured authorise repairs without prior inspection under the Auto Secure Commercial Vehicle Package Policy, and under the Contractors Plant and Machinery Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Auto Secure: yes, depreciation is deducted on replaced parts at fixed rates. Contractors Plant and Machinery: no deduction is made for depreciation on replaced parts, except parts with limited life.",
+  "eval_id": "q66",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 2,
+    "quote": "Subject to a deduction for depreciation at the rates mentioned below in respect of the parts replaced"
+   },
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 3,
+    "quote": "No deduction shall be made for depreciation in respect of parts replaced, except those with limited life"
+   }
+  ],
+  "question": "For a repairable (partial) loss, is depreciation deducted on replaced parts under the Auto Secure Commercial Vehicle Package Policy and under the Contractors Plant and Machinery Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Contractors Plant and Machinery: within three months after the rejection. Specie Insurance: within twelve months after the rejection.",
+  "eval_id": "q67",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 4,
+    "quote": "if a claim is made and rejected and no action or suit is commenced within three months after such rejection"
+   },
+   {
+    "filename": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+    "page": 6,
+    "quote": "if a claim is made and rejected and no court action or suit is commenced within twelve months after such rejection"
+   }
+  ],
+  "question": "After a claim is rejected, within what time must court action start before all benefits are forfeited under the Contractors Plant and Machinery Insurance policy, and under the Specie Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Contractors Plant and Machinery: the Company pays no more than its rateable proportion of the loss. Political Risk: the policy is excess over any other valid bond, indemnity or insurance, so it pays only above the other insurance.",
+  "eval_id": "q68",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 5,
+    "quote": "the Company shall not be liable to pay or contribute more then its rateable proportion of such loss damage or liability"
+   },
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 17,
+    "quote": "The insurance provided under this policy shall be excess over any other valid bond, or other indemnity or insurance"
+   }
+  ],
+  "question": "If another insurance covers the same loss, how much does the insurer pay under the Contractors Plant and Machinery Insurance policy, and under the Political Risk Insurance for Investors policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Cyber Shield: only disputes about the quantum to be paid, when liability is otherwise admitted. No dispute is referable if the Company has disputed or not accepted liability. Political Risk: any and all disputes or differences arising under or in relation to the policy, including its existence, validity or termination.",
+  "eval_id": "q69",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 7,
+    "quote": "If any dispute or diﬀerence shall arise as to the quantum to be paid under the policy (liability being otherwise admitted)"
+   },
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 15,
+    "quote": "Any and all disputes or differences which may arise under, out of, in connection with or in relation to this policy"
+   }
+  ],
+  "question": "Which disputes can go to arbitration under the Cyber Shield policy, and under the Political Risk Insurance for Investors policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Arogya Sanjeevani: all medical treatment must be taken in India only. Tata AIG Travel: the accident must occur whilst on the Insured Journey overseas.",
+  "eval_id": "q70",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 8,
+    "quote": "All medical treatment for the purpose of this insurance will have to be taken in India only"
+   },
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 12,
+    "quote": "If You suﬀer an Injury solely and directly due to an Accident which occurs whilst on the Insured Journey overseas"
+   }
+  ],
+  "question": "Where must the insured event take place for medical treatment under the Arogya Sanjeevani policy, and for the Accidental Death benefit under the Tata AIG Travel Insurance International Plus Health policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Tata AIG Travel: it pays a fixed amount for every 12-hour period when the Common Carrier in which the insured travels is hijacked. Aviation Insurance: it does not apply to claims caused by hi-jacking or unlawful seizure of the aircraft.",
+  "eval_id": "q71",
+  "evidence": [
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 22,
+    "quote": "if You are Kidnapped or any Common Carrier in which You are travelling has been Hijacked during the Insured journey/Trip"
+   },
+   {
+    "filename": "Policy_Wordings_aviation_insurance.pdf_7b7e60200a.pdf",
+    "page": 12,
+    "quote": "Hi-jacking or any unlawful seizure or wrongful exercise of control of the aircraft or crew in flight"
+   }
+  ],
+  "question": "How does a hijacking affect cover under the Tata AIG Travel Insurance International Plus Health policy, and under the Aviation Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Auto Secure: report to the police and the insurer within 48 hours from the theft. Tata AIG Travel: file an FIR within 12 hours of discovering the loss.",
+  "eval_id": "q72",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 10,
+    "quote": "insured should report to the Police as well as insurer within 48 hrs from theft"
+   },
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 21,
+    "quote": "File an FIR within twelve (12) hours of discovering Your Loss"
+   }
+  ],
+  "question": "How fast must a theft be reported to the police under the Auto Secure Commercial Vehicle Package Policy (vehicle theft), and under the Tata AIG Travel Insurance International Plus Health policy (lost or stolen Eligible Card)?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Both are the same. Revival must be within five years from the due date of the first unpaid premium, and the current revival interest rate is 9.5% p.a. in both policies.",
+  "eval_id": "q73",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 15,
+    "quote": "the application for the revival should be made within five years from the due date of the first unpaid Premium"
+   },
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 15,
+    "quote": "The current rate of interest is 9.5% p.a. compounded annually"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 18,
+    "quote": "within five years from the due date for payment of the first unpaid Premium"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 19,
+    "quote": "The current compounding rate of interest on revival is 9.5% p.a."
+   }
+  ],
+  "question": "Compare the revival terms of a lapsed policy under the Click 2 Protect Optima Secure policy and the HDFC Life Smart Pension Plus policy: the time limit and the current interest rate.",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Both give 30 days from receipt of the policy. HDFC Life Smart Pension Plus: it does not apply where the policyholder must compulsorily purchase the annuity from HDFC Life with the proceeds of a pension plan. Tata AIG Travel: it applies only to policies with a Policy Period of one year.",
+  "eval_id": "q74",
+  "evidence": [
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 18,
+    "quote": "within 30 days from the date of receipt of the policy whether received electronically or otherwise"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 18,
+    "quote": "Free look cancellation shall not be applicable where the Policyholder has to compulsorily purchase annuity from HDFC Life Insurance"
+   },
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 45,
+    "quote": "The Free Look Period will be applicable for policies with the Policy Period of one (1) year"
+   }
+  ],
+  "question": "Compare the free look period under the HDFC Life Smart Pension Plus policy and the Tata AIG Travel Insurance International Plus Health policy. How long is it, and to which policies does it apply?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Click 2 Protect: within the regulatory turn around time of 14 days. SBI General Livestock: the Company aims to respond within 7 days, and tries to keep the regulatory TAT of 14 days.",
+  "eval_id": "q75",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 20,
+    "quote": "will be responded to within the prescribed regulatory Turn Around Time (TAT) of 14 days"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 5,
+    "quote": "We aim to respond to all Grievances within 7 days"
+   }
+  ],
+  "question": "How fast does the insurer respond to a grievance under the Click 2 Protect Optima Secure policy, and under the SBI General Livestock policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Trade Credit: disputes are first resolved by negotiation. If that fails, the Delhi Arbitration Court decides them under Indian law. Port Package: the parties submit to the exclusive jurisdiction of the High Court of Mumbai.",
+  "eval_id": "q76",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 13,
+    "quote": "such disputes shall be resolved in accordance with the current legislation of  the Republic of India, in Delhi Arbitration Court"
+   },
+   {
+    "filename": "PORT_PACKAGE_Policy_wording_a5f317091b.pdf",
+    "page": 162,
+    "quote": "Each party agrees to submit to the exclusive jurisdiction of the High Court of Mumbai"
+   }
+  ],
+  "question": "Which forum decides disputes under the Trade Credit Insurance policy, and under the Port Package policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Arogya Sanjeevani: treatment of any illness within 30 days from the first policy commencement date is excluded, except claims arising from an accident. SBI General Livestock: death due to diseases contracted within 15 days from the Date of Commencement of Risk is excluded.",
+  "eval_id": "q77",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 5,
+    "quote": "Expenses related to the treatment of any illness within 30 days from the ﬁrst policy commencement date shall be excluded"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 2,
+    "quote": "Death of insured Animal due to diseases contracted within 15 days from the Date of Commencement of Risk"
+   }
+  ],
+  "question": "Compare the initial waiting period for illness under the Arogya Sanjeevani policy with the initial waiting period for disease under the SBI General Livestock policy.",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Cyber Shield: the cash rate of exchange published on the RBI website on the date of the loss. Trade Credit: the Reserve Bank of India rate on the day the Insured Event occurred, but not higher than the rate on the day of delivery (or the invoice date for services).",
+  "eval_id": "q78",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 6,
+    "quote": "the amount will be converted into INR at cash rate of exchange published on the website of the RBI"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 14,
+    "quote": "The rate of exchange used by the Reserve Bank of India on the day the Insured Event occurred will be used in calculating the amount of indemnification, subject to this not being higher than that of the day when delivery was effected"
+   }
+  ],
+  "question": "Which exchange rate is used to convert a foreign-currency loss into Indian Rupees under the Cyber Shield policy, and under the Trade Credit Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Bharat Griha Raksha: the Home Building and Home Contents covers continue for the benefit of the legal representatives during the Policy Period. Auto Secure: the policy stays valid for three months from the death of the sole insured or until the policy expires, whichever is earlier. The legal heirs can apply in that period for a transfer or a new policy.",
+  "eval_id": "q79",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 13,
+    "quote": "continue for the beneﬁt of your legal representative(s) during the Policy Period"
+   },
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 10,
+    "quote": "will remain valid for a period of three months from the date of the death of insured or until the expiry of this policy (whichever is earlier)"
+   }
+  ],
+  "question": "What happens to the insurance when the insured dies under the Bharat Griha Raksha policy, and under the Auto Secure Commercial Vehicle Package Policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Political Risk: 30 days written notice. Contractors Plant and Machinery: 15 days notice. In both cases the insurer returns a pro-rata or rateable part of the premium for the unexpired period.",
+  "eval_id": "q80",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 15,
+    "quote": "The Company may cancel this policy by giving 30 days written notice of such cancellation to the last known address of the Insured"
+   },
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 6,
+    "quote": "by 15 days notice to that eﬀect being given to the insured"
+   }
+  ],
+  "question": "How much notice must the insurer give to cancel the policy under the Political Risk Insurance for Investors policy, and under the Contractors Plant and Machinery Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Auto Secure: when the cost of retrieval and/or repair exceeds 75% of the IDV. Port Package: when the reasonable repair costs from one accident are estimated to exceed the insured value. Contractors Plant and Machinery: when the repair cost equals or exceeds the actual value of the machinery immediately before the damage.",
+  "eval_id": "q81",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 3,
+    "quote": "exceeds 75% of the IDV of the vehicle"
+   },
+   {
+    "filename": "PORT_PACKAGE_Policy_wording_a5f317091b.pdf",
+    "page": 39,
+    "quote": "If the reasonable costs of repair of damage sustained in one accident are estimated to exceed the insured value, we will pay the insured value as a CTL, less any salvage value"
+   },
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 3,
+    "quote": "If the cost of repairs as detailed hereinabove equals or exceeds the actual value of the machinery insured immediately before the occurrence of the damage"
+   }
+  ],
+  "question": "When is a damaged item settled as a total loss instead of being repaired under the Auto Secure Commercial Vehicle Package Policy, the Port Package policy (handling equipment), and the Contractors Plant and Machinery Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Arogya Sanjeevani: the Cumulative Bonus increases the sum insured by 5% for each claim-free policy year. Auto Secure: a No Claim Bonus discount on the own damage premium at renewal, starting at 20% after one claim-free year. Trade Credit: the insurer may pay an agreed portion of the paid premiums as a No Claims Bonus.",
+  "eval_id": "q82",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 5,
+    "quote": "Cumulative Bonus will be increased by 5% in respect of each claim free policy year"
+   },
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 9,
+    "quote": "No claim made or pending during the preceding full year of insurance 20%"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 5,
+    "quote": "the insurer may pay an agreed portion of the paid premiums to the Insured as No Claims Bonus"
+   }
+  ],
+  "question": "What reward does the insured get for a claim-free period under the Arogya Sanjeevani policy, the Auto Secure Commercial Vehicle Package Policy, and the Trade Credit Insurance policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Bharat Griha Raksha: yes, Acts of Terrorism are an insured event, as per the attached Terrorism Clause. Auto Secure: yes, loss or damage to the vehicle by terrorist activity is covered. Cyber Shield: no, the war exclusion includes Terrorism.",
+  "eval_id": "q83",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 6,
+    "quote": "Acts of Terrorism (Coverage as per Terrorism Clause attached)"
+   },
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 2,
+    "quote": "VII. by malicious act; VIII. by terrorist activity;"
+   },
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 5,
+    "quote": "illegal strikes, decrees of government, state or public authorities and including Terrorism"
+   }
+  ],
+  "question": "Is loss caused by terrorism covered under the Bharat Griha Raksha policy, the Auto Secure Commercial Vehicle Package Policy, and the Cyber Shield policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Bharat Griha Raksha: earthquake is a covered insured event. Specie Insurance: loss or damage caused by earthquake is excluded. Weather Insurance: earthquake is excluded unless it is mentioned as a covered peril in the policy.",
+  "eval_id": "q84",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 5,
+    "quote": "Earthquake, Volcanic Eruption or other Convulsions of Nature"
+   },
+   {
+    "filename": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+    "page": 2,
+    "quote": "loss or damage directly or indirectly caused by earthquake, storm, windstorm, flood, or fire or theft following such events"
+   },
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 6,
+    "quote": "The earthquake will remain an exclusion unless it is mentioned as a covered peril in the policy"
+   }
+  ],
+  "question": "How is earthquake treated under the Bharat Griha Raksha policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "75% in all three. Cyber Shield and Specie Insurance retain 75% of the annual rate for a period not exceeding 6 months. Weather Insurance refunds 25% of the full premium for more than 3 and up to 6 months, so it keeps 75%.",
+  "eval_id": "q85",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 7,
+    "quote": "6 Months 75% of the Annual rate"
+   },
+   {
+    "filename": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+    "page": 5,
+    "quote": "6 months 75% of the Annual rate"
+   },
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 9,
+    "quote": ">3 months & Up to 6 Months 25.00%"
+   }
+  ],
+  "question": "If the insured cancels after the policy was in force for about six months, with no claim, what share of the annual premium does the insurer keep under the Cyber Shield policy, the Specie Insurance policy, and the Weather Insurance (Retail) policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "Auto Secure: the Liability Only cover is deemed transferred to the new owner from the date of transfer, and the transferee must apply within 14 days. SBI General Livestock: the policy stands cancelled and no payment is made if ownership of the animal passes to another person, except by operation of law. Bharat Griha Raksha: the policy ends when the insured sells or releases the interest in the home building or contents.",
+  "eval_id": "q86",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 8,
+    "quote": "On transfer of ownership the Liability Only cover shall be deemed to be transferred in favour of the person to whom the motor vehicle is transferred"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 4,
+    "quote": "Policy shall stand cancelled and no payment shall be made hereunder if the ownership of the insured Animal passes from Insured to any other person"
+   },
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 13,
+    "quote": "This Policy will end when you sell, surrender or release your interest in your Home Building and/or Home Contents"
+   }
+  ],
+  "question": "What happens to the insurance when the insured property is sold or changes owner under the Auto Secure Commercial Vehicle Package Policy, the SBI General Livestock policy, and the Bharat Griha Raksha policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "No, in all three. Specie Insurance excludes loss or shortage discovered while taking inventory. Contractors Plant and Machinery excludes loss or damage discovered only at the time of taking an inventory or during routine servicing. Political Risk excludes shortage discovered on taking inventory.",
+  "eval_id": "q87",
+  "evidence": [
+   {
+    "filename": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+    "page": 2,
+    "quote": "loss or shortage discovered while taking inventory"
+   },
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 2,
+    "quote": "Loss or damage discovered only at the time of taking an inventory or during routine servicing"
+   },
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 10,
+    "quote": "unexplained damage, mysterious disappearance, or shortage discovered on taking inventory"
+   }
+  ],
+  "question": "Is a loss that is discovered only during an inventory covered under the Specie Insurance policy, the Contractors Plant and Machinery Insurance policy, and the Political Risk Insurance for Investors policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "The same rate in all three: 2% above the bank rate.",
+  "eval_id": "q88",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 8,
+    "quote": "claim at a rate 2% above the bank rate"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 5,
+    "quote": "the insurer shall be liable to pay interest at a rate, which is 2% above the bank rate"
+   },
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 56,
+    "quote": "to the date of payment of claim at a rate 2% above the Bank rate"
+   }
+  ],
+  "question": "What interest does the insurer pay when a claim is settled late under the Arogya Sanjeevani policy, the SBI General Livestock policy, and the Tata AIG Travel Insurance International Plus Health policy?",
+  "tier": "F_cross_document"
+ },
+ {
+  "answer": "The Contractors Plant and Machinery Insurance wording does not state this.",
+  "eval_id": "q89",
+  "evidence": [],
+  "question": "Under the Contractors Plant and Machinery Insurance policy, how long is the free look period?",
+  "tier": "G_unanswerable",
+  "named_file": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+  "trap": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+  "absent": [
+   "free look"
+  ]
+ },
+ {
+  "answer": "The Specie Insurance wording does not state this.",
+  "eval_id": "q90",
+  "evidence": [],
+  "question": "Under the Specie Insurance policy, what No Claim Bonus percentage is given after a claim-free year?",
+  "tier": "G_unanswerable",
+  "named_file": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+  "trap": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+  "absent": [
+   "No Claim Bonus"
+  ]
+ },
+ {
+  "answer": "The Cyber Shield wording does not state this.",
+  "eval_id": "q91",
+  "evidence": [],
+  "question": "Under the Cyber Shield policy, what is the grace period for premium payment?",
+  "tier": "G_unanswerable",
+  "named_file": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+  "trap": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+  "absent": [
+   "grace period"
+  ]
+ },
+ {
+  "answer": "The Weather Insurance (Retail) wording does not state this.",
+  "eval_id": "q92",
+  "evidence": [],
+  "question": "Under the Weather Insurance (Retail) policy, within how many hours must the insured file a First Information Report?",
+  "tier": "G_unanswerable",
+  "named_file": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+  "trap": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+  "absent": [
+   "First Information Report"
+  ]
+ },
+ {
+  "answer": "The Bharat Griha Raksha wording does not state this.",
+  "eval_id": "q93",
+  "evidence": [],
+  "question": "Under the Bharat Griha Raksha policy, what depreciation rate is deducted on replaced parts?",
+  "tier": "G_unanswerable",
+  "named_file": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+  "trap": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+  "absent": [
+   "depreciation"
+  ]
+ },
+ {
+  "answer": "The Political Risk Insurance for Investors wording does not state this.",
+  "eval_id": "q94",
+  "evidence": [],
+  "question": "Under the Political Risk Insurance for Investors policy, what co-payment percentage applies to each claim?",
+  "tier": "G_unanswerable",
+  "named_file": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+  "trap": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+  "absent": [
+   "co-payment"
+  ]
+ },
+ {
+  "answer": "The SBI General Livestock wording does not state this.",
+  "eval_id": "q95",
+  "evidence": [],
+  "question": "Under the SBI General Livestock policy, after how many months of continuous coverage does the moratorium period begin?",
+  "tier": "G_unanswerable",
+  "named_file": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+  "trap": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+  "absent": [
+   "moratorium"
+  ]
+ },
+ {
+  "answer": "The Aviation Insurance wording does not state this.",
+  "eval_id": "q96",
+  "evidence": [],
+  "question": "Under the Aviation Insurance policy, what is the grace period for premium payment?",
+  "tier": "G_unanswerable",
+  "named_file": "Policy_Wordings_aviation_insurance.pdf_7b7e60200a.pdf",
+  "trap": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+  "absent": [
+   "grace period"
+  ]
+ },
+ {
+  "answer": "The HDFC Life Smart Pension Plus wording does not state this.",
+  "eval_id": "q97",
+  "evidence": [],
+  "question": "Under the HDFC Life Smart Pension Plus policy, what is payable if the annuitant dies by suicide within 12 months?",
+  "tier": "G_unanswerable",
+  "named_file": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+  "trap": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+  "absent": [
+   "suicide"
+  ]
+ },
+ {
+  "answer": "The Tata AIG Travel Insurance International Plus Health wording does not state this.",
+  "eval_id": "q98",
+  "evidence": [],
+  "question": "Under the Tata AIG Travel Insurance International Plus Health policy, how is the Guaranteed Surrender Value calculated?",
+  "tier": "G_unanswerable",
+  "named_file": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+  "trap": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+  "absent": [
+   "Surrender Value"
+  ]
+ },
+ {
+  "answer": "The Trade Credit Insurance wording does not state this.",
+  "eval_id": "q99",
+  "evidence": [],
+  "question": "Under the Trade Credit Insurance policy, what penalty per day is payable if the insurer does not honour an Insurance Ombudsman award?",
+  "tier": "G_unanswerable",
+  "named_file": "14..Trade credit insc_GEN756.pdf",
+  "trap": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+  "absent": [
+   "award of the Insurance Ombudsman"
+  ]
+ },
+ {
+  "answer": "The Arogya Sanjeevani wording does not state this.",
+  "eval_id": "q100",
+  "evidence": [],
+  "question": "Under the Arogya Sanjeevani policy, what percentage of the sum insured is paid for the loss of one limb?",
+  "tier": "G_unanswerable",
+  "named_file": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+  "trap": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+  "absent": [
+   "one limb"
+  ]
+ },
+ {
+  "answer": "Within 30 days of their release by the supplier. This applies to security critical updates for the operating system on the computer system.",
+  "eval_id": "q101",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 3,
+    "quote": "You apply security critical updates for the operating system on Your Computer system within 30 days of their release by the respective supplier"
+   }
+  ],
+  "question": "Under the Cyber Shield policy, how quickly must I install important operating system patches so that a claim to restore my files stays valid?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Yes, if all conditions are met: the surgery is on a doctor's advice, it is supported by clinical protocols, the member is 18 or older, and the Body Mass Index is 40 or more, or 35 or more together with a listed severe co-morbidity after less invasive weight loss methods failed.",
+  "eval_id": "q102",
+  "evidence": [
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 6,
+    "quote": "Expenses related to the surgical treatment of obesity that does not fulﬁl all the below conditions"
+   },
+   {
+    "filename": "Arogya_Sanjeevani_Policy_Wording_KEN_034037d936.pdf",
+    "page": 6,
+    "quote": "greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss"
+   }
+  ],
+  "question": "Under the Arogya Sanjeevani policy, is weight-loss surgery ever paid for, and which body measurements qualify?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "No. Underinsurance does not apply to this policy. If the sum insured is less than the actual value at risk, the difference does not affect the amount paid.",
+  "eval_id": "q103",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 16,
+    "quote": "Underinsurance does not apply to the TATA AIG Bharat Griha Raksha Policy"
+   }
+  ],
+  "question": "Under the Bharat Griha Raksha policy, my flat is worth more than the amount I insured it for. Will the payout be cut in proportion?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "No, unless the Insurer has agreed otherwise in writing. A blood relationship between directors of the Insured and the Counterparty, up to direct cousins, is a Controlling influence. The Insurer has no liability for losses where a Controlling influence can arise between the Insured and the Counterparty.",
+  "eval_id": "q104",
+  "evidence": [
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 18,
+    "quote": "If the blood relationship exists between directors or largest shareholders of the Insured and the Counterparty"
+   },
+   {
+    "filename": "14..Trade credit insc_GEN756.pdf",
+    "page": 10,
+    "quote": "where between the Insured and the Counterparty can be arise any Controlling influence unless the Insurer has agreed otherwise in writing"
+   }
+  ],
+  "question": "Under the Trade Credit Insurance policy, a buyer does not pay an invoice. A director of that buyer is a first cousin of a director of my company. Is the loss covered?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Up to Rs 2,500 for one accident for a commercial vehicle such as a truck. The limit is Rs 750 for three-wheeled vehicles and Rs 1,500 for taxis.",
+  "eval_id": "q105",
+  "evidence": [
+   {
+    "filename": "Auto_Secure_Commercial_Vehicle_Package_Policy_Base_Policy_Wording_22b7905015.pdf",
+    "page": 3,
+    "quote": "but not exceeding Rs. 750/-for three wheeled vehicles, Rs. 1500/- for taxis and Rs. 2500/- for other commercial vehicles in respect of any one accident"
+   }
+  ],
+  "question": "Under the Auto Secure Commercial Vehicle Package Policy, my truck cannot move after a covered accident. How much of the cost to take it to the nearest garage is paid?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Insuring Agreement II, which covers Nontransfer. The Date of Loss is the date on which the Insured or the Foreign Enterprise first attempts to transfer the funds. The condition must continue for the whole Waiting Period.",
+  "eval_id": "q106",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 4,
+    "quote": "Nontransfer means the inability of the Foreign Enterprise and/or the Insured, after all reasonable efforts, to convert and transfer outside the Host Country available funds"
+   },
+   {
+    "filename": "Policy_Wordings_political_risk_insurance_for_investors.pdf_b7a0e7c805.pdf",
+    "page": 5,
+    "quote": "Date of Loss means the date during the Policy Period on which the Insured and/or the Foreign Enterprise first attempt(s) to transfer the funds in question"
+   }
+  ],
+  "question": "Under the Political Risk Insurance for Investors policy, the host nation stops my subsidiary from changing local money and sending dividends home. Which part of the policy covers this, and from which date is the loss counted?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "The benefits are reduced, not lost. Paid-up benefit = In-force benefit x Total Premiums Paid / Total Premiums Payable. This applies when premiums for at least one full year were paid.",
+  "eval_id": "q107",
+  "evidence": [
+   {
+    "filename": "Click-2-Protect-Optima-Secure-Policy-Bond-101Y122V05.pdf",
+    "page": 14,
+    "quote": "Paid-up benefit = In-force benefit × (Total Premiums Paid) / (Total Premiums Payable)"
+   }
+  ],
+  "question": "Under the Click 2 Protect Optima Secure policy, I stop paying after two full years of premiums. What happens to the amounts the policy pays out?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "More than three hours between the scheduled arrival of the vehicle or previous flight and the scheduled departure of the missed flight or connection.",
+  "eval_id": "q108",
+  "evidence": [
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 19,
+    "quote": "scheduled departure of the missed ﬂight/connection should be more than three (3) hours"
+   }
+  ],
+  "question": "Under the Tata AIG Travel Insurance International Plus Health policy, how long must the gap between my arrival and my onward plane be for a missed onward plane to be payable?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Yes, through the Liquidity Option. It is available only under Plan Option B with 100% Return of Total Premiums Paid. It can be used only after 5 years from the first annuity payout, at most 3 times, and the total lump sum cannot exceed 60% of the total premiums paid.",
+  "eval_id": "q109",
+  "evidence": [
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 24,
+    "quote": "This option can be exercised only after completion of the 5 years from the first annuity payout"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 24,
+    "quote": "This option shall be allowed for a maximum of 3 times throughout the contract term"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 24,
+    "quote": "cannot exceed 60% of the total premiums paid"
+   }
+  ],
+  "question": "Under the HDFC Life Smart Pension Plus policy, can I take cash out in exchange for smaller pension payments? What limits apply?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "15 days from the policy issue date. After that, the information in the policy is deemed to be accepted as correct.",
+  "eval_id": "q110",
+  "evidence": [
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 4,
+    "quote": "discrepancies, if any, in the information contained in the Policy document within 15 days from Policy issue date"
+   }
+  ],
+  "question": "Under the SBI General Livestock policy, I gave my details by telephone and the printed policy shows some of them wrongly. How long do I have to tell the insurer?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Data from the back-up data source or weather station. If that is also not available, the insurer uses the fallback methodology, which replaces missing data with data from the same dates in recent historical years.",
+  "eval_id": "q111",
+  "evidence": [
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 7,
+    "quote": "then the back-up data source/ weather stations data will be used"
+   },
+   {
+    "filename": "Weather_Insurance_Policy_Wordings_Retail_6a1bd806a7.pdf",
+    "page": 7,
+    "quote": "then the weather data generated through fallback methodology will be used"
+   }
+  ],
+  "question": "My cover pays out from rainfall measured at a named recording site. If that site stops reporting, which numbers does the insurer use?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Within 72 hours of discovering the Extortion Threat. The threat must also be reported to the insurer immediately or as soon as reasonably possible.",
+  "eval_id": "q112",
+  "evidence": [
+   {
+    "filename": "Cyber_Shield_Policy_Wordings_78baa23b5a.pdf",
+    "page": 3,
+    "quote": "The Extortion Threat is reported by You to the police within 72 hours of discovery by You"
+   }
+  ],
+  "question": "Someone online says they will publish my private files unless I pay them. How soon must I go to the police for my personal cyber cover to respond?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "No. Theft or dishonesty committed by, or in collusion with, any employee of the insured is excluded.",
+  "eval_id": "q113",
+  "evidence": [
+   {
+    "filename": "specie_insurance_policy_wordings_8d69ba9234.pdf",
+    "page": 2,
+    "quote": "theft or dishonesty committed by or in collusion with any principal shareholder (beneficial or otherwise), partner, director, officer, or any employee of the insured"
+   }
+  ],
+  "question": "We keep gold bars and banknotes in a vault under a valuables policy. One of our own staff steals some of them. Does the policy pay?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "The reduction (Average) applies only if the insured value is less than 80% of the market value of the item. The payout is then reduced by the percentage by which the insured value is below the market value. It does not apply if the insured value is an agreed value, and it does not apply to freight charges and labour costs.",
+  "eval_id": "q114",
+  "evidence": [
+   {
+    "filename": "PORT_PACKAGE_Policy_wording_a5f317091b.pdf",
+    "page": 39,
+    "quote": "applies only if the insured value is less than 80% of the market value of the item"
+   },
+   {
+    "filename": "PORT_PACKAGE_Policy_wording_a5f317091b.pdf",
+    "page": 39,
+    "quote": "does not apply if the insured value is an agreed value"
+   }
+  ],
+  "question": "A crane at our container terminal is insured for less than it is worth on the market. When does the insurer scale down a damage payout, and when does it not?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "90% of the Expenses. The remaining 10% must stay uninsured.",
+  "eval_id": "q115",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_aviation_insurance.pdf_7b7e60200a.pdf",
+    "page": 9,
+    "quote": "The Insurers will reimburse the Insured for 90% of the Expenses incurred by or on behalf of the Insured for the recall of any Aviation Product(s)"
+   }
+  ],
+  "question": "A maker of aircraft parts must call back its parts under an emergency airworthiness order. What share of the call-back costs does the insurer reimburse?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "It is deducted from the payment for the lost baggage. Any amount paid under the Delay of Checked-In Baggage section is deducted from the payment due under the Loss of Checked-In Baggage section.",
+  "eval_id": "q116",
+  "evidence": [
+   {
+    "filename": "tata_aig_travel_insurance_international_plus_health_policy_wordings_012c2ec139.pdf",
+    "page": 14,
+    "quote": "any amount claimed and paid to You under Section 5: Delay of Checked-In Baggage, will be deducted from any payment due to You under this Section"
+   }
+  ],
+  "question": "My suitcase did not arrive after a flight abroad and I was paid for the delay. The airline now confirms the suitcase is gone for good. What happens to the money I already received?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "No. Loss or damage due to total or partial immersion in tidal waters is excluded.",
+  "eval_id": "q117",
+  "evidence": [
+   {
+    "filename": "Policy_Wordings_contractors_plant_and_machinery_insurance.pdf_0175bcd067.pdf",
+    "page": 2,
+    "quote": "Loss or damage due to total or partial immersion in tidal waters"
+   }
+  ],
+  "question": "An excavator on a coastal building site is partly under sea water when the tide comes in. Is the damage paid?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Only if the Permanent Total Disablement add-on cover is opted. For milch cattle, PTD is a disablement that results in permanent and total incapacity to conceive or yield milk. Without the add-on, PTD is not covered.",
+  "eval_id": "q118",
+  "evidence": [
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 2,
+    "quote": "The disablement which results in permanent and total incapacity to conceive or yield milk"
+   },
+   {
+    "filename": "SBI_General_Livestock_Policy_Wording_38ef0b201b.pdf",
+    "page": 3,
+    "quote": "PTD is not covered unless Add On Cover 4.1 Permanent Total Disablement (PTD) is opted under the Policy"
+   }
+  ],
+  "question": "My insured buffalo can never give milk again after an illness. Is that payable?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "Yes, with the Advanced Annuity Option. It gives the present value of the annuities payable in the next 1 to 5 years as a lump sum. It is available only for Joint Life under the Life Annuity with Return of % of Total Premiums Paid variant, on the first death, and it must be used within 6 months from the date of that death.",
+  "eval_id": "q119",
+  "evidence": [
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 24,
+    "quote": "This is an option to withdraw present value of annuities payable in next 1 to 5 years in advance as a lump sum"
+   },
+   {
+    "filename": "hdfc-life-smart-pension-plus-v13-policy-document-individual.pdf",
+    "page": 24,
+    "quote": "It can be availed anytime within 6 months from the date of first death amongst the annuitants"
+   }
+  ],
+  "question": "My husband was the main pension holder on our joint pension plan and he has died. Can I take some future instalments as one payment? For how many years ahead, and by when must I ask?",
+  "tier": "H_paraphrased"
+ },
+ {
+  "answer": "No. The policy ends automatically 7 days after the home building collapses or is destroyed by a reason other than an Insured Event. The insured can apply within 7 days to continue the cover, but the insurer is not bound to agree.",
+  "eval_id": "q120",
+  "evidence": [
+   {
+    "filename": "Bharat_Griha_Raksha_Policy_Policy_Wordings_5219f40e18.pdf",
+    "page": 12,
+    "quote": "This Policy will automatically end 7 (seven) days after your Home Building collapses or is destroyed by reason other than any Insured Event"
+   }
+  ],
+  "question": "My house fell down by itself, not because of fire, flood or any other listed event. Does my home cover continue?",
+  "tier": "H_paraphrased"
+ }
+]

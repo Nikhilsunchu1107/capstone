@@ -1,4 +1,4 @@
-"""Graph RAG retrieval: entity-seeded graph traversal plus vector search, merged.
+"""Graph RAG retrieval: embedding-linked entity search plus vector search, merged with rank fusion.
 
 Chunks and vectors are shared with Vector RAG (vector_rag/index.py).
 Entities come from the shared LLM client (graph_rag/src/llm_ner.py).
@@ -17,7 +17,8 @@ for p in (str(HERE), str(HERE.parent)):  # `src.*` and `graph_rag.*` imports use
         sys.path.insert(0, p)
 
 from eval import config, embed  # noqa: E402
-from graph_rag.config import TOP_K  # noqa: E402
+
+TOP_K = config.TOP_K
 
 CACHE = HERE / "cache"
 GRAPH = CACHE / "graph.pkl"
@@ -81,11 +82,6 @@ def _item(chunk_id: str, score: float, source: str) -> dict:
     return {"id": chunk_id, "file": c.metadata["filename"], "page": c.metadata.get("page"), "text": c.text, "score": score, "source": source}
 
 
-def graph_results(question: str, top_k: int = TOP_K) -> list[dict]:
-    _load()
-    return [_item(r.chunk_id, r.score, "graph") for r in _state["gi"].retrieve(question, top_k=top_k)]
-
-
 def vector_results(question: str, top_k: int = TOP_K) -> list[dict]:
     _load()
     q = embed.embed([question], "query")[0]
@@ -112,7 +108,7 @@ def _entity_index():
     return _state["ents"], _state["ent_vecs"], _state["ent_chunks"]
 
 
-def linked_graph_results(question: str, top_k: int = TOP_K) -> list[dict]:
+def graph_results(question: str, top_k: int = TOP_K) -> list[dict]:
     """Graph retrieval with embedding-based entity linking and idf-weighted chunk scores.
 
     Each query entity links to its most similar graph entities. A chunk scores the sum of
@@ -150,17 +146,9 @@ def _rrf(lists: list[list[dict]], top_k: int) -> list[dict]:
 
 
 def retrieve(question: str, top_k: int = TOP_K, mode: str = "hybrid") -> list[dict]:
-    """Modes: graph, vector, hybrid (original design: merge by raw score),
-    linked_graph, linked_hybrid (embedding entity linking + idf scores + rank fusion)."""
-    if mode == "linked_graph":
-        return linked_graph_results(question, top_k)
-    if mode == "linked_hybrid":
-        return _rrf([linked_graph_results(question, top_k), vector_results(question, top_k)], top_k)
-    g = graph_results(question, top_k) if mode in ("hybrid", "graph") else []
-    v = vector_results(question, top_k) if mode in ("hybrid", "vector") else []
-    merged: dict[str, dict] = {}
-    for r in g + v:
-        if r["id"] not in merged or r["score"] > merged[r["id"]]["score"]:
-            merged[r["id"]] = r
-    ranked = sorted(merged.values(), key=lambda r: r["score"], reverse=True)[:top_k]
-    return [{**r, "rank": i + 1} for i, r in enumerate(ranked)]
+    """Modes: graph (linked entities only), vector, hybrid (rank fusion of both)."""
+    if mode == "graph":
+        return graph_results(question, top_k)
+    if mode == "vector":
+        return vector_results(question, top_k)
+    return _rrf([graph_results(question, top_k), vector_results(question, top_k)], top_k)

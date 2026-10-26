@@ -1,0 +1,5 @@
+Metric,Vector RAG,PageIndex RAG,Graph RAG,Best
+Answer correctness,0.80,0.82,0.78,PageIndex RAG
+Faithfulness,0.92,0.92,0.93,Graph RAG
+Answer relevancy,0.90,0.88,0.88,Vector RAG
+Context recall,0.84,0.91,0.83,PageIndex RAG

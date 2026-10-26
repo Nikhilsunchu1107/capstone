@@ -14,7 +14,7 @@ EMBED_MODEL = "jina-embeddings-v4"
 # At ~1.5 subword tokens per whitespace token, 200 whitespace tokens ≈ 300
 # subword tokens — safely below the limit with headroom for longer words.
 CHUNK_SIZE = 200
-TOP_K = 5
+TOP_K = 15
 TEMPERATURE = 0.0
 MAX_TOKENS = 1024
 EMBED_DIMENSION = 512
